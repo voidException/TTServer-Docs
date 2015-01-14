@@ -1,0 +1,117 @@
+\hypertarget{class_c_http_task}{}\section{C\+Http\+Task Class Reference}
+\label{class_c_http_task}\index{C\+Http\+Task@{C\+Http\+Task}}
+
+
+{\ttfamily \#include $<$Http\+Conn.\+h$>$}
+
+Inheritance diagram for C\+Http\+Task\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_http_task}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_http_task_afa21db0ea3592c73cb0c2fa5873f9e2f}{C\+Http\+Task} (\hyperlink{struct_request__t}{Request\+\_\+t} request)
+\item 
+virtual \hyperlink{class_c_http_task_a19db636729218c1df1e925ec8dd1e059}{$\sim$\+C\+Http\+Task} ()
+\item 
+void \hyperlink{class_c_http_task_aa339fcf33e48bd15c35dded2ac998dde}{run} ()
+\item 
+void \hyperlink{class_c_http_task_ae74e46472cff30cc324f920a3a199b31}{On\+Upload} ()
+\item 
+void \hyperlink{class_c_http_task_afc34e8b0abc31a4fbf6d2813feaaebb3}{On\+Download} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{class_c_http_task_a57b48cdb901d06007968e1d345d5d061}{m\+\_\+\+Conn\+Handle}
+\item 
+int \hyperlink{class_c_http_task_a16819f2eccaceae6f1f7a34e6a91be0f}{m\+\_\+n\+Method}
+\item 
+string \hyperlink{class_c_http_task_a188765b439a847ec4987285f834d922c}{m\+\_\+str\+Url}
+\item 
+string \hyperlink{class_c_http_task_a2859d827c1868fd41b6bacc07c223b70}{m\+\_\+str\+Content\+Type}
+\item 
+char $\ast$ \hyperlink{class_c_http_task_af7292840058d7b68a0c5b42bcfae2af9}{m\+\_\+p\+Content}
+\item 
+int \hyperlink{class_c_http_task_a2a50a9a6fbee3ad7420ac37303de6be0}{m\+\_\+n\+Content\+Len}
+\item 
+string \hyperlink{class_c_http_task_a17559281c8a1dab1fe59cecede527b0e}{m\+\_\+str\+Access\+Host}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_http_task_afa21db0ea3592c73cb0c2fa5873f9e2f}{}\index{C\+Http\+Task@{C\+Http\+Task}!C\+Http\+Task@{C\+Http\+Task}}
+\index{C\+Http\+Task@{C\+Http\+Task}!C\+Http\+Task@{C\+Http\+Task}}
+\subsubsection[{C\+Http\+Task}]{\setlength{\rightskip}{0pt plus 5cm}C\+Http\+Task\+::\+C\+Http\+Task (
+\begin{DoxyParamCaption}
+\item[{{\bf Request\+\_\+t}}]{request}
+\end{DoxyParamCaption}
+)}\label{class_c_http_task_afa21db0ea3592c73cb0c2fa5873f9e2f}
+\hypertarget{class_c_http_task_a19db636729218c1df1e925ec8dd1e059}{}\index{C\+Http\+Task@{C\+Http\+Task}!````~C\+Http\+Task@{$\sim$\+C\+Http\+Task}}
+\index{````~C\+Http\+Task@{$\sim$\+C\+Http\+Task}!C\+Http\+Task@{C\+Http\+Task}}
+\subsubsection[{$\sim$\+C\+Http\+Task}]{\setlength{\rightskip}{0pt plus 5cm}C\+Http\+Task\+::$\sim$\+C\+Http\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_http_task_a19db636729218c1df1e925ec8dd1e059}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_http_task_afc34e8b0abc31a4fbf6d2813feaaebb3}{}\index{C\+Http\+Task@{C\+Http\+Task}!On\+Download@{On\+Download}}
+\index{On\+Download@{On\+Download}!C\+Http\+Task@{C\+Http\+Task}}
+\subsubsection[{On\+Download}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Task\+::\+On\+Download (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_http_task_afc34e8b0abc31a4fbf6d2813feaaebb3}
+\hypertarget{class_c_http_task_ae74e46472cff30cc324f920a3a199b31}{}\index{C\+Http\+Task@{C\+Http\+Task}!On\+Upload@{On\+Upload}}
+\index{On\+Upload@{On\+Upload}!C\+Http\+Task@{C\+Http\+Task}}
+\subsubsection[{On\+Upload}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Task\+::\+On\+Upload (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_http_task_ae74e46472cff30cc324f920a3a199b31}
+\hypertarget{class_c_http_task_aa339fcf33e48bd15c35dded2ac998dde}{}\index{C\+Http\+Task@{C\+Http\+Task}!run@{run}}
+\index{run@{run}!C\+Http\+Task@{C\+Http\+Task}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Task\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_http_task_aa339fcf33e48bd15c35dded2ac998dde}
+
+
+Implements \hyperlink{class_c_task_a1a37e2aa0fe231f4826366f0cec43419}{C\+Task}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_http_task_a57b48cdb901d06007968e1d345d5d061}{}\index{C\+Http\+Task@{C\+Http\+Task}!m\+\_\+\+Conn\+Handle@{m\+\_\+\+Conn\+Handle}}
+\index{m\+\_\+\+Conn\+Handle@{m\+\_\+\+Conn\+Handle}!C\+Http\+Task@{C\+Http\+Task}}
+\subsubsection[{m\+\_\+\+Conn\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Http\+Task\+::m\+\_\+\+Conn\+Handle\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_task_a57b48cdb901d06007968e1d345d5d061}
+\hypertarget{class_c_http_task_a2a50a9a6fbee3ad7420ac37303de6be0}{}\index{C\+Http\+Task@{C\+Http\+Task}!m\+\_\+n\+Content\+Len@{m\+\_\+n\+Content\+Len}}
+\index{m\+\_\+n\+Content\+Len@{m\+\_\+n\+Content\+Len}!C\+Http\+Task@{C\+Http\+Task}}
+\subsubsection[{m\+\_\+n\+Content\+Len}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Http\+Task\+::m\+\_\+n\+Content\+Len\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_task_a2a50a9a6fbee3ad7420ac37303de6be0}
+\hypertarget{class_c_http_task_a16819f2eccaceae6f1f7a34e6a91be0f}{}\index{C\+Http\+Task@{C\+Http\+Task}!m\+\_\+n\+Method@{m\+\_\+n\+Method}}
+\index{m\+\_\+n\+Method@{m\+\_\+n\+Method}!C\+Http\+Task@{C\+Http\+Task}}
+\subsubsection[{m\+\_\+n\+Method}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Http\+Task\+::m\+\_\+n\+Method\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_task_a16819f2eccaceae6f1f7a34e6a91be0f}
+\hypertarget{class_c_http_task_af7292840058d7b68a0c5b42bcfae2af9}{}\index{C\+Http\+Task@{C\+Http\+Task}!m\+\_\+p\+Content@{m\+\_\+p\+Content}}
+\index{m\+\_\+p\+Content@{m\+\_\+p\+Content}!C\+Http\+Task@{C\+Http\+Task}}
+\subsubsection[{m\+\_\+p\+Content}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Http\+Task\+::m\+\_\+p\+Content\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_task_af7292840058d7b68a0c5b42bcfae2af9}
+\hypertarget{class_c_http_task_a17559281c8a1dab1fe59cecede527b0e}{}\index{C\+Http\+Task@{C\+Http\+Task}!m\+\_\+str\+Access\+Host@{m\+\_\+str\+Access\+Host}}
+\index{m\+\_\+str\+Access\+Host@{m\+\_\+str\+Access\+Host}!C\+Http\+Task@{C\+Http\+Task}}
+\subsubsection[{m\+\_\+str\+Access\+Host}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Http\+Task\+::m\+\_\+str\+Access\+Host\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_task_a17559281c8a1dab1fe59cecede527b0e}
+\hypertarget{class_c_http_task_a2859d827c1868fd41b6bacc07c223b70}{}\index{C\+Http\+Task@{C\+Http\+Task}!m\+\_\+str\+Content\+Type@{m\+\_\+str\+Content\+Type}}
+\index{m\+\_\+str\+Content\+Type@{m\+\_\+str\+Content\+Type}!C\+Http\+Task@{C\+Http\+Task}}
+\subsubsection[{m\+\_\+str\+Content\+Type}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Http\+Task\+::m\+\_\+str\+Content\+Type\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_task_a2859d827c1868fd41b6bacc07c223b70}
+\hypertarget{class_c_http_task_a188765b439a847ec4987285f834d922c}{}\index{C\+Http\+Task@{C\+Http\+Task}!m\+\_\+str\+Url@{m\+\_\+str\+Url}}
+\index{m\+\_\+str\+Url@{m\+\_\+str\+Url}!C\+Http\+Task@{C\+Http\+Task}}
+\subsubsection[{m\+\_\+str\+Url}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Http\+Task\+::m\+\_\+str\+Url\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_task_a188765b439a847ec4987285f834d922c}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/\hyperlink{msfs_2_http_conn_8h}{Http\+Conn.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/\hyperlink{msfs_2_http_conn_8cpp}{Http\+Conn.\+cpp}\end{DoxyCompactItemize}

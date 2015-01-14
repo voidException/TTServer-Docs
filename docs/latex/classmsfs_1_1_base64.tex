@@ -1,0 +1,282 @@
+\hypertarget{classmsfs_1_1_base64}{}\section{msfs\+:\+:Base64 Class Reference}
+\label{classmsfs_1_1_base64}\index{msfs\+::\+Base64@{msfs\+::\+Base64}}
+
+
+{\ttfamily \#include $<$Base64.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2f}{Decode\+Option} \{ \\*
+\hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa8a8f933ef15602d734f6d4ff9a47ede6}{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+S\+T\+R\+I\+C\+T} = 1, 
+\hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa356be1c7bf0b250cba677f671144b7d8}{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+W\+H\+I\+T\+E} = 2, 
+\hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2faae48b9be0341b427bc339fa833f6d04b}{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+A\+N\+Y} = 3, 
+\hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fafc9f955f6daab916249d3a82912879af}{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+M\+A\+S\+K} = 3, 
+\\*
+\hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fad4dacb890dd1f416e3df93af74a368fc}{D\+O\+\_\+\+P\+A\+D\+\_\+\+Y\+E\+S} = 4, 
+\hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2faca8a3e162a5017cfa764cc3ccf36507f}{D\+O\+\_\+\+P\+A\+D\+\_\+\+A\+N\+Y} = 8, 
+\hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa44a5f46bdfd919dfb5f1450ed721baa0}{D\+O\+\_\+\+P\+A\+D\+\_\+\+N\+O} = 12, 
+\hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fac9c911e29a36c38dcbf963048b220950}{D\+O\+\_\+\+P\+A\+D\+\_\+\+M\+A\+S\+K} = 12, 
+\\*
+\hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa510b1305a217b89116d60fe51eb647ea}{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+B\+U\+F\+F\+E\+R} = 16, 
+\hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2faa0b9f3aa941a185e9cd18d3c38af7148}{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+C\+H\+A\+R} = 32, 
+\hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa59eca5a3cf8f958c3bc622e91dac093f}{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+A\+N\+Y} = 48, 
+\hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa191ba19c2d34b8717e4df3d0c446a98e}{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+M\+A\+S\+K} = 48, 
+\\*
+\hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fafc492da1d0a77df595410e2a46bea340}{D\+O\+\_\+\+S\+T\+R\+I\+C\+T} = D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+S\+T\+R\+I\+C\+T $\vert$ D\+O\+\_\+\+P\+A\+D\+\_\+\+Y\+E\+S $\vert$ D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+B\+U\+F\+F\+E\+R, 
+\hyperlink{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa54816f565aa1e2b44209d1b70b74c307}{D\+O\+\_\+\+L\+A\+X} = D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+A\+N\+Y $\vert$ D\+O\+\_\+\+P\+A\+D\+\_\+\+A\+N\+Y $\vert$ D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+C\+H\+A\+R
+ \}
+\item 
+typedef int \hyperlink{classmsfs_1_1_base64_ab044f6b279e3a3c6004dd58ea625b3c7}{Decode\+Flags}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classmsfs_1_1_base64_ac035c1d830cdc127f818e18e4f2231e8}{Is\+Base64\+Char} (char ch)
+\item 
+static bool \hyperlink{classmsfs_1_1_base64_a27428e410fa0e22a5ddefaa4173b0a6a}{Get\+Next\+Base64\+Char} (char ch, char $\ast$next\+\_\+ch)
+\item 
+static bool \hyperlink{classmsfs_1_1_base64_a87bce28923a731be3d65e4a938b4fa1c}{Is\+Base64\+Encoded} (const std\+::string \&str)
+\item 
+static void \hyperlink{classmsfs_1_1_base64_ae21a3132e6b7e14d8bd73a07c27fec04}{Encode\+From\+Array} (const void $\ast$data, size\+\_\+t len, std\+::string $\ast$result)
+\item 
+static bool \hyperlink{classmsfs_1_1_base64_a62f0a32e438c55d6a62f0e958b6145eb}{Decode\+From\+Array} (const char $\ast$data, size\+\_\+t len, \hyperlink{classmsfs_1_1_base64_ab044f6b279e3a3c6004dd58ea625b3c7}{Decode\+Flags} \hyperlink{_http_parser_8h_ab6b306ef981f5e21bb41ea2c2dbe8cd9}{flags}, std\+::string $\ast$result, size\+\_\+t $\ast$data\+\_\+used)
+\item 
+static bool \hyperlink{classmsfs_1_1_base64_a32bb1e8d87c871743b478ab02b9f9a17}{Decode\+From\+Array} (const char $\ast$data, size\+\_\+t len, \hyperlink{classmsfs_1_1_base64_ab044f6b279e3a3c6004dd58ea625b3c7}{Decode\+Flags} \hyperlink{_http_parser_8h_ab6b306ef981f5e21bb41ea2c2dbe8cd9}{flags}, std\+::vector$<$ char $>$ $\ast$result, size\+\_\+t $\ast$data\+\_\+used)
+\item 
+static std\+::string \hyperlink{classmsfs_1_1_base64_aa2a0cdf6d35b9d7ce5594bada1783899}{Encode} (const std\+::string \&data)
+\item 
+static std\+::string \hyperlink{classmsfs_1_1_base64_a4b5ae0fcf999bc93e3be1ca552f0dbd0}{Decode} (const std\+::string \&data, \hyperlink{classmsfs_1_1_base64_ab044f6b279e3a3c6004dd58ea625b3c7}{Decode\+Flags} \hyperlink{_http_parser_8h_ab6b306ef981f5e21bb41ea2c2dbe8cd9}{flags})
+\item 
+static bool \hyperlink{classmsfs_1_1_base64_ad5ce93b74ed80ffc32c816c4897cc6f8}{Decode} (const std\+::string \&data, \hyperlink{classmsfs_1_1_base64_ab044f6b279e3a3c6004dd58ea625b3c7}{Decode\+Flags} \hyperlink{_http_parser_8h_ab6b306ef981f5e21bb41ea2c2dbe8cd9}{flags}, std\+::string $\ast$result, size\+\_\+t $\ast$data\+\_\+used)
+\item 
+static bool \hyperlink{classmsfs_1_1_base64_a5818dcd7728dc3ceb73f1871fc2cde23}{Decode} (const std\+::string \&data, \hyperlink{classmsfs_1_1_base64_ab044f6b279e3a3c6004dd58ea625b3c7}{Decode\+Flags} \hyperlink{_http_parser_8h_ab6b306ef981f5e21bb41ea2c2dbe8cd9}{flags}, std\+::vector$<$ char $>$ $\ast$result, size\+\_\+t $\ast$data\+\_\+used)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static size\+\_\+t \hyperlink{classmsfs_1_1_base64_a77d2ed52665562005fb1fc0f9e22f987}{Get\+Next\+Quantum} (\hyperlink{classmsfs_1_1_base64_ab044f6b279e3a3c6004dd58ea625b3c7}{Decode\+Flags} parse\+\_\+flags, bool illegal\+\_\+pads, const char $\ast$data, size\+\_\+t len, size\+\_\+t $\ast$dpos, unsigned char qbuf\mbox{[}4\mbox{]}, bool $\ast$padded)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static bool \hyperlink{classmsfs_1_1_base64_aa65a209f68859ba6c8c20a9c5bf86d5d}{Decode\+From\+Array\+Template} (const char $\ast$data, size\+\_\+t len, \hyperlink{classmsfs_1_1_base64_ab044f6b279e3a3c6004dd58ea625b3c7}{Decode\+Flags} \hyperlink{_http_parser_8h_ab6b306ef981f5e21bb41ea2c2dbe8cd9}{flags}, \hyperlink{http__parser_8c_ad24d0de3f597ca60dd95c4bc59c2ff73}{T} $\ast$result, size\+\_\+t $\ast$data\+\_\+used)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const char \hyperlink{classmsfs_1_1_base64_aba928b8815dd511ff05ed253e6dc8657}{Base64\+Table} \mbox{[}$\,$\mbox{]}
+\item 
+static const unsigned char \hyperlink{classmsfs_1_1_base64_a5ec48f5b0659f1ae23d52eb97f61f744}{Decode\+Table} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmsfs_1_1_base64_ab044f6b279e3a3c6004dd58ea625b3c7}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Decode\+Flags@{Decode\+Flags}}
+\index{Decode\+Flags@{Decode\+Flags}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Decode\+Flags}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf msfs\+::\+Base64\+::\+Decode\+Flags}}\label{classmsfs_1_1_base64_ab044f6b279e3a3c6004dd58ea625b3c7}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2f}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Decode\+Option@{Decode\+Option}}
+\index{Decode\+Option@{Decode\+Option}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Decode\+Option}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf msfs\+::\+Base64\+::\+Decode\+Option}}\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2f}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+S\+T\+R\+I\+C\+T@{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+S\+T\+R\+I\+C\+T}!msfs\+::\+Base64@{msfs\+::\+Base64}}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+S\+T\+R\+I\+C\+T@{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+S\+T\+R\+I\+C\+T}}\item[{\em 
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa8a8f933ef15602d734f6d4ff9a47ede6}{}D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+S\+T\+R\+I\+C\+T\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa8a8f933ef15602d734f6d4ff9a47ede6}
+}]\index{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+W\+H\+I\+T\+E@{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+W\+H\+I\+T\+E}!msfs\+::\+Base64@{msfs\+::\+Base64}}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+W\+H\+I\+T\+E@{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+W\+H\+I\+T\+E}}\item[{\em 
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa356be1c7bf0b250cba677f671144b7d8}{}D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+W\+H\+I\+T\+E\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa356be1c7bf0b250cba677f671144b7d8}
+}]\index{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+A\+N\+Y@{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+A\+N\+Y}!msfs\+::\+Base64@{msfs\+::\+Base64}}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+A\+N\+Y@{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+A\+N\+Y}}\item[{\em 
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2faae48b9be0341b427bc339fa833f6d04b}{}D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+A\+N\+Y\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2faae48b9be0341b427bc339fa833f6d04b}
+}]\index{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+M\+A\+S\+K@{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+M\+A\+S\+K}!msfs\+::\+Base64@{msfs\+::\+Base64}}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+M\+A\+S\+K@{D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+M\+A\+S\+K}}\item[{\em 
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fafc9f955f6daab916249d3a82912879af}{}D\+O\+\_\+\+P\+A\+R\+S\+E\+\_\+\+M\+A\+S\+K\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fafc9f955f6daab916249d3a82912879af}
+}]\index{D\+O\+\_\+\+P\+A\+D\+\_\+\+Y\+E\+S@{D\+O\+\_\+\+P\+A\+D\+\_\+\+Y\+E\+S}!msfs\+::\+Base64@{msfs\+::\+Base64}}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!D\+O\+\_\+\+P\+A\+D\+\_\+\+Y\+E\+S@{D\+O\+\_\+\+P\+A\+D\+\_\+\+Y\+E\+S}}\item[{\em 
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fad4dacb890dd1f416e3df93af74a368fc}{}D\+O\+\_\+\+P\+A\+D\+\_\+\+Y\+E\+S\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fad4dacb890dd1f416e3df93af74a368fc}
+}]\index{D\+O\+\_\+\+P\+A\+D\+\_\+\+A\+N\+Y@{D\+O\+\_\+\+P\+A\+D\+\_\+\+A\+N\+Y}!msfs\+::\+Base64@{msfs\+::\+Base64}}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!D\+O\+\_\+\+P\+A\+D\+\_\+\+A\+N\+Y@{D\+O\+\_\+\+P\+A\+D\+\_\+\+A\+N\+Y}}\item[{\em 
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2faca8a3e162a5017cfa764cc3ccf36507f}{}D\+O\+\_\+\+P\+A\+D\+\_\+\+A\+N\+Y\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2faca8a3e162a5017cfa764cc3ccf36507f}
+}]\index{D\+O\+\_\+\+P\+A\+D\+\_\+\+N\+O@{D\+O\+\_\+\+P\+A\+D\+\_\+\+N\+O}!msfs\+::\+Base64@{msfs\+::\+Base64}}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!D\+O\+\_\+\+P\+A\+D\+\_\+\+N\+O@{D\+O\+\_\+\+P\+A\+D\+\_\+\+N\+O}}\item[{\em 
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa44a5f46bdfd919dfb5f1450ed721baa0}{}D\+O\+\_\+\+P\+A\+D\+\_\+\+N\+O\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa44a5f46bdfd919dfb5f1450ed721baa0}
+}]\index{D\+O\+\_\+\+P\+A\+D\+\_\+\+M\+A\+S\+K@{D\+O\+\_\+\+P\+A\+D\+\_\+\+M\+A\+S\+K}!msfs\+::\+Base64@{msfs\+::\+Base64}}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!D\+O\+\_\+\+P\+A\+D\+\_\+\+M\+A\+S\+K@{D\+O\+\_\+\+P\+A\+D\+\_\+\+M\+A\+S\+K}}\item[{\em 
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fac9c911e29a36c38dcbf963048b220950}{}D\+O\+\_\+\+P\+A\+D\+\_\+\+M\+A\+S\+K\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fac9c911e29a36c38dcbf963048b220950}
+}]\index{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+B\+U\+F\+F\+E\+R@{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+B\+U\+F\+F\+E\+R}!msfs\+::\+Base64@{msfs\+::\+Base64}}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+B\+U\+F\+F\+E\+R@{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+B\+U\+F\+F\+E\+R}}\item[{\em 
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa510b1305a217b89116d60fe51eb647ea}{}D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+B\+U\+F\+F\+E\+R\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa510b1305a217b89116d60fe51eb647ea}
+}]\index{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+C\+H\+A\+R@{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+C\+H\+A\+R}!msfs\+::\+Base64@{msfs\+::\+Base64}}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+C\+H\+A\+R@{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+C\+H\+A\+R}}\item[{\em 
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2faa0b9f3aa941a185e9cd18d3c38af7148}{}D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+C\+H\+A\+R\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2faa0b9f3aa941a185e9cd18d3c38af7148}
+}]\index{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+A\+N\+Y@{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+A\+N\+Y}!msfs\+::\+Base64@{msfs\+::\+Base64}}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+A\+N\+Y@{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+A\+N\+Y}}\item[{\em 
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa59eca5a3cf8f958c3bc622e91dac093f}{}D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+A\+N\+Y\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa59eca5a3cf8f958c3bc622e91dac093f}
+}]\index{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+M\+A\+S\+K@{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+M\+A\+S\+K}!msfs\+::\+Base64@{msfs\+::\+Base64}}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+M\+A\+S\+K@{D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+M\+A\+S\+K}}\item[{\em 
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa191ba19c2d34b8717e4df3d0c446a98e}{}D\+O\+\_\+\+T\+E\+R\+M\+\_\+\+M\+A\+S\+K\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa191ba19c2d34b8717e4df3d0c446a98e}
+}]\index{D\+O\+\_\+\+S\+T\+R\+I\+C\+T@{D\+O\+\_\+\+S\+T\+R\+I\+C\+T}!msfs\+::\+Base64@{msfs\+::\+Base64}}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!D\+O\+\_\+\+S\+T\+R\+I\+C\+T@{D\+O\+\_\+\+S\+T\+R\+I\+C\+T}}\item[{\em 
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fafc492da1d0a77df595410e2a46bea340}{}D\+O\+\_\+\+S\+T\+R\+I\+C\+T\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fafc492da1d0a77df595410e2a46bea340}
+}]\index{D\+O\+\_\+\+L\+A\+X@{D\+O\+\_\+\+L\+A\+X}!msfs\+::\+Base64@{msfs\+::\+Base64}}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!D\+O\+\_\+\+L\+A\+X@{D\+O\+\_\+\+L\+A\+X}}\item[{\em 
+\hypertarget{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa54816f565aa1e2b44209d1b70b74c307}{}D\+O\+\_\+\+L\+A\+X\label{classmsfs_1_1_base64_aca79ad65b25bf05b3e953ddd844cef2fa54816f565aa1e2b44209d1b70b74c307}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmsfs_1_1_base64_a4b5ae0fcf999bc93e3be1ca552f0dbd0}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Decode@{Decode}}
+\index{Decode@{Decode}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Decode}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string msfs\+::\+Base64\+::\+Decode (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{data, }
+\item[{{\bf Decode\+Flags}}]{flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classmsfs_1_1_base64_a4b5ae0fcf999bc93e3be1ca552f0dbd0}
+\hypertarget{classmsfs_1_1_base64_ad5ce93b74ed80ffc32c816c4897cc6f8}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Decode@{Decode}}
+\index{Decode@{Decode}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Decode}]{\setlength{\rightskip}{0pt plus 5cm}static bool msfs\+::\+Base64\+::\+Decode (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{data, }
+\item[{{\bf Decode\+Flags}}]{flags, }
+\item[{std\+::string $\ast$}]{result, }
+\item[{size\+\_\+t $\ast$}]{data\+\_\+used}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classmsfs_1_1_base64_ad5ce93b74ed80ffc32c816c4897cc6f8}
+\hypertarget{classmsfs_1_1_base64_a5818dcd7728dc3ceb73f1871fc2cde23}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Decode@{Decode}}
+\index{Decode@{Decode}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Decode}]{\setlength{\rightskip}{0pt plus 5cm}static bool msfs\+::\+Base64\+::\+Decode (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{data, }
+\item[{{\bf Decode\+Flags}}]{flags, }
+\item[{std\+::vector$<$ char $>$ $\ast$}]{result, }
+\item[{size\+\_\+t $\ast$}]{data\+\_\+used}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classmsfs_1_1_base64_a5818dcd7728dc3ceb73f1871fc2cde23}
+\hypertarget{classmsfs_1_1_base64_a62f0a32e438c55d6a62f0e958b6145eb}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Decode\+From\+Array@{Decode\+From\+Array}}
+\index{Decode\+From\+Array@{Decode\+From\+Array}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Decode\+From\+Array}]{\setlength{\rightskip}{0pt plus 5cm}bool msfs\+::\+Base64\+::\+Decode\+From\+Array (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data, }
+\item[{size\+\_\+t}]{len, }
+\item[{{\bf Decode\+Flags}}]{flags, }
+\item[{std\+::string $\ast$}]{result, }
+\item[{size\+\_\+t $\ast$}]{data\+\_\+used}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_base64_a62f0a32e438c55d6a62f0e958b6145eb}
+\hypertarget{classmsfs_1_1_base64_a32bb1e8d87c871743b478ab02b9f9a17}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Decode\+From\+Array@{Decode\+From\+Array}}
+\index{Decode\+From\+Array@{Decode\+From\+Array}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Decode\+From\+Array}]{\setlength{\rightskip}{0pt plus 5cm}static bool msfs\+::\+Base64\+::\+Decode\+From\+Array (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data, }
+\item[{size\+\_\+t}]{len, }
+\item[{{\bf Decode\+Flags}}]{flags, }
+\item[{std\+::vector$<$ char $>$ $\ast$}]{result, }
+\item[{size\+\_\+t $\ast$}]{data\+\_\+used}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_base64_a32bb1e8d87c871743b478ab02b9f9a17}
+\hypertarget{classmsfs_1_1_base64_aa65a209f68859ba6c8c20a9c5bf86d5d}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Decode\+From\+Array\+Template@{Decode\+From\+Array\+Template}}
+\index{Decode\+From\+Array\+Template@{Decode\+From\+Array\+Template}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Decode\+From\+Array\+Template}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool msfs\+::\+Base64\+::\+Decode\+From\+Array\+Template (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data, }
+\item[{size\+\_\+t}]{len, }
+\item[{{\bf Decode\+Flags}}]{flags, }
+\item[{{\bf T} $\ast$}]{result, }
+\item[{size\+\_\+t $\ast$}]{data\+\_\+used}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classmsfs_1_1_base64_aa65a209f68859ba6c8c20a9c5bf86d5d}
+\hypertarget{classmsfs_1_1_base64_aa2a0cdf6d35b9d7ce5594bada1783899}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Encode@{Encode}}
+\index{Encode@{Encode}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Encode}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string msfs\+::\+Base64\+::\+Encode (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classmsfs_1_1_base64_aa2a0cdf6d35b9d7ce5594bada1783899}
+\hypertarget{classmsfs_1_1_base64_ae21a3132e6b7e14d8bd73a07c27fec04}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Encode\+From\+Array@{Encode\+From\+Array}}
+\index{Encode\+From\+Array@{Encode\+From\+Array}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Encode\+From\+Array}]{\setlength{\rightskip}{0pt plus 5cm}void msfs\+::\+Base64\+::\+Encode\+From\+Array (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{data, }
+\item[{size\+\_\+t}]{len, }
+\item[{std\+::string $\ast$}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_base64_ae21a3132e6b7e14d8bd73a07c27fec04}
+\hypertarget{classmsfs_1_1_base64_a27428e410fa0e22a5ddefaa4173b0a6a}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Get\+Next\+Base64\+Char@{Get\+Next\+Base64\+Char}}
+\index{Get\+Next\+Base64\+Char@{Get\+Next\+Base64\+Char}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Get\+Next\+Base64\+Char}]{\setlength{\rightskip}{0pt plus 5cm}bool msfs\+::\+Base64\+::\+Get\+Next\+Base64\+Char (
+\begin{DoxyParamCaption}
+\item[{char}]{ch, }
+\item[{char $\ast$}]{next\+\_\+ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_base64_a27428e410fa0e22a5ddefaa4173b0a6a}
+\hypertarget{classmsfs_1_1_base64_a77d2ed52665562005fb1fc0f9e22f987}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Get\+Next\+Quantum@{Get\+Next\+Quantum}}
+\index{Get\+Next\+Quantum@{Get\+Next\+Quantum}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Get\+Next\+Quantum}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t msfs\+::\+Base64\+::\+Get\+Next\+Quantum (
+\begin{DoxyParamCaption}
+\item[{{\bf Decode\+Flags}}]{parse\+\_\+flags, }
+\item[{bool}]{illegal\+\_\+pads, }
+\item[{const char $\ast$}]{data, }
+\item[{size\+\_\+t}]{len, }
+\item[{size\+\_\+t $\ast$}]{dpos, }
+\item[{unsigned char}]{qbuf\mbox{[}4\mbox{]}, }
+\item[{bool $\ast$}]{padded}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classmsfs_1_1_base64_a77d2ed52665562005fb1fc0f9e22f987}
+\hypertarget{classmsfs_1_1_base64_ac035c1d830cdc127f818e18e4f2231e8}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Is\+Base64\+Char@{Is\+Base64\+Char}}
+\index{Is\+Base64\+Char@{Is\+Base64\+Char}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Is\+Base64\+Char}]{\setlength{\rightskip}{0pt plus 5cm}bool msfs\+::\+Base64\+::\+Is\+Base64\+Char (
+\begin{DoxyParamCaption}
+\item[{char}]{ch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_base64_ac035c1d830cdc127f818e18e4f2231e8}
+\hypertarget{classmsfs_1_1_base64_a87bce28923a731be3d65e4a938b4fa1c}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Is\+Base64\+Encoded@{Is\+Base64\+Encoded}}
+\index{Is\+Base64\+Encoded@{Is\+Base64\+Encoded}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Is\+Base64\+Encoded}]{\setlength{\rightskip}{0pt plus 5cm}bool msfs\+::\+Base64\+::\+Is\+Base64\+Encoded (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_base64_a87bce28923a731be3d65e4a938b4fa1c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmsfs_1_1_base64_aba928b8815dd511ff05ed253e6dc8657}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Base64\+Table@{Base64\+Table}}
+\index{Base64\+Table@{Base64\+Table}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Base64\+Table}]{\setlength{\rightskip}{0pt plus 5cm}const char msfs\+::\+Base64\+::\+Base64\+Table\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classmsfs_1_1_base64_aba928b8815dd511ff05ed253e6dc8657}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+
+
+  \textcolor{stringliteral}{"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"}
+\end{DoxyCode}
+\hypertarget{classmsfs_1_1_base64_a5ec48f5b0659f1ae23d52eb97f61f744}{}\index{msfs\+::\+Base64@{msfs\+::\+Base64}!Decode\+Table@{Decode\+Table}}
+\index{Decode\+Table@{Decode\+Table}!msfs\+::\+Base64@{msfs\+::\+Base64}}
+\subsubsection[{Decode\+Table}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned char msfs\+::\+Base64\+::\+Decode\+Table\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classmsfs_1_1_base64_a5ec48f5b0659f1ae23d52eb97f61f744}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_aee1f43d5dee94461e8512a201853e0ca}{sp},  
+  \hyperlink{namespacemsfs_aee1f43d5dee94461e8512a201853e0ca}{sp},\hyperlink{namespacemsfs_aee1f43d5dee94461e8512a201853e0ca}{sp},\hyperlink{namespacemsfs_aee1f43d5dee94461e8512a201853e0ca}{sp},\hyperlink{namespacemsfs_aee1f43d5dee94461e8512a201853e0ca}{sp},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_aee1f43d5dee94461e8512a201853e0ca}{sp},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},62,\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},63,52,53,  
+  54,55,56,57,58,59,60,61,\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a7f0f18439623dfa004657c8cb9f3652c}{pd},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il}, 0, 1, 2, 3, 4,  
+   5, 6, 7, 8, 9,10,11,12,13,14,  
+  15,16,17,18,19,20,21,22,23,24,  
+  25,\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},26,27,28,  
+  29,30,31,32,33,34,35,36,37,38,  
+  39,40,41,42,43,44,45,46,47,48,  
+  49,50,51,\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},  
+  \hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},\hyperlink{namespacemsfs_a381cc34886844e8885b4a6ed94dcf51a}{il},il               
+\}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/include/common/\hyperlink{_base64_8h}{Base64.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/common/\hyperlink{_base64_8cpp}{Base64.\+cpp}\end{DoxyCompactItemize}

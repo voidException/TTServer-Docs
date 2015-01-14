@@ -1,0 +1,81 @@
+\hypertarget{_file_serv_conn_8cpp}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+File\+Serv\+Conn.cpp File Reference}
+\label{_file_serv_conn_8cpp}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+File\+Serv\+Conn.\+cpp@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+File\+Serv\+Conn.\+cpp}}
+{\ttfamily \#include \char`\"{}File\+Serv\+Conn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}File\+Handler.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Im\+User.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Attach\+Data.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Route\+Serv\+Conn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Msg\+Conn.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_file_serv_conn_8cpp_ab5257a1463f0d322891e6659f953133c}{file\+\_\+server\+\_\+conn\+\_\+timer\+\_\+callback} (void $\ast$callback\+\_\+data, uint8\+\_\+t msg, uint32\+\_\+t handle, void $\ast$p\+Param)
+\item 
+void \hyperlink{_file_serv_conn_8cpp_adfc0607df4161880fced9488a0b2e6d1}{init\+\_\+file\+\_\+serv\+\_\+conn} (\hyperlink{structserv__info__t}{serv\+\_\+info\+\_\+t} $\ast$server\+\_\+list, uint32\+\_\+t server\+\_\+count)
+\item 
+bool \hyperlink{_file_serv_conn_8cpp_aefab9dae410d64a1fd47ccfe5d005276}{is\+\_\+file\+\_\+server\+\_\+available} ()
+\item 
+\hyperlink{class_c_file_serv_conn}{C\+File\+Serv\+Conn} $\ast$ \hyperlink{_file_serv_conn_8cpp_a2e1e48a8ac6b08334776e46fd1b0767b}{get\+\_\+random\+\_\+file\+\_\+serv\+\_\+conn} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{imconn_8h_a1b07337cf5bc653007359de2c69e2dce}{Conn\+Map\+\_\+t} \hyperlink{_file_serv_conn_8cpp_a2ba8a3335ce2b371361954803e4d2a35}{g\+\_\+file\+\_\+server\+\_\+conn\+\_\+map}
+\item 
+static \hyperlink{structserv__info__t}{serv\+\_\+info\+\_\+t} $\ast$ \hyperlink{_file_serv_conn_8cpp_ad6a5115b6a88131ae4798420bc71b120}{g\+\_\+file\+\_\+server\+\_\+list}
+\item 
+static uint32\+\_\+t \hyperlink{_file_serv_conn_8cpp_a76f1c384f7144234182a6cdca858f7e4}{g\+\_\+file\+\_\+server\+\_\+count}
+\item 
+static \hyperlink{class_c_file_handler}{C\+File\+Handler} $\ast$ \hyperlink{_file_serv_conn_8cpp_a4830c512359d02181ec9d9bea8009298}{s\+\_\+file\+\_\+handler} = N\+U\+L\+L
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_file_serv_conn_8cpp_ab5257a1463f0d322891e6659f953133c}{}\index{File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}!file\+\_\+server\+\_\+conn\+\_\+timer\+\_\+callback@{file\+\_\+server\+\_\+conn\+\_\+timer\+\_\+callback}}
+\index{file\+\_\+server\+\_\+conn\+\_\+timer\+\_\+callback@{file\+\_\+server\+\_\+conn\+\_\+timer\+\_\+callback}!File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}}
+\subsubsection[{file\+\_\+server\+\_\+conn\+\_\+timer\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}void file\+\_\+server\+\_\+conn\+\_\+timer\+\_\+callback (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{callback\+\_\+data, }
+\item[{uint8\+\_\+t}]{msg, }
+\item[{uint32\+\_\+t}]{handle, }
+\item[{void $\ast$}]{p\+Param}
+\end{DoxyParamCaption}
+)}\label{_file_serv_conn_8cpp_ab5257a1463f0d322891e6659f953133c}
+\hypertarget{_file_serv_conn_8cpp_a2e1e48a8ac6b08334776e46fd1b0767b}{}\index{File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}!get\+\_\+random\+\_\+file\+\_\+serv\+\_\+conn@{get\+\_\+random\+\_\+file\+\_\+serv\+\_\+conn}}
+\index{get\+\_\+random\+\_\+file\+\_\+serv\+\_\+conn@{get\+\_\+random\+\_\+file\+\_\+serv\+\_\+conn}!File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}}
+\subsubsection[{get\+\_\+random\+\_\+file\+\_\+serv\+\_\+conn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+File\+Serv\+Conn}$\ast$ get\+\_\+random\+\_\+file\+\_\+serv\+\_\+conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_file_serv_conn_8cpp_a2e1e48a8ac6b08334776e46fd1b0767b}
+\hypertarget{_file_serv_conn_8cpp_adfc0607df4161880fced9488a0b2e6d1}{}\index{File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}!init\+\_\+file\+\_\+serv\+\_\+conn@{init\+\_\+file\+\_\+serv\+\_\+conn}}
+\index{init\+\_\+file\+\_\+serv\+\_\+conn@{init\+\_\+file\+\_\+serv\+\_\+conn}!File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}}
+\subsubsection[{init\+\_\+file\+\_\+serv\+\_\+conn}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+file\+\_\+serv\+\_\+conn (
+\begin{DoxyParamCaption}
+\item[{{\bf serv\+\_\+info\+\_\+t} $\ast$}]{server\+\_\+list, }
+\item[{uint32\+\_\+t}]{server\+\_\+count}
+\end{DoxyParamCaption}
+)}\label{_file_serv_conn_8cpp_adfc0607df4161880fced9488a0b2e6d1}
+\hypertarget{_file_serv_conn_8cpp_aefab9dae410d64a1fd47ccfe5d005276}{}\index{File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}!is\+\_\+file\+\_\+server\+\_\+available@{is\+\_\+file\+\_\+server\+\_\+available}}
+\index{is\+\_\+file\+\_\+server\+\_\+available@{is\+\_\+file\+\_\+server\+\_\+available}!File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}}
+\subsubsection[{is\+\_\+file\+\_\+server\+\_\+available}]{\setlength{\rightskip}{0pt plus 5cm}bool is\+\_\+file\+\_\+server\+\_\+available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_file_serv_conn_8cpp_aefab9dae410d64a1fd47ccfe5d005276}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_file_serv_conn_8cpp_a2ba8a3335ce2b371361954803e4d2a35}{}\index{File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}!g\+\_\+file\+\_\+server\+\_\+conn\+\_\+map@{g\+\_\+file\+\_\+server\+\_\+conn\+\_\+map}}
+\index{g\+\_\+file\+\_\+server\+\_\+conn\+\_\+map@{g\+\_\+file\+\_\+server\+\_\+conn\+\_\+map}!File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}}
+\subsubsection[{g\+\_\+file\+\_\+server\+\_\+conn\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conn\+Map\+\_\+t} g\+\_\+file\+\_\+server\+\_\+conn\+\_\+map\hspace{0.3cm}{\ttfamily [static]}}\label{_file_serv_conn_8cpp_a2ba8a3335ce2b371361954803e4d2a35}
+\hypertarget{_file_serv_conn_8cpp_a76f1c384f7144234182a6cdca858f7e4}{}\index{File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}!g\+\_\+file\+\_\+server\+\_\+count@{g\+\_\+file\+\_\+server\+\_\+count}}
+\index{g\+\_\+file\+\_\+server\+\_\+count@{g\+\_\+file\+\_\+server\+\_\+count}!File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}}
+\subsubsection[{g\+\_\+file\+\_\+server\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t g\+\_\+file\+\_\+server\+\_\+count\hspace{0.3cm}{\ttfamily [static]}}\label{_file_serv_conn_8cpp_a76f1c384f7144234182a6cdca858f7e4}
+\hypertarget{_file_serv_conn_8cpp_ad6a5115b6a88131ae4798420bc71b120}{}\index{File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}!g\+\_\+file\+\_\+server\+\_\+list@{g\+\_\+file\+\_\+server\+\_\+list}}
+\index{g\+\_\+file\+\_\+server\+\_\+list@{g\+\_\+file\+\_\+server\+\_\+list}!File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}}
+\subsubsection[{g\+\_\+file\+\_\+server\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf serv\+\_\+info\+\_\+t}$\ast$ g\+\_\+file\+\_\+server\+\_\+list\hspace{0.3cm}{\ttfamily [static]}}\label{_file_serv_conn_8cpp_ad6a5115b6a88131ae4798420bc71b120}
+\hypertarget{_file_serv_conn_8cpp_a4830c512359d02181ec9d9bea8009298}{}\index{File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}!s\+\_\+file\+\_\+handler@{s\+\_\+file\+\_\+handler}}
+\index{s\+\_\+file\+\_\+handler@{s\+\_\+file\+\_\+handler}!File\+Serv\+Conn.\+cpp@{File\+Serv\+Conn.\+cpp}}
+\subsubsection[{s\+\_\+file\+\_\+handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+File\+Handler}$\ast$ s\+\_\+file\+\_\+handler = N\+U\+L\+L\hspace{0.3cm}{\ttfamily [static]}}\label{_file_serv_conn_8cpp_a4830c512359d02181ec9d9bea8009298}

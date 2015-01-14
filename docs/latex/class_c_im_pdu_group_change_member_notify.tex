@@ -1,0 +1,119 @@
+\hypertarget{class_c_im_pdu_group_change_member_notify}{}\section{C\+Im\+Pdu\+Group\+Change\+Member\+Notify Class Reference}
+\label{class_c_im_pdu_group_change_member_notify}\index{C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}}
+
+
+{\ttfamily \#include $<$Im\+Pdu\+Group.\+h$>$}
+
+Inheritance diagram for C\+Im\+Pdu\+Group\+Change\+Member\+Notify\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_im_pdu_group_change_member_notify}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_im_pdu_group_change_member_notify_a672df55c4735f2f78284ac82c6f94e7c}{C\+Im\+Pdu\+Group\+Change\+Member\+Notify} (\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$buf, uint32\+\_\+t len)
+\item 
+\hyperlink{class_c_im_pdu_group_change_member_notify_ac3a3277d7b6f7aa439fdfa14914e3e10}{C\+Im\+Pdu\+Group\+Change\+Member\+Notify} (uint32\+\_\+t group\+\_\+id, uint32\+\_\+t user\+\_\+cnt, uint32\+\_\+t $\ast$user\+\_\+list)
+\item 
+virtual \hyperlink{class_c_im_pdu_group_change_member_notify_a024e80e2ec93a8ffffcc904b59fb418c}{$\sim$\+C\+Im\+Pdu\+Group\+Change\+Member\+Notify} ()
+\item 
+virtual uint16\+\_\+t \hyperlink{class_c_im_pdu_group_change_member_notify_afcffd94ce8f439d55401555734d8e89c}{Get\+Pdu\+Type} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_group_change_member_notify_a9be522138fcb4dccc689077aaa2ccd09}{Get\+Group\+Id} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_group_change_member_notify_a79c53e1368a09641f477546b1371889e}{Get\+User\+Cnt} ()
+\item 
+uint32\+\_\+t $\ast$ \hyperlink{class_c_im_pdu_group_change_member_notify_a89181dec0d4bb1168ed135c733dd52ed}{Get\+User\+List} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_group_change_member_notify_a51e94815b7804d1b951f366ea3309e75}{m\+\_\+group\+\_\+id}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_group_change_member_notify_af3ef15f21f64dde41525d0f329bea87e}{m\+\_\+user\+\_\+cnt}
+\item 
+uint32\+\_\+t $\ast$ \hyperlink{class_c_im_pdu_group_change_member_notify_a889f9fe3feeb8c917b3fc0aa8c4da49c}{m\+\_\+user\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_im_pdu_group_change_member_notify_a672df55c4735f2f78284ac82c6f94e7c}{}\index{C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}!C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}}
+\index{C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}!C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}}
+\subsubsection[{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Group\+Change\+Member\+Notify\+::\+C\+Im\+Pdu\+Group\+Change\+Member\+Notify (
+\begin{DoxyParamCaption}
+\item[{{\bf uchar\+\_\+t} $\ast$}]{buf, }
+\item[{uint32\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_group_change_member_notify_a672df55c4735f2f78284ac82c6f94e7c}
+\hypertarget{class_c_im_pdu_group_change_member_notify_ac3a3277d7b6f7aa439fdfa14914e3e10}{}\index{C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}!C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}}
+\index{C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}!C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}}
+\subsubsection[{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Group\+Change\+Member\+Notify\+::\+C\+Im\+Pdu\+Group\+Change\+Member\+Notify (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{group\+\_\+id, }
+\item[{uint32\+\_\+t}]{user\+\_\+cnt, }
+\item[{uint32\+\_\+t $\ast$}]{user\+\_\+list}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_group_change_member_notify_ac3a3277d7b6f7aa439fdfa14914e3e10}
+\hypertarget{class_c_im_pdu_group_change_member_notify_a024e80e2ec93a8ffffcc904b59fb418c}{}\index{C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}!````~C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{$\sim$\+C\+Im\+Pdu\+Group\+Change\+Member\+Notify}}
+\index{````~C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{$\sim$\+C\+Im\+Pdu\+Group\+Change\+Member\+Notify}!C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}}
+\subsubsection[{$\sim$\+C\+Im\+Pdu\+Group\+Change\+Member\+Notify}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Group\+Change\+Member\+Notify\+::$\sim$\+C\+Im\+Pdu\+Group\+Change\+Member\+Notify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_im_pdu_group_change_member_notify_a024e80e2ec93a8ffffcc904b59fb418c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_im_pdu_group_change_member_notify_a9be522138fcb4dccc689077aaa2ccd09}{}\index{C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}!Get\+Group\+Id@{Get\+Group\+Id}}
+\index{Get\+Group\+Id@{Get\+Group\+Id}!C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}}
+\subsubsection[{Get\+Group\+Id}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Group\+Change\+Member\+Notify\+::\+Get\+Group\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_group_change_member_notify_a9be522138fcb4dccc689077aaa2ccd09}
+\hypertarget{class_c_im_pdu_group_change_member_notify_afcffd94ce8f439d55401555734d8e89c}{}\index{C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}!Get\+Pdu\+Type@{Get\+Pdu\+Type}}
+\index{Get\+Pdu\+Type@{Get\+Pdu\+Type}!C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}}
+\subsubsection[{Get\+Pdu\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint16\+\_\+t C\+Im\+Pdu\+Group\+Change\+Member\+Notify\+::\+Get\+Pdu\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_im_pdu_group_change_member_notify_afcffd94ce8f439d55401555734d8e89c}
+
+
+Reimplemented from \hyperlink{class_c_im_pdu_a887912f445b3e864d33f9e7f2325f1fc}{C\+Im\+Pdu}.
+
+\hypertarget{class_c_im_pdu_group_change_member_notify_a79c53e1368a09641f477546b1371889e}{}\index{C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}!Get\+User\+Cnt@{Get\+User\+Cnt}}
+\index{Get\+User\+Cnt@{Get\+User\+Cnt}!C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}}
+\subsubsection[{Get\+User\+Cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Group\+Change\+Member\+Notify\+::\+Get\+User\+Cnt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_group_change_member_notify_a79c53e1368a09641f477546b1371889e}
+\hypertarget{class_c_im_pdu_group_change_member_notify_a89181dec0d4bb1168ed135c733dd52ed}{}\index{C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}!Get\+User\+List@{Get\+User\+List}}
+\index{Get\+User\+List@{Get\+User\+List}!C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}}
+\subsubsection[{Get\+User\+List}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t$\ast$ C\+Im\+Pdu\+Group\+Change\+Member\+Notify\+::\+Get\+User\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_group_change_member_notify_a89181dec0d4bb1168ed135c733dd52ed}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_im_pdu_group_change_member_notify_a51e94815b7804d1b951f366ea3309e75}{}\index{C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}!m\+\_\+group\+\_\+id@{m\+\_\+group\+\_\+id}}
+\index{m\+\_\+group\+\_\+id@{m\+\_\+group\+\_\+id}!C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}}
+\subsubsection[{m\+\_\+group\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Group\+Change\+Member\+Notify\+::m\+\_\+group\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_group_change_member_notify_a51e94815b7804d1b951f366ea3309e75}
+\hypertarget{class_c_im_pdu_group_change_member_notify_af3ef15f21f64dde41525d0f329bea87e}{}\index{C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}!m\+\_\+user\+\_\+cnt@{m\+\_\+user\+\_\+cnt}}
+\index{m\+\_\+user\+\_\+cnt@{m\+\_\+user\+\_\+cnt}!C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}}
+\subsubsection[{m\+\_\+user\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Group\+Change\+Member\+Notify\+::m\+\_\+user\+\_\+cnt\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_group_change_member_notify_af3ef15f21f64dde41525d0f329bea87e}
+\hypertarget{class_c_im_pdu_group_change_member_notify_a889f9fe3feeb8c917b3fc0aa8c4da49c}{}\index{C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}!m\+\_\+user\+\_\+list@{m\+\_\+user\+\_\+list}}
+\index{m\+\_\+user\+\_\+list@{m\+\_\+user\+\_\+list}!C\+Im\+Pdu\+Group\+Change\+Member\+Notify@{C\+Im\+Pdu\+Group\+Change\+Member\+Notify}}
+\subsubsection[{m\+\_\+user\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t$\ast$ C\+Im\+Pdu\+Group\+Change\+Member\+Notify\+::m\+\_\+user\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_group_change_member_notify_a889f9fe3feeb8c917b3fc0aa8c4da49c}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_group_8h}{Im\+Pdu\+Group.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_group_8cpp}{Im\+Pdu\+Group.\+cpp}\end{DoxyCompactItemize}

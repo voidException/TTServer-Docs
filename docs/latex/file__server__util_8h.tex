@@ -1,0 +1,61 @@
+\hypertarget{file__server__util_8h}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/file\+\_\+server/file\+\_\+server\+\_\+util.h File Reference}
+\label{file__server__util_8h}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/file\+\_\+server/file\+\_\+server\+\_\+util.\+h@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/file\+\_\+server/file\+\_\+server\+\_\+util.\+h}}
+{\ttfamily \#include $<$pthread.\+h$>$}\\*
+{\ttfamily \#include $<$uuid/uuid.\+h$>$}\\*
+{\ttfamily \#include $<$imconn.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structfile__header__t}{file\+\_\+header\+\_\+t}
+\item 
+struct \hyperlink{structupload__package__t}{upload\+\_\+package\+\_\+t}
+\item 
+struct \hyperlink{structtransfer__task__t}{transfer\+\_\+task\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{file__server__util_8h_a34374145cfed17a2c6b5a33206b8a369}{\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+T\+U\+I\+L\+\_\+\+H\+\_\+\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structfile__header__t}{file\+\_\+header\+\_\+t} \hyperlink{file__server__util_8h_aec5f1a1b9e7c1e888f2cd84e12fa79e9}{file\+\_\+header}
+\item 
+typedef struct \hyperlink{structupload__package__t}{upload\+\_\+package\+\_\+t} \hyperlink{file__server__util_8h_aefe7d5001df21d41911a659b7650f815}{upload\+\_\+package}
+\item 
+typedef struct \hyperlink{structtransfer__task__t}{transfer\+\_\+task\+\_\+t} \hyperlink{file__server__util_8h_a9b5fd9a79bb97b829b80a0e01a7e42c4}{transfer\+\_\+task}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{file__server__util_8h_a27f960d660a92482e2639748097f07d6}{generate\+\_\+id} (char $\ast$id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{file__server__util_8h_a34374145cfed17a2c6b5a33206b8a369}{}\index{file\+\_\+server\+\_\+util.\+h@{file\+\_\+server\+\_\+util.\+h}!\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+T\+U\+I\+L\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+T\+U\+I\+L\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+T\+U\+I\+L\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+T\+U\+I\+L\+\_\+\+H\+\_\+\+\_\+}!file\+\_\+server\+\_\+util.\+h@{file\+\_\+server\+\_\+util.\+h}}
+\subsubsection[{\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+T\+U\+I\+L\+\_\+\+H\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+T\+U\+I\+L\+\_\+\+H\+\_\+\+\_\+}\label{file__server__util_8h_a34374145cfed17a2c6b5a33206b8a369}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{file__server__util_8h_aec5f1a1b9e7c1e888f2cd84e12fa79e9}{}\index{file\+\_\+server\+\_\+util.\+h@{file\+\_\+server\+\_\+util.\+h}!file\+\_\+header@{file\+\_\+header}}
+\index{file\+\_\+header@{file\+\_\+header}!file\+\_\+server\+\_\+util.\+h@{file\+\_\+server\+\_\+util.\+h}}
+\subsubsection[{file\+\_\+header}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf file\+\_\+header\+\_\+t} {\bf file\+\_\+header}}\label{file__server__util_8h_aec5f1a1b9e7c1e888f2cd84e12fa79e9}
+\hypertarget{file__server__util_8h_a9b5fd9a79bb97b829b80a0e01a7e42c4}{}\index{file\+\_\+server\+\_\+util.\+h@{file\+\_\+server\+\_\+util.\+h}!transfer\+\_\+task@{transfer\+\_\+task}}
+\index{transfer\+\_\+task@{transfer\+\_\+task}!file\+\_\+server\+\_\+util.\+h@{file\+\_\+server\+\_\+util.\+h}}
+\subsubsection[{transfer\+\_\+task}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf transfer\+\_\+task\+\_\+t} {\bf transfer\+\_\+task}}\label{file__server__util_8h_a9b5fd9a79bb97b829b80a0e01a7e42c4}
+\hypertarget{file__server__util_8h_aefe7d5001df21d41911a659b7650f815}{}\index{file\+\_\+server\+\_\+util.\+h@{file\+\_\+server\+\_\+util.\+h}!upload\+\_\+package@{upload\+\_\+package}}
+\index{upload\+\_\+package@{upload\+\_\+package}!file\+\_\+server\+\_\+util.\+h@{file\+\_\+server\+\_\+util.\+h}}
+\subsubsection[{upload\+\_\+package}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf upload\+\_\+package\+\_\+t} {\bf upload\+\_\+package}}\label{file__server__util_8h_aefe7d5001df21d41911a659b7650f815}
+
+
+\subsection{Function Documentation}
+\hypertarget{file__server__util_8h_a27f960d660a92482e2639748097f07d6}{}\index{file\+\_\+server\+\_\+util.\+h@{file\+\_\+server\+\_\+util.\+h}!generate\+\_\+id@{generate\+\_\+id}}
+\index{generate\+\_\+id@{generate\+\_\+id}!file\+\_\+server\+\_\+util.\+h@{file\+\_\+server\+\_\+util.\+h}}
+\subsubsection[{generate\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}int generate\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{id}
+\end{DoxyParamCaption}
+)}\label{file__server__util_8h_a27f960d660a92482e2639748097f07d6}

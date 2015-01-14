@@ -1,0 +1,73 @@
+\hypertarget{class_c_thread_pool}{}\section{C\+Thread\+Pool Class Reference}
+\label{class_c_thread_pool}\index{C\+Thread\+Pool@{C\+Thread\+Pool}}
+
+
+{\ttfamily \#include $<$Thread\+Pool.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_thread_pool_ad782c35d603373734182289680d146c6}{C\+Thread\+Pool} ()
+\item 
+virtual \hyperlink{class_c_thread_pool_acb6a395b0928bd2472801b0d9ac8b3c0}{$\sim$\+C\+Thread\+Pool} ()
+\item 
+int \hyperlink{class_c_thread_pool_a08cc9923d91d307c58807ad94a903844}{Init} (uint32\+\_\+t worker\+\_\+size)
+\item 
+void \hyperlink{class_c_thread_pool_a96f55b391ba290894393e8056b38beaf}{Add\+Task} (\hyperlink{class_c_task}{C\+Task} $\ast$p\+Task)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{class_c_thread_pool_aa2d4a7c170bf2862e3c74eb7d6fd85d4}{m\+\_\+worker\+\_\+size}
+\item 
+\hyperlink{class_c_worker_thread}{C\+Worker\+Thread} $\ast$ \hyperlink{class_c_thread_pool_ab859c55dd0db1ef0ba9b4f686ba51a83}{m\+\_\+worker\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_thread_pool_ad782c35d603373734182289680d146c6}{}\index{C\+Thread\+Pool@{C\+Thread\+Pool}!C\+Thread\+Pool@{C\+Thread\+Pool}}
+\index{C\+Thread\+Pool@{C\+Thread\+Pool}!C\+Thread\+Pool@{C\+Thread\+Pool}}
+\subsubsection[{C\+Thread\+Pool}]{\setlength{\rightskip}{0pt plus 5cm}C\+Thread\+Pool\+::\+C\+Thread\+Pool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_thread_pool_ad782c35d603373734182289680d146c6}
+\hypertarget{class_c_thread_pool_acb6a395b0928bd2472801b0d9ac8b3c0}{}\index{C\+Thread\+Pool@{C\+Thread\+Pool}!````~C\+Thread\+Pool@{$\sim$\+C\+Thread\+Pool}}
+\index{````~C\+Thread\+Pool@{$\sim$\+C\+Thread\+Pool}!C\+Thread\+Pool@{C\+Thread\+Pool}}
+\subsubsection[{$\sim$\+C\+Thread\+Pool}]{\setlength{\rightskip}{0pt plus 5cm}C\+Thread\+Pool\+::$\sim$\+C\+Thread\+Pool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_thread_pool_acb6a395b0928bd2472801b0d9ac8b3c0}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_thread_pool_a96f55b391ba290894393e8056b38beaf}{}\index{C\+Thread\+Pool@{C\+Thread\+Pool}!Add\+Task@{Add\+Task}}
+\index{Add\+Task@{Add\+Task}!C\+Thread\+Pool@{C\+Thread\+Pool}}
+\subsubsection[{Add\+Task}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Thread\+Pool\+::\+Add\+Task (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Task} $\ast$}]{p\+Task}
+\end{DoxyParamCaption}
+)}\label{class_c_thread_pool_a96f55b391ba290894393e8056b38beaf}
+\hypertarget{class_c_thread_pool_a08cc9923d91d307c58807ad94a903844}{}\index{C\+Thread\+Pool@{C\+Thread\+Pool}!Init@{Init}}
+\index{Init@{Init}!C\+Thread\+Pool@{C\+Thread\+Pool}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Thread\+Pool\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{worker\+\_\+size}
+\end{DoxyParamCaption}
+)}\label{class_c_thread_pool_a08cc9923d91d307c58807ad94a903844}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_thread_pool_ab859c55dd0db1ef0ba9b4f686ba51a83}{}\index{C\+Thread\+Pool@{C\+Thread\+Pool}!m\+\_\+worker\+\_\+list@{m\+\_\+worker\+\_\+list}}
+\index{m\+\_\+worker\+\_\+list@{m\+\_\+worker\+\_\+list}!C\+Thread\+Pool@{C\+Thread\+Pool}}
+\subsubsection[{m\+\_\+worker\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Worker\+Thread}$\ast$ C\+Thread\+Pool\+::m\+\_\+worker\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_thread_pool_ab859c55dd0db1ef0ba9b4f686ba51a83}
+\hypertarget{class_c_thread_pool_aa2d4a7c170bf2862e3c74eb7d6fd85d4}{}\index{C\+Thread\+Pool@{C\+Thread\+Pool}!m\+\_\+worker\+\_\+size@{m\+\_\+worker\+\_\+size}}
+\index{m\+\_\+worker\+\_\+size@{m\+\_\+worker\+\_\+size}!C\+Thread\+Pool@{C\+Thread\+Pool}}
+\subsubsection[{m\+\_\+worker\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Thread\+Pool\+::m\+\_\+worker\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_thread_pool_aa2d4a7c170bf2862e3c74eb7d6fd85d4}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/include/common/\hyperlink{_thread_pool_8h}{Thread\+Pool.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/common/\hyperlink{_thread_pool_8cpp}{Thread\+Pool.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\hypertarget{msfs_2common_2_base_socket_8cpp}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/common/\+Base\+Socket.cpp File Reference}
+\label{msfs_2common_2_base_socket_8cpp}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/common/\+Base\+Socket.\+cpp@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/common/\+Base\+Socket.\+cpp}}
+{\ttfamily \#include \char`\"{}Base\+Socket.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Event\+Dispatch.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{msfs_2common_2_base_socket_8cpp_aa8cecfc5c5c054d2875c03e77b7be15d}{T\+R\+U\+E}~1
+\item 
+\#define \hyperlink{msfs_2common_2_base_socket_8cpp_aa93f0eb578d23995850d61f7d61c55c1}{F\+A\+L\+S\+E}~0
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef hash\+\_\+map$<$ \hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t}, \hyperlink{class_c_base_socket}{C\+Base\+Socket} $\ast$ $>$ \hyperlink{msfs_2common_2_base_socket_8cpp_a3526f2c11da320a7a60cbd991006f735}{Socket\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{msfs_2common_2_base_socket_8cpp_ae63f51cae040801c10b4c300bab2c216}{Add\+Base\+Socket} (\hyperlink{class_c_base_socket}{C\+Base\+Socket} $\ast$p\+Socket)
+\item 
+void \hyperlink{msfs_2common_2_base_socket_8cpp_ac854322ddd1457f63652b9d89141b34f}{Remove\+Base\+Socket} (\hyperlink{class_c_base_socket}{C\+Base\+Socket} $\ast$p\+Socket)
+\item 
+\hyperlink{class_c_base_socket}{C\+Base\+Socket} $\ast$ \hyperlink{msfs_2common_2_base_socket_8cpp_ab9a292db88e6a0732fffa47de6940f2f}{Find\+Base\+Socket} (\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} fd)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{base_2_base_socket_8cpp_a3526f2c11da320a7a60cbd991006f735}{Socket\+Map} \hyperlink{msfs_2common_2_base_socket_8cpp_a5a352fc564a6b5691288ee54b982e0da}{g\+\_\+socket\+\_\+map}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{msfs_2common_2_base_socket_8cpp_aa93f0eb578d23995850d61f7d61c55c1}{}\index{msfs/common/\+Base\+Socket.\+cpp@{msfs/common/\+Base\+Socket.\+cpp}!F\+A\+L\+S\+E@{F\+A\+L\+S\+E}}
+\index{F\+A\+L\+S\+E@{F\+A\+L\+S\+E}!msfs/common/\+Base\+Socket.\+cpp@{msfs/common/\+Base\+Socket.\+cpp}}
+\subsubsection[{F\+A\+L\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+A\+L\+S\+E~0}\label{msfs_2common_2_base_socket_8cpp_aa93f0eb578d23995850d61f7d61c55c1}
+\hypertarget{msfs_2common_2_base_socket_8cpp_aa8cecfc5c5c054d2875c03e77b7be15d}{}\index{msfs/common/\+Base\+Socket.\+cpp@{msfs/common/\+Base\+Socket.\+cpp}!T\+R\+U\+E@{T\+R\+U\+E}}
+\index{T\+R\+U\+E@{T\+R\+U\+E}!msfs/common/\+Base\+Socket.\+cpp@{msfs/common/\+Base\+Socket.\+cpp}}
+\subsubsection[{T\+R\+U\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+R\+U\+E~1}\label{msfs_2common_2_base_socket_8cpp_aa8cecfc5c5c054d2875c03e77b7be15d}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{msfs_2common_2_base_socket_8cpp_a3526f2c11da320a7a60cbd991006f735}{}\index{msfs/common/\+Base\+Socket.\+cpp@{msfs/common/\+Base\+Socket.\+cpp}!Socket\+Map@{Socket\+Map}}
+\index{Socket\+Map@{Socket\+Map}!msfs/common/\+Base\+Socket.\+cpp@{msfs/common/\+Base\+Socket.\+cpp}}
+\subsubsection[{Socket\+Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef hash\+\_\+map$<${\bf net\+\_\+handle\+\_\+t}, {\bf C\+Base\+Socket}$\ast$$>$ {\bf Socket\+Map}}\label{msfs_2common_2_base_socket_8cpp_a3526f2c11da320a7a60cbd991006f735}
+
+
+\subsection{Function Documentation}
+\hypertarget{msfs_2common_2_base_socket_8cpp_ae63f51cae040801c10b4c300bab2c216}{}\index{msfs/common/\+Base\+Socket.\+cpp@{msfs/common/\+Base\+Socket.\+cpp}!Add\+Base\+Socket@{Add\+Base\+Socket}}
+\index{Add\+Base\+Socket@{Add\+Base\+Socket}!msfs/common/\+Base\+Socket.\+cpp@{msfs/common/\+Base\+Socket.\+cpp}}
+\subsubsection[{Add\+Base\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}void Add\+Base\+Socket (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Base\+Socket} $\ast$}]{p\+Socket}
+\end{DoxyParamCaption}
+)}\label{msfs_2common_2_base_socket_8cpp_ae63f51cae040801c10b4c300bab2c216}
+\hypertarget{msfs_2common_2_base_socket_8cpp_ab9a292db88e6a0732fffa47de6940f2f}{}\index{msfs/common/\+Base\+Socket.\+cpp@{msfs/common/\+Base\+Socket.\+cpp}!Find\+Base\+Socket@{Find\+Base\+Socket}}
+\index{Find\+Base\+Socket@{Find\+Base\+Socket}!msfs/common/\+Base\+Socket.\+cpp@{msfs/common/\+Base\+Socket.\+cpp}}
+\subsubsection[{Find\+Base\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Base\+Socket}$\ast$ Find\+Base\+Socket (
+\begin{DoxyParamCaption}
+\item[{{\bf net\+\_\+handle\+\_\+t}}]{fd}
+\end{DoxyParamCaption}
+)}\label{msfs_2common_2_base_socket_8cpp_ab9a292db88e6a0732fffa47de6940f2f}
+\hypertarget{msfs_2common_2_base_socket_8cpp_ac854322ddd1457f63652b9d89141b34f}{}\index{msfs/common/\+Base\+Socket.\+cpp@{msfs/common/\+Base\+Socket.\+cpp}!Remove\+Base\+Socket@{Remove\+Base\+Socket}}
+\index{Remove\+Base\+Socket@{Remove\+Base\+Socket}!msfs/common/\+Base\+Socket.\+cpp@{msfs/common/\+Base\+Socket.\+cpp}}
+\subsubsection[{Remove\+Base\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}void Remove\+Base\+Socket (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Base\+Socket} $\ast$}]{p\+Socket}
+\end{DoxyParamCaption}
+)}\label{msfs_2common_2_base_socket_8cpp_ac854322ddd1457f63652b9d89141b34f}
+
+
+\subsection{Variable Documentation}
+\hypertarget{msfs_2common_2_base_socket_8cpp_a5a352fc564a6b5691288ee54b982e0da}{}\index{msfs/common/\+Base\+Socket.\+cpp@{msfs/common/\+Base\+Socket.\+cpp}!g\+\_\+socket\+\_\+map@{g\+\_\+socket\+\_\+map}}
+\index{g\+\_\+socket\+\_\+map@{g\+\_\+socket\+\_\+map}!msfs/common/\+Base\+Socket.\+cpp@{msfs/common/\+Base\+Socket.\+cpp}}
+\subsubsection[{g\+\_\+socket\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Socket\+Map} g\+\_\+socket\+\_\+map}\label{msfs_2common_2_base_socket_8cpp_a5a352fc564a6b5691288ee54b982e0da}

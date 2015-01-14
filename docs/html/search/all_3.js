@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['base64',['Base64',['../classmsfs_1_1_base64.html',1,'msfs']]],
+  ['base64_2ecpp',['Base64.cpp',['../_base64_8cpp.html',1,'']]],
+  ['base64_2eh',['Base64.h',['../_base64_8h.html',1,'']]],
+  ['base64table',['Base64Table',['../classmsfs_1_1_base64.html#aba928b8815dd511ff05ed253e6dc8657',1,'msfs::Base64']]],
+  ['basesocket_2ecpp',['BaseSocket.cpp',['../base_2_base_socket_8cpp.html',1,'']]],
+  ['basesocket_2ecpp',['BaseSocket.cpp',['../msfs_2common_2_base_socket_8cpp.html',1,'']]],
+  ['basesocket_2eh',['BaseSocket.h',['../base_2_base_socket_8h.html',1,'']]],
+  ['basesocket_2eh',['BaseSocket.h',['../msfs_2include_2common_2_base_socket_8h.html',1,'']]],
+  ['begin_5ftime',['begin_time',['../msfs_2_http_conn_8cpp.html#a9f7d2607627b3914edd5f03aec4e1496',1,'HttpConn.cpp']]],
+  ['bit_5fat',['BIT_AT',['../_http_parser_8cpp.html#a9ddbf0df312c3e6827f91bb214a74504',1,'BIT_AT():&#160;HttpParser.cpp'],['../http__parser_8c.html#a9ddbf0df312c3e6827f91bb214a74504',1,'BIT_AT():&#160;http_parser.c']]],
+  ['bool',['BOOL',['../base_2ostype_8h.html#a050c65e107f0c828f856a231f4b4e788',1,'BOOL():&#160;ostype.h'],['../msfs_2include_2common_2ostype_8h.html#a050c65e107f0c828f856a231f4b4e788',1,'BOOL():&#160;ostype.h']]],
+  ['bool_5f',['BOOL_',['../classjsonxx_1_1_value.html#a20ed4eff7fd265232bfe9e79596ef857af791553b8f44402500e914c3de70e2e2',1,'jsonxx::Value']]],
+  ['bool_5fvalue_5f',['bool_value_',['../classjsonxx_1_1_value.html#a1a83f85a3c152877e173018922188fd1',1,'jsonxx::Value']]],
+  ['boolean',['Boolean',['../namespacejsonxx.html#aa700abaa02dfd30f2a09ba8e95c6f3eb',1,'jsonxx']]],
+  ['boundary_5fmark',['BOUNDARY_MARK',['../msfs_2_http_conn_8h.html#a404191d0eedfeb40c26e96aff5184168',1,'HttpConn.h']]],
+  ['broadcastclientmsgdata',['BroadcastClientMsgData',['../class_c_im_user.html#ae218ccfce79190fc6988a9250cd12229',1,'CImUser']]],
+  ['broadcastdata',['BroadcastData',['../class_c_im_user.html#a89e22f8abe6a631d5df428b24fcc61eb',1,'CImUser']]],
+  ['broadcastpdu',['BroadcastPdu',['../class_c_im_user.html#a8adc85a16601f1d300ef0b4b582a3566',1,'CImUser::BroadcastPdu()'],['../class_c_im_user_manager.html#a8ec6129fdcb0602eed2d9daf16dc88ec',1,'CImUserManager::BroadcastPdu()']]],
+  ['broadcastpduwithoutmobile',['BroadcastPduWithOutMobile',['../class_c_im_user.html#a00b5ce9b7bc6cd66c756d5a38cbb12a1',1,'CImUser']]],
+  ['byte',['byte',['../_portable_8h.html#a0c8186d9b9b7880309c27230bbb5e69d',1,'Portable.h']]],
+  ['bytesize',['ByteSize',['../class_i_m_1_1_base_define_1_1_ip_addr.html#ab21f1366e74bf3b8d3646c5fc7c3f7a0',1,'IM::BaseDefine::IpAddr::ByteSize()'],['../class_i_m_1_1_base_define_1_1_client_user_info.html#a0cf737acdacd8e471a9675cad9a5fe6e',1,'IM::BaseDefine::ClientUserInfo::ByteSize()'],['../class_i_m_1_1_base_define_1_1_server_user_info.html#a42b8932777dd3b2bbc721c45dd789697',1,'IM::BaseDefine::ServerUserInfo::ByteSize()'],['../class_i_m_1_1_base_define_1_1_client_user_stat.html#a82de32b09acb49feb4e1c98e95541425',1,'IM::BaseDefine::ClientUserStat::ByteSize()'],['../class_i_m_1_1_base_define_1_1_server_user_stat.html#abbf26899ca798c24f373e996acbd948e',1,'IM::BaseDefine::ServerUserStat::ByteSize()'],['../class_i_m_1_1_base_define_1_1_client_un_read_info.html#a4fbcbdb7357c3e80641f0a60036a2e1f',1,'IM::BaseDefine::ClientUnReadInfo::ByteSize()'],['../class_i_m_1_1_base_define_1_1_server_un_read_info.html#a3aac11390c73599344c36be8121b69a2',1,'IM::BaseDefine::ServerUnReadInfo::ByteSize()'],['../class_i_m_1_1_base_define_1_1_client_msg_info.html#a9d9789362bf65efb87425bab1d84d46b',1,'IM::BaseDefine::ClientMsgInfo::ByteSize()'],['../class_i_m_1_1_base_define_1_1_server_msg_info.html#a5c9a68ad8bd799ed68dc1fc8c8bafb36',1,'IM::BaseDefine::ServerMsgInfo::ByteSize()'],['../class_i_m_1_1_base_define_1_1_client_group_info.html#a3663ffaa333b42f84b9b2a4d39a0282a',1,'IM::BaseDefine::ClientGroupInfo::ByteSize()'],['../class_i_m_1_1_base_define_1_1_server_group_info.html#abd3985c5186358cabd1ff4a49f9e49e4',1,'IM::BaseDefine::ServerGroupInfo::ByteSize()'],['../class_i_m_1_1_base_define_1_1_client_group_un_read_cnt.html#a019b4bbf64acc069eef85300016ec625',1,'IM::BaseDefine::ClientGroupUnReadCnt::ByteSize()'],['../class_i_m_1_1_base_define_1_1_server_group_un_read_cnt.html#a4cc829b6c4579fd99df30e051f0999ff',1,'IM::BaseDefine::ServerGroupUnReadCnt::ByteSize()'],['../class_i_m_1_1_base_define_1_1_client_group_msg.html#ad58b2109a0fc0708c6d64059c1088d58',1,'IM::BaseDefine::ClientGroupMsg::ByteSize()'],['../class_i_m_1_1_base_define_1_1_server_group_msg.html#ab9f18f9b51073487cf712f1047b9c0d6',1,'IM::BaseDefine::ServerGroupMsg::ByteSize()'],['../class_i_m_1_1_base_define_1_1_client_offline_file_info.html#ab6a110ef417da38be6fcd642a80e779e',1,'IM::BaseDefine::ClientOfflineFileInfo::ByteSize()'],['../class_i_m_1_1_base_define_1_1_server_offline_file_info.html#a8ce9857c5bf70ed18b50aeaec860fd99',1,'IM::BaseDefine::ServerOfflineFileInfo::ByteSize()']]]
+];

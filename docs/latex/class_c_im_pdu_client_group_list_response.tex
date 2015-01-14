@@ -1,0 +1,105 @@
+\hypertarget{class_c_im_pdu_client_group_list_response}{}\section{C\+Im\+Pdu\+Client\+Group\+List\+Response Class Reference}
+\label{class_c_im_pdu_client_group_list_response}\index{C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}}
+
+
+{\ttfamily \#include $<$Im\+Pdu\+Group.\+h$>$}
+
+Inheritance diagram for C\+Im\+Pdu\+Client\+Group\+List\+Response\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_im_pdu_client_group_list_response}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_im_pdu_client_group_list_response_ae7a7354339de3b0c4c7c9c2da1406dcb}{C\+Im\+Pdu\+Client\+Group\+List\+Response} (\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$buf, uint32\+\_\+t len)
+\item 
+\hyperlink{class_c_im_pdu_client_group_list_response_aec076b828f6415862fe5796eacad7660}{C\+Im\+Pdu\+Client\+Group\+List\+Response} (uint16\+\_\+t cmd\+\_\+id, uint32\+\_\+t group\+\_\+cnt, \hyperlink{structgroup__info__t}{group\+\_\+info\+\_\+t} $\ast$group\+\_\+list=N\+U\+L\+L)
+\item 
+virtual \hyperlink{class_c_im_pdu_client_group_list_response_a754cfef2de0fe19f542992adf9ec117a}{$\sim$\+C\+Im\+Pdu\+Client\+Group\+List\+Response} ()
+\item 
+virtual uint16\+\_\+t \hyperlink{class_c_im_pdu_client_group_list_response_a730bc119409b7e55c7d1ea64c06fd84c}{Get\+Pdu\+Type} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_group_list_response_ab9ad7ad413c82ce50c2ef6066661ca4b}{Get\+Group\+Cnt} ()
+\item 
+\hyperlink{structclient__group__info__t}{client\+\_\+group\+\_\+info\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_client_group_list_response_a393fb8074cdf2de511e615b91ca758b9}{Get\+Group\+List} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_group_list_response_ab12d56d89829c20ec6b49fde52d07183}{m\+\_\+group\+\_\+cnt}
+\item 
+\hyperlink{structclient__group__info__t}{client\+\_\+group\+\_\+info\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_client_group_list_response_a75957a044b1f753da93a6b2b7ca0158a}{m\+\_\+group\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_im_pdu_client_group_list_response_ae7a7354339de3b0c4c7c9c2da1406dcb}{}\index{C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}!C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}}
+\index{C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}!C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}}
+\subsubsection[{C\+Im\+Pdu\+Client\+Group\+List\+Response}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Client\+Group\+List\+Response\+::\+C\+Im\+Pdu\+Client\+Group\+List\+Response (
+\begin{DoxyParamCaption}
+\item[{{\bf uchar\+\_\+t} $\ast$}]{buf, }
+\item[{uint32\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_client_group_list_response_ae7a7354339de3b0c4c7c9c2da1406dcb}
+\hypertarget{class_c_im_pdu_client_group_list_response_aec076b828f6415862fe5796eacad7660}{}\index{C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}!C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}}
+\index{C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}!C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}}
+\subsubsection[{C\+Im\+Pdu\+Client\+Group\+List\+Response}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Client\+Group\+List\+Response\+::\+C\+Im\+Pdu\+Client\+Group\+List\+Response (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{cmd\+\_\+id, }
+\item[{uint32\+\_\+t}]{group\+\_\+cnt, }
+\item[{{\bf group\+\_\+info\+\_\+t} $\ast$}]{group\+\_\+list = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_client_group_list_response_aec076b828f6415862fe5796eacad7660}
+\hypertarget{class_c_im_pdu_client_group_list_response_a754cfef2de0fe19f542992adf9ec117a}{}\index{C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}!````~C\+Im\+Pdu\+Client\+Group\+List\+Response@{$\sim$\+C\+Im\+Pdu\+Client\+Group\+List\+Response}}
+\index{````~C\+Im\+Pdu\+Client\+Group\+List\+Response@{$\sim$\+C\+Im\+Pdu\+Client\+Group\+List\+Response}!C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}}
+\subsubsection[{$\sim$\+C\+Im\+Pdu\+Client\+Group\+List\+Response}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Client\+Group\+List\+Response\+::$\sim$\+C\+Im\+Pdu\+Client\+Group\+List\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_im_pdu_client_group_list_response_a754cfef2de0fe19f542992adf9ec117a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_im_pdu_client_group_list_response_ab9ad7ad413c82ce50c2ef6066661ca4b}{}\index{C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}!Get\+Group\+Cnt@{Get\+Group\+Cnt}}
+\index{Get\+Group\+Cnt@{Get\+Group\+Cnt}!C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}}
+\subsubsection[{Get\+Group\+Cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Group\+List\+Response\+::\+Get\+Group\+Cnt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_group_list_response_ab9ad7ad413c82ce50c2ef6066661ca4b}
+\hypertarget{class_c_im_pdu_client_group_list_response_a393fb8074cdf2de511e615b91ca758b9}{}\index{C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}!Get\+Group\+List@{Get\+Group\+List}}
+\index{Get\+Group\+List@{Get\+Group\+List}!C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}}
+\subsubsection[{Get\+Group\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf client\+\_\+group\+\_\+info\+\_\+t}$\ast$ C\+Im\+Pdu\+Client\+Group\+List\+Response\+::\+Get\+Group\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_group_list_response_a393fb8074cdf2de511e615b91ca758b9}
+\hypertarget{class_c_im_pdu_client_group_list_response_a730bc119409b7e55c7d1ea64c06fd84c}{}\index{C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}!Get\+Pdu\+Type@{Get\+Pdu\+Type}}
+\index{Get\+Pdu\+Type@{Get\+Pdu\+Type}!C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}}
+\subsubsection[{Get\+Pdu\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint16\+\_\+t C\+Im\+Pdu\+Client\+Group\+List\+Response\+::\+Get\+Pdu\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_im_pdu_client_group_list_response_a730bc119409b7e55c7d1ea64c06fd84c}
+
+
+Reimplemented from \hyperlink{class_c_im_pdu_a887912f445b3e864d33f9e7f2325f1fc}{C\+Im\+Pdu}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_im_pdu_client_group_list_response_ab12d56d89829c20ec6b49fde52d07183}{}\index{C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}!m\+\_\+group\+\_\+cnt@{m\+\_\+group\+\_\+cnt}}
+\index{m\+\_\+group\+\_\+cnt@{m\+\_\+group\+\_\+cnt}!C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}}
+\subsubsection[{m\+\_\+group\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Group\+List\+Response\+::m\+\_\+group\+\_\+cnt\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_group_list_response_ab12d56d89829c20ec6b49fde52d07183}
+\hypertarget{class_c_im_pdu_client_group_list_response_a75957a044b1f753da93a6b2b7ca0158a}{}\index{C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}!m\+\_\+group\+\_\+list@{m\+\_\+group\+\_\+list}}
+\index{m\+\_\+group\+\_\+list@{m\+\_\+group\+\_\+list}!C\+Im\+Pdu\+Client\+Group\+List\+Response@{C\+Im\+Pdu\+Client\+Group\+List\+Response}}
+\subsubsection[{m\+\_\+group\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf client\+\_\+group\+\_\+info\+\_\+t}$\ast$ C\+Im\+Pdu\+Client\+Group\+List\+Response\+::m\+\_\+group\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_group_list_response_a75957a044b1f753da93a6b2b7ca0158a}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_group_8h}{Im\+Pdu\+Group.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_group_8cpp}{Im\+Pdu\+Group.\+cpp}\end{DoxyCompactItemize}

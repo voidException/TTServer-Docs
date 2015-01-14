@@ -1,0 +1,62 @@
+\hypertarget{msg__server_8cpp}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/msg\+\_\+server.cpp File Reference}
+\label{msg__server_8cpp}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/msg\+\_\+server.\+cpp@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/msg\+\_\+server.\+cpp}}
+{\ttfamily \#include \char`\"{}netlib.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Config\+File\+Reader.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Msg\+Conn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Login\+Serv\+Conn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Route\+Serv\+Conn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\+B\+Serv\+Conn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Http\+Conn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}File\+Serv\+Conn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}version.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{msg__server_8cpp_ad86968af0c18fdf40f933bc8ed693eb2}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+C\+U\+R\+R\+E\+N\+T\+\_\+\+D\+B\+\_\+\+C\+O\+N\+N\+\_\+\+C\+N\+T}~10
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{msg__server_8cpp_a9f6700a7954b4fcfab0028c10a88cc18}{msg\+\_\+serv\+\_\+callback} (void $\ast$callback\+\_\+data, uint8\+\_\+t msg, uint32\+\_\+t handle, void $\ast$p\+Param)
+\item 
+void \hyperlink{msg__server_8cpp_abfe06a571c6062bdf0dfc4e0bfc04368}{http\+\_\+callback} (void $\ast$callback\+\_\+data, uint8\+\_\+t msg, uint32\+\_\+t handle, void $\ast$p\+Param)
+\item 
+int \hyperlink{msg__server_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{msg__server_8cpp_ad86968af0c18fdf40f933bc8ed693eb2}{}\index{msg\+\_\+server.\+cpp@{msg\+\_\+server.\+cpp}!D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+C\+U\+R\+R\+E\+N\+T\+\_\+\+D\+B\+\_\+\+C\+O\+N\+N\+\_\+\+C\+N\+T@{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+C\+U\+R\+R\+E\+N\+T\+\_\+\+D\+B\+\_\+\+C\+O\+N\+N\+\_\+\+C\+N\+T}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+C\+U\+R\+R\+E\+N\+T\+\_\+\+D\+B\+\_\+\+C\+O\+N\+N\+\_\+\+C\+N\+T@{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+C\+U\+R\+R\+E\+N\+T\+\_\+\+D\+B\+\_\+\+C\+O\+N\+N\+\_\+\+C\+N\+T}!msg\+\_\+server.\+cpp@{msg\+\_\+server.\+cpp}}
+\subsubsection[{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+C\+U\+R\+R\+E\+N\+T\+\_\+\+D\+B\+\_\+\+C\+O\+N\+N\+\_\+\+C\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+C\+U\+R\+R\+E\+N\+T\+\_\+\+D\+B\+\_\+\+C\+O\+N\+N\+\_\+\+C\+N\+T~10}\label{msg__server_8cpp_ad86968af0c18fdf40f933bc8ed693eb2}
+
+
+\subsection{Function Documentation}
+\hypertarget{msg__server_8cpp_abfe06a571c6062bdf0dfc4e0bfc04368}{}\index{msg\+\_\+server.\+cpp@{msg\+\_\+server.\+cpp}!http\+\_\+callback@{http\+\_\+callback}}
+\index{http\+\_\+callback@{http\+\_\+callback}!msg\+\_\+server.\+cpp@{msg\+\_\+server.\+cpp}}
+\subsubsection[{http\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}void http\+\_\+callback (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{callback\+\_\+data, }
+\item[{uint8\+\_\+t}]{msg, }
+\item[{uint32\+\_\+t}]{handle, }
+\item[{void $\ast$}]{p\+Param}
+\end{DoxyParamCaption}
+)}\label{msg__server_8cpp_abfe06a571c6062bdf0dfc4e0bfc04368}
+\hypertarget{msg__server_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{}\index{msg\+\_\+server.\+cpp@{msg\+\_\+server.\+cpp}!main@{main}}
+\index{main@{main}!msg\+\_\+server.\+cpp@{msg\+\_\+server.\+cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{msg__server_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+\hypertarget{msg__server_8cpp_a9f6700a7954b4fcfab0028c10a88cc18}{}\index{msg\+\_\+server.\+cpp@{msg\+\_\+server.\+cpp}!msg\+\_\+serv\+\_\+callback@{msg\+\_\+serv\+\_\+callback}}
+\index{msg\+\_\+serv\+\_\+callback@{msg\+\_\+serv\+\_\+callback}!msg\+\_\+server.\+cpp@{msg\+\_\+server.\+cpp}}
+\subsubsection[{msg\+\_\+serv\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}void msg\+\_\+serv\+\_\+callback (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{callback\+\_\+data, }
+\item[{uint8\+\_\+t}]{msg, }
+\item[{uint32\+\_\+t}]{handle, }
+\item[{void $\ast$}]{p\+Param}
+\end{DoxyParamCaption}
+)}\label{msg__server_8cpp_a9f6700a7954b4fcfab0028c10a88cc18}

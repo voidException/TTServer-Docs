@@ -1,0 +1,179 @@
+\hypertarget{class_c_im_user_manager}{}\section{C\+Im\+User\+Manager Class Reference}
+\label{class_c_im_user_manager}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+
+
+{\ttfamily \#include $<$Im\+User.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_im_user_manager_a7948f76ee16ef1ba03d6c7587df288a5}{C\+Im\+User\+Manager} ()
+\item 
+\hyperlink{class_c_im_user_manager_aeffddce5039e824ac684e0210ba7bce3}{$\sim$\+C\+Im\+User\+Manager} ()
+\item 
+\hyperlink{class_c_im_user}{C\+Im\+User} $\ast$ \hyperlink{class_c_im_user_manager_abbc5ab359e468de81a77eb7362e53430}{Get\+Im\+User\+By\+Id} (uint32\+\_\+t user\+\_\+id)
+\item 
+\hyperlink{class_c_im_user}{C\+Im\+User} $\ast$ \hyperlink{class_c_im_user_manager_a0ab0a7e559540f82d935261f1ac98a72}{Get\+Im\+User\+By\+Name} (string user\+\_\+name)
+\item 
+\hyperlink{class_c_msg_conn}{C\+Msg\+Conn} $\ast$ \hyperlink{class_c_im_user_manager_ad8e7e6bd1d6be7b22e617f5b3885e036}{Get\+Msg\+Conn\+By\+Handle} (uint32\+\_\+t user\+\_\+id, uint32\+\_\+t handle)
+\item 
+bool \hyperlink{class_c_im_user_manager_a27ba5f480e19b11a31aceab1f56727e2}{Add\+Im\+User\+By\+Name} (string user\+\_\+name, \hyperlink{class_c_im_user}{C\+Im\+User} $\ast$p\+User)
+\item 
+void \hyperlink{class_c_im_user_manager_aa62d7f6ffb9c6ad261f29d1f63ab729e}{Remove\+Im\+User\+By\+Name} (string user\+\_\+name)
+\item 
+bool \hyperlink{class_c_im_user_manager_a024cb1baa6278abf3ba0e276a5f2d349}{Add\+Im\+User\+By\+Id} (uint32\+\_\+t user\+\_\+id, \hyperlink{class_c_im_user}{C\+Im\+User} $\ast$p\+User)
+\item 
+void \hyperlink{class_c_im_user_manager_a5f481a4acc0b92470445c49833443755}{Remove\+Im\+User\+By\+Id} (uint32\+\_\+t user\+\_\+id)
+\item 
+void \hyperlink{class_c_im_user_manager_afbd540c01a8eec7bc15e7a576b210e8d}{Remove\+Im\+User} (\hyperlink{class_c_im_user}{C\+Im\+User} $\ast$p\+User)
+\item 
+void \hyperlink{class_c_im_user_manager_a32b38be0263719e1507c9ce2d602ed7d}{Remove\+All} ()
+\item 
+void \hyperlink{class_c_im_user_manager_a79252b502ac98aa8f56599bffabb1a83}{Get\+Online\+User\+Info} (list$<$ \hyperlink{structuser__conn__stat__t}{user\+\_\+conn\+\_\+stat\+\_\+t} $>$ $\ast$online\+\_\+user\+\_\+info)
+\item 
+void \hyperlink{class_c_im_user_manager_abe97bede8fe8229d2f462cffa423536c}{Get\+User\+Conn\+Cnt} (list$<$ \hyperlink{structuser__conn__t}{user\+\_\+conn\+\_\+t} $>$ $\ast$user\+\_\+conn\+\_\+list, uint32\+\_\+t \&total\+\_\+conn\+\_\+cnt)
+\item 
+void \hyperlink{class_c_im_user_manager_a8ec6129fdcb0602eed2d9daf16dc88ec}{Broadcast\+Pdu} (\hyperlink{class_c_im_pdu}{C\+Im\+Pdu} $\ast$pdu)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_im_user_manager}{C\+Im\+User\+Manager} $\ast$ \hyperlink{class_c_im_user_manager_afe6828cff6d7dba577a3920118e5a7f3}{Get\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_im_user_8h_a80f368a794e7569e3966c0bd7946dcd1}{Im\+User\+Map\+\_\+t} \hyperlink{class_c_im_user_manager_aae1ebcf35420cd07eabffa6b7b43050e}{m\+\_\+im\+\_\+user\+\_\+map}
+\item 
+\hyperlink{_im_user_8h_af6bb46c52b79dbd2d30637da49247c5b}{Im\+User\+Map\+By\+Name\+\_\+t} \hyperlink{class_c_im_user_manager_a196d387a08fa9627664215dbdd45ea06}{m\+\_\+im\+\_\+user\+\_\+map\+\_\+by\+\_\+name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_im_user_manager_a7948f76ee16ef1ba03d6c7587df288a5}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{C\+Im\+User\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+User\+Manager\+::\+C\+Im\+User\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_user_manager_a7948f76ee16ef1ba03d6c7587df288a5}
+\hypertarget{class_c_im_user_manager_aeffddce5039e824ac684e0210ba7bce3}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!````~C\+Im\+User\+Manager@{$\sim$\+C\+Im\+User\+Manager}}
+\index{````~C\+Im\+User\+Manager@{$\sim$\+C\+Im\+User\+Manager}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{$\sim$\+C\+Im\+User\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+User\+Manager\+::$\sim$\+C\+Im\+User\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_im_user_manager_aeffddce5039e824ac684e0210ba7bce3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_im_user_manager_a024cb1baa6278abf3ba0e276a5f2d349}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!Add\+Im\+User\+By\+Id@{Add\+Im\+User\+By\+Id}}
+\index{Add\+Im\+User\+By\+Id@{Add\+Im\+User\+By\+Id}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{Add\+Im\+User\+By\+Id}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Im\+User\+Manager\+::\+Add\+Im\+User\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{user\+\_\+id, }
+\item[{{\bf C\+Im\+User} $\ast$}]{p\+User}
+\end{DoxyParamCaption}
+)}\label{class_c_im_user_manager_a024cb1baa6278abf3ba0e276a5f2d349}
+\hypertarget{class_c_im_user_manager_a27ba5f480e19b11a31aceab1f56727e2}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!Add\+Im\+User\+By\+Name@{Add\+Im\+User\+By\+Name}}
+\index{Add\+Im\+User\+By\+Name@{Add\+Im\+User\+By\+Name}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{Add\+Im\+User\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Im\+User\+Manager\+::\+Add\+Im\+User\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{string}]{user\+\_\+name, }
+\item[{{\bf C\+Im\+User} $\ast$}]{p\+User}
+\end{DoxyParamCaption}
+)}\label{class_c_im_user_manager_a27ba5f480e19b11a31aceab1f56727e2}
+\hypertarget{class_c_im_user_manager_a8ec6129fdcb0602eed2d9daf16dc88ec}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!Broadcast\+Pdu@{Broadcast\+Pdu}}
+\index{Broadcast\+Pdu@{Broadcast\+Pdu}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{Broadcast\+Pdu}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Im\+User\+Manager\+::\+Broadcast\+Pdu (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu} $\ast$}]{pdu}
+\end{DoxyParamCaption}
+)}\label{class_c_im_user_manager_a8ec6129fdcb0602eed2d9daf16dc88ec}
+\hypertarget{class_c_im_user_manager_abbc5ab359e468de81a77eb7362e53430}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!Get\+Im\+User\+By\+Id@{Get\+Im\+User\+By\+Id}}
+\index{Get\+Im\+User\+By\+Id@{Get\+Im\+User\+By\+Id}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{Get\+Im\+User\+By\+Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Im\+User} $\ast$ C\+Im\+User\+Manager\+::\+Get\+Im\+User\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{user\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{class_c_im_user_manager_abbc5ab359e468de81a77eb7362e53430}
+\hypertarget{class_c_im_user_manager_a0ab0a7e559540f82d935261f1ac98a72}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!Get\+Im\+User\+By\+Name@{Get\+Im\+User\+By\+Name}}
+\index{Get\+Im\+User\+By\+Name@{Get\+Im\+User\+By\+Name}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{Get\+Im\+User\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Im\+User} $\ast$ C\+Im\+User\+Manager\+::\+Get\+Im\+User\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{string}]{user\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_c_im_user_manager_a0ab0a7e559540f82d935261f1ac98a72}
+\hypertarget{class_c_im_user_manager_afe6828cff6d7dba577a3920118e5a7f3}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!Get\+Instance@{Get\+Instance}}
+\index{Get\+Instance@{Get\+Instance}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{Get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Im\+User\+Manager} $\ast$ C\+Im\+User\+Manager\+::\+Get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_im_user_manager_afe6828cff6d7dba577a3920118e5a7f3}
+\hypertarget{class_c_im_user_manager_ad8e7e6bd1d6be7b22e617f5b3885e036}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!Get\+Msg\+Conn\+By\+Handle@{Get\+Msg\+Conn\+By\+Handle}}
+\index{Get\+Msg\+Conn\+By\+Handle@{Get\+Msg\+Conn\+By\+Handle}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{Get\+Msg\+Conn\+By\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Msg\+Conn} $\ast$ C\+Im\+User\+Manager\+::\+Get\+Msg\+Conn\+By\+Handle (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{user\+\_\+id, }
+\item[{uint32\+\_\+t}]{handle}
+\end{DoxyParamCaption}
+)}\label{class_c_im_user_manager_ad8e7e6bd1d6be7b22e617f5b3885e036}
+\hypertarget{class_c_im_user_manager_a79252b502ac98aa8f56599bffabb1a83}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!Get\+Online\+User\+Info@{Get\+Online\+User\+Info}}
+\index{Get\+Online\+User\+Info@{Get\+Online\+User\+Info}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{Get\+Online\+User\+Info}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Im\+User\+Manager\+::\+Get\+Online\+User\+Info (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf user\+\_\+conn\+\_\+stat\+\_\+t} $>$ $\ast$}]{online\+\_\+user\+\_\+info}
+\end{DoxyParamCaption}
+)}\label{class_c_im_user_manager_a79252b502ac98aa8f56599bffabb1a83}
+\hypertarget{class_c_im_user_manager_abe97bede8fe8229d2f462cffa423536c}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!Get\+User\+Conn\+Cnt@{Get\+User\+Conn\+Cnt}}
+\index{Get\+User\+Conn\+Cnt@{Get\+User\+Conn\+Cnt}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{Get\+User\+Conn\+Cnt}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Im\+User\+Manager\+::\+Get\+User\+Conn\+Cnt (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf user\+\_\+conn\+\_\+t} $>$ $\ast$}]{user\+\_\+conn\+\_\+list, }
+\item[{uint32\+\_\+t \&}]{total\+\_\+conn\+\_\+cnt}
+\end{DoxyParamCaption}
+)}\label{class_c_im_user_manager_abe97bede8fe8229d2f462cffa423536c}
+\hypertarget{class_c_im_user_manager_a32b38be0263719e1507c9ce2d602ed7d}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!Remove\+All@{Remove\+All}}
+\index{Remove\+All@{Remove\+All}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{Remove\+All}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Im\+User\+Manager\+::\+Remove\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_im_user_manager_a32b38be0263719e1507c9ce2d602ed7d}
+\hypertarget{class_c_im_user_manager_afbd540c01a8eec7bc15e7a576b210e8d}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!Remove\+Im\+User@{Remove\+Im\+User}}
+\index{Remove\+Im\+User@{Remove\+Im\+User}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{Remove\+Im\+User}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Im\+User\+Manager\+::\+Remove\+Im\+User (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+User} $\ast$}]{p\+User}
+\end{DoxyParamCaption}
+)}\label{class_c_im_user_manager_afbd540c01a8eec7bc15e7a576b210e8d}
+\hypertarget{class_c_im_user_manager_a5f481a4acc0b92470445c49833443755}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!Remove\+Im\+User\+By\+Id@{Remove\+Im\+User\+By\+Id}}
+\index{Remove\+Im\+User\+By\+Id@{Remove\+Im\+User\+By\+Id}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{Remove\+Im\+User\+By\+Id}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Im\+User\+Manager\+::\+Remove\+Im\+User\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{user\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{class_c_im_user_manager_a5f481a4acc0b92470445c49833443755}
+\hypertarget{class_c_im_user_manager_aa62d7f6ffb9c6ad261f29d1f63ab729e}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!Remove\+Im\+User\+By\+Name@{Remove\+Im\+User\+By\+Name}}
+\index{Remove\+Im\+User\+By\+Name@{Remove\+Im\+User\+By\+Name}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{Remove\+Im\+User\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Im\+User\+Manager\+::\+Remove\+Im\+User\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{string}]{user\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_c_im_user_manager_aa62d7f6ffb9c6ad261f29d1f63ab729e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_im_user_manager_aae1ebcf35420cd07eabffa6b7b43050e}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!m\+\_\+im\+\_\+user\+\_\+map@{m\+\_\+im\+\_\+user\+\_\+map}}
+\index{m\+\_\+im\+\_\+user\+\_\+map@{m\+\_\+im\+\_\+user\+\_\+map}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{m\+\_\+im\+\_\+user\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Im\+User\+Map\+\_\+t} C\+Im\+User\+Manager\+::m\+\_\+im\+\_\+user\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_user_manager_aae1ebcf35420cd07eabffa6b7b43050e}
+\hypertarget{class_c_im_user_manager_a196d387a08fa9627664215dbdd45ea06}{}\index{C\+Im\+User\+Manager@{C\+Im\+User\+Manager}!m\+\_\+im\+\_\+user\+\_\+map\+\_\+by\+\_\+name@{m\+\_\+im\+\_\+user\+\_\+map\+\_\+by\+\_\+name}}
+\index{m\+\_\+im\+\_\+user\+\_\+map\+\_\+by\+\_\+name@{m\+\_\+im\+\_\+user\+\_\+map\+\_\+by\+\_\+name}!C\+Im\+User\+Manager@{C\+Im\+User\+Manager}}
+\subsubsection[{m\+\_\+im\+\_\+user\+\_\+map\+\_\+by\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Im\+User\+Map\+By\+Name\+\_\+t} C\+Im\+User\+Manager\+::m\+\_\+im\+\_\+user\+\_\+map\+\_\+by\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_user_manager_a196d387a08fa9627664215dbdd45ea06}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\hyperlink{_im_user_8h}{Im\+User.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\hyperlink{_im_user_8cpp}{Im\+User.\+cpp}\end{DoxyCompactItemize}

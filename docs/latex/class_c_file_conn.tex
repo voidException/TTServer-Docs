@@ -1,0 +1,292 @@
+\hypertarget{class_c_file_conn}{}\section{C\+File\+Conn Class Reference}
+\label{class_c_file_conn}\index{C\+File\+Conn@{C\+File\+Conn}}
+
+
+yunfan add end  
+
+
+
+
+{\ttfamily \#include $<$File\+Conn.\+h$>$}
+
+Inheritance diagram for C\+File\+Conn\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_file_conn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_file_conn_af588aac3e2633cab63e8752ca511f67c}{C\+File\+Conn} ()
+\begin{DoxyCompactList}\small\item\em yunfan add end \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_file_conn_af090196d15ef6187962f71a709d93901}{$\sim$\+C\+File\+Conn} ()
+\item 
+virtual void \hyperlink{class_c_file_conn_a41033d47c83a957921b2c8657f4f3300}{Close} ()
+\item 
+void \hyperlink{class_c_file_conn_a00b41e34197cd0f2fbf69d6b240c5792}{On\+Connect} (\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} handle)
+\item 
+virtual void \hyperlink{class_c_file_conn_a702c2b62a53e4ca8e61947f4383c1559}{On\+Close} ()
+\item 
+virtual void \hyperlink{class_c_file_conn_adf6c36077defe60139abb750034a8b05}{On\+Timer} (uint64\+\_\+t curr\+\_\+tick)
+\item 
+virtual void \hyperlink{class_c_file_conn_a6bbdb156d47876abdce052b5cdd8f279}{On\+Write} ()
+\item 
+virtual void \hyperlink{class_c_file_conn_ae5ead1c0ca9d433630779cdd7f76f8ce}{Handle\+Pdu} (\hyperlink{class_c_im_pdu}{C\+Im\+Pdu} $\ast$p\+Pdu)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_c_file_conn_ade1c65cb664bcec2a57490db3d40a77b}{\+\_\+\+Handle\+Client\+File\+Login\+Req} (\hyperlink{class_c_im_pdu_client_file_login_req}{C\+Im\+Pdu\+Client\+File\+Login\+Req} $\ast$p\+Pdu)
+\item 
+int \hyperlink{class_c_file_conn_a9f791f0b35cbbffa952ef7fb3796e9e5}{\+\_\+\+Handle\+Msg\+File\+Transfer\+Req} (\hyperlink{class_c_im_pdu_msg_file_transfer_req}{C\+Im\+Pdu\+Msg\+File\+Transfer\+Req} $\ast$p\+Pdu)
+\begin{DoxyCompactList}\small\item\em yunfan add 2014.\+8.\+6 \end{DoxyCompactList}\item 
+int \hyperlink{class_c_file_conn_a02d4b3e7d8a71fd0e0d7f865a79f1712}{\+\_\+\+Handle\+Client\+File\+States} (\hyperlink{class_c_im_pdu_client_file_state}{C\+Im\+Pdu\+Client\+File\+State} $\ast$p\+Pdu)
+\item 
+int \hyperlink{class_c_file_conn_a177d7a1472c7903fa3100aefe2f49603}{\+\_\+\+Handle\+Client\+File\+Pull\+File\+Req} (\hyperlink{class_c_im_pdu_client_file_pull_data_req}{C\+Im\+Pdu\+Client\+File\+Pull\+Data\+Req} $\ast$p\+Pdu)
+\item 
+int \hyperlink{class_c_file_conn_a3fb4537081f36cfc9d669047bbcf69d7}{\+\_\+\+Handle\+Client\+File\+Pull\+File\+Rsp} (\hyperlink{class_c_im_pdu_client_file_pull_data_rsp}{C\+Im\+Pdu\+Client\+File\+Pull\+Data\+Rsp} $\ast$p\+Pdu)
+\item 
+int \hyperlink{class_c_file_conn_a96e4ff2a031a1dc612609423f7ee7952}{\+\_\+\+States\+Notify} (int \hyperlink{_http_parser_8cpp_adc6e5733fc3c22f0a7b2914188c49c90}{state}, const char $\ast$task\+\_\+id, uint32\+\_\+t user\+\_\+id, \hyperlink{class_c_im_conn}{C\+Im\+Conn} $\ast$p\+Conn)
+\item 
+int \hyperlink{class_c_file_conn_a58d5a372888610256578a108387f33c0}{\+\_\+\+Handle\+Get\+Server\+Address\+Req} (\hyperlink{class_c_im_pdu_file_server_i_p_req}{C\+Im\+Pdu\+File\+Server\+I\+P\+Req} $\ast$p\+Pdu)
+\item 
+bool \hyperlink{class_c_file_conn_a9ccf2b42631445f279fe1b713a31ecf4}{\+\_\+\+Is\+Auth} ()
+\begin{DoxyCompactList}\small\item\em yunfan add end \end{DoxyCompactList}\item 
+int \hyperlink{class_c_file_conn_ae2e691a672ea8698544d3a5b5b5a275d}{\+\_\+\+Pre\+Upload} (const char $\ast$task\+\_\+id)
+\begin{DoxyCompactList}\small\item\em yunfan add 2014.\+8.\+18 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_c_file_conn_ad58386b46f20db0b313eee70d7502961}{m\+\_\+b\+Auth}
+\begin{DoxyCompactList}\small\item\em yunan add end \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{class_c_file_conn_a81d47e4080df874d7d325dd03953f8d9}{m\+\_\+user\+\_\+id}
+\item 
+string \hyperlink{class_c_file_conn_a3a193b87cde12d19a55915bdf46c6695}{m\+\_\+user\+\_\+id\+\_\+url}
+\item 
+\hyperlink{_file_conn_8h_a97254a81b327945dedc0bf8f0d5f18be}{File\+Map\+\_\+t} \hyperlink{class_c_file_conn_ae2890933bc02587bfb3595ab3fb7e922}{m\+\_\+save\+\_\+file\+\_\+map}
+\item 
+\hyperlink{_file_conn_8h_a74a192a456eb1d91b89db434bd54c3e4}{Task\+Map\+\_\+t} \hyperlink{class_c_file_conn_a2fcf9487a3579adb28c9584db14a63c8}{m\+\_\+file\+\_\+task\+\_\+map}
+\item 
+list$<$ \hyperlink{structfile__stat__t}{file\+\_\+stat\+\_\+t} $\ast$ $>$ \hyperlink{class_c_file_conn_a946a47abc253d214e4b2b43a2dcef683}{m\+\_\+send\+\_\+file\+\_\+list}
+\item 
+std\+::deque$<$ \hyperlink{class_c_im_pdu_client_file_data}{C\+Im\+Pdu\+Client\+File\+Data} $\ast$ $>$ \hyperlink{class_c_file_conn_a8e74bcaff86d11aa758e089837b67d82}{m\+\_\+filedatad\+\_\+queue}
+\begin{DoxyCompactList}\small\item\em yunfan add 2014.\+8.\+7 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+yunfan add end 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_file_conn_af588aac3e2633cab63e8752ca511f67c}{}\index{C\+File\+Conn@{C\+File\+Conn}!C\+File\+Conn@{C\+File\+Conn}}
+\index{C\+File\+Conn@{C\+File\+Conn}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{C\+File\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}C\+File\+Conn\+::\+C\+File\+Conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_file_conn_af588aac3e2633cab63e8752ca511f67c}
+
+
+yunfan add end 
+
+\hypertarget{class_c_file_conn_af090196d15ef6187962f71a709d93901}{}\index{C\+File\+Conn@{C\+File\+Conn}!````~C\+File\+Conn@{$\sim$\+C\+File\+Conn}}
+\index{````~C\+File\+Conn@{$\sim$\+C\+File\+Conn}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{$\sim$\+C\+File\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}C\+File\+Conn\+::$\sim$\+C\+File\+Conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_conn_af090196d15ef6187962f71a709d93901}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_file_conn_ade1c65cb664bcec2a57490db3d40a77b}{}\index{C\+File\+Conn@{C\+File\+Conn}!\+\_\+\+Handle\+Client\+File\+Login\+Req@{\+\_\+\+Handle\+Client\+File\+Login\+Req}}
+\index{\+\_\+\+Handle\+Client\+File\+Login\+Req@{\+\_\+\+Handle\+Client\+File\+Login\+Req}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+Client\+File\+Login\+Req}]{\setlength{\rightskip}{0pt plus 5cm}int C\+File\+Conn\+::\+\_\+\+Handle\+Client\+File\+Login\+Req (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+Client\+File\+Login\+Req} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_ade1c65cb664bcec2a57490db3d40a77b}
+yunfan add 2014.\+8.\+6
+
+yunfan add 2014.\+8.\+12
+
+yunfan add end \hypertarget{class_c_file_conn_a177d7a1472c7903fa3100aefe2f49603}{}\index{C\+File\+Conn@{C\+File\+Conn}!\+\_\+\+Handle\+Client\+File\+Pull\+File\+Req@{\+\_\+\+Handle\+Client\+File\+Pull\+File\+Req}}
+\index{\+\_\+\+Handle\+Client\+File\+Pull\+File\+Req@{\+\_\+\+Handle\+Client\+File\+Pull\+File\+Req}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+Client\+File\+Pull\+File\+Req}]{\setlength{\rightskip}{0pt plus 5cm}int C\+File\+Conn\+::\+\_\+\+Handle\+Client\+File\+Pull\+File\+Req (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+Client\+File\+Pull\+Data\+Req} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_a177d7a1472c7903fa3100aefe2f49603}
+recver\textquotesingle{}s user id \hypertarget{class_c_file_conn_a3fb4537081f36cfc9d669047bbcf69d7}{}\index{C\+File\+Conn@{C\+File\+Conn}!\+\_\+\+Handle\+Client\+File\+Pull\+File\+Rsp@{\+\_\+\+Handle\+Client\+File\+Pull\+File\+Rsp}}
+\index{\+\_\+\+Handle\+Client\+File\+Pull\+File\+Rsp@{\+\_\+\+Handle\+Client\+File\+Pull\+File\+Rsp}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+Client\+File\+Pull\+File\+Rsp}]{\setlength{\rightskip}{0pt plus 5cm}int C\+File\+Conn\+::\+\_\+\+Handle\+Client\+File\+Pull\+File\+Rsp (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+Client\+File\+Pull\+Data\+Rsp} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_a3fb4537081f36cfc9d669047bbcf69d7}
+sender\textquotesingle{}s user id
+
+send to recver
+
+this is the response to the server pull-\/data-\/req \hypertarget{class_c_file_conn_a02d4b3e7d8a71fd0e0d7f865a79f1712}{}\index{C\+File\+Conn@{C\+File\+Conn}!\+\_\+\+Handle\+Client\+File\+States@{\+\_\+\+Handle\+Client\+File\+States}}
+\index{\+\_\+\+Handle\+Client\+File\+States@{\+\_\+\+Handle\+Client\+File\+States}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+Client\+File\+States}]{\setlength{\rightskip}{0pt plus 5cm}int C\+File\+Conn\+::\+\_\+\+Handle\+Client\+File\+States (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+Client\+File\+State} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_a02d4b3e7d8a71fd0e0d7f865a79f1712}
+\hypertarget{class_c_file_conn_a58d5a372888610256578a108387f33c0}{}\index{C\+File\+Conn@{C\+File\+Conn}!\+\_\+\+Handle\+Get\+Server\+Address\+Req@{\+\_\+\+Handle\+Get\+Server\+Address\+Req}}
+\index{\+\_\+\+Handle\+Get\+Server\+Address\+Req@{\+\_\+\+Handle\+Get\+Server\+Address\+Req}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+Get\+Server\+Address\+Req}]{\setlength{\rightskip}{0pt plus 5cm}int C\+File\+Conn\+::\+\_\+\+Handle\+Get\+Server\+Address\+Req (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+File\+Server\+I\+P\+Req} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_a58d5a372888610256578a108387f33c0}
+\hypertarget{class_c_file_conn_a9f791f0b35cbbffa952ef7fb3796e9e5}{}\index{C\+File\+Conn@{C\+File\+Conn}!\+\_\+\+Handle\+Msg\+File\+Transfer\+Req@{\+\_\+\+Handle\+Msg\+File\+Transfer\+Req}}
+\index{\+\_\+\+Handle\+Msg\+File\+Transfer\+Req@{\+\_\+\+Handle\+Msg\+File\+Transfer\+Req}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+Msg\+File\+Transfer\+Req}]{\setlength{\rightskip}{0pt plus 5cm}int C\+File\+Conn\+::\+\_\+\+Handle\+Msg\+File\+Transfer\+Req (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+Msg\+File\+Transfer\+Req} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_a9f791f0b35cbbffa952ef7fb3796e9e5}
+
+
+yunfan add 2014.\+8.\+6 
+
+\hypertarget{class_c_file_conn_a9ccf2b42631445f279fe1b713a31ecf4}{}\index{C\+File\+Conn@{C\+File\+Conn}!\+\_\+\+Is\+Auth@{\+\_\+\+Is\+Auth}}
+\index{\+\_\+\+Is\+Auth@{\+\_\+\+Is\+Auth}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{\+\_\+\+Is\+Auth}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+File\+Conn\+::\+\_\+\+Is\+Auth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_c_file_conn_a9ccf2b42631445f279fe1b713a31ecf4}
+
+
+yunfan add end 
+
+\hypertarget{class_c_file_conn_ae2e691a672ea8698544d3a5b5b5a275d}{}\index{C\+File\+Conn@{C\+File\+Conn}!\+\_\+\+Pre\+Upload@{\+\_\+\+Pre\+Upload}}
+\index{\+\_\+\+Pre\+Upload@{\+\_\+\+Pre\+Upload}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{\+\_\+\+Pre\+Upload}]{\setlength{\rightskip}{0pt plus 5cm}int C\+File\+Conn\+::\+\_\+\+Pre\+Upload (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{task\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_ae2e691a672ea8698544d3a5b5b5a275d}
+
+
+yunfan add 2014.\+8.\+18 
+
+\hypertarget{class_c_file_conn_a96e4ff2a031a1dc612609423f7ee7952}{}\index{C\+File\+Conn@{C\+File\+Conn}!\+\_\+\+States\+Notify@{\+\_\+\+States\+Notify}}
+\index{\+\_\+\+States\+Notify@{\+\_\+\+States\+Notify}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{\+\_\+\+States\+Notify}]{\setlength{\rightskip}{0pt plus 5cm}int C\+File\+Conn\+::\+\_\+\+States\+Notify (
+\begin{DoxyParamCaption}
+\item[{int}]{state, }
+\item[{const char $\ast$}]{task\+\_\+id, }
+\item[{uint32\+\_\+t}]{user\+\_\+id, }
+\item[{{\bf C\+Im\+Conn} $\ast$}]{p\+Conn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_a96e4ff2a031a1dc612609423f7ee7952}
+\hypertarget{class_c_file_conn_a41033d47c83a957921b2c8657f4f3300}{}\index{C\+File\+Conn@{C\+File\+Conn}!Close@{Close}}
+\index{Close@{Close}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Conn\+::\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_conn_a41033d47c83a957921b2c8657f4f3300}
+\hypertarget{class_c_file_conn_ae5ead1c0ca9d433630779cdd7f76f8ce}{}\index{C\+File\+Conn@{C\+File\+Conn}!Handle\+Pdu@{Handle\+Pdu}}
+\index{Handle\+Pdu@{Handle\+Pdu}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{Handle\+Pdu}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Conn\+::\+Handle\+Pdu (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_conn_ae5ead1c0ca9d433630779cdd7f76f8ce}
+yunfan add 2014.\+8.\+6
+
+yunfan add end 
+
+Reimplemented from \hyperlink{class_c_im_conn_a0f3ce1718aadfc944328e872cbfafdb9}{C\+Im\+Conn}.
+
+\hypertarget{class_c_file_conn_a702c2b62a53e4ca8e61947f4383c1559}{}\index{C\+File\+Conn@{C\+File\+Conn}!On\+Close@{On\+Close}}
+\index{On\+Close@{On\+Close}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{On\+Close}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Conn\+::\+On\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_conn_a702c2b62a53e4ca8e61947f4383c1559}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_a9874ab69df11d0a6147e2c301013508a}{C\+Im\+Conn}.
+
+\hypertarget{class_c_file_conn_a00b41e34197cd0f2fbf69d6b240c5792}{}\index{C\+File\+Conn@{C\+File\+Conn}!On\+Connect@{On\+Connect}}
+\index{On\+Connect@{On\+Connect}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{On\+Connect}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Conn\+::\+On\+Connect (
+\begin{DoxyParamCaption}
+\item[{{\bf net\+\_\+handle\+\_\+t}}]{handle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_conn_a00b41e34197cd0f2fbf69d6b240c5792}
+yunfan modify 2014.\+8.\+7
+
+yunfan modify end 
+
+Reimplemented from \hyperlink{class_c_im_conn_a6675f76461fc127d026658c6763de896}{C\+Im\+Conn}.
+
+\hypertarget{class_c_file_conn_adf6c36077defe60139abb750034a8b05}{}\index{C\+File\+Conn@{C\+File\+Conn}!On\+Timer@{On\+Timer}}
+\index{On\+Timer@{On\+Timer}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{On\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Conn\+::\+On\+Timer (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t}]{curr\+\_\+tick}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_conn_adf6c36077defe60139abb750034a8b05}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_adc9be86c438a9884b3bf51fd5da180bc}{C\+Im\+Conn}.
+
+\hypertarget{class_c_file_conn_a6bbdb156d47876abdce052b5cdd8f279}{}\index{C\+File\+Conn@{C\+File\+Conn}!On\+Write@{On\+Write}}
+\index{On\+Write@{On\+Write}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{On\+Write}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Conn\+::\+On\+Write (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_conn_a6bbdb156d47876abdce052b5cdd8f279}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_a6015911abda030c60baf840f5aa3c42b}{C\+Im\+Conn}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_file_conn_ad58386b46f20db0b313eee70d7502961}{}\index{C\+File\+Conn@{C\+File\+Conn}!m\+\_\+b\+Auth@{m\+\_\+b\+Auth}}
+\index{m\+\_\+b\+Auth@{m\+\_\+b\+Auth}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{m\+\_\+b\+Auth}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+File\+Conn\+::m\+\_\+b\+Auth\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_ad58386b46f20db0b313eee70d7502961}
+
+
+yunan add end 
+
+\hypertarget{class_c_file_conn_a2fcf9487a3579adb28c9584db14a63c8}{}\index{C\+File\+Conn@{C\+File\+Conn}!m\+\_\+file\+\_\+task\+\_\+map@{m\+\_\+file\+\_\+task\+\_\+map}}
+\index{m\+\_\+file\+\_\+task\+\_\+map@{m\+\_\+file\+\_\+task\+\_\+map}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{m\+\_\+file\+\_\+task\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task\+Map\+\_\+t} C\+File\+Conn\+::m\+\_\+file\+\_\+task\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_a2fcf9487a3579adb28c9584db14a63c8}
+\hypertarget{class_c_file_conn_a8e74bcaff86d11aa758e089837b67d82}{}\index{C\+File\+Conn@{C\+File\+Conn}!m\+\_\+filedatad\+\_\+queue@{m\+\_\+filedatad\+\_\+queue}}
+\index{m\+\_\+filedatad\+\_\+queue@{m\+\_\+filedatad\+\_\+queue}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{m\+\_\+filedatad\+\_\+queue}]{\setlength{\rightskip}{0pt plus 5cm}std\+::deque$<${\bf C\+Im\+Pdu\+Client\+File\+Data}$\ast$$>$ C\+File\+Conn\+::m\+\_\+filedatad\+\_\+queue\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_a8e74bcaff86d11aa758e089837b67d82}
+
+
+yunfan add 2014.\+8.\+7 
+
+\hypertarget{class_c_file_conn_ae2890933bc02587bfb3595ab3fb7e922}{}\index{C\+File\+Conn@{C\+File\+Conn}!m\+\_\+save\+\_\+file\+\_\+map@{m\+\_\+save\+\_\+file\+\_\+map}}
+\index{m\+\_\+save\+\_\+file\+\_\+map@{m\+\_\+save\+\_\+file\+\_\+map}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{m\+\_\+save\+\_\+file\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\+Map\+\_\+t} C\+File\+Conn\+::m\+\_\+save\+\_\+file\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_ae2890933bc02587bfb3595ab3fb7e922}
+\hypertarget{class_c_file_conn_a946a47abc253d214e4b2b43a2dcef683}{}\index{C\+File\+Conn@{C\+File\+Conn}!m\+\_\+send\+\_\+file\+\_\+list@{m\+\_\+send\+\_\+file\+\_\+list}}
+\index{m\+\_\+send\+\_\+file\+\_\+list@{m\+\_\+send\+\_\+file\+\_\+list}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{m\+\_\+send\+\_\+file\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}list$<${\bf file\+\_\+stat\+\_\+t}$\ast$$>$ C\+File\+Conn\+::m\+\_\+send\+\_\+file\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_a946a47abc253d214e4b2b43a2dcef683}
+\hypertarget{class_c_file_conn_a81d47e4080df874d7d325dd03953f8d9}{}\index{C\+File\+Conn@{C\+File\+Conn}!m\+\_\+user\+\_\+id@{m\+\_\+user\+\_\+id}}
+\index{m\+\_\+user\+\_\+id@{m\+\_\+user\+\_\+id}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{m\+\_\+user\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+File\+Conn\+::m\+\_\+user\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_a81d47e4080df874d7d325dd03953f8d9}
+\hypertarget{class_c_file_conn_a3a193b87cde12d19a55915bdf46c6695}{}\index{C\+File\+Conn@{C\+File\+Conn}!m\+\_\+user\+\_\+id\+\_\+url@{m\+\_\+user\+\_\+id\+\_\+url}}
+\index{m\+\_\+user\+\_\+id\+\_\+url@{m\+\_\+user\+\_\+id\+\_\+url}!C\+File\+Conn@{C\+File\+Conn}}
+\subsubsection[{m\+\_\+user\+\_\+id\+\_\+url}]{\setlength{\rightskip}{0pt plus 5cm}string C\+File\+Conn\+::m\+\_\+user\+\_\+id\+\_\+url\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_conn_a3a193b87cde12d19a55915bdf46c6695}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/file\+\_\+server/\hyperlink{_file_conn_8h}{File\+Conn.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/file\+\_\+server/\hyperlink{_file_conn_8cpp}{File\+Conn.\+cpp}\end{DoxyCompactItemize}

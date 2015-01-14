@@ -1,0 +1,297 @@
+\hypertarget{classmsfs_1_1_file}{}\section{msfs\+:\+:File Class Reference}
+\label{classmsfs_1_1_file}\index{msfs\+::\+File@{msfs\+::\+File}}
+
+
+{\ttfamily \#include $<$File\+Lin.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmsfs_1_1_file_afffb980a173dcc744f5151afdf0d71aa}{File} (const char $\ast$path)
+\item 
+\hyperlink{classmsfs_1_1_file_acddda26533e9392df924d0f4f489c327}{$\sim$\+File} ()
+\item 
+const char $\ast$ \hyperlink{classmsfs_1_1_file_acb9bbd56964efe9021282b222fc18f97}{get\+Path} () const 
+\item 
+\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a0b0462f18ef67e6738aeda1f6b1793be}{create} (bool direct\+Io=false)
+\item 
+\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a383f3a7dc8eeb48e3378264908b87ece}{remove} ()
+\item 
+\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a80b87f839f68f9b1d8870a62fded4ce5}{open} (bool direct\+Io=false)
+\item 
+\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a38348346cf2c0e6ab0dab8a650a19794}{close} ()
+\item 
+\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a3462d7f77e46c39059429807865144ac}{is\+Exist} (bool $\ast$exist)
+\item 
+\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a101e031c6abb1bb635eeb2ee9e78463f}{is\+Directory} (bool $\ast$is\+Dir)
+\item 
+\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_ab4126e9757b13596366a091696346a3c}{get\+File\+Num} (int $\ast$file\+Num)
+\item 
+int \hyperlink{classmsfs_1_1_file_ad4977f128c4e251f9f45a0fd435c93d0}{get\+Fd} ()
+\item 
+\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_ad8adce00c2941f58463327a9f32adc4b}{read} (\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} offset, \hyperlink{_portable_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32} size, void $\ast$buffer)
+\item 
+\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a9b4f881613748c75780dee6226c41886}{write} (\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} offset, \hyperlink{_portable_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32} size, const void $\ast$buffer)
+\item 
+\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_ac2624f63bb15edf854e02f6cab00427e}{sync} ()
+\item 
+\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_ab539efad18daad3fb4b95ef86309a4ca}{get\+Size} (\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} $\ast$size)
+\item 
+\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a4680e29a7024919c9e596080cae98741}{set\+Size} (\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} size)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classmsfs_1_1_file_a2d6470e8a4fd2e040e644727aace4ec6}{is\+Exist} (const char $\ast$path)
+\item 
+static \hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a1390555ab6f3c20f941d64b2db418eb4}{mkdir\+No\+Recursion} (const char $\ast$path)
+\item 
+static \hyperlink{_portable_8h_a93680f46d09022794e3923824923b42b}{s64} \hyperlink{classmsfs_1_1_file_a9f97023d0a5c4042efbd4028de07be51}{get\+File\+Size} (const char $\ast$path)
+\item 
+static const char $\ast$ \hyperlink{classmsfs_1_1_file_a613f7cac09695623a2a89b9b60521deb}{explain\+Errno} (\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} code)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a54596794c43cd9eb2cfb9d3484b69153}{E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} = 0
+\item 
+static const \hyperlink{_portable_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32} \hyperlink{classmsfs_1_1_file_ad59b27fa86eefd41c1557ed92436e46b}{E\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+S\+T} = 1
+\item 
+static const \hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_aaa340983eb246794bd9b4b218f29686c}{E\+\_\+\+P\+E\+R\+M\+\_\+\+E\+R\+R} = 2
+\item 
+static const \hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a866824e44012b4ecef984e0bdce324ec}{E\+\_\+\+D\+I\+S\+K\+\_\+\+F\+U\+L\+L} = 3
+\item 
+static const \hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a95502138fd077a99ec58121c316584e7}{E\+\_\+\+E\+X\+I\+S\+T\+S} = 4
+\item 
+static const \hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a36bd65e6947a0f87e774fb5067a02867}{E\+\_\+\+I\+N\+\_\+\+U\+S\+E} = 5
+\item 
+static const \hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a0d94b1f5c3c680e4d6f1e72b6e30be91}{E\+\_\+\+E\+O\+F} = 6
+\item 
+static const \hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_ae47ffd6a21e486df2fae5b0bb1532f8d}{E\+\_\+\+R\+E\+A\+D} = 7
+\item 
+static const \hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_adf78f7dc3faf93c0b6cf4ca4cfe4c34a}{E\+\_\+\+W\+R\+I\+T\+E} = 8
+\item 
+static const \hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_ab4121efa6b5e7ba520915a051d3b8474}{E\+\_\+\+N\+O\+\_\+\+E\+M\+P\+T\+Y} = 9
+\item 
+static const \hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_a57847c96ccd044502e1592d08a04e790}{E\+\_\+\+O\+T\+H\+E\+R} = 10
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{classmsfs_1_1_file_a99a60c4f4ed5f0fdf9c18f42d49a2ca4}{m\+\_\+path}
+\item 
+bool \hyperlink{classmsfs_1_1_file_a7d87779dfc7754c04ddd519b744bf3e9}{m\+\_\+opened}
+\item 
+\hyperlink{_portable_8h_a93680f46d09022794e3923824923b42b}{s64} \hyperlink{classmsfs_1_1_file_a736477e6c7c03b9d0a1ceaeb8b9c94c5}{m\+\_\+size}
+\item 
+int \hyperlink{classmsfs_1_1_file_a2b422b1f947e6b86fe8e80ab2c90ac24}{m\+\_\+file}
+\item 
+bool \hyperlink{classmsfs_1_1_file_ac1cea12507c16d5388927045a8a4788e}{m\+\_\+direct\+Io}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmsfs_1_1_file_afffb980a173dcc744f5151afdf0d71aa}{}\index{msfs\+::\+File@{msfs\+::\+File}!File@{File}}
+\index{File@{File}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{File}]{\setlength{\rightskip}{0pt plus 5cm}msfs\+::\+File\+::\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_afffb980a173dcc744f5151afdf0d71aa}
+\hypertarget{classmsfs_1_1_file_acddda26533e9392df924d0f4f489c327}{}\index{msfs\+::\+File@{msfs\+::\+File}!````~File@{$\sim$\+File}}
+\index{````~File@{$\sim$\+File}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{$\sim$\+File}]{\setlength{\rightskip}{0pt plus 5cm}msfs\+::\+File\+::$\sim$\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_acddda26533e9392df924d0f4f489c327}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmsfs_1_1_file_a38348346cf2c0e6ab0dab8a650a19794}{}\index{msfs\+::\+File@{msfs\+::\+File}!close@{close}}
+\index{close@{close}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_a38348346cf2c0e6ab0dab8a650a19794}
+\hypertarget{classmsfs_1_1_file_a0b0462f18ef67e6738aeda1f6b1793be}{}\index{msfs\+::\+File@{msfs\+::\+File}!create@{create}}
+\index{create@{create}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+::create (
+\begin{DoxyParamCaption}
+\item[{bool}]{direct\+Io = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_a0b0462f18ef67e6738aeda1f6b1793be}
+\hypertarget{classmsfs_1_1_file_a613f7cac09695623a2a89b9b60521deb}{}\index{msfs\+::\+File@{msfs\+::\+File}!explain\+Errno@{explain\+Errno}}
+\index{explain\+Errno@{explain\+Errno}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{explain\+Errno}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ msfs\+::\+File\+::explain\+Errno (
+\begin{DoxyParamCaption}
+\item[{{\bf u64}}]{code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classmsfs_1_1_file_a613f7cac09695623a2a89b9b60521deb}
+\hypertarget{classmsfs_1_1_file_ad4977f128c4e251f9f45a0fd435c93d0}{}\index{msfs\+::\+File@{msfs\+::\+File}!get\+Fd@{get\+Fd}}
+\index{get\+Fd@{get\+Fd}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{get\+Fd}]{\setlength{\rightskip}{0pt plus 5cm}int msfs\+::\+File\+::get\+Fd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmsfs_1_1_file_ad4977f128c4e251f9f45a0fd435c93d0}
+\hypertarget{classmsfs_1_1_file_ab4126e9757b13596366a091696346a3c}{}\index{msfs\+::\+File@{msfs\+::\+File}!get\+File\+Num@{get\+File\+Num}}
+\index{get\+File\+Num@{get\+File\+Num}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{get\+File\+Num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+::get\+File\+Num (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{file\+Num}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_ab4126e9757b13596366a091696346a3c}
+\hypertarget{classmsfs_1_1_file_a9f97023d0a5c4042efbd4028de07be51}{}\index{msfs\+::\+File@{msfs\+::\+File}!get\+File\+Size@{get\+File\+Size}}
+\index{get\+File\+Size@{get\+File\+Size}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{get\+File\+Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s64} msfs\+::\+File\+::get\+File\+Size (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_file_a9f97023d0a5c4042efbd4028de07be51}
+\hypertarget{classmsfs_1_1_file_acb9bbd56964efe9021282b222fc18f97}{}\index{msfs\+::\+File@{msfs\+::\+File}!get\+Path@{get\+Path}}
+\index{get\+Path@{get\+Path}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{get\+Path}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ msfs\+::\+File\+::get\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classmsfs_1_1_file_acb9bbd56964efe9021282b222fc18f97}
+\hypertarget{classmsfs_1_1_file_ab539efad18daad3fb4b95ef86309a4ca}{}\index{msfs\+::\+File@{msfs\+::\+File}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{get\+Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+::get\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf u64} $\ast$}]{size}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_ab539efad18daad3fb4b95ef86309a4ca}
+\hypertarget{classmsfs_1_1_file_a101e031c6abb1bb635eeb2ee9e78463f}{}\index{msfs\+::\+File@{msfs\+::\+File}!is\+Directory@{is\+Directory}}
+\index{is\+Directory@{is\+Directory}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{is\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+::is\+Directory (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{is\+Dir}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_a101e031c6abb1bb635eeb2ee9e78463f}
+\hypertarget{classmsfs_1_1_file_a3462d7f77e46c39059429807865144ac}{}\index{msfs\+::\+File@{msfs\+::\+File}!is\+Exist@{is\+Exist}}
+\index{is\+Exist@{is\+Exist}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{is\+Exist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+::is\+Exist (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{exist}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_a3462d7f77e46c39059429807865144ac}
+\hypertarget{classmsfs_1_1_file_a2d6470e8a4fd2e040e644727aace4ec6}{}\index{msfs\+::\+File@{msfs\+::\+File}!is\+Exist@{is\+Exist}}
+\index{is\+Exist@{is\+Exist}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{is\+Exist}]{\setlength{\rightskip}{0pt plus 5cm}static bool msfs\+::\+File\+::is\+Exist (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classmsfs_1_1_file_a2d6470e8a4fd2e040e644727aace4ec6}
+\hypertarget{classmsfs_1_1_file_a1390555ab6f3c20f941d64b2db418eb4}{}\index{msfs\+::\+File@{msfs\+::\+File}!mkdir\+No\+Recursion@{mkdir\+No\+Recursion}}
+\index{mkdir\+No\+Recursion@{mkdir\+No\+Recursion}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{mkdir\+No\+Recursion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+::mkdir\+No\+Recursion (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_file_a1390555ab6f3c20f941d64b2db418eb4}
+\hypertarget{classmsfs_1_1_file_a80b87f839f68f9b1d8870a62fded4ce5}{}\index{msfs\+::\+File@{msfs\+::\+File}!open@{open}}
+\index{open@{open}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+::open (
+\begin{DoxyParamCaption}
+\item[{bool}]{direct\+Io = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_a80b87f839f68f9b1d8870a62fded4ce5}
+\hypertarget{classmsfs_1_1_file_ad8adce00c2941f58463327a9f32adc4b}{}\index{msfs\+::\+File@{msfs\+::\+File}!read@{read}}
+\index{read@{read}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+::read (
+\begin{DoxyParamCaption}
+\item[{{\bf u64}}]{offset, }
+\item[{{\bf u32}}]{size, }
+\item[{void $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_ad8adce00c2941f58463327a9f32adc4b}
+\hypertarget{classmsfs_1_1_file_a383f3a7dc8eeb48e3378264908b87ece}{}\index{msfs\+::\+File@{msfs\+::\+File}!remove@{remove}}
+\index{remove@{remove}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+::remove (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_a383f3a7dc8eeb48e3378264908b87ece}
+\hypertarget{classmsfs_1_1_file_a4680e29a7024919c9e596080cae98741}{}\index{msfs\+::\+File@{msfs\+::\+File}!set\+Size@{set\+Size}}
+\index{set\+Size@{set\+Size}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{set\+Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+::set\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf u64}}]{size}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_a4680e29a7024919c9e596080cae98741}
+\hypertarget{classmsfs_1_1_file_ac2624f63bb15edf854e02f6cab00427e}{}\index{msfs\+::\+File@{msfs\+::\+File}!sync@{sync}}
+\index{sync@{sync}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{sync}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+::sync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_ac2624f63bb15edf854e02f6cab00427e}
+\hypertarget{classmsfs_1_1_file_a9b4f881613748c75780dee6226c41886}{}\index{msfs\+::\+File@{msfs\+::\+File}!write@{write}}
+\index{write@{write}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+::write (
+\begin{DoxyParamCaption}
+\item[{{\bf u64}}]{offset, }
+\item[{{\bf u32}}]{size, }
+\item[{const void $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_a9b4f881613748c75780dee6226c41886}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmsfs_1_1_file_a866824e44012b4ecef984e0bdce324ec}{}\index{msfs\+::\+File@{msfs\+::\+File}!E\+\_\+\+D\+I\+S\+K\+\_\+\+F\+U\+L\+L@{E\+\_\+\+D\+I\+S\+K\+\_\+\+F\+U\+L\+L}}
+\index{E\+\_\+\+D\+I\+S\+K\+\_\+\+F\+U\+L\+L@{E\+\_\+\+D\+I\+S\+K\+\_\+\+F\+U\+L\+L}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{E\+\_\+\+D\+I\+S\+K\+\_\+\+F\+U\+L\+L}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf u64} msfs\+::\+File\+::\+E\+\_\+\+D\+I\+S\+K\+\_\+\+F\+U\+L\+L = 3\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_file_a866824e44012b4ecef984e0bdce324ec}
+\hypertarget{classmsfs_1_1_file_a0d94b1f5c3c680e4d6f1e72b6e30be91}{}\index{msfs\+::\+File@{msfs\+::\+File}!E\+\_\+\+E\+O\+F@{E\+\_\+\+E\+O\+F}}
+\index{E\+\_\+\+E\+O\+F@{E\+\_\+\+E\+O\+F}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{E\+\_\+\+E\+O\+F}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf u64} msfs\+::\+File\+::\+E\+\_\+\+E\+O\+F = 6\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_file_a0d94b1f5c3c680e4d6f1e72b6e30be91}
+\hypertarget{classmsfs_1_1_file_a95502138fd077a99ec58121c316584e7}{}\index{msfs\+::\+File@{msfs\+::\+File}!E\+\_\+\+E\+X\+I\+S\+T\+S@{E\+\_\+\+E\+X\+I\+S\+T\+S}}
+\index{E\+\_\+\+E\+X\+I\+S\+T\+S@{E\+\_\+\+E\+X\+I\+S\+T\+S}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{E\+\_\+\+E\+X\+I\+S\+T\+S}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf u64} msfs\+::\+File\+::\+E\+\_\+\+E\+X\+I\+S\+T\+S = 4\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_file_a95502138fd077a99ec58121c316584e7}
+\hypertarget{classmsfs_1_1_file_a36bd65e6947a0f87e774fb5067a02867}{}\index{msfs\+::\+File@{msfs\+::\+File}!E\+\_\+\+I\+N\+\_\+\+U\+S\+E@{E\+\_\+\+I\+N\+\_\+\+U\+S\+E}}
+\index{E\+\_\+\+I\+N\+\_\+\+U\+S\+E@{E\+\_\+\+I\+N\+\_\+\+U\+S\+E}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{E\+\_\+\+I\+N\+\_\+\+U\+S\+E}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf u64} msfs\+::\+File\+::\+E\+\_\+\+I\+N\+\_\+\+U\+S\+E = 5\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_file_a36bd65e6947a0f87e774fb5067a02867}
+\hypertarget{classmsfs_1_1_file_ab4121efa6b5e7ba520915a051d3b8474}{}\index{msfs\+::\+File@{msfs\+::\+File}!E\+\_\+\+N\+O\+\_\+\+E\+M\+P\+T\+Y@{E\+\_\+\+N\+O\+\_\+\+E\+M\+P\+T\+Y}}
+\index{E\+\_\+\+N\+O\+\_\+\+E\+M\+P\+T\+Y@{E\+\_\+\+N\+O\+\_\+\+E\+M\+P\+T\+Y}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{E\+\_\+\+N\+O\+\_\+\+E\+M\+P\+T\+Y}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf u64} msfs\+::\+File\+::\+E\+\_\+\+N\+O\+\_\+\+E\+M\+P\+T\+Y = 9\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_file_ab4121efa6b5e7ba520915a051d3b8474}
+\hypertarget{classmsfs_1_1_file_a54596794c43cd9eb2cfb9d3484b69153}{}\index{msfs\+::\+File@{msfs\+::\+File}!E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R@{E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R}}
+\index{E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R@{E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf u64} msfs\+::\+File\+::\+E\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R = 0\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_file_a54596794c43cd9eb2cfb9d3484b69153}
+\hypertarget{classmsfs_1_1_file_ad59b27fa86eefd41c1557ed92436e46b}{}\index{msfs\+::\+File@{msfs\+::\+File}!E\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+S\+T@{E\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+S\+T}}
+\index{E\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+S\+T@{E\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+S\+T}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{E\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf u32} msfs\+::\+File\+::\+E\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+S\+T = 1\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_file_ad59b27fa86eefd41c1557ed92436e46b}
+\hypertarget{classmsfs_1_1_file_a57847c96ccd044502e1592d08a04e790}{}\index{msfs\+::\+File@{msfs\+::\+File}!E\+\_\+\+O\+T\+H\+E\+R@{E\+\_\+\+O\+T\+H\+E\+R}}
+\index{E\+\_\+\+O\+T\+H\+E\+R@{E\+\_\+\+O\+T\+H\+E\+R}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{E\+\_\+\+O\+T\+H\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf u64} msfs\+::\+File\+::\+E\+\_\+\+O\+T\+H\+E\+R = 10\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_file_a57847c96ccd044502e1592d08a04e790}
+\hypertarget{classmsfs_1_1_file_aaa340983eb246794bd9b4b218f29686c}{}\index{msfs\+::\+File@{msfs\+::\+File}!E\+\_\+\+P\+E\+R\+M\+\_\+\+E\+R\+R@{E\+\_\+\+P\+E\+R\+M\+\_\+\+E\+R\+R}}
+\index{E\+\_\+\+P\+E\+R\+M\+\_\+\+E\+R\+R@{E\+\_\+\+P\+E\+R\+M\+\_\+\+E\+R\+R}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{E\+\_\+\+P\+E\+R\+M\+\_\+\+E\+R\+R}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf u64} msfs\+::\+File\+::\+E\+\_\+\+P\+E\+R\+M\+\_\+\+E\+R\+R = 2\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_file_aaa340983eb246794bd9b4b218f29686c}
+\hypertarget{classmsfs_1_1_file_ae47ffd6a21e486df2fae5b0bb1532f8d}{}\index{msfs\+::\+File@{msfs\+::\+File}!E\+\_\+\+R\+E\+A\+D@{E\+\_\+\+R\+E\+A\+D}}
+\index{E\+\_\+\+R\+E\+A\+D@{E\+\_\+\+R\+E\+A\+D}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{E\+\_\+\+R\+E\+A\+D}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf u64} msfs\+::\+File\+::\+E\+\_\+\+R\+E\+A\+D = 7\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_file_ae47ffd6a21e486df2fae5b0bb1532f8d}
+\hypertarget{classmsfs_1_1_file_adf78f7dc3faf93c0b6cf4ca4cfe4c34a}{}\index{msfs\+::\+File@{msfs\+::\+File}!E\+\_\+\+W\+R\+I\+T\+E@{E\+\_\+\+W\+R\+I\+T\+E}}
+\index{E\+\_\+\+W\+R\+I\+T\+E@{E\+\_\+\+W\+R\+I\+T\+E}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{E\+\_\+\+W\+R\+I\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf u64} msfs\+::\+File\+::\+E\+\_\+\+W\+R\+I\+T\+E = 8\hspace{0.3cm}{\ttfamily [static]}}\label{classmsfs_1_1_file_adf78f7dc3faf93c0b6cf4ca4cfe4c34a}
+\hypertarget{classmsfs_1_1_file_ac1cea12507c16d5388927045a8a4788e}{}\index{msfs\+::\+File@{msfs\+::\+File}!m\+\_\+direct\+Io@{m\+\_\+direct\+Io}}
+\index{m\+\_\+direct\+Io@{m\+\_\+direct\+Io}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{m\+\_\+direct\+Io}]{\setlength{\rightskip}{0pt plus 5cm}bool msfs\+::\+File\+::m\+\_\+direct\+Io\hspace{0.3cm}{\ttfamily [private]}}\label{classmsfs_1_1_file_ac1cea12507c16d5388927045a8a4788e}
+\hypertarget{classmsfs_1_1_file_a2b422b1f947e6b86fe8e80ab2c90ac24}{}\index{msfs\+::\+File@{msfs\+::\+File}!m\+\_\+file@{m\+\_\+file}}
+\index{m\+\_\+file@{m\+\_\+file}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{m\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}int msfs\+::\+File\+::m\+\_\+file\hspace{0.3cm}{\ttfamily [private]}}\label{classmsfs_1_1_file_a2b422b1f947e6b86fe8e80ab2c90ac24}
+\hypertarget{classmsfs_1_1_file_a7d87779dfc7754c04ddd519b744bf3e9}{}\index{msfs\+::\+File@{msfs\+::\+File}!m\+\_\+opened@{m\+\_\+opened}}
+\index{m\+\_\+opened@{m\+\_\+opened}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{m\+\_\+opened}]{\setlength{\rightskip}{0pt plus 5cm}bool msfs\+::\+File\+::m\+\_\+opened\hspace{0.3cm}{\ttfamily [private]}}\label{classmsfs_1_1_file_a7d87779dfc7754c04ddd519b744bf3e9}
+\hypertarget{classmsfs_1_1_file_a99a60c4f4ed5f0fdf9c18f42d49a2ca4}{}\index{msfs\+::\+File@{msfs\+::\+File}!m\+\_\+path@{m\+\_\+path}}
+\index{m\+\_\+path@{m\+\_\+path}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{m\+\_\+path}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ msfs\+::\+File\+::m\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}\label{classmsfs_1_1_file_a99a60c4f4ed5f0fdf9c18f42d49a2ca4}
+\hypertarget{classmsfs_1_1_file_a736477e6c7c03b9d0a1ceaeb8b9c94c5}{}\index{msfs\+::\+File@{msfs\+::\+File}!m\+\_\+size@{m\+\_\+size}}
+\index{m\+\_\+size@{m\+\_\+size}!msfs\+::\+File@{msfs\+::\+File}}
+\subsubsection[{m\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s64} msfs\+::\+File\+::m\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}\label{classmsfs_1_1_file_a736477e6c7c03b9d0a1ceaeb8b9c94c5}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/include/storage/\hyperlink{_file_lin_8h}{File\+Lin.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/storage/\hyperlink{_file_lin_8cpp}{File\+Lin.\+cpp}\end{DoxyCompactItemize}

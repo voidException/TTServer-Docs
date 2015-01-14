@@ -1,0 +1,133 @@
+\hypertarget{class_c_im_pdu_client_file_has_offline_res}{}\section{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res Class Reference}
+\label{class_c_im_pdu_client_file_has_offline_res}\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+
+
+{\ttfamily \#include $<$Im\+Pdu\+File.\+h$>$}
+
+Inheritance diagram for C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_im_pdu_client_file_has_offline_res}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_im_pdu_client_file_has_offline_res_a080515d1388a5261ca2acdddba7632e9}{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res} (\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$buf, uint32\+\_\+t len)
+\item 
+\hyperlink{class_c_im_pdu_client_file_has_offline_res_a06be55fc51394e0d75d1e59b578ba162}{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res} (uint32\+\_\+t file\+\_\+cnt=0, \hyperlink{structoffline__file__t}{offline\+\_\+file\+\_\+t} $\ast$serv\+\_\+file\+\_\+list=N\+U\+L\+L, const list$<$ \hyperlink{structsvr__ip__addr__t}{svr\+\_\+ip\+\_\+addr\+\_\+t} $>$ $\ast$ip\+\_\+addr\+\_\+list=N\+U\+L\+L)
+\item 
+virtual \hyperlink{class_c_im_pdu_client_file_has_offline_res_a7dbac966f1be22df30b9d53856a1cfec}{$\sim$\+C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res} ()
+\item 
+virtual uint16\+\_\+t \hyperlink{class_c_im_pdu_client_file_has_offline_res_a4a8f050f2ee31d1270158ef4d4aef286}{Get\+Pdu\+Type} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_file_has_offline_res_a34b2fe0a44c4503ea16384a193907f7f}{Get\+File\+Cnt} ()
+\item 
+\hyperlink{structclient__offline__file__t}{client\+\_\+offline\+\_\+file\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_client_file_has_offline_res_ac15985ce80b3e1c07fb6b114502c8bb3}{Get\+File\+List} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_file_has_offline_res_a2355ed51ce8213c84d2058c9d8139f08}{Get\+I\+P\+Addr\+Cnt} ()
+\item 
+\hyperlink{structip__addr__t}{ip\+\_\+addr\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_client_file_has_offline_res_aca190ea94430bc74694abdd0c0f6af5d}{Get\+I\+P\+Addr\+List} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_file_has_offline_res_ae80a761ee9962d9d78ee8fe5036a61fa}{m\+\_\+file\+\_\+cnt}
+\item 
+\hyperlink{structclient__offline__file__t}{client\+\_\+offline\+\_\+file\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_client_file_has_offline_res_a1e2afcfa4104612fae75343a6e67aa9c}{m\+\_\+file\+\_\+list}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_file_has_offline_res_aaf5d035a2257ed8090dac3f8482ba72d}{m\+\_\+ip\+\_\+addr\+\_\+cnt}
+\item 
+\hyperlink{structip__addr__t}{ip\+\_\+addr\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_client_file_has_offline_res_ab6f259087b0b8aa4c66e0bb2d7b5d2f5}{m\+\_\+ip\+\_\+addr\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_im_pdu_client_file_has_offline_res_a080515d1388a5261ca2acdddba7632e9}{}\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\subsubsection[{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res\+::\+C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res (
+\begin{DoxyParamCaption}
+\item[{{\bf uchar\+\_\+t} $\ast$}]{buf, }
+\item[{uint32\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_client_file_has_offline_res_a080515d1388a5261ca2acdddba7632e9}
+\hypertarget{class_c_im_pdu_client_file_has_offline_res_a06be55fc51394e0d75d1e59b578ba162}{}\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\subsubsection[{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res\+::\+C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{file\+\_\+cnt = {\ttfamily 0}, }
+\item[{{\bf offline\+\_\+file\+\_\+t} $\ast$}]{serv\+\_\+file\+\_\+list = {\ttfamily NULL}, }
+\item[{const list$<$ {\bf svr\+\_\+ip\+\_\+addr\+\_\+t} $>$ $\ast$}]{ip\+\_\+addr\+\_\+list = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_client_file_has_offline_res_a06be55fc51394e0d75d1e59b578ba162}
+\hypertarget{class_c_im_pdu_client_file_has_offline_res_a7dbac966f1be22df30b9d53856a1cfec}{}\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!````~C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{$\sim$\+C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\index{````~C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{$\sim$\+C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\subsubsection[{$\sim$\+C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res\+::$\sim$\+C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_im_pdu_client_file_has_offline_res_a7dbac966f1be22df30b9d53856a1cfec}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_im_pdu_client_file_has_offline_res_a34b2fe0a44c4503ea16384a193907f7f}{}\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!Get\+File\+Cnt@{Get\+File\+Cnt}}
+\index{Get\+File\+Cnt@{Get\+File\+Cnt}!C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\subsubsection[{Get\+File\+Cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res\+::\+Get\+File\+Cnt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_file_has_offline_res_a34b2fe0a44c4503ea16384a193907f7f}
+\hypertarget{class_c_im_pdu_client_file_has_offline_res_ac15985ce80b3e1c07fb6b114502c8bb3}{}\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!Get\+File\+List@{Get\+File\+List}}
+\index{Get\+File\+List@{Get\+File\+List}!C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\subsubsection[{Get\+File\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf client\+\_\+offline\+\_\+file\+\_\+t}$\ast$ C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res\+::\+Get\+File\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_file_has_offline_res_ac15985ce80b3e1c07fb6b114502c8bb3}
+\hypertarget{class_c_im_pdu_client_file_has_offline_res_a2355ed51ce8213c84d2058c9d8139f08}{}\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!Get\+I\+P\+Addr\+Cnt@{Get\+I\+P\+Addr\+Cnt}}
+\index{Get\+I\+P\+Addr\+Cnt@{Get\+I\+P\+Addr\+Cnt}!C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\subsubsection[{Get\+I\+P\+Addr\+Cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res\+::\+Get\+I\+P\+Addr\+Cnt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_file_has_offline_res_a2355ed51ce8213c84d2058c9d8139f08}
+\hypertarget{class_c_im_pdu_client_file_has_offline_res_aca190ea94430bc74694abdd0c0f6af5d}{}\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!Get\+I\+P\+Addr\+List@{Get\+I\+P\+Addr\+List}}
+\index{Get\+I\+P\+Addr\+List@{Get\+I\+P\+Addr\+List}!C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\subsubsection[{Get\+I\+P\+Addr\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ip\+\_\+addr\+\_\+t}$\ast$ C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res\+::\+Get\+I\+P\+Addr\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_file_has_offline_res_aca190ea94430bc74694abdd0c0f6af5d}
+\hypertarget{class_c_im_pdu_client_file_has_offline_res_a4a8f050f2ee31d1270158ef4d4aef286}{}\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!Get\+Pdu\+Type@{Get\+Pdu\+Type}}
+\index{Get\+Pdu\+Type@{Get\+Pdu\+Type}!C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\subsubsection[{Get\+Pdu\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint16\+\_\+t C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res\+::\+Get\+Pdu\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_im_pdu_client_file_has_offline_res_a4a8f050f2ee31d1270158ef4d4aef286}
+
+
+Reimplemented from \hyperlink{class_c_im_pdu_a887912f445b3e864d33f9e7f2325f1fc}{C\+Im\+Pdu}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_im_pdu_client_file_has_offline_res_ae80a761ee9962d9d78ee8fe5036a61fa}{}\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!m\+\_\+file\+\_\+cnt@{m\+\_\+file\+\_\+cnt}}
+\index{m\+\_\+file\+\_\+cnt@{m\+\_\+file\+\_\+cnt}!C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\subsubsection[{m\+\_\+file\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res\+::m\+\_\+file\+\_\+cnt\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_file_has_offline_res_ae80a761ee9962d9d78ee8fe5036a61fa}
+\hypertarget{class_c_im_pdu_client_file_has_offline_res_a1e2afcfa4104612fae75343a6e67aa9c}{}\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!m\+\_\+file\+\_\+list@{m\+\_\+file\+\_\+list}}
+\index{m\+\_\+file\+\_\+list@{m\+\_\+file\+\_\+list}!C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\subsubsection[{m\+\_\+file\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf client\+\_\+offline\+\_\+file\+\_\+t}$\ast$ C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res\+::m\+\_\+file\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_file_has_offline_res_a1e2afcfa4104612fae75343a6e67aa9c}
+\hypertarget{class_c_im_pdu_client_file_has_offline_res_aaf5d035a2257ed8090dac3f8482ba72d}{}\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!m\+\_\+ip\+\_\+addr\+\_\+cnt@{m\+\_\+ip\+\_\+addr\+\_\+cnt}}
+\index{m\+\_\+ip\+\_\+addr\+\_\+cnt@{m\+\_\+ip\+\_\+addr\+\_\+cnt}!C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\subsubsection[{m\+\_\+ip\+\_\+addr\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res\+::m\+\_\+ip\+\_\+addr\+\_\+cnt\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_file_has_offline_res_aaf5d035a2257ed8090dac3f8482ba72d}
+\hypertarget{class_c_im_pdu_client_file_has_offline_res_ab6f259087b0b8aa4c66e0bb2d7b5d2f5}{}\index{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}!m\+\_\+ip\+\_\+addr\+\_\+list@{m\+\_\+ip\+\_\+addr\+\_\+list}}
+\index{m\+\_\+ip\+\_\+addr\+\_\+list@{m\+\_\+ip\+\_\+addr\+\_\+list}!C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res@{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res}}
+\subsubsection[{m\+\_\+ip\+\_\+addr\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ip\+\_\+addr\+\_\+t}$\ast$ C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Res\+::m\+\_\+ip\+\_\+addr\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_file_has_offline_res_ab6f259087b0b8aa4c66e0bb2d7b5d2f5}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_file_8h}{Im\+Pdu\+File.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_file_8cpp}{Im\+Pdu\+File.\+cpp}\end{DoxyCompactItemize}

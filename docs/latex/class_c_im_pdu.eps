@@ -1,0 +1,711 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 4626.334520
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.108077 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 130 def
+/cols 2 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text `arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col `arg1' to `arg2' of row `arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(CImPdu) cw
+(CImPduAllUserRequest) cw
+(CImPduClientAllUserRequest) cw
+(CImPduClientBuddyListRequest) cw
+(CImPduClientDBQueryRequest) cw
+(CImPduClientDBQueryResponse) cw
+(CImPduClientDepartmentRequest) cw
+(CImPduClientDepartmentResponse) cw
+(CImPduClientFileAddOfflineReq) cw
+(CImPduClientFileData) cw
+(CImPduClientFileDelOfflineReq) cw
+(CImPduClientFileGetOfflineReq) cw
+(CImPduClientFileHasOfflineReq) cw
+(CImPduClientFileHasOfflineRes) cw
+(CImPduClientFileLoginReq) cw
+(CImPduClientFileLoginRes) cw
+(CImPduClientFileNotify) cw
+(CImPduClientFilePullDataReq) cw
+(CImPduClientFilePullDataRsp) cw
+(CImPduClientFileRequest) cw
+(CImPduClientFileResponse) cw
+(CImPduClientFileState) cw
+(CImPduClientFileUploadFinish) cw
+(CImPduClientFriendList) cw
+(CImPduClientFriendNotify) cw
+(CImPduClientGroupChangeMemberNotify) cw
+(CImPduClientGroupChangeMemberRequest) cw
+(CImPduClientGroupChangeMemberResponse) cw
+(CImPduClientGroupCreateNormalGroupNotify) cw
+(CImPduClientGroupCreateTmpGroupRequest) cw
+(CImPduClientGroupCreateTmpGroupResponse) cw
+(CImPduClientGroupListRequest) cw
+(CImPduClientGroupListResponse) cw
+(CImPduClientGroupMsgListResponse) cw
+(CImPduClientGroupMsgReadAck) cw
+(CImPduClientGroupUnreadMsgCntRequest) cw
+(CImPduClientGroupUnreadMsgCntResponse) cw
+(CImPduClientGroupUnreadMsgRequest) cw
+(CImPduClientGroupUserListRequest) cw
+(CImPduClientGroupUserListResponse) cw
+(CImPduClientMsgData) cw
+(CImPduClientMsgDataAck) cw
+(CImPduClientMsgListResponse) cw
+(CImPduClientMsgReadAck) cw
+(CImPduClientOnlineFriendList) cw
+(CImPduClientP2PCmdMsg) cw
+(CImPduClientRemoveSessionRequest) cw
+(CImPduClientRemoveSessionResponse) cw
+(CImPduClientServiceSetting) cw
+(CImPduClientTimeRequest) cw
+(CImPduClientTimeResponse) cw
+(CImPduClientUnreadMsgCntRequest) cw
+(CImPduClientUnreadMsgCntResponse) cw
+(CImPduClientUnreadMsgRequest) cw
+(CImPduClientUserInfoRequest) cw
+(CImPduClientUserInfoResponse) cw
+(CImPduClientUsersStatusRequest) cw
+(CImPduClientUsersStatusResponse) cw
+(CImPduClientUserStatusRequest) cw
+(CImPduClientUserStatusResponse) cw
+(CImPduDBQueryRequest) cw
+(CImPduDBQueryResponse) cw
+(CImPduDBWriteResponse) cw
+(CImPduDepartmentRequest) cw
+(CImPduDepartmentResponse) cw
+(CImPduFileAddOfflineReq) cw
+(CImPduFileDelOfflineReq) cw
+(CImPduFileHasOfflineReq) cw
+(CImPduFileHasOfflineRes) cw
+(CImPduFileNotify) cw
+(CImPduFileServerIPReq) cw
+(CImPduFileServerIPRsp) cw
+(CImPduFriendListRequest) cw
+(CImPduFriendListResponse) cw
+(CImPduFriendStatusList) cw
+(CImPduFriendStatusNotify) cw
+(CImPduFriendStatusQuery) cw
+(CImPduGroupChangeMemberNotify) cw
+(CImPduGroupChangeMemberRequest) cw
+(CImPduGroupChangeMemberResponse) cw
+(CImPduGroupCreateNormalGroupNotify) cw
+(CImPduGroupCreateTmpGroupRequest) cw
+(CImPduGroupCreateTmpGroupResponse) cw
+(CImPduGroupListRequest) cw
+(CImPduGroupListResponse) cw
+(CImPduGroupMsgListResponse) cw
+(CImPduGroupMsgReadAck) cw
+(CImPduGroupP2PMessageRequest) cw
+(CImPduGroupP2PMessageResponse) cw
+(CImPduGroupUnreadMsgCntRequest) cw
+(CImPduGroupUnreadMsgCntResponse) cw
+(CImPduGroupUnreadMsgRequest) cw
+(CImPduGroupUserListRequest) cw
+(CImPduGroupUserListResponse) cw
+(CImPduHeartbeat) cw
+(CImPduKickUser) cw
+(CImPduLoginRequest) cw
+(CImPduLoginResponse) cw
+(CImPduMsgData) cw
+(CImPduMsgFileTransferReq) cw
+(CImPduMsgFileTransferRsp) cw
+(CImPduMsgListResponse) cw
+(CImPduMsgReadAck) cw
+(CImPduMsgServInfo) cw
+(CImPduMsgServRequest) cw
+(CImPduMsgServResponse) cw
+(CImPduOnlineUserInfo) cw
+(CImPduP2PMsg) cw
+(CImPduRemoveSessionRequest) cw
+(CImPduRemoveSessionResponse) cw
+(CImPduRoleSet) cw
+(CImPduServerKickUser) cw
+(CImPduStopReceivePacket) cw
+(CImPduUnreadMsgCountRequest) cw
+(CImPduUnreadMsgCountResponse) cw
+(CImPduUnreadMsgRequest) cw
+(CImPduUserActionLog) cw
+(CImPduUserClientTypeRequest) cw
+(CImPduUserClientTypeResponse) cw
+(CImPduUserCntUpdate) cw
+(CImPduUserConnInfo) cw
+(CImPduUsersInfoRequest) cw
+(CImPduUsersInfoResponse) cw
+(CImPduUsersStatusRequest) cw
+(CImPduUsersStatusResponse) cw
+(CImPduUserStatusRequest) cw
+(CImPduUserStatusResponse) cw
+(CImPduUserStatusUpdate) cw
+(CImPduValidateRequest) cw
+(CImPduValidateResponse) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (CImPdu) 0.000000 129.000000 box
+ (CImPduAllUserRequest) 1.000000 128.000000 box
+ (CImPduClientAllUserRequest) 1.000000 127.000000 box
+ (CImPduClientBuddyListRequest) 1.000000 126.000000 box
+ (CImPduClientDBQueryRequest) 1.000000 125.000000 box
+ (CImPduClientDBQueryResponse) 1.000000 124.000000 box
+ (CImPduClientDepartmentRequest) 1.000000 123.000000 box
+ (CImPduClientDepartmentResponse) 1.000000 122.000000 box
+ (CImPduClientFileAddOfflineReq) 1.000000 121.000000 box
+ (CImPduClientFileData) 1.000000 120.000000 box
+ (CImPduClientFileDelOfflineReq) 1.000000 119.000000 box
+ (CImPduClientFileGetOfflineReq) 1.000000 118.000000 box
+ (CImPduClientFileHasOfflineReq) 1.000000 117.000000 box
+ (CImPduClientFileHasOfflineRes) 1.000000 116.000000 box
+ (CImPduClientFileLoginReq) 1.000000 115.000000 box
+ (CImPduClientFileLoginRes) 1.000000 114.000000 box
+ (CImPduClientFileNotify) 1.000000 113.000000 box
+ (CImPduClientFilePullDataReq) 1.000000 112.000000 box
+ (CImPduClientFilePullDataRsp) 1.000000 111.000000 box
+ (CImPduClientFileRequest) 1.000000 110.000000 box
+ (CImPduClientFileResponse) 1.000000 109.000000 box
+ (CImPduClientFileState) 1.000000 108.000000 box
+ (CImPduClientFileUploadFinish) 1.000000 107.000000 box
+ (CImPduClientFriendList) 1.000000 106.000000 box
+ (CImPduClientFriendNotify) 1.000000 105.000000 box
+ (CImPduClientGroupChangeMemberNotify) 1.000000 104.000000 box
+ (CImPduClientGroupChangeMemberRequest) 1.000000 103.000000 box
+ (CImPduClientGroupChangeMemberResponse) 1.000000 102.000000 box
+ (CImPduClientGroupCreateNormalGroupNotify) 1.000000 101.000000 box
+ (CImPduClientGroupCreateTmpGroupRequest) 1.000000 100.000000 box
+ (CImPduClientGroupCreateTmpGroupResponse) 1.000000 99.000000 box
+ (CImPduClientGroupListRequest) 1.000000 98.000000 box
+ (CImPduClientGroupListResponse) 1.000000 97.000000 box
+ (CImPduClientGroupMsgListResponse) 1.000000 96.000000 box
+ (CImPduClientGroupMsgReadAck) 1.000000 95.000000 box
+ (CImPduClientGroupUnreadMsgCntRequest) 1.000000 94.000000 box
+ (CImPduClientGroupUnreadMsgCntResponse) 1.000000 93.000000 box
+ (CImPduClientGroupUnreadMsgRequest) 1.000000 92.000000 box
+ (CImPduClientGroupUserListRequest) 1.000000 91.000000 box
+ (CImPduClientGroupUserListResponse) 1.000000 90.000000 box
+ (CImPduClientMsgData) 1.000000 89.000000 box
+ (CImPduClientMsgDataAck) 1.000000 88.000000 box
+ (CImPduClientMsgListResponse) 1.000000 87.000000 box
+ (CImPduClientMsgReadAck) 1.000000 86.000000 box
+ (CImPduClientOnlineFriendList) 1.000000 85.000000 box
+ (CImPduClientP2PCmdMsg) 1.000000 84.000000 box
+ (CImPduClientRemoveSessionRequest) 1.000000 83.000000 box
+ (CImPduClientRemoveSessionResponse) 1.000000 82.000000 box
+ (CImPduClientServiceSetting) 1.000000 81.000000 box
+ (CImPduClientTimeRequest) 1.000000 80.000000 box
+ (CImPduClientTimeResponse) 1.000000 79.000000 box
+ (CImPduClientUnreadMsgCntRequest) 1.000000 78.000000 box
+ (CImPduClientUnreadMsgCntResponse) 1.000000 77.000000 box
+ (CImPduClientUnreadMsgRequest) 1.000000 76.000000 box
+ (CImPduClientUserInfoRequest) 1.000000 75.000000 box
+ (CImPduClientUserInfoResponse) 1.000000 74.000000 box
+ (CImPduClientUsersStatusRequest) 1.000000 73.000000 box
+ (CImPduClientUsersStatusResponse) 1.000000 72.000000 box
+ (CImPduClientUserStatusRequest) 1.000000 71.000000 box
+ (CImPduClientUserStatusResponse) 1.000000 70.000000 box
+ (CImPduDBQueryRequest) 1.000000 69.000000 box
+ (CImPduDBQueryResponse) 1.000000 68.000000 box
+ (CImPduDBWriteResponse) 1.000000 67.000000 box
+ (CImPduDepartmentRequest) 1.000000 66.000000 box
+ (CImPduDepartmentResponse) 1.000000 65.000000 box
+ (CImPduFileAddOfflineReq) 1.000000 64.000000 box
+ (CImPduFileDelOfflineReq) 1.000000 63.000000 box
+ (CImPduFileHasOfflineReq) 1.000000 62.000000 box
+ (CImPduFileHasOfflineRes) 1.000000 61.000000 box
+ (CImPduFileNotify) 1.000000 60.000000 box
+ (CImPduFileServerIPReq) 1.000000 59.000000 box
+ (CImPduFileServerIPRsp) 1.000000 58.000000 box
+ (CImPduFriendListRequest) 1.000000 57.000000 box
+ (CImPduFriendListResponse) 1.000000 56.000000 box
+ (CImPduFriendStatusList) 1.000000 55.000000 box
+ (CImPduFriendStatusNotify) 1.000000 54.000000 box
+ (CImPduFriendStatusQuery) 1.000000 53.000000 box
+ (CImPduGroupChangeMemberNotify) 1.000000 52.000000 box
+ (CImPduGroupChangeMemberRequest) 1.000000 51.000000 box
+ (CImPduGroupChangeMemberResponse) 1.000000 50.000000 box
+ (CImPduGroupCreateNormalGroupNotify) 1.000000 49.000000 box
+ (CImPduGroupCreateTmpGroupRequest) 1.000000 48.000000 box
+ (CImPduGroupCreateTmpGroupResponse) 1.000000 47.000000 box
+ (CImPduGroupListRequest) 1.000000 46.000000 box
+ (CImPduGroupListResponse) 1.000000 45.000000 box
+ (CImPduGroupMsgListResponse) 1.000000 44.000000 box
+ (CImPduGroupMsgReadAck) 1.000000 43.000000 box
+ (CImPduGroupP2PMessageRequest) 1.000000 42.000000 box
+ (CImPduGroupP2PMessageResponse) 1.000000 41.000000 box
+ (CImPduGroupUnreadMsgCntRequest) 1.000000 40.000000 box
+ (CImPduGroupUnreadMsgCntResponse) 1.000000 39.000000 box
+ (CImPduGroupUnreadMsgRequest) 1.000000 38.000000 box
+ (CImPduGroupUserListRequest) 1.000000 37.000000 box
+ (CImPduGroupUserListResponse) 1.000000 36.000000 box
+ (CImPduHeartbeat) 1.000000 35.000000 box
+ (CImPduKickUser) 1.000000 34.000000 box
+ (CImPduLoginRequest) 1.000000 33.000000 box
+ (CImPduLoginResponse) 1.000000 32.000000 box
+ (CImPduMsgData) 1.000000 31.000000 box
+ (CImPduMsgFileTransferReq) 1.000000 30.000000 box
+ (CImPduMsgFileTransferRsp) 1.000000 29.000000 box
+ (CImPduMsgListResponse) 1.000000 28.000000 box
+ (CImPduMsgReadAck) 1.000000 27.000000 box
+ (CImPduMsgServInfo) 1.000000 26.000000 box
+ (CImPduMsgServRequest) 1.000000 25.000000 box
+ (CImPduMsgServResponse) 1.000000 24.000000 box
+ (CImPduOnlineUserInfo) 1.000000 23.000000 box
+ (CImPduP2PMsg) 1.000000 22.000000 box
+ (CImPduRemoveSessionRequest) 1.000000 21.000000 box
+ (CImPduRemoveSessionResponse) 1.000000 20.000000 box
+ (CImPduRoleSet) 1.000000 19.000000 box
+ (CImPduServerKickUser) 1.000000 18.000000 box
+ (CImPduStopReceivePacket) 1.000000 17.000000 box
+ (CImPduUnreadMsgCountRequest) 1.000000 16.000000 box
+ (CImPduUnreadMsgCountResponse) 1.000000 15.000000 box
+ (CImPduUnreadMsgRequest) 1.000000 14.000000 box
+ (CImPduUserActionLog) 1.000000 13.000000 box
+ (CImPduUserClientTypeRequest) 1.000000 12.000000 box
+ (CImPduUserClientTypeResponse) 1.000000 11.000000 box
+ (CImPduUserCntUpdate) 1.000000 10.000000 box
+ (CImPduUserConnInfo) 1.000000 9.000000 box
+ (CImPduUsersInfoRequest) 1.000000 8.000000 box
+ (CImPduUsersInfoResponse) 1.000000 7.000000 box
+ (CImPduUsersStatusRequest) 1.000000 6.000000 box
+ (CImPduUsersStatusResponse) 1.000000 5.000000 box
+ (CImPduUserStatusRequest) 1.000000 4.000000 box
+ (CImPduUserStatusResponse) 1.000000 3.000000 box
+ (CImPduUserStatusUpdate) 1.000000 2.000000 box
+ (CImPduValidateRequest) 1.000000 1.000000 box
+ (CImPduValidateResponse) 1.000000 0.000000 box
+
+% ----- relations -----
+
+solid
+1 0.000000 128.250000 out
+solid
+0 0.000000 128.500000 hedge
+solid
+0 0.000000 127.500000 hedge
+solid
+0 0.000000 126.500000 hedge
+solid
+0 0.000000 125.500000 hedge
+solid
+0 0.000000 124.500000 hedge
+solid
+0 0.000000 123.500000 hedge
+solid
+0 0.000000 122.500000 hedge
+solid
+0 0.000000 121.500000 hedge
+solid
+0 0.000000 120.500000 hedge
+solid
+0 0.000000 119.500000 hedge
+solid
+0 0.000000 118.500000 hedge
+solid
+0 0.000000 117.500000 hedge
+solid
+0 0.000000 116.500000 hedge
+solid
+0 0.000000 115.500000 hedge
+solid
+0 0.000000 114.500000 hedge
+solid
+0 0.000000 113.500000 hedge
+solid
+0 0.000000 112.500000 hedge
+solid
+0 0.000000 111.500000 hedge
+solid
+0 0.000000 110.500000 hedge
+solid
+0 0.000000 109.500000 hedge
+solid
+0 0.000000 108.500000 hedge
+solid
+0 0.000000 107.500000 hedge
+solid
+0 0.000000 106.500000 hedge
+solid
+0 0.000000 105.500000 hedge
+solid
+0 0.000000 104.500000 hedge
+solid
+0 0.000000 103.500000 hedge
+solid
+0 0.000000 102.500000 hedge
+solid
+0 0.000000 101.500000 hedge
+solid
+0 0.000000 100.500000 hedge
+solid
+0 0.000000 99.500000 hedge
+solid
+0 0.000000 98.500000 hedge
+solid
+0 0.000000 97.500000 hedge
+solid
+0 0.000000 96.500000 hedge
+solid
+0 0.000000 95.500000 hedge
+solid
+0 0.000000 94.500000 hedge
+solid
+0 0.000000 93.500000 hedge
+solid
+0 0.000000 92.500000 hedge
+solid
+0 0.000000 91.500000 hedge
+solid
+0 0.000000 90.500000 hedge
+solid
+0 0.000000 89.500000 hedge
+solid
+0 0.000000 88.500000 hedge
+solid
+0 0.000000 87.500000 hedge
+solid
+0 0.000000 86.500000 hedge
+solid
+0 0.000000 85.500000 hedge
+solid
+0 0.000000 84.500000 hedge
+solid
+0 0.000000 83.500000 hedge
+solid
+0 0.000000 82.500000 hedge
+solid
+0 0.000000 81.500000 hedge
+solid
+0 0.000000 80.500000 hedge
+solid
+0 0.000000 79.500000 hedge
+solid
+0 0.000000 78.500000 hedge
+solid
+0 0.000000 77.500000 hedge
+solid
+0 0.000000 76.500000 hedge
+solid
+0 0.000000 75.500000 hedge
+solid
+0 0.000000 74.500000 hedge
+solid
+0 0.000000 73.500000 hedge
+solid
+0 0.000000 72.500000 hedge
+solid
+0 0.000000 71.500000 hedge
+solid
+0 0.000000 70.500000 hedge
+solid
+0 0.000000 69.500000 hedge
+solid
+0 0.000000 68.500000 hedge
+solid
+0 0.000000 67.500000 hedge
+solid
+0 0.000000 66.500000 hedge
+solid
+0 0.000000 65.500000 hedge
+solid
+0 0.000000 64.500000 hedge
+solid
+0 0.000000 63.500000 hedge
+solid
+0 0.000000 62.500000 hedge
+solid
+0 0.000000 61.500000 hedge
+solid
+0 0.000000 60.500000 hedge
+solid
+0 0.000000 59.500000 hedge
+solid
+0 0.000000 58.500000 hedge
+solid
+0 0.000000 57.500000 hedge
+solid
+0 0.000000 56.500000 hedge
+solid
+0 0.000000 55.500000 hedge
+solid
+0 0.000000 54.500000 hedge
+solid
+0 0.000000 53.500000 hedge
+solid
+0 0.000000 52.500000 hedge
+solid
+0 0.000000 51.500000 hedge
+solid
+0 0.000000 50.500000 hedge
+solid
+0 0.000000 49.500000 hedge
+solid
+0 0.000000 48.500000 hedge
+solid
+0 0.000000 47.500000 hedge
+solid
+0 0.000000 46.500000 hedge
+solid
+0 0.000000 45.500000 hedge
+solid
+0 0.000000 44.500000 hedge
+solid
+0 0.000000 43.500000 hedge
+solid
+0 0.000000 42.500000 hedge
+solid
+0 0.000000 41.500000 hedge
+solid
+0 0.000000 40.500000 hedge
+solid
+0 0.000000 39.500000 hedge
+solid
+0 0.000000 38.500000 hedge
+solid
+0 0.000000 37.500000 hedge
+solid
+0 0.000000 36.500000 hedge
+solid
+0 0.000000 35.500000 hedge
+solid
+0 0.000000 34.500000 hedge
+solid
+0 0.000000 33.500000 hedge
+solid
+0 0.000000 32.500000 hedge
+solid
+0 0.000000 31.500000 hedge
+solid
+0 0.000000 30.500000 hedge
+solid
+0 0.000000 29.500000 hedge
+solid
+0 0.000000 28.500000 hedge
+solid
+0 0.000000 27.500000 hedge
+solid
+0 0.000000 26.500000 hedge
+solid
+0 0.000000 25.500000 hedge
+solid
+0 0.000000 24.500000 hedge
+solid
+0 0.000000 23.500000 hedge
+solid
+0 0.000000 22.500000 hedge
+solid
+0 0.000000 21.500000 hedge
+solid
+0 0.000000 20.500000 hedge
+solid
+0 0.000000 19.500000 hedge
+solid
+0 0.000000 18.500000 hedge
+solid
+0 0.000000 17.500000 hedge
+solid
+0 0.000000 16.500000 hedge
+solid
+0 0.000000 15.500000 hedge
+solid
+0 0.000000 14.500000 hedge
+solid
+0 0.000000 13.500000 hedge
+solid
+0 0.000000 12.500000 hedge
+solid
+0 0.000000 11.500000 hedge
+solid
+0 0.000000 10.500000 hedge
+solid
+0 0.000000 9.500000 hedge
+solid
+0 0.000000 8.500000 hedge
+solid
+0 0.000000 7.500000 hedge
+solid
+0 0.000000 6.500000 hedge
+solid
+0 0.000000 5.500000 hedge
+solid
+0 0.000000 4.500000 hedge
+solid
+0 0.000000 3.500000 hedge
+solid
+0 0.000000 2.500000 hedge
+solid
+0 0.000000 1.500000 hedge
+solid
+0 0.000000 0.500000 hedge
+solid
+0.000000 129.000000 0.500000 vedge

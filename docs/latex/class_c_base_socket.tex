@@ -1,0 +1,618 @@
+\hypertarget{class_c_base_socket}{}\section{C\+Base\+Socket Class Reference}
+\label{class_c_base_socket}\index{C\+Base\+Socket@{C\+Base\+Socket}}
+
+
+{\ttfamily \#include $<$Base\+Socket.\+h$>$}
+
+Inheritance diagram for C\+Base\+Socket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_base_socket}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_base_socket_addf3bf444356a73e1b22b267ffcc3cae}{C\+Base\+Socket} ()
+\item 
+virtual \hyperlink{class_c_base_socket_affd9b0d8c2917fdc30ff421217ef3c0f}{$\sim$\+C\+Base\+Socket} ()
+\item 
+\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} \hyperlink{class_c_base_socket_a67f302722909a6de5740dfa0b99d80f6}{Get\+Socket} ()
+\item 
+void \hyperlink{class_c_base_socket_ac3d800a30aea0b1c73ebd5d6b9ed8a50}{Set\+Socket} (\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} fd)
+\item 
+void \hyperlink{class_c_base_socket_a911c9a90e052e1a1969e046bec4dae8a}{Set\+State} (uint8\+\_\+t \hyperlink{_http_parser_8cpp_adc6e5733fc3c22f0a7b2914188c49c90}{state})
+\item 
+void \hyperlink{class_c_base_socket_afd663f9a74d47ddf732115c8cbfde08b}{Set\+Callback} (\hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback)
+\item 
+void \hyperlink{class_c_base_socket_a7b157b0848d2d2c317d36c1bd947db2e}{Set\+Callback\+Data} (void $\ast$data)
+\item 
+void \hyperlink{class_c_base_socket_a50368e1e128ed2659bdfea7d5db49364}{Set\+Remote\+I\+P} (char $\ast$ip)
+\item 
+void \hyperlink{class_c_base_socket_aed856b547dcbd071746dfcafe6bd07df}{Set\+Remote\+Port} (uint16\+\_\+t port)
+\item 
+void \hyperlink{class_c_base_socket_a7c242800e3dc9e638f28688c73ff7d4f}{Set\+Send\+Buf\+Size} (uint32\+\_\+t send\+\_\+size)
+\item 
+void \hyperlink{class_c_base_socket_ac13ac6f0958c835e8177f800b71dc59f}{Set\+Recv\+Buf\+Size} (uint32\+\_\+t recv\+\_\+size)
+\item 
+const char $\ast$ \hyperlink{class_c_base_socket_ab67e2d8ea84d36dfddc3975460727adc}{Get\+Remote\+I\+P} ()
+\item 
+uint16\+\_\+t \hyperlink{class_c_base_socket_a12c343b70b478d8f7e094dd91d4dafb2}{Get\+Remote\+Port} ()
+\item 
+const char $\ast$ \hyperlink{class_c_base_socket_adc18d9100f4e1981a092c964444f62bd}{Get\+Local\+I\+P} ()
+\item 
+uint16\+\_\+t \hyperlink{class_c_base_socket_af2accbbe419f28919c31b7e5131ae083}{Get\+Local\+Port} ()
+\item 
+int \hyperlink{class_c_base_socket_aed79eecacc5111f43a459029eebba2dc}{Listen} (const char $\ast$server\+\_\+ip, uint16\+\_\+t port, \hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$callback\+\_\+data)
+\item 
+\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} \hyperlink{class_c_base_socket_abd9522218179b5a4a9aa46cafedde0a4}{Connect} (const char $\ast$server\+\_\+ip, uint16\+\_\+t port, \hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$callback\+\_\+data)
+\item 
+int \hyperlink{class_c_base_socket_aecaf1a6f668cadf938b6e386d6f274f5}{Send} (void $\ast$buf, int len)
+\item 
+int \hyperlink{class_c_base_socket_aac275b1f4cbdc77f100c1fb04888ba24}{Recv} (void $\ast$buf, int len)
+\item 
+int \hyperlink{class_c_base_socket_acc1d5334e2c121a7705e84af536544c9}{Close} ()
+\item 
+void \hyperlink{class_c_base_socket_afa0c274f4b6d711099f2fca02e0237b9}{On\+Read} ()
+\item 
+void \hyperlink{class_c_base_socket_ab919914415b76a3441dc9f2cb6a134de}{On\+Write} ()
+\item 
+void \hyperlink{class_c_base_socket_a18a3b1766f29c232018ec02502240e4f}{On\+Close} ()
+\item 
+\hyperlink{class_c_base_socket_addf3bf444356a73e1b22b267ffcc3cae}{C\+Base\+Socket} ()
+\item 
+virtual \hyperlink{class_c_base_socket_ac70630233ba131daf7c710ccb86fe7be}{$\sim$\+C\+Base\+Socket} ()
+\item 
+\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} \hyperlink{class_c_base_socket_a67f302722909a6de5740dfa0b99d80f6}{Get\+Socket} ()
+\item 
+void \hyperlink{class_c_base_socket_ac3d800a30aea0b1c73ebd5d6b9ed8a50}{Set\+Socket} (\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} fd)
+\item 
+void \hyperlink{class_c_base_socket_a911c9a90e052e1a1969e046bec4dae8a}{Set\+State} (uint8\+\_\+t \hyperlink{_http_parser_8cpp_adc6e5733fc3c22f0a7b2914188c49c90}{state})
+\item 
+void \hyperlink{class_c_base_socket_afd663f9a74d47ddf732115c8cbfde08b}{Set\+Callback} (\hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback)
+\item 
+void \hyperlink{class_c_base_socket_a7b157b0848d2d2c317d36c1bd947db2e}{Set\+Callback\+Data} (void $\ast$data)
+\item 
+void \hyperlink{class_c_base_socket_a50368e1e128ed2659bdfea7d5db49364}{Set\+Remote\+I\+P} (char $\ast$ip)
+\item 
+void \hyperlink{class_c_base_socket_aed856b547dcbd071746dfcafe6bd07df}{Set\+Remote\+Port} (uint16\+\_\+t port)
+\item 
+const char $\ast$ \hyperlink{class_c_base_socket_ab67e2d8ea84d36dfddc3975460727adc}{Get\+Remote\+I\+P} ()
+\item 
+uint16\+\_\+t \hyperlink{class_c_base_socket_a12c343b70b478d8f7e094dd91d4dafb2}{Get\+Remote\+Port} ()
+\item 
+const char $\ast$ \hyperlink{class_c_base_socket_adc18d9100f4e1981a092c964444f62bd}{Get\+Local\+I\+P} ()
+\item 
+uint16\+\_\+t \hyperlink{class_c_base_socket_af2accbbe419f28919c31b7e5131ae083}{Get\+Local\+Port} ()
+\item 
+int \hyperlink{class_c_base_socket_aed79eecacc5111f43a459029eebba2dc}{Listen} (const char $\ast$server\+\_\+ip, uint16\+\_\+t port, \hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$callback\+\_\+data)
+\item 
+\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} \hyperlink{class_c_base_socket_abd9522218179b5a4a9aa46cafedde0a4}{Connect} (const char $\ast$server\+\_\+ip, uint16\+\_\+t port, \hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$callback\+\_\+data)
+\item 
+int \hyperlink{class_c_base_socket_aecaf1a6f668cadf938b6e386d6f274f5}{Send} (void $\ast$buf, int len)
+\item 
+int \hyperlink{class_c_base_socket_aac275b1f4cbdc77f100c1fb04888ba24}{Recv} (void $\ast$buf, int len)
+\item 
+int \hyperlink{class_c_base_socket_acc1d5334e2c121a7705e84af536544c9}{Close} ()
+\item 
+void \hyperlink{class_c_base_socket_afa0c274f4b6d711099f2fca02e0237b9}{On\+Read} ()
+\item 
+void \hyperlink{class_c_base_socket_ab919914415b76a3441dc9f2cb6a134de}{On\+Write} ()
+\item 
+void \hyperlink{class_c_base_socket_a18a3b1766f29c232018ec02502240e4f}{On\+Close} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_c_base_socket_a98136f6af14a435c04c375b0e12a4b8e}{\+\_\+\+Get\+Error\+Code} ()
+\item 
+bool \hyperlink{class_c_base_socket_a4ac3112f184fbd21814d3aa804259bdc}{\+\_\+\+Is\+Block} (int error\+\_\+code)
+\item 
+void \hyperlink{class_c_base_socket_a71af7699ce3021b15254c181f6986b9b}{\+\_\+\+Set\+Nonblock} (\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} fd)
+\item 
+void \hyperlink{class_c_base_socket_a2e9150a1f186551710c423c8bf904222}{\+\_\+\+Set\+Reuse\+Addr} (\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} fd)
+\item 
+void \hyperlink{class_c_base_socket_a1c72ac8a5b9882e8c20e8a3d74a8018f}{\+\_\+\+Set\+No\+Delay} (\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} fd)
+\item 
+void \hyperlink{class_c_base_socket_a82f7a6d27dbdc84e348098cbbbaae7a6}{\+\_\+\+Set\+Addr} (const char $\ast$ip, const uint16\+\_\+t port, sockaddr\+\_\+in $\ast$p\+Addr)
+\item 
+void \hyperlink{class_c_base_socket_a46a1139923baf199da3363f8247a1a9c}{\+\_\+\+Accept\+New\+Socket} ()
+\item 
+int \hyperlink{class_c_base_socket_a98136f6af14a435c04c375b0e12a4b8e}{\+\_\+\+Get\+Error\+Code} ()
+\item 
+bool \hyperlink{class_c_base_socket_a4ac3112f184fbd21814d3aa804259bdc}{\+\_\+\+Is\+Block} (int error\+\_\+code)
+\item 
+void \hyperlink{class_c_base_socket_a71af7699ce3021b15254c181f6986b9b}{\+\_\+\+Set\+Nonblock} (\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} fd)
+\item 
+void \hyperlink{class_c_base_socket_a2e9150a1f186551710c423c8bf904222}{\+\_\+\+Set\+Reuse\+Addr} (\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} fd)
+\item 
+void \hyperlink{class_c_base_socket_a1c72ac8a5b9882e8c20e8a3d74a8018f}{\+\_\+\+Set\+No\+Delay} (\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} fd)
+\item 
+void \hyperlink{class_c_base_socket_a82f7a6d27dbdc84e348098cbbbaae7a6}{\+\_\+\+Set\+Addr} (const char $\ast$ip, const uint16\+\_\+t port, sockaddr\+\_\+in $\ast$p\+Addr)
+\item 
+void \hyperlink{class_c_base_socket_a46a1139923baf199da3363f8247a1a9c}{\+\_\+\+Accept\+New\+Socket} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_c_base_socket_afcc84b95d0bb51dbe1dc137890b1706c}{m\+\_\+remote\+\_\+ip}
+\item 
+uint16\+\_\+t \hyperlink{class_c_base_socket_a02d757e168dce85d385016994c76c4bd}{m\+\_\+remote\+\_\+port}
+\item 
+string \hyperlink{class_c_base_socket_a8e323be4ab9de8c01f4e8538ed3fd43c}{m\+\_\+local\+\_\+ip}
+\item 
+uint16\+\_\+t \hyperlink{class_c_base_socket_a7bc4119261829c4486bfc582b30a5c69}{m\+\_\+local\+\_\+port}
+\item 
+\hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} \hyperlink{class_c_base_socket_a240958a75f9513411d74dfe14a6090b6}{m\+\_\+callback}
+\item 
+void $\ast$ \hyperlink{class_c_base_socket_a0aa0915b528531ec5a126fd3c99ac2f4}{m\+\_\+callback\+\_\+data}
+\item 
+uint8\+\_\+t \hyperlink{class_c_base_socket_a1dfbcf388204b43e5a9739487c29692c}{m\+\_\+state}
+\item 
+\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} \hyperlink{class_c_base_socket_a8294a495dc75ef2216ac155e686c6037}{m\+\_\+socket}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_base_socket_addf3bf444356a73e1b22b267ffcc3cae}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!C\+Base\+Socket@{C\+Base\+Socket}}
+\index{C\+Base\+Socket@{C\+Base\+Socket}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{C\+Base\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}C\+Base\+Socket\+::\+C\+Base\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_addf3bf444356a73e1b22b267ffcc3cae}
+\hypertarget{class_c_base_socket_affd9b0d8c2917fdc30ff421217ef3c0f}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!````~C\+Base\+Socket@{$\sim$\+C\+Base\+Socket}}
+\index{````~C\+Base\+Socket@{$\sim$\+C\+Base\+Socket}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{$\sim$\+C\+Base\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}C\+Base\+Socket\+::$\sim$\+C\+Base\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_base_socket_affd9b0d8c2917fdc30ff421217ef3c0f}
+\hypertarget{class_c_base_socket_addf3bf444356a73e1b22b267ffcc3cae}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!C\+Base\+Socket@{C\+Base\+Socket}}
+\index{C\+Base\+Socket@{C\+Base\+Socket}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{C\+Base\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}C\+Base\+Socket\+::\+C\+Base\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_addf3bf444356a73e1b22b267ffcc3cae}
+\hypertarget{class_c_base_socket_ac70630233ba131daf7c710ccb86fe7be}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!````~C\+Base\+Socket@{$\sim$\+C\+Base\+Socket}}
+\index{````~C\+Base\+Socket@{$\sim$\+C\+Base\+Socket}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{$\sim$\+C\+Base\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Base\+Socket\+::$\sim$\+C\+Base\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_base_socket_ac70630233ba131daf7c710ccb86fe7be}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_base_socket_a46a1139923baf199da3363f8247a1a9c}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!\+\_\+\+Accept\+New\+Socket@{\+\_\+\+Accept\+New\+Socket}}
+\index{\+\_\+\+Accept\+New\+Socket@{\+\_\+\+Accept\+New\+Socket}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{\+\_\+\+Accept\+New\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+\_\+\+Accept\+New\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a46a1139923baf199da3363f8247a1a9c}
+\hypertarget{class_c_base_socket_a46a1139923baf199da3363f8247a1a9c}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!\+\_\+\+Accept\+New\+Socket@{\+\_\+\+Accept\+New\+Socket}}
+\index{\+\_\+\+Accept\+New\+Socket@{\+\_\+\+Accept\+New\+Socket}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{\+\_\+\+Accept\+New\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+\_\+\+Accept\+New\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a46a1139923baf199da3363f8247a1a9c}
+\hypertarget{class_c_base_socket_a98136f6af14a435c04c375b0e12a4b8e}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!\+\_\+\+Get\+Error\+Code@{\+\_\+\+Get\+Error\+Code}}
+\index{\+\_\+\+Get\+Error\+Code@{\+\_\+\+Get\+Error\+Code}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{\+\_\+\+Get\+Error\+Code}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Base\+Socket\+::\+\_\+\+Get\+Error\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a98136f6af14a435c04c375b0e12a4b8e}
+\hypertarget{class_c_base_socket_a98136f6af14a435c04c375b0e12a4b8e}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!\+\_\+\+Get\+Error\+Code@{\+\_\+\+Get\+Error\+Code}}
+\index{\+\_\+\+Get\+Error\+Code@{\+\_\+\+Get\+Error\+Code}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{\+\_\+\+Get\+Error\+Code}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Base\+Socket\+::\+\_\+\+Get\+Error\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a98136f6af14a435c04c375b0e12a4b8e}
+\hypertarget{class_c_base_socket_a4ac3112f184fbd21814d3aa804259bdc}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!\+\_\+\+Is\+Block@{\+\_\+\+Is\+Block}}
+\index{\+\_\+\+Is\+Block@{\+\_\+\+Is\+Block}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{\+\_\+\+Is\+Block}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Base\+Socket\+::\+\_\+\+Is\+Block (
+\begin{DoxyParamCaption}
+\item[{int}]{error\+\_\+code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a4ac3112f184fbd21814d3aa804259bdc}
+\hypertarget{class_c_base_socket_a4ac3112f184fbd21814d3aa804259bdc}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!\+\_\+\+Is\+Block@{\+\_\+\+Is\+Block}}
+\index{\+\_\+\+Is\+Block@{\+\_\+\+Is\+Block}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{\+\_\+\+Is\+Block}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Base\+Socket\+::\+\_\+\+Is\+Block (
+\begin{DoxyParamCaption}
+\item[{int}]{error\+\_\+code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a4ac3112f184fbd21814d3aa804259bdc}
+\hypertarget{class_c_base_socket_a82f7a6d27dbdc84e348098cbbbaae7a6}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!\+\_\+\+Set\+Addr@{\+\_\+\+Set\+Addr}}
+\index{\+\_\+\+Set\+Addr@{\+\_\+\+Set\+Addr}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{\+\_\+\+Set\+Addr}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+\_\+\+Set\+Addr (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ip, }
+\item[{const uint16\+\_\+t}]{port, }
+\item[{sockaddr\+\_\+in $\ast$}]{p\+Addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a82f7a6d27dbdc84e348098cbbbaae7a6}
+\hypertarget{class_c_base_socket_a82f7a6d27dbdc84e348098cbbbaae7a6}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!\+\_\+\+Set\+Addr@{\+\_\+\+Set\+Addr}}
+\index{\+\_\+\+Set\+Addr@{\+\_\+\+Set\+Addr}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{\+\_\+\+Set\+Addr}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+\_\+\+Set\+Addr (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ip, }
+\item[{const uint16\+\_\+t}]{port, }
+\item[{sockaddr\+\_\+in $\ast$}]{p\+Addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a82f7a6d27dbdc84e348098cbbbaae7a6}
+\hypertarget{class_c_base_socket_a1c72ac8a5b9882e8c20e8a3d74a8018f}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!\+\_\+\+Set\+No\+Delay@{\+\_\+\+Set\+No\+Delay}}
+\index{\+\_\+\+Set\+No\+Delay@{\+\_\+\+Set\+No\+Delay}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{\+\_\+\+Set\+No\+Delay}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+\_\+\+Set\+No\+Delay (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+O\+C\+K\+E\+T}}]{fd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a1c72ac8a5b9882e8c20e8a3d74a8018f}
+\hypertarget{class_c_base_socket_a1c72ac8a5b9882e8c20e8a3d74a8018f}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!\+\_\+\+Set\+No\+Delay@{\+\_\+\+Set\+No\+Delay}}
+\index{\+\_\+\+Set\+No\+Delay@{\+\_\+\+Set\+No\+Delay}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{\+\_\+\+Set\+No\+Delay}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+\_\+\+Set\+No\+Delay (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+O\+C\+K\+E\+T}}]{fd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a1c72ac8a5b9882e8c20e8a3d74a8018f}
+\hypertarget{class_c_base_socket_a71af7699ce3021b15254c181f6986b9b}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!\+\_\+\+Set\+Nonblock@{\+\_\+\+Set\+Nonblock}}
+\index{\+\_\+\+Set\+Nonblock@{\+\_\+\+Set\+Nonblock}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{\+\_\+\+Set\+Nonblock}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+\_\+\+Set\+Nonblock (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+O\+C\+K\+E\+T}}]{fd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a71af7699ce3021b15254c181f6986b9b}
+\hypertarget{class_c_base_socket_a71af7699ce3021b15254c181f6986b9b}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!\+\_\+\+Set\+Nonblock@{\+\_\+\+Set\+Nonblock}}
+\index{\+\_\+\+Set\+Nonblock@{\+\_\+\+Set\+Nonblock}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{\+\_\+\+Set\+Nonblock}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+\_\+\+Set\+Nonblock (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+O\+C\+K\+E\+T}}]{fd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a71af7699ce3021b15254c181f6986b9b}
+\hypertarget{class_c_base_socket_a2e9150a1f186551710c423c8bf904222}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!\+\_\+\+Set\+Reuse\+Addr@{\+\_\+\+Set\+Reuse\+Addr}}
+\index{\+\_\+\+Set\+Reuse\+Addr@{\+\_\+\+Set\+Reuse\+Addr}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{\+\_\+\+Set\+Reuse\+Addr}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+\_\+\+Set\+Reuse\+Addr (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+O\+C\+K\+E\+T}}]{fd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a2e9150a1f186551710c423c8bf904222}
+\hypertarget{class_c_base_socket_a2e9150a1f186551710c423c8bf904222}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!\+\_\+\+Set\+Reuse\+Addr@{\+\_\+\+Set\+Reuse\+Addr}}
+\index{\+\_\+\+Set\+Reuse\+Addr@{\+\_\+\+Set\+Reuse\+Addr}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{\+\_\+\+Set\+Reuse\+Addr}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+\_\+\+Set\+Reuse\+Addr (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+O\+C\+K\+E\+T}}]{fd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a2e9150a1f186551710c423c8bf904222}
+\hypertarget{class_c_base_socket_acc1d5334e2c121a7705e84af536544c9}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Close@{Close}}
+\index{Close@{Close}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Base\+Socket\+::\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_acc1d5334e2c121a7705e84af536544c9}
+\hypertarget{class_c_base_socket_acc1d5334e2c121a7705e84af536544c9}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Close@{Close}}
+\index{Close@{Close}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Base\+Socket\+::\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_acc1d5334e2c121a7705e84af536544c9}
+\hypertarget{class_c_base_socket_abd9522218179b5a4a9aa46cafedde0a4}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Connect@{Connect}}
+\index{Connect@{Connect}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf net\+\_\+handle\+\_\+t} C\+Base\+Socket\+::\+Connect (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{server\+\_\+ip, }
+\item[{uint16\+\_\+t}]{port, }
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{callback\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_abd9522218179b5a4a9aa46cafedde0a4}
+\hypertarget{class_c_base_socket_abd9522218179b5a4a9aa46cafedde0a4}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Connect@{Connect}}
+\index{Connect@{Connect}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf net\+\_\+handle\+\_\+t} C\+Base\+Socket\+::\+Connect (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{server\+\_\+ip, }
+\item[{uint16\+\_\+t}]{port, }
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{callback\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_abd9522218179b5a4a9aa46cafedde0a4}
+\hypertarget{class_c_base_socket_adc18d9100f4e1981a092c964444f62bd}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Get\+Local\+I\+P@{Get\+Local\+I\+P}}
+\index{Get\+Local\+I\+P@{Get\+Local\+I\+P}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Get\+Local\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ C\+Base\+Socket\+::\+Get\+Local\+I\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_adc18d9100f4e1981a092c964444f62bd}
+\hypertarget{class_c_base_socket_adc18d9100f4e1981a092c964444f62bd}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Get\+Local\+I\+P@{Get\+Local\+I\+P}}
+\index{Get\+Local\+I\+P@{Get\+Local\+I\+P}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Get\+Local\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ C\+Base\+Socket\+::\+Get\+Local\+I\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_adc18d9100f4e1981a092c964444f62bd}
+\hypertarget{class_c_base_socket_af2accbbe419f28919c31b7e5131ae083}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Get\+Local\+Port@{Get\+Local\+Port}}
+\index{Get\+Local\+Port@{Get\+Local\+Port}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Get\+Local\+Port}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t C\+Base\+Socket\+::\+Get\+Local\+Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_af2accbbe419f28919c31b7e5131ae083}
+\hypertarget{class_c_base_socket_af2accbbe419f28919c31b7e5131ae083}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Get\+Local\+Port@{Get\+Local\+Port}}
+\index{Get\+Local\+Port@{Get\+Local\+Port}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Get\+Local\+Port}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t C\+Base\+Socket\+::\+Get\+Local\+Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_af2accbbe419f28919c31b7e5131ae083}
+\hypertarget{class_c_base_socket_ab67e2d8ea84d36dfddc3975460727adc}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Get\+Remote\+I\+P@{Get\+Remote\+I\+P}}
+\index{Get\+Remote\+I\+P@{Get\+Remote\+I\+P}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Get\+Remote\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ C\+Base\+Socket\+::\+Get\+Remote\+I\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_ab67e2d8ea84d36dfddc3975460727adc}
+\hypertarget{class_c_base_socket_ab67e2d8ea84d36dfddc3975460727adc}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Get\+Remote\+I\+P@{Get\+Remote\+I\+P}}
+\index{Get\+Remote\+I\+P@{Get\+Remote\+I\+P}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Get\+Remote\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ C\+Base\+Socket\+::\+Get\+Remote\+I\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_ab67e2d8ea84d36dfddc3975460727adc}
+\hypertarget{class_c_base_socket_a12c343b70b478d8f7e094dd91d4dafb2}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Get\+Remote\+Port@{Get\+Remote\+Port}}
+\index{Get\+Remote\+Port@{Get\+Remote\+Port}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Get\+Remote\+Port}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t C\+Base\+Socket\+::\+Get\+Remote\+Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_a12c343b70b478d8f7e094dd91d4dafb2}
+\hypertarget{class_c_base_socket_a12c343b70b478d8f7e094dd91d4dafb2}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Get\+Remote\+Port@{Get\+Remote\+Port}}
+\index{Get\+Remote\+Port@{Get\+Remote\+Port}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Get\+Remote\+Port}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t C\+Base\+Socket\+::\+Get\+Remote\+Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_a12c343b70b478d8f7e094dd91d4dafb2}
+\hypertarget{class_c_base_socket_a67f302722909a6de5740dfa0b99d80f6}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Get\+Socket@{Get\+Socket}}
+\index{Get\+Socket@{Get\+Socket}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Get\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+O\+C\+K\+E\+T} C\+Base\+Socket\+::\+Get\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_a67f302722909a6de5740dfa0b99d80f6}
+\hypertarget{class_c_base_socket_a67f302722909a6de5740dfa0b99d80f6}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Get\+Socket@{Get\+Socket}}
+\index{Get\+Socket@{Get\+Socket}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Get\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+O\+C\+K\+E\+T} C\+Base\+Socket\+::\+Get\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_a67f302722909a6de5740dfa0b99d80f6}
+\hypertarget{class_c_base_socket_aed79eecacc5111f43a459029eebba2dc}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Listen@{Listen}}
+\index{Listen@{Listen}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Listen}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Base\+Socket\+::\+Listen (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{server\+\_\+ip, }
+\item[{uint16\+\_\+t}]{port, }
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{callback\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_aed79eecacc5111f43a459029eebba2dc}
+\hypertarget{class_c_base_socket_aed79eecacc5111f43a459029eebba2dc}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Listen@{Listen}}
+\index{Listen@{Listen}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Listen}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Base\+Socket\+::\+Listen (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{server\+\_\+ip, }
+\item[{uint16\+\_\+t}]{port, }
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{callback\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_aed79eecacc5111f43a459029eebba2dc}
+\hypertarget{class_c_base_socket_a18a3b1766f29c232018ec02502240e4f}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!On\+Close@{On\+Close}}
+\index{On\+Close@{On\+Close}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{On\+Close}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+On\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_a18a3b1766f29c232018ec02502240e4f}
+\hypertarget{class_c_base_socket_a18a3b1766f29c232018ec02502240e4f}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!On\+Close@{On\+Close}}
+\index{On\+Close@{On\+Close}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{On\+Close}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+On\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_a18a3b1766f29c232018ec02502240e4f}
+\hypertarget{class_c_base_socket_afa0c274f4b6d711099f2fca02e0237b9}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!On\+Read@{On\+Read}}
+\index{On\+Read@{On\+Read}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{On\+Read}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+On\+Read (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_afa0c274f4b6d711099f2fca02e0237b9}
+\hypertarget{class_c_base_socket_afa0c274f4b6d711099f2fca02e0237b9}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!On\+Read@{On\+Read}}
+\index{On\+Read@{On\+Read}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{On\+Read}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+On\+Read (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_afa0c274f4b6d711099f2fca02e0237b9}
+\hypertarget{class_c_base_socket_ab919914415b76a3441dc9f2cb6a134de}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!On\+Write@{On\+Write}}
+\index{On\+Write@{On\+Write}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{On\+Write}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+On\+Write (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_ab919914415b76a3441dc9f2cb6a134de}
+\hypertarget{class_c_base_socket_ab919914415b76a3441dc9f2cb6a134de}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!On\+Write@{On\+Write}}
+\index{On\+Write@{On\+Write}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{On\+Write}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+On\+Write (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_ab919914415b76a3441dc9f2cb6a134de}
+\hypertarget{class_c_base_socket_aac275b1f4cbdc77f100c1fb04888ba24}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Recv@{Recv}}
+\index{Recv@{Recv}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Recv}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Base\+Socket\+::\+Recv (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buf, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_aac275b1f4cbdc77f100c1fb04888ba24}
+\hypertarget{class_c_base_socket_aac275b1f4cbdc77f100c1fb04888ba24}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Recv@{Recv}}
+\index{Recv@{Recv}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Recv}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Base\+Socket\+::\+Recv (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buf, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_aac275b1f4cbdc77f100c1fb04888ba24}
+\hypertarget{class_c_base_socket_aecaf1a6f668cadf938b6e386d6f274f5}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Send@{Send}}
+\index{Send@{Send}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Send}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Base\+Socket\+::\+Send (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buf, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_aecaf1a6f668cadf938b6e386d6f274f5}
+\hypertarget{class_c_base_socket_aecaf1a6f668cadf938b6e386d6f274f5}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Send@{Send}}
+\index{Send@{Send}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Send}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Base\+Socket\+::\+Send (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buf, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_aecaf1a6f668cadf938b6e386d6f274f5}
+\hypertarget{class_c_base_socket_afd663f9a74d47ddf732115c8cbfde08b}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Set\+Callback@{Set\+Callback}}
+\index{Set\+Callback@{Set\+Callback}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Set\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+Set\+Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf callback\+\_\+t}}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_afd663f9a74d47ddf732115c8cbfde08b}
+\hypertarget{class_c_base_socket_afd663f9a74d47ddf732115c8cbfde08b}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Set\+Callback@{Set\+Callback}}
+\index{Set\+Callback@{Set\+Callback}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Set\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+Set\+Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf callback\+\_\+t}}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_afd663f9a74d47ddf732115c8cbfde08b}
+\hypertarget{class_c_base_socket_a7b157b0848d2d2c317d36c1bd947db2e}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Set\+Callback\+Data@{Set\+Callback\+Data}}
+\index{Set\+Callback\+Data@{Set\+Callback\+Data}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Set\+Callback\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+Set\+Callback\+Data (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_a7b157b0848d2d2c317d36c1bd947db2e}
+\hypertarget{class_c_base_socket_a7b157b0848d2d2c317d36c1bd947db2e}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Set\+Callback\+Data@{Set\+Callback\+Data}}
+\index{Set\+Callback\+Data@{Set\+Callback\+Data}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Set\+Callback\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+Set\+Callback\+Data (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_a7b157b0848d2d2c317d36c1bd947db2e}
+\hypertarget{class_c_base_socket_ac13ac6f0958c835e8177f800b71dc59f}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Set\+Recv\+Buf\+Size@{Set\+Recv\+Buf\+Size}}
+\index{Set\+Recv\+Buf\+Size@{Set\+Recv\+Buf\+Size}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Set\+Recv\+Buf\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+Set\+Recv\+Buf\+Size (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{recv\+\_\+size}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_ac13ac6f0958c835e8177f800b71dc59f}
+\hypertarget{class_c_base_socket_a50368e1e128ed2659bdfea7d5db49364}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Set\+Remote\+I\+P@{Set\+Remote\+I\+P}}
+\index{Set\+Remote\+I\+P@{Set\+Remote\+I\+P}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Set\+Remote\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+Set\+Remote\+I\+P (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_a50368e1e128ed2659bdfea7d5db49364}
+\hypertarget{class_c_base_socket_a50368e1e128ed2659bdfea7d5db49364}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Set\+Remote\+I\+P@{Set\+Remote\+I\+P}}
+\index{Set\+Remote\+I\+P@{Set\+Remote\+I\+P}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Set\+Remote\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+Set\+Remote\+I\+P (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_a50368e1e128ed2659bdfea7d5db49364}
+\hypertarget{class_c_base_socket_aed856b547dcbd071746dfcafe6bd07df}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Set\+Remote\+Port@{Set\+Remote\+Port}}
+\index{Set\+Remote\+Port@{Set\+Remote\+Port}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Set\+Remote\+Port}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+Set\+Remote\+Port (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_aed856b547dcbd071746dfcafe6bd07df}
+\hypertarget{class_c_base_socket_aed856b547dcbd071746dfcafe6bd07df}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Set\+Remote\+Port@{Set\+Remote\+Port}}
+\index{Set\+Remote\+Port@{Set\+Remote\+Port}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Set\+Remote\+Port}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+Set\+Remote\+Port (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_aed856b547dcbd071746dfcafe6bd07df}
+\hypertarget{class_c_base_socket_a7c242800e3dc9e638f28688c73ff7d4f}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Set\+Send\+Buf\+Size@{Set\+Send\+Buf\+Size}}
+\index{Set\+Send\+Buf\+Size@{Set\+Send\+Buf\+Size}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Set\+Send\+Buf\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+Set\+Send\+Buf\+Size (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{send\+\_\+size}
+\end{DoxyParamCaption}
+)}\label{class_c_base_socket_a7c242800e3dc9e638f28688c73ff7d4f}
+\hypertarget{class_c_base_socket_ac3d800a30aea0b1c73ebd5d6b9ed8a50}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Set\+Socket@{Set\+Socket}}
+\index{Set\+Socket@{Set\+Socket}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Set\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+Set\+Socket (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+O\+C\+K\+E\+T}}]{fd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_ac3d800a30aea0b1c73ebd5d6b9ed8a50}
+\hypertarget{class_c_base_socket_ac3d800a30aea0b1c73ebd5d6b9ed8a50}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Set\+Socket@{Set\+Socket}}
+\index{Set\+Socket@{Set\+Socket}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Set\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+Set\+Socket (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+O\+C\+K\+E\+T}}]{fd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_ac3d800a30aea0b1c73ebd5d6b9ed8a50}
+\hypertarget{class_c_base_socket_a911c9a90e052e1a1969e046bec4dae8a}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Set\+State@{Set\+State}}
+\index{Set\+State@{Set\+State}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Set\+State}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+Set\+State (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_a911c9a90e052e1a1969e046bec4dae8a}
+\hypertarget{class_c_base_socket_a911c9a90e052e1a1969e046bec4dae8a}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!Set\+State@{Set\+State}}
+\index{Set\+State@{Set\+State}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{Set\+State}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Base\+Socket\+::\+Set\+State (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_base_socket_a911c9a90e052e1a1969e046bec4dae8a}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_base_socket_a240958a75f9513411d74dfe14a6090b6}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!m\+\_\+callback@{m\+\_\+callback}}
+\index{m\+\_\+callback@{m\+\_\+callback}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{m\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf callback\+\_\+t} C\+Base\+Socket\+::m\+\_\+callback\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a240958a75f9513411d74dfe14a6090b6}
+\hypertarget{class_c_base_socket_a0aa0915b528531ec5a126fd3c99ac2f4}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!m\+\_\+callback\+\_\+data@{m\+\_\+callback\+\_\+data}}
+\index{m\+\_\+callback\+\_\+data@{m\+\_\+callback\+\_\+data}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{m\+\_\+callback\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ C\+Base\+Socket\+::m\+\_\+callback\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a0aa0915b528531ec5a126fd3c99ac2f4}
+\hypertarget{class_c_base_socket_a8e323be4ab9de8c01f4e8538ed3fd43c}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!m\+\_\+local\+\_\+ip@{m\+\_\+local\+\_\+ip}}
+\index{m\+\_\+local\+\_\+ip@{m\+\_\+local\+\_\+ip}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{m\+\_\+local\+\_\+ip}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Base\+Socket\+::m\+\_\+local\+\_\+ip\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a8e323be4ab9de8c01f4e8538ed3fd43c}
+\hypertarget{class_c_base_socket_a7bc4119261829c4486bfc582b30a5c69}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!m\+\_\+local\+\_\+port@{m\+\_\+local\+\_\+port}}
+\index{m\+\_\+local\+\_\+port@{m\+\_\+local\+\_\+port}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{m\+\_\+local\+\_\+port}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t C\+Base\+Socket\+::m\+\_\+local\+\_\+port\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a7bc4119261829c4486bfc582b30a5c69}
+\hypertarget{class_c_base_socket_afcc84b95d0bb51dbe1dc137890b1706c}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!m\+\_\+remote\+\_\+ip@{m\+\_\+remote\+\_\+ip}}
+\index{m\+\_\+remote\+\_\+ip@{m\+\_\+remote\+\_\+ip}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{m\+\_\+remote\+\_\+ip}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Base\+Socket\+::m\+\_\+remote\+\_\+ip\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_afcc84b95d0bb51dbe1dc137890b1706c}
+\hypertarget{class_c_base_socket_a02d757e168dce85d385016994c76c4bd}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!m\+\_\+remote\+\_\+port@{m\+\_\+remote\+\_\+port}}
+\index{m\+\_\+remote\+\_\+port@{m\+\_\+remote\+\_\+port}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{m\+\_\+remote\+\_\+port}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t C\+Base\+Socket\+::m\+\_\+remote\+\_\+port\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a02d757e168dce85d385016994c76c4bd}
+\hypertarget{class_c_base_socket_a8294a495dc75ef2216ac155e686c6037}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!m\+\_\+socket@{m\+\_\+socket}}
+\index{m\+\_\+socket@{m\+\_\+socket}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{m\+\_\+socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+O\+C\+K\+E\+T} C\+Base\+Socket\+::m\+\_\+socket\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a8294a495dc75ef2216ac155e686c6037}
+\hypertarget{class_c_base_socket_a1dfbcf388204b43e5a9739487c29692c}{}\index{C\+Base\+Socket@{C\+Base\+Socket}!m\+\_\+state@{m\+\_\+state}}
+\index{m\+\_\+state@{m\+\_\+state}!C\+Base\+Socket@{C\+Base\+Socket}}
+\subsubsection[{m\+\_\+state}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t C\+Base\+Socket\+::m\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_base_socket_a1dfbcf388204b43e5a9739487c29692c}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{base_2_base_socket_8h}{Base\+Socket.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{base_2_base_socket_8cpp}{Base\+Socket.\+cpp}\end{DoxyCompactItemize}

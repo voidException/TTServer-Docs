@@ -1,0 +1,183 @@
+\hypertarget{class_c_file_serv_conn}{}\section{C\+File\+Serv\+Conn Class Reference}
+\label{class_c_file_serv_conn}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+
+
+{\ttfamily \#include $<$File\+Serv\+Conn.\+h$>$}
+
+Inheritance diagram for C\+File\+Serv\+Conn\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_file_serv_conn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_file_serv_conn_a31befdc854bbc8b1cc84612272072717}{C\+File\+Serv\+Conn} ()
+\item 
+virtual \hyperlink{class_c_file_serv_conn_ae30ce878fc806feb3d792963599c3003}{$\sim$\+C\+File\+Serv\+Conn} ()
+\item 
+bool \hyperlink{class_c_file_serv_conn_a6b1865f9e1ceb7730eb6afa0b998aff9}{Is\+Open} ()
+\item 
+void \hyperlink{class_c_file_serv_conn_adb7a6983ec2d7cba713179f2bcc73cff}{Connect} (const char $\ast$server\+\_\+ip, uint16\+\_\+t server\+\_\+port, uint32\+\_\+t serv\+\_\+idx)
+\item 
+virtual void \hyperlink{class_c_file_serv_conn_a0aae2f759e4ef50651d44eeec4a561f7}{Close} ()
+\item 
+virtual void \hyperlink{class_c_file_serv_conn_ac40f673b910670974de8a7903d512b90}{On\+Confirm} ()
+\item 
+virtual void \hyperlink{class_c_file_serv_conn_aaab1284392966c50bc3f9ec22e2f3046}{On\+Close} ()
+\item 
+virtual void \hyperlink{class_c_file_serv_conn_abe273865a9e7f55360de82d7c251e60a}{On\+Timer} (uint64\+\_\+t curr\+\_\+tick)
+\item 
+virtual void \hyperlink{class_c_file_serv_conn_a704293812566a83fdfc9023b7451981a}{Handle\+Pdu} (\hyperlink{class_c_im_pdu}{C\+Im\+Pdu} $\ast$p\+Pdu)
+\item 
+const list$<$ \hyperlink{structsvr__ip__addr__t}{svr\+\_\+ip\+\_\+addr\+\_\+t} $>$ $\ast$ \hyperlink{class_c_file_serv_conn_ac59375eebb3d8bcbc1e6387168df94c8}{Get\+File\+Server\+I\+P\+List} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_file_serv_conn_a198c50f9b94980b4bc9805dc3d415d59}{\+\_\+\+Handle\+File\+Msg\+Trans\+Rsp} (\hyperlink{class_c_im_pdu_msg_file_transfer_rsp}{C\+Im\+Pdu\+Msg\+File\+Transfer\+Rsp} $\ast$p\+Pdu)
+\item 
+void \hyperlink{class_c_file_serv_conn_a6daf81243397c1d0fe4b562344aa207b}{\+\_\+\+Handle\+File\+Server\+I\+P\+Rsp} (\hyperlink{class_c_im_pdu_file_server_i_p_rsp}{C\+Im\+Pdu\+File\+Server\+I\+P\+Rsp} $\ast$p\+Pdu)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_c_file_serv_conn_a9f7cdbe1c895acaf22a5574e009d392c}{m\+\_\+b\+Open}
+\item 
+uint32\+\_\+t \hyperlink{class_c_file_serv_conn_a6eb0716284a88b2ea4fd2ef6135041ff}{m\+\_\+serv\+\_\+idx}
+\item 
+uint64\+\_\+t \hyperlink{class_c_file_serv_conn_af2ecd57e6349f0505d6c4910ea9c464b}{m\+\_\+connect\+\_\+time}
+\item 
+list$<$ \hyperlink{structsvr__ip__addr__t}{svr\+\_\+ip\+\_\+addr\+\_\+t} $>$ \hyperlink{class_c_file_serv_conn_a55438152b192f87c31773412265671c5}{m\+\_\+ip\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_file_serv_conn_a31befdc854bbc8b1cc84612272072717}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{C\+File\+Serv\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}C\+File\+Serv\+Conn\+::\+C\+File\+Serv\+Conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_file_serv_conn_a31befdc854bbc8b1cc84612272072717}
+\hypertarget{class_c_file_serv_conn_ae30ce878fc806feb3d792963599c3003}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!````~C\+File\+Serv\+Conn@{$\sim$\+C\+File\+Serv\+Conn}}
+\index{````~C\+File\+Serv\+Conn@{$\sim$\+C\+File\+Serv\+Conn}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{$\sim$\+C\+File\+Serv\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}C\+File\+Serv\+Conn\+::$\sim$\+C\+File\+Serv\+Conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_serv_conn_ae30ce878fc806feb3d792963599c3003}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_file_serv_conn_a198c50f9b94980b4bc9805dc3d415d59}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!\+\_\+\+Handle\+File\+Msg\+Trans\+Rsp@{\+\_\+\+Handle\+File\+Msg\+Trans\+Rsp}}
+\index{\+\_\+\+Handle\+File\+Msg\+Trans\+Rsp@{\+\_\+\+Handle\+File\+Msg\+Trans\+Rsp}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+File\+Msg\+Trans\+Rsp}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Serv\+Conn\+::\+\_\+\+Handle\+File\+Msg\+Trans\+Rsp (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+Msg\+File\+Transfer\+Rsp} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_serv_conn_a198c50f9b94980b4bc9805dc3d415d59}
+\hypertarget{class_c_file_serv_conn_a6daf81243397c1d0fe4b562344aa207b}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!\+\_\+\+Handle\+File\+Server\+I\+P\+Rsp@{\+\_\+\+Handle\+File\+Server\+I\+P\+Rsp}}
+\index{\+\_\+\+Handle\+File\+Server\+I\+P\+Rsp@{\+\_\+\+Handle\+File\+Server\+I\+P\+Rsp}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+File\+Server\+I\+P\+Rsp}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Serv\+Conn\+::\+\_\+\+Handle\+File\+Server\+I\+P\+Rsp (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+File\+Server\+I\+P\+Rsp} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_serv_conn_a6daf81243397c1d0fe4b562344aa207b}
+\hypertarget{class_c_file_serv_conn_a0aae2f759e4ef50651d44eeec4a561f7}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!Close@{Close}}
+\index{Close@{Close}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Serv\+Conn\+::\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_serv_conn_a0aae2f759e4ef50651d44eeec4a561f7}
+\hypertarget{class_c_file_serv_conn_adb7a6983ec2d7cba713179f2bcc73cff}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!Connect@{Connect}}
+\index{Connect@{Connect}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Serv\+Conn\+::\+Connect (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{server\+\_\+ip, }
+\item[{uint16\+\_\+t}]{server\+\_\+port, }
+\item[{uint32\+\_\+t}]{serv\+\_\+idx}
+\end{DoxyParamCaption}
+)}\label{class_c_file_serv_conn_adb7a6983ec2d7cba713179f2bcc73cff}
+\hypertarget{class_c_file_serv_conn_ac59375eebb3d8bcbc1e6387168df94c8}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!Get\+File\+Server\+I\+P\+List@{Get\+File\+Server\+I\+P\+List}}
+\index{Get\+File\+Server\+I\+P\+List@{Get\+File\+Server\+I\+P\+List}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{Get\+File\+Server\+I\+P\+List}]{\setlength{\rightskip}{0pt plus 5cm}const list$<${\bf svr\+\_\+ip\+\_\+addr\+\_\+t}$>$$\ast$ C\+File\+Serv\+Conn\+::\+Get\+File\+Server\+I\+P\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_file_serv_conn_ac59375eebb3d8bcbc1e6387168df94c8}
+\hypertarget{class_c_file_serv_conn_a704293812566a83fdfc9023b7451981a}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!Handle\+Pdu@{Handle\+Pdu}}
+\index{Handle\+Pdu@{Handle\+Pdu}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{Handle\+Pdu}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Serv\+Conn\+::\+Handle\+Pdu (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_serv_conn_a704293812566a83fdfc9023b7451981a}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_a0f3ce1718aadfc944328e872cbfafdb9}{C\+Im\+Conn}.
+
+\hypertarget{class_c_file_serv_conn_a6b1865f9e1ceb7730eb6afa0b998aff9}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!Is\+Open@{Is\+Open}}
+\index{Is\+Open@{Is\+Open}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{Is\+Open}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+File\+Serv\+Conn\+::\+Is\+Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_file_serv_conn_a6b1865f9e1ceb7730eb6afa0b998aff9}
+\hypertarget{class_c_file_serv_conn_aaab1284392966c50bc3f9ec22e2f3046}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!On\+Close@{On\+Close}}
+\index{On\+Close@{On\+Close}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{On\+Close}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Serv\+Conn\+::\+On\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_serv_conn_aaab1284392966c50bc3f9ec22e2f3046}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_a9874ab69df11d0a6147e2c301013508a}{C\+Im\+Conn}.
+
+\hypertarget{class_c_file_serv_conn_ac40f673b910670974de8a7903d512b90}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!On\+Confirm@{On\+Confirm}}
+\index{On\+Confirm@{On\+Confirm}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{On\+Confirm}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Serv\+Conn\+::\+On\+Confirm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_serv_conn_ac40f673b910670974de8a7903d512b90}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_a7f173449bf492576c42c9603e85f406a}{C\+Im\+Conn}.
+
+\hypertarget{class_c_file_serv_conn_abe273865a9e7f55360de82d7c251e60a}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!On\+Timer@{On\+Timer}}
+\index{On\+Timer@{On\+Timer}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{On\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Serv\+Conn\+::\+On\+Timer (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t}]{curr\+\_\+tick}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_file_serv_conn_abe273865a9e7f55360de82d7c251e60a}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_adc9be86c438a9884b3bf51fd5da180bc}{C\+Im\+Conn}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_file_serv_conn_a9f7cdbe1c895acaf22a5574e009d392c}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!m\+\_\+b\+Open@{m\+\_\+b\+Open}}
+\index{m\+\_\+b\+Open@{m\+\_\+b\+Open}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{m\+\_\+b\+Open}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+File\+Serv\+Conn\+::m\+\_\+b\+Open\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_serv_conn_a9f7cdbe1c895acaf22a5574e009d392c}
+\hypertarget{class_c_file_serv_conn_af2ecd57e6349f0505d6c4910ea9c464b}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!m\+\_\+connect\+\_\+time@{m\+\_\+connect\+\_\+time}}
+\index{m\+\_\+connect\+\_\+time@{m\+\_\+connect\+\_\+time}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{m\+\_\+connect\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t C\+File\+Serv\+Conn\+::m\+\_\+connect\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_serv_conn_af2ecd57e6349f0505d6c4910ea9c464b}
+\hypertarget{class_c_file_serv_conn_a55438152b192f87c31773412265671c5}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!m\+\_\+ip\+\_\+list@{m\+\_\+ip\+\_\+list}}
+\index{m\+\_\+ip\+\_\+list@{m\+\_\+ip\+\_\+list}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{m\+\_\+ip\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}list$<${\bf svr\+\_\+ip\+\_\+addr\+\_\+t}$>$ C\+File\+Serv\+Conn\+::m\+\_\+ip\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_serv_conn_a55438152b192f87c31773412265671c5}
+\hypertarget{class_c_file_serv_conn_a6eb0716284a88b2ea4fd2ef6135041ff}{}\index{C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}!m\+\_\+serv\+\_\+idx@{m\+\_\+serv\+\_\+idx}}
+\index{m\+\_\+serv\+\_\+idx@{m\+\_\+serv\+\_\+idx}!C\+File\+Serv\+Conn@{C\+File\+Serv\+Conn}}
+\subsubsection[{m\+\_\+serv\+\_\+idx}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+File\+Serv\+Conn\+::m\+\_\+serv\+\_\+idx\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_file_serv_conn_a6eb0716284a88b2ea4fd2ef6135041ff}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\hyperlink{_file_serv_conn_8h}{File\+Serv\+Conn.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\hyperlink{_file_serv_conn_8cpp}{File\+Serv\+Conn.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,119 @@
+\hypertarget{class_c_im_pdu_client_online_friend_list}{}\section{C\+Im\+Pdu\+Client\+Online\+Friend\+List Class Reference}
+\label{class_c_im_pdu_client_online_friend_list}\index{C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}}
+
+
+{\ttfamily \#include $<$Im\+Pdu\+Client.\+h$>$}
+
+Inheritance diagram for C\+Im\+Pdu\+Client\+Online\+Friend\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_im_pdu_client_online_friend_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_im_pdu_client_online_friend_list_a5f565ecc8270bf2b430d657f8bff6bd9}{C\+Im\+Pdu\+Client\+Online\+Friend\+List} (\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$buf, uint32\+\_\+t len)
+\item 
+\hyperlink{class_c_im_pdu_client_online_friend_list_a4872935e7acb5b6d87b91d59957144ca}{C\+Im\+Pdu\+Client\+Online\+Friend\+List} (uint16\+\_\+t list\+\_\+type, uint32\+\_\+t friend\+\_\+cnt, \hyperlink{structuser__stat__t}{user\+\_\+stat\+\_\+t} $\ast$friend\+\_\+stat\+\_\+list)
+\item 
+virtual \hyperlink{class_c_im_pdu_client_online_friend_list_a7d717905b506ab39dbbe02f1d3ddea5d}{$\sim$\+C\+Im\+Pdu\+Client\+Online\+Friend\+List} ()
+\item 
+virtual uint16\+\_\+t \hyperlink{class_c_im_pdu_client_online_friend_list_a1cef54de73752b8167a89605ddff9ee6}{Get\+Pdu\+Type} ()
+\item 
+uint16\+\_\+t \hyperlink{class_c_im_pdu_client_online_friend_list_aff97a410468500497bf5854752cba402}{Get\+List\+Type} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_online_friend_list_a834e882b114217c4930b1be100373f83}{Get\+Friend\+Cnt} ()
+\item 
+\hyperlink{structclient__stat__t}{client\+\_\+stat\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_client_online_friend_list_ae23f692140959e1cbcc3e389f875af23}{Get\+Friend\+Stat\+List} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{class_c_im_pdu_client_online_friend_list_a5940a5533a7909c2af4b0490033e2577}{m\+\_\+list\+\_\+type}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_online_friend_list_af1eb0d998511894a06a21bd56524180b}{m\+\_\+friend\+\_\+cnt}
+\item 
+\hyperlink{structclient__stat__t}{client\+\_\+stat\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_client_online_friend_list_ab36942e5eb5fdc1d239c8d9f1547c9a5}{m\+\_\+friend\+\_\+stat\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_im_pdu_client_online_friend_list_a5f565ecc8270bf2b430d657f8bff6bd9}{}\index{C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}!C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}}
+\index{C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}!C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}}
+\subsubsection[{C\+Im\+Pdu\+Client\+Online\+Friend\+List}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Client\+Online\+Friend\+List\+::\+C\+Im\+Pdu\+Client\+Online\+Friend\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf uchar\+\_\+t} $\ast$}]{buf, }
+\item[{uint32\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_client_online_friend_list_a5f565ecc8270bf2b430d657f8bff6bd9}
+\hypertarget{class_c_im_pdu_client_online_friend_list_a4872935e7acb5b6d87b91d59957144ca}{}\index{C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}!C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}}
+\index{C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}!C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}}
+\subsubsection[{C\+Im\+Pdu\+Client\+Online\+Friend\+List}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Client\+Online\+Friend\+List\+::\+C\+Im\+Pdu\+Client\+Online\+Friend\+List (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{list\+\_\+type, }
+\item[{uint32\+\_\+t}]{friend\+\_\+cnt, }
+\item[{{\bf user\+\_\+stat\+\_\+t} $\ast$}]{friend\+\_\+stat\+\_\+list}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_client_online_friend_list_a4872935e7acb5b6d87b91d59957144ca}
+\hypertarget{class_c_im_pdu_client_online_friend_list_a7d717905b506ab39dbbe02f1d3ddea5d}{}\index{C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}!````~C\+Im\+Pdu\+Client\+Online\+Friend\+List@{$\sim$\+C\+Im\+Pdu\+Client\+Online\+Friend\+List}}
+\index{````~C\+Im\+Pdu\+Client\+Online\+Friend\+List@{$\sim$\+C\+Im\+Pdu\+Client\+Online\+Friend\+List}!C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}}
+\subsubsection[{$\sim$\+C\+Im\+Pdu\+Client\+Online\+Friend\+List}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Client\+Online\+Friend\+List\+::$\sim$\+C\+Im\+Pdu\+Client\+Online\+Friend\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_im_pdu_client_online_friend_list_a7d717905b506ab39dbbe02f1d3ddea5d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_im_pdu_client_online_friend_list_a834e882b114217c4930b1be100373f83}{}\index{C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}!Get\+Friend\+Cnt@{Get\+Friend\+Cnt}}
+\index{Get\+Friend\+Cnt@{Get\+Friend\+Cnt}!C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}}
+\subsubsection[{Get\+Friend\+Cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Online\+Friend\+List\+::\+Get\+Friend\+Cnt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_online_friend_list_a834e882b114217c4930b1be100373f83}
+\hypertarget{class_c_im_pdu_client_online_friend_list_ae23f692140959e1cbcc3e389f875af23}{}\index{C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}!Get\+Friend\+Stat\+List@{Get\+Friend\+Stat\+List}}
+\index{Get\+Friend\+Stat\+List@{Get\+Friend\+Stat\+List}!C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}}
+\subsubsection[{Get\+Friend\+Stat\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf client\+\_\+stat\+\_\+t}$\ast$ C\+Im\+Pdu\+Client\+Online\+Friend\+List\+::\+Get\+Friend\+Stat\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_online_friend_list_ae23f692140959e1cbcc3e389f875af23}
+\hypertarget{class_c_im_pdu_client_online_friend_list_aff97a410468500497bf5854752cba402}{}\index{C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}!Get\+List\+Type@{Get\+List\+Type}}
+\index{Get\+List\+Type@{Get\+List\+Type}!C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}}
+\subsubsection[{Get\+List\+Type}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t C\+Im\+Pdu\+Client\+Online\+Friend\+List\+::\+Get\+List\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_online_friend_list_aff97a410468500497bf5854752cba402}
+\hypertarget{class_c_im_pdu_client_online_friend_list_a1cef54de73752b8167a89605ddff9ee6}{}\index{C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}!Get\+Pdu\+Type@{Get\+Pdu\+Type}}
+\index{Get\+Pdu\+Type@{Get\+Pdu\+Type}!C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}}
+\subsubsection[{Get\+Pdu\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint16\+\_\+t C\+Im\+Pdu\+Client\+Online\+Friend\+List\+::\+Get\+Pdu\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_im_pdu_client_online_friend_list_a1cef54de73752b8167a89605ddff9ee6}
+
+
+Reimplemented from \hyperlink{class_c_im_pdu_a887912f445b3e864d33f9e7f2325f1fc}{C\+Im\+Pdu}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_im_pdu_client_online_friend_list_af1eb0d998511894a06a21bd56524180b}{}\index{C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}!m\+\_\+friend\+\_\+cnt@{m\+\_\+friend\+\_\+cnt}}
+\index{m\+\_\+friend\+\_\+cnt@{m\+\_\+friend\+\_\+cnt}!C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}}
+\subsubsection[{m\+\_\+friend\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Online\+Friend\+List\+::m\+\_\+friend\+\_\+cnt\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_online_friend_list_af1eb0d998511894a06a21bd56524180b}
+\hypertarget{class_c_im_pdu_client_online_friend_list_ab36942e5eb5fdc1d239c8d9f1547c9a5}{}\index{C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}!m\+\_\+friend\+\_\+stat\+\_\+list@{m\+\_\+friend\+\_\+stat\+\_\+list}}
+\index{m\+\_\+friend\+\_\+stat\+\_\+list@{m\+\_\+friend\+\_\+stat\+\_\+list}!C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}}
+\subsubsection[{m\+\_\+friend\+\_\+stat\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf client\+\_\+stat\+\_\+t}$\ast$ C\+Im\+Pdu\+Client\+Online\+Friend\+List\+::m\+\_\+friend\+\_\+stat\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_online_friend_list_ab36942e5eb5fdc1d239c8d9f1547c9a5}
+\hypertarget{class_c_im_pdu_client_online_friend_list_a5940a5533a7909c2af4b0490033e2577}{}\index{C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}!m\+\_\+list\+\_\+type@{m\+\_\+list\+\_\+type}}
+\index{m\+\_\+list\+\_\+type@{m\+\_\+list\+\_\+type}!C\+Im\+Pdu\+Client\+Online\+Friend\+List@{C\+Im\+Pdu\+Client\+Online\+Friend\+List}}
+\subsubsection[{m\+\_\+list\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t C\+Im\+Pdu\+Client\+Online\+Friend\+List\+::m\+\_\+list\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_online_friend_list_a5940a5533a7909c2af4b0490033e2577}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_client_8h}{Im\+Pdu\+Client.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_client_8cpp}{Im\+Pdu\+Client.\+cpp}\end{DoxyCompactItemize}

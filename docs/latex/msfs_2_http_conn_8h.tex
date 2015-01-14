@@ -1,0 +1,241 @@
+\hypertarget{msfs_2_http_conn_8h}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/\+Http\+Conn.h File Reference}
+\label{msfs_2_http_conn_8h}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/\+Http\+Conn.\+h@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/\+Http\+Conn.\+h}}
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$pthread.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}netlib.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Simple\+Buffer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}File\+Manager.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Config\+File\+Reader.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Thread\+Pool.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Http\+Parser\+Wrapper.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_request__t}{Request\+\_\+t}
+\item 
+struct \hyperlink{struct_response__t}{Response\+\_\+t}
+\item 
+class \hyperlink{class_c_http_task}{C\+Http\+Task}
+\item 
+class \hyperlink{class_c_http_conn}{C\+Http\+Conn}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_aada9ed9ef0c00b4665564104a37be97b}{H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T}~30000
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_a9f5bb96f8a9d6094c7da2b8cd76c51cb}{H\+T\+T\+P\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+M\+A\+X}~0x\+A00000
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_a404191d0eedfeb40c26e96aff5184168}{B\+O\+U\+N\+D\+A\+R\+Y\+\_\+\+M\+A\+R\+K}~\char`\"{}boundary=\char`\"{}
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_a0ae9a26500f3b6fafa7a485d30ade40c}{H\+T\+T\+P\+\_\+\+E\+N\+D\+\_\+\+M\+A\+R\+K}~\char`\"{}\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_a5c988fd3cd44b01dbbecdf58dedd8016}{C\+O\+N\+T\+E\+N\+T\+\_\+\+T\+Y\+P\+E}~\char`\"{}Content-\/Type\+:\char`\"{}
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_a7dbacf63a58ed10d1ee7e1bea591d744}{C\+O\+N\+T\+E\+N\+T\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N}~\char`\"{}Content-\/Disposition\+:\char`\"{}
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_a4245ea3fba0358165b402a7a615419bb}{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}~0x100000
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_a326724948a10875cd6764fd05f3b78b6}{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+E\+A\+D\+E\+R}
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_aa00a9a8195dfcf21294df9fb9f8ce510}{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+E\+X\+T\+E\+N\+D}
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_a713130d6ba12cab2e126a57976ce9b1d}{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+T\+M\+L}
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_aa6e3181a50149ced2ad57f2cc9082e76}{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+T\+M\+L\+\_\+\+M\+A\+X}~1024
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_ad6672d4664f336bec914dee57dab1140}{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403}
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_a6dd941b1dabbd1f8b064b61aa6161bb1}{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403\+\_\+\+L\+E\+N}~strlen(\hyperlink{msfs_2_http_conn_8h_ad6672d4664f336bec914dee57dab1140}{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403})
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_a531a527b7ad40dd7e5f3f5d2ce5e4215}{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404}
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_a1ae222a2d41b3ab80c95f3fe4beb7c11}{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404\+\_\+\+L\+E\+N}~strlen(\hyperlink{msfs_2_http_conn_8h_a531a527b7ad40dd7e5f3f5d2ce5e4215}{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404})
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_adbc5e2ce383615316962316d3fc2ed15}{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500}
+\item 
+\#define \hyperlink{msfs_2_http_conn_8h_a327c79b99140a2ee00ef1728e8e92c47}{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500\+\_\+\+L\+E\+N}~strlen(\hyperlink{msfs_2_http_conn_8h_adbc5e2ce383615316962316d3fc2ed15}{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500})
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef hash\+\_\+map$<$ uint32\+\_\+t, \hyperlink{class_c_http_conn}{C\+Http\+Conn} $\ast$ $>$ \hyperlink{msfs_2_http_conn_8h_a0eda7ca5c4fec5d93f00f76c977fa349}{Http\+Conn\+Map\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{msfs_2_http_conn_8h_aabfcbcb5ac86a1edac4035264bc7d2b8a6307465d1ec3517c8ff03d8de9f690cd}{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+L\+E}, 
+\hyperlink{msfs_2_http_conn_8h_aabfcbcb5ac86a1edac4035264bc7d2b8a082028666c4d63346c5c50b844d32c46}{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D}, 
+\hyperlink{msfs_2_http_conn_8h_aabfcbcb5ac86a1edac4035264bc7d2b8a80e13dc8a9783959bed85f5be1f3f406}{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+N}, 
+\hyperlink{msfs_2_http_conn_8h_aabfcbcb5ac86a1edac4035264bc7d2b8a789a51a79c10caae10604554eb601e74}{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+E\+D}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_http_conn}{C\+Http\+Conn} $\ast$ \hyperlink{msfs_2_http_conn_8h_a51dafa2a11b28fe48dc9928ac0b548c9}{Find\+Http\+Conn\+By\+Handle} (uint32\+\_\+t handle)
+\item 
+void \hyperlink{msfs_2_http_conn_8h_aed77736e4f9f6d48ebe6e69483df2ed9}{init\+\_\+http\+\_\+conn} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmsfs_1_1_file_manager}{File\+Manager} $\ast$ \hyperlink{msfs_2_http_conn_8h_a84ccd477d0043d13ff8fe374f9c9532f}{g\+\_\+file\+Manager}
+\item 
+\hyperlink{class_c_config_file_reader}{C\+Config\+File\+Reader} \hyperlink{msfs_2_http_conn_8h_a2f8365b2173e603e15324228e499e6b2}{config\+\_\+file}
+\item 
+\hyperlink{class_c_thread_pool}{C\+Thread\+Pool} \hyperlink{msfs_2_http_conn_8h_a787477d76fb984164df4a2406a7ebeef}{g\+\_\+\+Post\+Thread\+Pool}
+\item 
+\hyperlink{class_c_thread_pool}{C\+Thread\+Pool} \hyperlink{msfs_2_http_conn_8h_a4ad4fb80f36eced4a75d3f45b14e6de0}{g\+\_\+\+Get\+Thread\+Pool}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{msfs_2_http_conn_8h_a404191d0eedfeb40c26e96aff5184168}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!B\+O\+U\+N\+D\+A\+R\+Y\+\_\+\+M\+A\+R\+K@{B\+O\+U\+N\+D\+A\+R\+Y\+\_\+\+M\+A\+R\+K}}
+\index{B\+O\+U\+N\+D\+A\+R\+Y\+\_\+\+M\+A\+R\+K@{B\+O\+U\+N\+D\+A\+R\+Y\+\_\+\+M\+A\+R\+K}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{B\+O\+U\+N\+D\+A\+R\+Y\+\_\+\+M\+A\+R\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+O\+U\+N\+D\+A\+R\+Y\+\_\+\+M\+A\+R\+K~\char`\"{}boundary=\char`\"{}}\label{msfs_2_http_conn_8h_a404191d0eedfeb40c26e96aff5184168}
+\hypertarget{msfs_2_http_conn_8h_a7dbacf63a58ed10d1ee7e1bea591d744}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!C\+O\+N\+T\+E\+N\+T\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N@{C\+O\+N\+T\+E\+N\+T\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N}}
+\index{C\+O\+N\+T\+E\+N\+T\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N@{C\+O\+N\+T\+E\+N\+T\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{C\+O\+N\+T\+E\+N\+T\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+T\+E\+N\+T\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N~\char`\"{}Content-\/Disposition\+:\char`\"{}}\label{msfs_2_http_conn_8h_a7dbacf63a58ed10d1ee7e1bea591d744}
+\hypertarget{msfs_2_http_conn_8h_a5c988fd3cd44b01dbbecdf58dedd8016}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!C\+O\+N\+T\+E\+N\+T\+\_\+\+T\+Y\+P\+E@{C\+O\+N\+T\+E\+N\+T\+\_\+\+T\+Y\+P\+E}}
+\index{C\+O\+N\+T\+E\+N\+T\+\_\+\+T\+Y\+P\+E@{C\+O\+N\+T\+E\+N\+T\+\_\+\+T\+Y\+P\+E}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{C\+O\+N\+T\+E\+N\+T\+\_\+\+T\+Y\+P\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+T\+E\+N\+T\+\_\+\+T\+Y\+P\+E~\char`\"{}Content-\/Type\+:\char`\"{}}\label{msfs_2_http_conn_8h_a5c988fd3cd44b01dbbecdf58dedd8016}
+\hypertarget{msfs_2_http_conn_8h_aada9ed9ef0c00b4665564104a37be97b}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T@{H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T}}
+\index{H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T@{H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T~30000}\label{msfs_2_http_conn_8h_aada9ed9ef0c00b4665564104a37be97b}
+\hypertarget{msfs_2_http_conn_8h_a0ae9a26500f3b6fafa7a485d30ade40c}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!H\+T\+T\+P\+\_\+\+E\+N\+D\+\_\+\+M\+A\+R\+K@{H\+T\+T\+P\+\_\+\+E\+N\+D\+\_\+\+M\+A\+R\+K}}
+\index{H\+T\+T\+P\+\_\+\+E\+N\+D\+\_\+\+M\+A\+R\+K@{H\+T\+T\+P\+\_\+\+E\+N\+D\+\_\+\+M\+A\+R\+K}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+E\+N\+D\+\_\+\+M\+A\+R\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+E\+N\+D\+\_\+\+M\+A\+R\+K~\char`\"{}\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n\char`\"{}}\label{msfs_2_http_conn_8h_a0ae9a26500f3b6fafa7a485d30ade40c}
+\hypertarget{msfs_2_http_conn_8h_ad6672d4664f336bec914dee57dab1140}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403}}
+\index{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403}\label{msfs_2_http_conn_8h_ad6672d4664f336bec914dee57dab1140}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{stringliteral}{"HTTP/1.1 403 Access Forbidden\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Content-Length: 0\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Connection: close\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Content-Type: text/html;charset=utf-8\(\backslash\)r\(\backslash\)n\(\backslash\)r\(\backslash\)n"}
+\end{DoxyCode}
+\hypertarget{msfs_2_http_conn_8h_a6dd941b1dabbd1f8b064b61aa6161bb1}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403\+\_\+\+L\+E\+N@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403\+\_\+\+L\+E\+N}}
+\index{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403\+\_\+\+L\+E\+N@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403\+\_\+\+L\+E\+N}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403\+\_\+\+L\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403\+\_\+\+L\+E\+N~strlen({\bf H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+403})}\label{msfs_2_http_conn_8h_a6dd941b1dabbd1f8b064b61aa6161bb1}
+\hypertarget{msfs_2_http_conn_8h_a531a527b7ad40dd7e5f3f5d2ce5e4215}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404}}
+\index{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404}\label{msfs_2_http_conn_8h_a531a527b7ad40dd7e5f3f5d2ce5e4215}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{stringliteral}{"HTTP/1.1 404 Not Found\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Content-Length: 0\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Connection: close\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Content-Type: text/html;charset=utf-8\(\backslash\)r\(\backslash\)n\(\backslash\)r\(\backslash\)n"}
+\end{DoxyCode}
+\hypertarget{msfs_2_http_conn_8h_a1ae222a2d41b3ab80c95f3fe4beb7c11}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404\+\_\+\+L\+E\+N@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404\+\_\+\+L\+E\+N}}
+\index{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404\+\_\+\+L\+E\+N@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404\+\_\+\+L\+E\+N}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404\+\_\+\+L\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404\+\_\+\+L\+E\+N~strlen({\bf H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+404})}\label{msfs_2_http_conn_8h_a1ae222a2d41b3ab80c95f3fe4beb7c11}
+\hypertarget{msfs_2_http_conn_8h_adbc5e2ce383615316962316d3fc2ed15}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500}}
+\index{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500}\label{msfs_2_http_conn_8h_adbc5e2ce383615316962316d3fc2ed15}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{stringliteral}{"HTTP/1.1 500 Internal Server Error\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Connection:close\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Content-Length:0\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Content-Type:text/html;charset=utf-8\(\backslash\)r\(\backslash\)n\(\backslash\)r\(\backslash\)n"}
+\end{DoxyCode}
+\hypertarget{msfs_2_http_conn_8h_a327c79b99140a2ee00ef1728e8e92c47}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500\+\_\+\+L\+E\+N@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500\+\_\+\+L\+E\+N}}
+\index{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500\+\_\+\+L\+E\+N@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500\+\_\+\+L\+E\+N}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500\+\_\+\+L\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500\+\_\+\+L\+E\+N~strlen({\bf H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+500})}\label{msfs_2_http_conn_8h_a327c79b99140a2ee00ef1728e8e92c47}
+\hypertarget{msfs_2_http_conn_8h_aa00a9a8195dfcf21294df9fb9f8ce510}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+E\+X\+T\+E\+N\+D@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+E\+X\+T\+E\+N\+D}}
+\index{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+E\+X\+T\+E\+N\+D@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+E\+X\+T\+E\+N\+D}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+E\+X\+T\+E\+N\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+E\+X\+T\+E\+N\+D}\label{msfs_2_http_conn_8h_aa00a9a8195dfcf21294df9fb9f8ce510}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{stringliteral}{"HTTP/1.1 200 OK\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Connection:close\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Content-Length:%d\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Content-Type:multipart/form-data\(\backslash\)r\(\backslash\)n\(\backslash\)r\(\backslash\)n"}
+\end{DoxyCode}
+\hypertarget{msfs_2_http_conn_8h_a326724948a10875cd6764fd05f3b78b6}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+E\+A\+D\+E\+R@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+E\+A\+D\+E\+R}}
+\index{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+E\+A\+D\+E\+R@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+E\+A\+D\+E\+R}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+E\+A\+D\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+E\+A\+D\+E\+R}\label{msfs_2_http_conn_8h_a326724948a10875cd6764fd05f3b78b6}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{stringliteral}{"HTTP/1.1 200 OK\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+\textcolor{stringliteral}{"Connection:close\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+\textcolor{stringliteral}{"Content-Length:%d\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+\textcolor{stringliteral}{"Content-Type:multipart/form-data\(\backslash\)r\(\backslash\)n\(\backslash\)r\(\backslash\)n"}
+\end{DoxyCode}
+\hypertarget{msfs_2_http_conn_8h_a713130d6ba12cab2e126a57976ce9b1d}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+T\+M\+L@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+T\+M\+L}}
+\index{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+T\+M\+L@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+T\+M\+L}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+T\+M\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+T\+M\+L}\label{msfs_2_http_conn_8h_a713130d6ba12cab2e126a57976ce9b1d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{stringliteral}{"HTTP/1.1 200 OK\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Connection:close\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Content-Length:%d\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+                                    \textcolor{stringliteral}{"Content-Type:text/html;charset=utf-8\(\backslash\)r\(\backslash\)n\(\backslash\)r\(\backslash\)n%s"}
+\end{DoxyCode}
+\hypertarget{msfs_2_http_conn_8h_aa6e3181a50149ced2ad57f2cc9082e76}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+T\+M\+L\+\_\+\+M\+A\+X@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+T\+M\+L\+\_\+\+M\+A\+X}}
+\index{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+T\+M\+L\+\_\+\+M\+A\+X@{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+T\+M\+L\+\_\+\+M\+A\+X}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+T\+M\+L\+\_\+\+M\+A\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+H\+T\+M\+L\+\_\+\+M\+A\+X~1024}\label{msfs_2_http_conn_8h_aa6e3181a50149ced2ad57f2cc9082e76}
+\hypertarget{msfs_2_http_conn_8h_a9f5bb96f8a9d6094c7da2b8cd76c51cb}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!H\+T\+T\+P\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+M\+A\+X@{H\+T\+T\+P\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+M\+A\+X}}
+\index{H\+T\+T\+P\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+M\+A\+X@{H\+T\+T\+P\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+M\+A\+X}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+M\+A\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+M\+A\+X~0x\+A00000}\label{msfs_2_http_conn_8h_a9f5bb96f8a9d6094c7da2b8cd76c51cb}
+\hypertarget{msfs_2_http_conn_8h_a4245ea3fba0358165b402a7a615419bb}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E@{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}}
+\index{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E@{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E~0x100000}\label{msfs_2_http_conn_8h_a4245ea3fba0358165b402a7a615419bb}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{msfs_2_http_conn_8h_a0eda7ca5c4fec5d93f00f76c977fa349}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!Http\+Conn\+Map\+\_\+t@{Http\+Conn\+Map\+\_\+t}}
+\index{Http\+Conn\+Map\+\_\+t@{Http\+Conn\+Map\+\_\+t}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{Http\+Conn\+Map\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef hash\+\_\+map$<$uint32\+\_\+t, {\bf C\+Http\+Conn}$\ast$$>$ {\bf Http\+Conn\+Map\+\_\+t}}\label{msfs_2_http_conn_8h_a0eda7ca5c4fec5d93f00f76c977fa349}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{msfs_2_http_conn_8h_aabfcbcb5ac86a1edac4035264bc7d2b8}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\label{msfs_2_http_conn_8h_aabfcbcb5ac86a1edac4035264bc7d2b8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+L\+E@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+L\+E}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+L\+E@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+L\+E}}\item[{\em 
+\hypertarget{msfs_2_http_conn_8h_aabfcbcb5ac86a1edac4035264bc7d2b8a6307465d1ec3517c8ff03d8de9f690cd}{}C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+L\+E\label{msfs_2_http_conn_8h_aabfcbcb5ac86a1edac4035264bc7d2b8a6307465d1ec3517c8ff03d8de9f690cd}
+}]\index{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D}}\item[{\em 
+\hypertarget{msfs_2_http_conn_8h_aabfcbcb5ac86a1edac4035264bc7d2b8a082028666c4d63346c5c50b844d32c46}{}C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D\label{msfs_2_http_conn_8h_aabfcbcb5ac86a1edac4035264bc7d2b8a082028666c4d63346c5c50b844d32c46}
+}]\index{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+N@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+N}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+N@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+N}}\item[{\em 
+\hypertarget{msfs_2_http_conn_8h_aabfcbcb5ac86a1edac4035264bc7d2b8a80e13dc8a9783959bed85f5be1f3f406}{}C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+N\label{msfs_2_http_conn_8h_aabfcbcb5ac86a1edac4035264bc7d2b8a80e13dc8a9783959bed85f5be1f3f406}
+}]\index{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+E\+D@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+E\+D}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+E\+D@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+E\+D}}\item[{\em 
+\hypertarget{msfs_2_http_conn_8h_aabfcbcb5ac86a1edac4035264bc7d2b8a789a51a79c10caae10604554eb601e74}{}C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+E\+D\label{msfs_2_http_conn_8h_aabfcbcb5ac86a1edac4035264bc7d2b8a789a51a79c10caae10604554eb601e74}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{msfs_2_http_conn_8h_a51dafa2a11b28fe48dc9928ac0b548c9}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!Find\+Http\+Conn\+By\+Handle@{Find\+Http\+Conn\+By\+Handle}}
+\index{Find\+Http\+Conn\+By\+Handle@{Find\+Http\+Conn\+By\+Handle}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{Find\+Http\+Conn\+By\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Http\+Conn}$\ast$ Find\+Http\+Conn\+By\+Handle (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{handle}
+\end{DoxyParamCaption}
+)}\label{msfs_2_http_conn_8h_a51dafa2a11b28fe48dc9928ac0b548c9}
+\hypertarget{msfs_2_http_conn_8h_aed77736e4f9f6d48ebe6e69483df2ed9}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!init\+\_\+http\+\_\+conn@{init\+\_\+http\+\_\+conn}}
+\index{init\+\_\+http\+\_\+conn@{init\+\_\+http\+\_\+conn}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{init\+\_\+http\+\_\+conn}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+http\+\_\+conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{msfs_2_http_conn_8h_aed77736e4f9f6d48ebe6e69483df2ed9}
+
+
+\subsection{Variable Documentation}
+\hypertarget{msfs_2_http_conn_8h_a2f8365b2173e603e15324228e499e6b2}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!config\+\_\+file@{config\+\_\+file}}
+\index{config\+\_\+file@{config\+\_\+file}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{config\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Config\+File\+Reader} config\+\_\+file}\label{msfs_2_http_conn_8h_a2f8365b2173e603e15324228e499e6b2}
+\hypertarget{msfs_2_http_conn_8h_a84ccd477d0043d13ff8fe374f9c9532f}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!g\+\_\+file\+Manager@{g\+\_\+file\+Manager}}
+\index{g\+\_\+file\+Manager@{g\+\_\+file\+Manager}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{g\+\_\+file\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\+Manager}$\ast$ g\+\_\+file\+Manager}\label{msfs_2_http_conn_8h_a84ccd477d0043d13ff8fe374f9c9532f}
+\hypertarget{msfs_2_http_conn_8h_a4ad4fb80f36eced4a75d3f45b14e6de0}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!g\+\_\+\+Get\+Thread\+Pool@{g\+\_\+\+Get\+Thread\+Pool}}
+\index{g\+\_\+\+Get\+Thread\+Pool@{g\+\_\+\+Get\+Thread\+Pool}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{g\+\_\+\+Get\+Thread\+Pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Thread\+Pool} g\+\_\+\+Get\+Thread\+Pool}\label{msfs_2_http_conn_8h_a4ad4fb80f36eced4a75d3f45b14e6de0}
+\hypertarget{msfs_2_http_conn_8h_a787477d76fb984164df4a2406a7ebeef}{}\index{msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}!g\+\_\+\+Post\+Thread\+Pool@{g\+\_\+\+Post\+Thread\+Pool}}
+\index{g\+\_\+\+Post\+Thread\+Pool@{g\+\_\+\+Post\+Thread\+Pool}!msfs/\+Http\+Conn.\+h@{msfs/\+Http\+Conn.\+h}}
+\subsubsection[{g\+\_\+\+Post\+Thread\+Pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Thread\+Pool} g\+\_\+\+Post\+Thread\+Pool}\label{msfs_2_http_conn_8h_a787477d76fb984164df4a2406a7ebeef}

@@ -1,0 +1,114 @@
+\hypertarget{msfs_2_http_conn_8cpp}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/\+Http\+Conn.cpp File Reference}
+\label{msfs_2_http_conn_8cpp}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/\+Http\+Conn.\+cpp@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/\+Http\+Conn.\+cpp}}
+{\ttfamily \#include \char`\"{}Http\+Conn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Http\+Parser\+Wrapper.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}jsonxx.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}atomic.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{msfs_2_http_conn_8cpp_af45214c3cb8f87717ec5990290d2afa3}{M\+O\+N\+I\+T\+O\+R\+\_\+\+N\+U\+M\+B\+E\+R}~1000
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_http_conn}{C\+Http\+Conn} $\ast$ \hyperlink{msfs_2_http_conn_8cpp_a9bf397e52b8b2596bbd7da1ee17e687b}{Find\+Http\+Conn\+By\+Handle} (uint32\+\_\+t conn\+\_\+handle)
+\item 
+void \hyperlink{msfs_2_http_conn_8cpp_a3295f8ddcd55ba56e976790954920f07}{httpconn\+\_\+callback} (void $\ast$callback\+\_\+data, uint8\+\_\+t msg, uint32\+\_\+t handle, uint32\+\_\+t u\+Param, void $\ast$p\+Param)
+\item 
+void \hyperlink{msfs_2_http_conn_8cpp_acd7fec445febea2fd498ab1cbc7ae375}{http\+\_\+conn\+\_\+loop\+\_\+callback} (void $\ast$callback\+\_\+data, uint8\+\_\+t msg, uint32\+\_\+t handle, void $\ast$p\+Param)
+\item 
+void \hyperlink{msfs_2_http_conn_8cpp_a3157d1e22a672e1fcbe7a83653a6e7ce}{http\+\_\+conn\+\_\+timer\+\_\+callback} (void $\ast$callback\+\_\+data, uint8\+\_\+t msg, uint32\+\_\+t handle, void $\ast$p\+Param)
+\item 
+void \hyperlink{msfs_2_http_conn_8cpp_aed77736e4f9f6d48ebe6e69483df2ed9}{init\+\_\+http\+\_\+conn} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{msfs_2_http_conn_8h_a0eda7ca5c4fec5d93f00f76c977fa349}{Http\+Conn\+Map\+\_\+t} \hyperlink{msfs_2_http_conn_8cpp_ac424c9baf7e4f41037c2efa74668c639}{g\+\_\+http\+\_\+conn\+\_\+map}
+\item 
+static \hyperlink{atomic_8h_a620d50a1508238bf4dc09842c1602167}{atomic\+\_\+t} \hyperlink{msfs_2_http_conn_8cpp_adfeccf6da94b7d56c4a3e9426565de6e}{accept\+\_\+number} = 0
+\item 
+static \hyperlink{atomic_8h_a620d50a1508238bf4dc09842c1602167}{atomic\+\_\+t} \hyperlink{msfs_2_http_conn_8cpp_a5d640fc47b9238ef0b384774080307b2}{finish\+\_\+number} = 0
+\item 
+static \hyperlink{atomic_8h_a620d50a1508238bf4dc09842c1602167}{atomic\+\_\+t} \hyperlink{msfs_2_http_conn_8cpp_a9f7d2607627b3914edd5f03aec4e1496}{begin\+\_\+time} = 0
+\item 
+static \hyperlink{atomic_8h_a620d50a1508238bf4dc09842c1602167}{atomic\+\_\+t} \hyperlink{msfs_2_http_conn_8cpp_ad3740d7022e4b58853b984f9908d9341}{end\+\_\+time} = 0
+\item 
+static uint32\+\_\+t \hyperlink{msfs_2_http_conn_8cpp_a64d3baf9b6924a0e8690b79b2b59c92e}{g\+\_\+conn\+\_\+handle\+\_\+generator} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{msfs_2_http_conn_8cpp_af45214c3cb8f87717ec5990290d2afa3}{}\index{msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}!M\+O\+N\+I\+T\+O\+R\+\_\+\+N\+U\+M\+B\+E\+R@{M\+O\+N\+I\+T\+O\+R\+\_\+\+N\+U\+M\+B\+E\+R}}
+\index{M\+O\+N\+I\+T\+O\+R\+\_\+\+N\+U\+M\+B\+E\+R@{M\+O\+N\+I\+T\+O\+R\+\_\+\+N\+U\+M\+B\+E\+R}!msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}}
+\subsubsection[{M\+O\+N\+I\+T\+O\+R\+\_\+\+N\+U\+M\+B\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+O\+N\+I\+T\+O\+R\+\_\+\+N\+U\+M\+B\+E\+R~1000}\label{msfs_2_http_conn_8cpp_af45214c3cb8f87717ec5990290d2afa3}
+
+
+\subsection{Function Documentation}
+\hypertarget{msfs_2_http_conn_8cpp_a9bf397e52b8b2596bbd7da1ee17e687b}{}\index{msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}!Find\+Http\+Conn\+By\+Handle@{Find\+Http\+Conn\+By\+Handle}}
+\index{Find\+Http\+Conn\+By\+Handle@{Find\+Http\+Conn\+By\+Handle}!msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}}
+\subsubsection[{Find\+Http\+Conn\+By\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Http\+Conn}$\ast$ Find\+Http\+Conn\+By\+Handle (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{conn\+\_\+handle}
+\end{DoxyParamCaption}
+)}\label{msfs_2_http_conn_8cpp_a9bf397e52b8b2596bbd7da1ee17e687b}
+\hypertarget{msfs_2_http_conn_8cpp_acd7fec445febea2fd498ab1cbc7ae375}{}\index{msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}!http\+\_\+conn\+\_\+loop\+\_\+callback@{http\+\_\+conn\+\_\+loop\+\_\+callback}}
+\index{http\+\_\+conn\+\_\+loop\+\_\+callback@{http\+\_\+conn\+\_\+loop\+\_\+callback}!msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}}
+\subsubsection[{http\+\_\+conn\+\_\+loop\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}void http\+\_\+conn\+\_\+loop\+\_\+callback (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{callback\+\_\+data, }
+\item[{uint8\+\_\+t}]{msg, }
+\item[{uint32\+\_\+t}]{handle, }
+\item[{void $\ast$}]{p\+Param}
+\end{DoxyParamCaption}
+)}\label{msfs_2_http_conn_8cpp_acd7fec445febea2fd498ab1cbc7ae375}
+\hypertarget{msfs_2_http_conn_8cpp_a3157d1e22a672e1fcbe7a83653a6e7ce}{}\index{msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}!http\+\_\+conn\+\_\+timer\+\_\+callback@{http\+\_\+conn\+\_\+timer\+\_\+callback}}
+\index{http\+\_\+conn\+\_\+timer\+\_\+callback@{http\+\_\+conn\+\_\+timer\+\_\+callback}!msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}}
+\subsubsection[{http\+\_\+conn\+\_\+timer\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}void http\+\_\+conn\+\_\+timer\+\_\+callback (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{callback\+\_\+data, }
+\item[{uint8\+\_\+t}]{msg, }
+\item[{uint32\+\_\+t}]{handle, }
+\item[{void $\ast$}]{p\+Param}
+\end{DoxyParamCaption}
+)}\label{msfs_2_http_conn_8cpp_a3157d1e22a672e1fcbe7a83653a6e7ce}
+\hypertarget{msfs_2_http_conn_8cpp_a3295f8ddcd55ba56e976790954920f07}{}\index{msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}!httpconn\+\_\+callback@{httpconn\+\_\+callback}}
+\index{httpconn\+\_\+callback@{httpconn\+\_\+callback}!msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}}
+\subsubsection[{httpconn\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}void httpconn\+\_\+callback (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{callback\+\_\+data, }
+\item[{uint8\+\_\+t}]{msg, }
+\item[{uint32\+\_\+t}]{handle, }
+\item[{uint32\+\_\+t}]{u\+Param, }
+\item[{void $\ast$}]{p\+Param}
+\end{DoxyParamCaption}
+)}\label{msfs_2_http_conn_8cpp_a3295f8ddcd55ba56e976790954920f07}
+\hypertarget{msfs_2_http_conn_8cpp_aed77736e4f9f6d48ebe6e69483df2ed9}{}\index{msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}!init\+\_\+http\+\_\+conn@{init\+\_\+http\+\_\+conn}}
+\index{init\+\_\+http\+\_\+conn@{init\+\_\+http\+\_\+conn}!msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}}
+\subsubsection[{init\+\_\+http\+\_\+conn}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+http\+\_\+conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{msfs_2_http_conn_8cpp_aed77736e4f9f6d48ebe6e69483df2ed9}
+
+
+\subsection{Variable Documentation}
+\hypertarget{msfs_2_http_conn_8cpp_adfeccf6da94b7d56c4a3e9426565de6e}{}\index{msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}!accept\+\_\+number@{accept\+\_\+number}}
+\index{accept\+\_\+number@{accept\+\_\+number}!msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}}
+\subsubsection[{accept\+\_\+number}]{\setlength{\rightskip}{0pt plus 5cm}{\bf atomic\+\_\+t} accept\+\_\+number = 0\hspace{0.3cm}{\ttfamily [static]}}\label{msfs_2_http_conn_8cpp_adfeccf6da94b7d56c4a3e9426565de6e}
+\hypertarget{msfs_2_http_conn_8cpp_a9f7d2607627b3914edd5f03aec4e1496}{}\index{msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}!begin\+\_\+time@{begin\+\_\+time}}
+\index{begin\+\_\+time@{begin\+\_\+time}!msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}}
+\subsubsection[{begin\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf atomic\+\_\+t} begin\+\_\+time = 0\hspace{0.3cm}{\ttfamily [static]}}\label{msfs_2_http_conn_8cpp_a9f7d2607627b3914edd5f03aec4e1496}
+\hypertarget{msfs_2_http_conn_8cpp_ad3740d7022e4b58853b984f9908d9341}{}\index{msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}!end\+\_\+time@{end\+\_\+time}}
+\index{end\+\_\+time@{end\+\_\+time}!msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}}
+\subsubsection[{end\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf atomic\+\_\+t} end\+\_\+time = 0\hspace{0.3cm}{\ttfamily [static]}}\label{msfs_2_http_conn_8cpp_ad3740d7022e4b58853b984f9908d9341}
+\hypertarget{msfs_2_http_conn_8cpp_a5d640fc47b9238ef0b384774080307b2}{}\index{msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}!finish\+\_\+number@{finish\+\_\+number}}
+\index{finish\+\_\+number@{finish\+\_\+number}!msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}}
+\subsubsection[{finish\+\_\+number}]{\setlength{\rightskip}{0pt plus 5cm}{\bf atomic\+\_\+t} finish\+\_\+number = 0\hspace{0.3cm}{\ttfamily [static]}}\label{msfs_2_http_conn_8cpp_a5d640fc47b9238ef0b384774080307b2}
+\hypertarget{msfs_2_http_conn_8cpp_a64d3baf9b6924a0e8690b79b2b59c92e}{}\index{msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}!g\+\_\+conn\+\_\+handle\+\_\+generator@{g\+\_\+conn\+\_\+handle\+\_\+generator}}
+\index{g\+\_\+conn\+\_\+handle\+\_\+generator@{g\+\_\+conn\+\_\+handle\+\_\+generator}!msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}}
+\subsubsection[{g\+\_\+conn\+\_\+handle\+\_\+generator}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t g\+\_\+conn\+\_\+handle\+\_\+generator = 0\hspace{0.3cm}{\ttfamily [static]}}\label{msfs_2_http_conn_8cpp_a64d3baf9b6924a0e8690b79b2b59c92e}
+\hypertarget{msfs_2_http_conn_8cpp_ac424c9baf7e4f41037c2efa74668c639}{}\index{msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}!g\+\_\+http\+\_\+conn\+\_\+map@{g\+\_\+http\+\_\+conn\+\_\+map}}
+\index{g\+\_\+http\+\_\+conn\+\_\+map@{g\+\_\+http\+\_\+conn\+\_\+map}!msfs/\+Http\+Conn.\+cpp@{msfs/\+Http\+Conn.\+cpp}}
+\subsubsection[{g\+\_\+http\+\_\+conn\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Http\+Conn\+Map\+\_\+t} g\+\_\+http\+\_\+conn\+\_\+map\hspace{0.3cm}{\ttfamily [static]}}\label{msfs_2_http_conn_8cpp_ac424c9baf7e4f41037c2efa74668c639}

@@ -1,0 +1,85 @@
+\hypertarget{imconn_8h}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/imconn.h File Reference}
+\label{imconn_8h}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/imconn.\+h@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/imconn.\+h}}
+{\ttfamily \#include \char`\"{}netlib.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}impdu.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_im_conn}{C\+Im\+Conn}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{imconn_8h_ab8d4865a138b90e6aa58c1c7fda7099c}{S\+E\+R\+V\+E\+R\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L}~5000
+\item 
+\#define \hyperlink{imconn_8h_a2533774d0ba0505b1b90502bdf8b0c9c}{S\+E\+R\+V\+E\+R\+\_\+\+T\+I\+M\+E\+O\+U\+T}~30000
+\item 
+\#define \hyperlink{imconn_8h_a2e1c114f770640a86dbdae1160b0d52c}{C\+L\+I\+E\+N\+T\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L}~5000
+\item 
+\#define \hyperlink{imconn_8h_acbb5358766b3fd26fcb09271b5f8b1e3}{C\+L\+I\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T}~30000
+\item 
+\#define \hyperlink{imconn_8h_a0c0352c37183f74ee38d62cbc17be173}{M\+O\+B\+I\+L\+E\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T}~30000 $\ast$ 10
+\item 
+\#define \hyperlink{imconn_8h_a4245ea3fba0358165b402a7a615419bb}{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}~2048
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef hash\+\_\+map$<$ \hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t}, \hyperlink{class_c_im_conn}{C\+Im\+Conn} $\ast$ $>$ \hyperlink{imconn_8h_a1b07337cf5bc653007359de2c69e2dce}{Conn\+Map\+\_\+t}
+\item 
+typedef hash\+\_\+map$<$ uint32\+\_\+t, \hyperlink{class_c_im_conn}{C\+Im\+Conn} $\ast$ $>$ \hyperlink{imconn_8h_a4f9dc5efe63df99b8964058b32170c53}{User\+Map\+\_\+t}
+\item 
+typedef hash\+\_\+map$<$ uint32\+\_\+t, uint32\+\_\+t $>$ \hyperlink{imconn_8h_ad782c407f75cb59ef9d916f265a7aaec}{User\+Conn\+Cnt\+Map\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{imconn_8h_ad395d80257f8218e54d97433111eb6df}{imconn\+\_\+callback} (void $\ast$callback\+\_\+data, uint8\+\_\+t msg, uint32\+\_\+t handle, void $\ast$p\+Param)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{imconn_8h_a2e1c114f770640a86dbdae1160b0d52c}{}\index{imconn.\+h@{imconn.\+h}!C\+L\+I\+E\+N\+T\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L@{C\+L\+I\+E\+N\+T\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L@{C\+L\+I\+E\+N\+T\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L}!imconn.\+h@{imconn.\+h}}
+\subsubsection[{C\+L\+I\+E\+N\+T\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+L\+I\+E\+N\+T\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L~5000}\label{imconn_8h_a2e1c114f770640a86dbdae1160b0d52c}
+\hypertarget{imconn_8h_acbb5358766b3fd26fcb09271b5f8b1e3}{}\index{imconn.\+h@{imconn.\+h}!C\+L\+I\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T@{C\+L\+I\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T@{C\+L\+I\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T}!imconn.\+h@{imconn.\+h}}
+\subsubsection[{C\+L\+I\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+L\+I\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T~30000}\label{imconn_8h_acbb5358766b3fd26fcb09271b5f8b1e3}
+\hypertarget{imconn_8h_a0c0352c37183f74ee38d62cbc17be173}{}\index{imconn.\+h@{imconn.\+h}!M\+O\+B\+I\+L\+E\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T@{M\+O\+B\+I\+L\+E\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T}}
+\index{M\+O\+B\+I\+L\+E\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T@{M\+O\+B\+I\+L\+E\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T}!imconn.\+h@{imconn.\+h}}
+\subsubsection[{M\+O\+B\+I\+L\+E\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+O\+B\+I\+L\+E\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+T\+I\+M\+E\+O\+U\+T~30000 $\ast$ 10}\label{imconn_8h_a0c0352c37183f74ee38d62cbc17be173}
+\hypertarget{imconn_8h_a4245ea3fba0358165b402a7a615419bb}{}\index{imconn.\+h@{imconn.\+h}!R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E@{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}}
+\index{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E@{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}!imconn.\+h@{imconn.\+h}}
+\subsubsection[{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E~2048}\label{imconn_8h_a4245ea3fba0358165b402a7a615419bb}
+\hypertarget{imconn_8h_ab8d4865a138b90e6aa58c1c7fda7099c}{}\index{imconn.\+h@{imconn.\+h}!S\+E\+R\+V\+E\+R\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L@{S\+E\+R\+V\+E\+R\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L}}
+\index{S\+E\+R\+V\+E\+R\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L@{S\+E\+R\+V\+E\+R\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L}!imconn.\+h@{imconn.\+h}}
+\subsubsection[{S\+E\+R\+V\+E\+R\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+R\+V\+E\+R\+\_\+\+H\+E\+A\+R\+T\+B\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L~5000}\label{imconn_8h_ab8d4865a138b90e6aa58c1c7fda7099c}
+\hypertarget{imconn_8h_a2533774d0ba0505b1b90502bdf8b0c9c}{}\index{imconn.\+h@{imconn.\+h}!S\+E\+R\+V\+E\+R\+\_\+\+T\+I\+M\+E\+O\+U\+T@{S\+E\+R\+V\+E\+R\+\_\+\+T\+I\+M\+E\+O\+U\+T}}
+\index{S\+E\+R\+V\+E\+R\+\_\+\+T\+I\+M\+E\+O\+U\+T@{S\+E\+R\+V\+E\+R\+\_\+\+T\+I\+M\+E\+O\+U\+T}!imconn.\+h@{imconn.\+h}}
+\subsubsection[{S\+E\+R\+V\+E\+R\+\_\+\+T\+I\+M\+E\+O\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+R\+V\+E\+R\+\_\+\+T\+I\+M\+E\+O\+U\+T~30000}\label{imconn_8h_a2533774d0ba0505b1b90502bdf8b0c9c}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{imconn_8h_a1b07337cf5bc653007359de2c69e2dce}{}\index{imconn.\+h@{imconn.\+h}!Conn\+Map\+\_\+t@{Conn\+Map\+\_\+t}}
+\index{Conn\+Map\+\_\+t@{Conn\+Map\+\_\+t}!imconn.\+h@{imconn.\+h}}
+\subsubsection[{Conn\+Map\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef hash\+\_\+map$<${\bf net\+\_\+handle\+\_\+t}, {\bf C\+Im\+Conn}$\ast$$>$ {\bf Conn\+Map\+\_\+t}}\label{imconn_8h_a1b07337cf5bc653007359de2c69e2dce}
+\hypertarget{imconn_8h_ad782c407f75cb59ef9d916f265a7aaec}{}\index{imconn.\+h@{imconn.\+h}!User\+Conn\+Cnt\+Map\+\_\+t@{User\+Conn\+Cnt\+Map\+\_\+t}}
+\index{User\+Conn\+Cnt\+Map\+\_\+t@{User\+Conn\+Cnt\+Map\+\_\+t}!imconn.\+h@{imconn.\+h}}
+\subsubsection[{User\+Conn\+Cnt\+Map\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef hash\+\_\+map$<$uint32\+\_\+t, uint32\+\_\+t$>$ {\bf User\+Conn\+Cnt\+Map\+\_\+t}}\label{imconn_8h_ad782c407f75cb59ef9d916f265a7aaec}
+\hypertarget{imconn_8h_a4f9dc5efe63df99b8964058b32170c53}{}\index{imconn.\+h@{imconn.\+h}!User\+Map\+\_\+t@{User\+Map\+\_\+t}}
+\index{User\+Map\+\_\+t@{User\+Map\+\_\+t}!imconn.\+h@{imconn.\+h}}
+\subsubsection[{User\+Map\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef hash\+\_\+map$<$uint32\+\_\+t, {\bf C\+Im\+Conn}$\ast$$>$ {\bf User\+Map\+\_\+t}}\label{imconn_8h_a4f9dc5efe63df99b8964058b32170c53}
+
+
+\subsection{Function Documentation}
+\hypertarget{imconn_8h_ad395d80257f8218e54d97433111eb6df}{}\index{imconn.\+h@{imconn.\+h}!imconn\+\_\+callback@{imconn\+\_\+callback}}
+\index{imconn\+\_\+callback@{imconn\+\_\+callback}!imconn.\+h@{imconn.\+h}}
+\subsubsection[{imconn\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}void imconn\+\_\+callback (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{callback\+\_\+data, }
+\item[{uint8\+\_\+t}]{msg, }
+\item[{uint32\+\_\+t}]{handle, }
+\item[{void $\ast$}]{p\+Param}
+\end{DoxyParamCaption}
+)}\label{imconn_8h_ad395d80257f8218e54d97433111eb6df}

@@ -1,0 +1,191 @@
+\hypertarget{class_c_im_pdu_login_request}{}\section{C\+Im\+Pdu\+Login\+Request Class Reference}
+\label{class_c_im_pdu_login_request}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+
+
+{\ttfamily \#include $<$Im\+Pdu\+Client.\+h$>$}
+
+Inheritance diagram for C\+Im\+Pdu\+Login\+Request\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_im_pdu_login_request}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_im_pdu_login_request_aa1e9dc3b745fde7905fabbd749ab6f8b}{C\+Im\+Pdu\+Login\+Request} (\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$buf, uint32\+\_\+t len)
+\item 
+\hyperlink{class_c_im_pdu_login_request_aa901a5bd125da85e094e9081885413f1}{C\+Im\+Pdu\+Login\+Request} (const char $\ast$user\+\_\+name, const char $\ast$password, uint32\+\_\+t online\+\_\+status, uint32\+\_\+t client\+\_\+type, const char $\ast$client\+\_\+version=N\+U\+L\+L)
+\item 
+virtual \hyperlink{class_c_im_pdu_login_request_a3ce6cd83a753ef91d812001a2ae775e2}{$\sim$\+C\+Im\+Pdu\+Login\+Request} ()
+\item 
+virtual uint16\+\_\+t \hyperlink{class_c_im_pdu_login_request_af69739cb8426a4b15b748d9ef1edc71b}{Get\+Pdu\+Type} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_login_request_aff813934808575d67f1c13a1ad6ab37c}{Get\+User\+Name\+Len} ()
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_login_request_adae8752dbe063456782be770747f535e}{Get\+User\+Name} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_login_request_a6f0fe5c678851bfb4af9ee21bfb03d58}{Get\+Password\+Len} ()
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_login_request_a637b4f27c72daa0ab4065511b881535c}{Get\+Password} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_login_request_a960b8c84d01f94b3802d026283627c6f}{Get\+Online\+Status} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_login_request_ac1f51bafd457df40fc0b7517c3c5f4c7}{Get\+Client\+Type} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_login_request_a956cc292f321b11a9d56c106a87261c7}{Get\+Client\+Version\+Len} ()
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_login_request_a9e800931377579b91f16c47fe1646117}{Get\+Client\+Version} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_login_request_a387f1bc1dbb83dec505fec6adbb96178}{m\+\_\+user\+\_\+name\+\_\+len}
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_login_request_a5fd10a040ee72540a2a24ba6214b7ca3}{m\+\_\+user\+\_\+name}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_login_request_a48fa22ca9a1ecdb23e18d92fe32f32b4}{m\+\_\+password\+\_\+len}
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_login_request_a4251687291336d609b92fca0ffc243b7}{m\+\_\+password}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_login_request_a264739b23088f1a4a5692b45e47627fe}{m\+\_\+online\+\_\+status}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_login_request_aa07675e11a5b3752006814e92ab5c0ab}{m\+\_\+client\+\_\+type}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_login_request_a2c8ded87cfe925b26a9d0f413ac1f161}{m\+\_\+client\+\_\+version\+\_\+len}
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_login_request_ae99ee2ca88b4113daf5dc324a1b6475d}{m\+\_\+client\+\_\+version}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_im_pdu_login_request_aa1e9dc3b745fde7905fabbd749ab6f8b}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{C\+Im\+Pdu\+Login\+Request}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Login\+Request\+::\+C\+Im\+Pdu\+Login\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf uchar\+\_\+t} $\ast$}]{buf, }
+\item[{uint32\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_login_request_aa1e9dc3b745fde7905fabbd749ab6f8b}
+\hypertarget{class_c_im_pdu_login_request_aa901a5bd125da85e094e9081885413f1}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{C\+Im\+Pdu\+Login\+Request}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Login\+Request\+::\+C\+Im\+Pdu\+Login\+Request (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{user\+\_\+name, }
+\item[{const char $\ast$}]{password, }
+\item[{uint32\+\_\+t}]{online\+\_\+status, }
+\item[{uint32\+\_\+t}]{client\+\_\+type, }
+\item[{const char $\ast$}]{client\+\_\+version = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_login_request_aa901a5bd125da85e094e9081885413f1}
+\hypertarget{class_c_im_pdu_login_request_a3ce6cd83a753ef91d812001a2ae775e2}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!````~C\+Im\+Pdu\+Login\+Request@{$\sim$\+C\+Im\+Pdu\+Login\+Request}}
+\index{````~C\+Im\+Pdu\+Login\+Request@{$\sim$\+C\+Im\+Pdu\+Login\+Request}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{$\sim$\+C\+Im\+Pdu\+Login\+Request}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Im\+Pdu\+Login\+Request\+::$\sim$\+C\+Im\+Pdu\+Login\+Request (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_im_pdu_login_request_a3ce6cd83a753ef91d812001a2ae775e2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_im_pdu_login_request_ac1f51bafd457df40fc0b7517c3c5f4c7}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!Get\+Client\+Type@{Get\+Client\+Type}}
+\index{Get\+Client\+Type@{Get\+Client\+Type}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{Get\+Client\+Type}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Login\+Request\+::\+Get\+Client\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_login_request_ac1f51bafd457df40fc0b7517c3c5f4c7}
+\hypertarget{class_c_im_pdu_login_request_a9e800931377579b91f16c47fe1646117}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!Get\+Client\+Version@{Get\+Client\+Version}}
+\index{Get\+Client\+Version@{Get\+Client\+Version}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{Get\+Client\+Version}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Login\+Request\+::\+Get\+Client\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_login_request_a9e800931377579b91f16c47fe1646117}
+\hypertarget{class_c_im_pdu_login_request_a956cc292f321b11a9d56c106a87261c7}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!Get\+Client\+Version\+Len@{Get\+Client\+Version\+Len}}
+\index{Get\+Client\+Version\+Len@{Get\+Client\+Version\+Len}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{Get\+Client\+Version\+Len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Login\+Request\+::\+Get\+Client\+Version\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_login_request_a956cc292f321b11a9d56c106a87261c7}
+\hypertarget{class_c_im_pdu_login_request_a960b8c84d01f94b3802d026283627c6f}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!Get\+Online\+Status@{Get\+Online\+Status}}
+\index{Get\+Online\+Status@{Get\+Online\+Status}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{Get\+Online\+Status}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Login\+Request\+::\+Get\+Online\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_login_request_a960b8c84d01f94b3802d026283627c6f}
+\hypertarget{class_c_im_pdu_login_request_a637b4f27c72daa0ab4065511b881535c}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!Get\+Password@{Get\+Password}}
+\index{Get\+Password@{Get\+Password}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{Get\+Password}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Login\+Request\+::\+Get\+Password (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_login_request_a637b4f27c72daa0ab4065511b881535c}
+\hypertarget{class_c_im_pdu_login_request_a6f0fe5c678851bfb4af9ee21bfb03d58}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!Get\+Password\+Len@{Get\+Password\+Len}}
+\index{Get\+Password\+Len@{Get\+Password\+Len}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{Get\+Password\+Len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Login\+Request\+::\+Get\+Password\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_login_request_a6f0fe5c678851bfb4af9ee21bfb03d58}
+\hypertarget{class_c_im_pdu_login_request_af69739cb8426a4b15b748d9ef1edc71b}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!Get\+Pdu\+Type@{Get\+Pdu\+Type}}
+\index{Get\+Pdu\+Type@{Get\+Pdu\+Type}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{Get\+Pdu\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint16\+\_\+t C\+Im\+Pdu\+Login\+Request\+::\+Get\+Pdu\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_im_pdu_login_request_af69739cb8426a4b15b748d9ef1edc71b}
+
+
+Reimplemented from \hyperlink{class_c_im_pdu_a887912f445b3e864d33f9e7f2325f1fc}{C\+Im\+Pdu}.
+
+\hypertarget{class_c_im_pdu_login_request_adae8752dbe063456782be770747f535e}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!Get\+User\+Name@{Get\+User\+Name}}
+\index{Get\+User\+Name@{Get\+User\+Name}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{Get\+User\+Name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Login\+Request\+::\+Get\+User\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_login_request_adae8752dbe063456782be770747f535e}
+\hypertarget{class_c_im_pdu_login_request_aff813934808575d67f1c13a1ad6ab37c}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!Get\+User\+Name\+Len@{Get\+User\+Name\+Len}}
+\index{Get\+User\+Name\+Len@{Get\+User\+Name\+Len}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{Get\+User\+Name\+Len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Login\+Request\+::\+Get\+User\+Name\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_login_request_aff813934808575d67f1c13a1ad6ab37c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_im_pdu_login_request_aa07675e11a5b3752006814e92ab5c0ab}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!m\+\_\+client\+\_\+type@{m\+\_\+client\+\_\+type}}
+\index{m\+\_\+client\+\_\+type@{m\+\_\+client\+\_\+type}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{m\+\_\+client\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Login\+Request\+::m\+\_\+client\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_login_request_aa07675e11a5b3752006814e92ab5c0ab}
+\hypertarget{class_c_im_pdu_login_request_ae99ee2ca88b4113daf5dc324a1b6475d}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!m\+\_\+client\+\_\+version@{m\+\_\+client\+\_\+version}}
+\index{m\+\_\+client\+\_\+version@{m\+\_\+client\+\_\+version}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{m\+\_\+client\+\_\+version}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Login\+Request\+::m\+\_\+client\+\_\+version\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_login_request_ae99ee2ca88b4113daf5dc324a1b6475d}
+\hypertarget{class_c_im_pdu_login_request_a2c8ded87cfe925b26a9d0f413ac1f161}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!m\+\_\+client\+\_\+version\+\_\+len@{m\+\_\+client\+\_\+version\+\_\+len}}
+\index{m\+\_\+client\+\_\+version\+\_\+len@{m\+\_\+client\+\_\+version\+\_\+len}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{m\+\_\+client\+\_\+version\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Login\+Request\+::m\+\_\+client\+\_\+version\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_login_request_a2c8ded87cfe925b26a9d0f413ac1f161}
+\hypertarget{class_c_im_pdu_login_request_a264739b23088f1a4a5692b45e47627fe}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!m\+\_\+online\+\_\+status@{m\+\_\+online\+\_\+status}}
+\index{m\+\_\+online\+\_\+status@{m\+\_\+online\+\_\+status}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{m\+\_\+online\+\_\+status}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Login\+Request\+::m\+\_\+online\+\_\+status\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_login_request_a264739b23088f1a4a5692b45e47627fe}
+\hypertarget{class_c_im_pdu_login_request_a4251687291336d609b92fca0ffc243b7}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!m\+\_\+password@{m\+\_\+password}}
+\index{m\+\_\+password@{m\+\_\+password}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{m\+\_\+password}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Login\+Request\+::m\+\_\+password\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_login_request_a4251687291336d609b92fca0ffc243b7}
+\hypertarget{class_c_im_pdu_login_request_a48fa22ca9a1ecdb23e18d92fe32f32b4}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!m\+\_\+password\+\_\+len@{m\+\_\+password\+\_\+len}}
+\index{m\+\_\+password\+\_\+len@{m\+\_\+password\+\_\+len}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{m\+\_\+password\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Login\+Request\+::m\+\_\+password\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_login_request_a48fa22ca9a1ecdb23e18d92fe32f32b4}
+\hypertarget{class_c_im_pdu_login_request_a5fd10a040ee72540a2a24ba6214b7ca3}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!m\+\_\+user\+\_\+name@{m\+\_\+user\+\_\+name}}
+\index{m\+\_\+user\+\_\+name@{m\+\_\+user\+\_\+name}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{m\+\_\+user\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Login\+Request\+::m\+\_\+user\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_login_request_a5fd10a040ee72540a2a24ba6214b7ca3}
+\hypertarget{class_c_im_pdu_login_request_a387f1bc1dbb83dec505fec6adbb96178}{}\index{C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}!m\+\_\+user\+\_\+name\+\_\+len@{m\+\_\+user\+\_\+name\+\_\+len}}
+\index{m\+\_\+user\+\_\+name\+\_\+len@{m\+\_\+user\+\_\+name\+\_\+len}!C\+Im\+Pdu\+Login\+Request@{C\+Im\+Pdu\+Login\+Request}}
+\subsubsection[{m\+\_\+user\+\_\+name\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Login\+Request\+::m\+\_\+user\+\_\+name\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_login_request_a387f1bc1dbb83dec505fec6adbb96178}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_client_8h}{Im\+Pdu\+Client.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_client_8cpp}{Im\+Pdu\+Client.\+cpp}\end{DoxyCompactItemize}

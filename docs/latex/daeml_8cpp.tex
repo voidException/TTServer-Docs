@@ -1,0 +1,69 @@
+\hypertarget{daeml_8cpp}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/tools/daeml.cpp File Reference}
+\label{daeml_8cpp}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/tools/daeml.\+cpp@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/tools/daeml.\+cpp}}
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$fcntl.\+h$>$}\\*
+{\ttfamily \#include $<$sys/types.\+h$>$}\\*
+{\ttfamily \#include $<$sys/wait.\+h$>$}\\*
+{\ttfamily \#include $<$signal.\+h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{daeml_8cpp_aa5d6e791d48f2ad5338064093822cfaa}{P\+R\+I\+N\+T}(a)~a
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{daeml_8cpp_a911b2e3944e0ad6e66180392967775d1}{Close\+All} (int fd)
+\item 
+int \hyperlink{daeml_8cpp_a8d250c1deb99931898230dc5f2da3d99}{Daemon} (int no\+\_\+chdir, int no\+\_\+close, int root)
+\item 
+void \hyperlink{daeml_8cpp_ab139af1f801d73e4b540c97c3316fa33}{Print\+Usage} (char $\ast$\hyperlink{http__parser_8c_a8f8f80d37794cde9472343e4487ba3eb}{name})
+\item 
+int \hyperlink{daeml_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{daeml_8cpp_aa5d6e791d48f2ad5338064093822cfaa}{}\index{daeml.\+cpp@{daeml.\+cpp}!P\+R\+I\+N\+T@{P\+R\+I\+N\+T}}
+\index{P\+R\+I\+N\+T@{P\+R\+I\+N\+T}!daeml.\+cpp@{daeml.\+cpp}}
+\subsubsection[{P\+R\+I\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+I\+N\+T(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)~a}\label{daeml_8cpp_aa5d6e791d48f2ad5338064093822cfaa}
+
+
+\subsection{Function Documentation}
+\hypertarget{daeml_8cpp_a911b2e3944e0ad6e66180392967775d1}{}\index{daeml.\+cpp@{daeml.\+cpp}!Close\+All@{Close\+All}}
+\index{Close\+All@{Close\+All}!daeml.\+cpp@{daeml.\+cpp}}
+\subsubsection[{Close\+All}]{\setlength{\rightskip}{0pt plus 5cm}void Close\+All (
+\begin{DoxyParamCaption}
+\item[{int}]{fd}
+\end{DoxyParamCaption}
+)}\label{daeml_8cpp_a911b2e3944e0ad6e66180392967775d1}
+\hypertarget{daeml_8cpp_a8d250c1deb99931898230dc5f2da3d99}{}\index{daeml.\+cpp@{daeml.\+cpp}!Daemon@{Daemon}}
+\index{Daemon@{Daemon}!daeml.\+cpp@{daeml.\+cpp}}
+\subsubsection[{Daemon}]{\setlength{\rightskip}{0pt plus 5cm}int Daemon (
+\begin{DoxyParamCaption}
+\item[{int}]{no\+\_\+chdir, }
+\item[{int}]{no\+\_\+close, }
+\item[{int}]{root}
+\end{DoxyParamCaption}
+)}\label{daeml_8cpp_a8d250c1deb99931898230dc5f2da3d99}
+\hypertarget{daeml_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{}\index{daeml.\+cpp@{daeml.\+cpp}!main@{main}}
+\index{main@{main}!daeml.\+cpp@{daeml.\+cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{daeml_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+\hypertarget{daeml_8cpp_ab139af1f801d73e4b540c97c3316fa33}{}\index{daeml.\+cpp@{daeml.\+cpp}!Print\+Usage@{Print\+Usage}}
+\index{Print\+Usage@{Print\+Usage}!daeml.\+cpp@{daeml.\+cpp}}
+\subsubsection[{Print\+Usage}]{\setlength{\rightskip}{0pt plus 5cm}void Print\+Usage (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\label{daeml_8cpp_ab139af1f801d73e4b540c97c3316fa33}

@@ -1,0 +1,188 @@
+\hypertarget{structtransfer__task__t}{}\section{transfer\+\_\+task\+\_\+t Struct Reference}
+\label{structtransfer__task__t}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+
+
+{\ttfamily \#include $<$file\+\_\+server\+\_\+util.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structtransfer__task__t_a800fea2fd204ee0fa62a46f7d9fbfdc2}{transfer\+\_\+task\+\_\+t} ()
+\item 
+\hyperlink{structtransfer__task__t_a7e94811197d009adec13b229b844e6a9}{$\sim$transfer\+\_\+task\+\_\+t} ()
+\item 
+void \hyperlink{structtransfer__task__t_a48de1065c9d8a568a3395f4141b463e9}{lock} (int n)
+\item 
+void \hyperlink{structtransfer__task__t_aa8ac84dfe27a74fdd3d034409bb68980}{unlock} (int n)
+\item 
+void \hyperlink{structtransfer__task__t_a29553613bd6b932665f59c1fb0c09acf}{release} ()
+\item 
+uint32\+\_\+t \hyperlink{structtransfer__task__t_a137b1ed25d8fe269dc8677111f9d544d}{Get\+Opponent} (uint32\+\_\+t user\+\_\+id)
+\item 
+\hyperlink{class_c_im_conn}{C\+Im\+Conn} $\ast$ \hyperlink{structtransfer__task__t_a65b69d712dc23f2aee0b8ceaab5e9ff1}{Get\+Opponent\+Conn} (uint32\+\_\+t user\+\_\+id)
+\item 
+\hyperlink{class_c_im_conn}{C\+Im\+Conn} $\ast$ \hyperlink{structtransfer__task__t_a09a40059d36bfca8462dc8832828ad55}{Get\+Conn} (uint32\+\_\+t user\+\_\+id)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{structtransfer__task__t_aa18fe39975838bbd013e998e415553d6}{transfer\+\_\+mode}
+\item 
+string \hyperlink{structtransfer__task__t_a84aefe856ac0516979ad6bc23c3ecc72}{task\+\_\+id}
+\item 
+uint32\+\_\+t \hyperlink{structtransfer__task__t_ac37251c2082573c456dcb7cdd83715d4}{from\+\_\+user\+\_\+id}
+\item 
+uint32\+\_\+t \hyperlink{structtransfer__task__t_aa83ca200d0a3a9506ccc56747baed732}{to\+\_\+user\+\_\+id}
+\item 
+bool \hyperlink{structtransfer__task__t_ade8b50d85e3841cad284b5d56412d6a6}{ready\+\_\+to\+\_\+recv}
+\item 
+bool \hyperlink{structtransfer__task__t_a13055582fac68304e08be922e7cf28b5}{ready\+\_\+to\+\_\+send}
+\item 
+uint32\+\_\+t \hyperlink{structtransfer__task__t_a4baea21aae99190e8470b9cd211a0c5c}{file\+\_\+size}
+\item 
+string \hyperlink{structtransfer__task__t_ae017d61b15ad01ddf6370c520c34b1b9}{current\+\_\+block}
+\item 
+time\+\_\+t \hyperlink{structtransfer__task__t_a95f9df09e2e08519ae8e8f38120b880e}{create\+\_\+time}
+\item 
+bool \hyperlink{structtransfer__task__t_a977f0bd17b925a3d2de63115e54553a8}{self\+\_\+destroy}
+\item 
+\hyperlink{class_c_im_conn}{C\+Im\+Conn} $\ast$ \hyperlink{structtransfer__task__t_a4c7b12647332e60715c0bf58d46f58da}{from\+\_\+conn}
+\item 
+\hyperlink{class_c_im_conn}{C\+Im\+Conn} $\ast$ \hyperlink{structtransfer__task__t_a174f3ff2ea40cc3fdef9b23ca708f429}{to\+\_\+conn}
+\item 
+pthread\+\_\+rwlock\+\_\+t \hyperlink{structtransfer__task__t_a5bde63b1aa3c433cf348f2c53749a706}{task\+\_\+lock}
+\item 
+std\+::map$<$ uint32\+\_\+t, \hyperlink{structupload__package__t}{upload\+\_\+package\+\_\+t} $\ast$ $>$ \hyperlink{structtransfer__task__t_a5f744614a5c5e68baf8190f39faba2b9}{upload\+\_\+packages}
+\item 
+F\+I\+L\+E $\ast$ \hyperlink{structtransfer__task__t_a90b53dedba891fb673bac05d6bdf427f}{fp}
+\item 
+uint32\+\_\+t \hyperlink{structtransfer__task__t_ac93c46acd00166eccb06f6241aaba292}{transfered\+\_\+size}
+\item 
+\hyperlink{structfile__header__t}{file\+\_\+header\+\_\+t} $\ast$ \hyperlink{structtransfer__task__t_a735a0022a8cf6f55a81a01f43dc6bc20}{file\+\_\+head}
+\item 
+pthread\+\_\+t \hyperlink{structtransfer__task__t_a0771c021831d5adc65590d6cfc3cf2eb}{worker}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structtransfer__task__t_a800fea2fd204ee0fa62a46f7d9fbfdc2}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{transfer\+\_\+task\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}transfer\+\_\+task\+\_\+t\+::transfer\+\_\+task\+\_\+t (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structtransfer__task__t_a800fea2fd204ee0fa62a46f7d9fbfdc2}
+\hypertarget{structtransfer__task__t_a7e94811197d009adec13b229b844e6a9}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!````~transfer\+\_\+task\+\_\+t@{$\sim$transfer\+\_\+task\+\_\+t}}
+\index{````~transfer\+\_\+task\+\_\+t@{$\sim$transfer\+\_\+task\+\_\+t}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{$\sim$transfer\+\_\+task\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}transfer\+\_\+task\+\_\+t\+::$\sim$transfer\+\_\+task\+\_\+t (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structtransfer__task__t_a7e94811197d009adec13b229b844e6a9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structtransfer__task__t_a09a40059d36bfca8462dc8832828ad55}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!Get\+Conn@{Get\+Conn}}
+\index{Get\+Conn@{Get\+Conn}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{Get\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Im\+Conn}$\ast$ transfer\+\_\+task\+\_\+t\+::\+Get\+Conn (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{user\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structtransfer__task__t_a09a40059d36bfca8462dc8832828ad55}
+\hypertarget{structtransfer__task__t_a137b1ed25d8fe269dc8677111f9d544d}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!Get\+Opponent@{Get\+Opponent}}
+\index{Get\+Opponent@{Get\+Opponent}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{Get\+Opponent}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t transfer\+\_\+task\+\_\+t\+::\+Get\+Opponent (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{user\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structtransfer__task__t_a137b1ed25d8fe269dc8677111f9d544d}
+\hypertarget{structtransfer__task__t_a65b69d712dc23f2aee0b8ceaab5e9ff1}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!Get\+Opponent\+Conn@{Get\+Opponent\+Conn}}
+\index{Get\+Opponent\+Conn@{Get\+Opponent\+Conn}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{Get\+Opponent\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Im\+Conn}$\ast$ transfer\+\_\+task\+\_\+t\+::\+Get\+Opponent\+Conn (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{user\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structtransfer__task__t_a65b69d712dc23f2aee0b8ceaab5e9ff1}
+\hypertarget{structtransfer__task__t_a48de1065c9d8a568a3395f4141b463e9}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!lock@{lock}}
+\index{lock@{lock}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{lock}]{\setlength{\rightskip}{0pt plus 5cm}void transfer\+\_\+task\+\_\+t\+::lock (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structtransfer__task__t_a48de1065c9d8a568a3395f4141b463e9}
+\hypertarget{structtransfer__task__t_a29553613bd6b932665f59c1fb0c09acf}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!release@{release}}
+\index{release@{release}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void transfer\+\_\+task\+\_\+t\+::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structtransfer__task__t_a29553613bd6b932665f59c1fb0c09acf}
+\hypertarget{structtransfer__task__t_aa8ac84dfe27a74fdd3d034409bb68980}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!unlock@{unlock}}
+\index{unlock@{unlock}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{unlock}]{\setlength{\rightskip}{0pt plus 5cm}void transfer\+\_\+task\+\_\+t\+::unlock (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structtransfer__task__t_aa8ac84dfe27a74fdd3d034409bb68980}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structtransfer__task__t_a95f9df09e2e08519ae8e8f38120b880e}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!create\+\_\+time@{create\+\_\+time}}
+\index{create\+\_\+time@{create\+\_\+time}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{create\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}time\+\_\+t transfer\+\_\+task\+\_\+t\+::create\+\_\+time}\label{structtransfer__task__t_a95f9df09e2e08519ae8e8f38120b880e}
+\hypertarget{structtransfer__task__t_ae017d61b15ad01ddf6370c520c34b1b9}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!current\+\_\+block@{current\+\_\+block}}
+\index{current\+\_\+block@{current\+\_\+block}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{current\+\_\+block}]{\setlength{\rightskip}{0pt plus 5cm}string transfer\+\_\+task\+\_\+t\+::current\+\_\+block}\label{structtransfer__task__t_ae017d61b15ad01ddf6370c520c34b1b9}
+\hypertarget{structtransfer__task__t_a735a0022a8cf6f55a81a01f43dc6bc20}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!file\+\_\+head@{file\+\_\+head}}
+\index{file\+\_\+head@{file\+\_\+head}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{file\+\_\+head}]{\setlength{\rightskip}{0pt plus 5cm}{\bf file\+\_\+header\+\_\+t}$\ast$ transfer\+\_\+task\+\_\+t\+::file\+\_\+head}\label{structtransfer__task__t_a735a0022a8cf6f55a81a01f43dc6bc20}
+\hypertarget{structtransfer__task__t_a4baea21aae99190e8470b9cd211a0c5c}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!file\+\_\+size@{file\+\_\+size}}
+\index{file\+\_\+size@{file\+\_\+size}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{file\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t transfer\+\_\+task\+\_\+t\+::file\+\_\+size}\label{structtransfer__task__t_a4baea21aae99190e8470b9cd211a0c5c}
+\hypertarget{structtransfer__task__t_a90b53dedba891fb673bac05d6bdf427f}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!fp@{fp}}
+\index{fp@{fp}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{fp}]{\setlength{\rightskip}{0pt plus 5cm}F\+I\+L\+E$\ast$ transfer\+\_\+task\+\_\+t\+::fp}\label{structtransfer__task__t_a90b53dedba891fb673bac05d6bdf427f}
+\hypertarget{structtransfer__task__t_a4c7b12647332e60715c0bf58d46f58da}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!from\+\_\+conn@{from\+\_\+conn}}
+\index{from\+\_\+conn@{from\+\_\+conn}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{from\+\_\+conn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Im\+Conn}$\ast$ transfer\+\_\+task\+\_\+t\+::from\+\_\+conn}\label{structtransfer__task__t_a4c7b12647332e60715c0bf58d46f58da}
+\hypertarget{structtransfer__task__t_ac37251c2082573c456dcb7cdd83715d4}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!from\+\_\+user\+\_\+id@{from\+\_\+user\+\_\+id}}
+\index{from\+\_\+user\+\_\+id@{from\+\_\+user\+\_\+id}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{from\+\_\+user\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t transfer\+\_\+task\+\_\+t\+::from\+\_\+user\+\_\+id}\label{structtransfer__task__t_ac37251c2082573c456dcb7cdd83715d4}
+\hypertarget{structtransfer__task__t_ade8b50d85e3841cad284b5d56412d6a6}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!ready\+\_\+to\+\_\+recv@{ready\+\_\+to\+\_\+recv}}
+\index{ready\+\_\+to\+\_\+recv@{ready\+\_\+to\+\_\+recv}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{ready\+\_\+to\+\_\+recv}]{\setlength{\rightskip}{0pt plus 5cm}bool transfer\+\_\+task\+\_\+t\+::ready\+\_\+to\+\_\+recv}\label{structtransfer__task__t_ade8b50d85e3841cad284b5d56412d6a6}
+\hypertarget{structtransfer__task__t_a13055582fac68304e08be922e7cf28b5}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!ready\+\_\+to\+\_\+send@{ready\+\_\+to\+\_\+send}}
+\index{ready\+\_\+to\+\_\+send@{ready\+\_\+to\+\_\+send}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{ready\+\_\+to\+\_\+send}]{\setlength{\rightskip}{0pt plus 5cm}bool transfer\+\_\+task\+\_\+t\+::ready\+\_\+to\+\_\+send}\label{structtransfer__task__t_a13055582fac68304e08be922e7cf28b5}
+\hypertarget{structtransfer__task__t_a977f0bd17b925a3d2de63115e54553a8}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!self\+\_\+destroy@{self\+\_\+destroy}}
+\index{self\+\_\+destroy@{self\+\_\+destroy}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{self\+\_\+destroy}]{\setlength{\rightskip}{0pt plus 5cm}bool transfer\+\_\+task\+\_\+t\+::self\+\_\+destroy}\label{structtransfer__task__t_a977f0bd17b925a3d2de63115e54553a8}
+\hypertarget{structtransfer__task__t_a84aefe856ac0516979ad6bc23c3ecc72}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!task\+\_\+id@{task\+\_\+id}}
+\index{task\+\_\+id@{task\+\_\+id}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{task\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}string transfer\+\_\+task\+\_\+t\+::task\+\_\+id}\label{structtransfer__task__t_a84aefe856ac0516979ad6bc23c3ecc72}
+\hypertarget{structtransfer__task__t_a5bde63b1aa3c433cf348f2c53749a706}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!task\+\_\+lock@{task\+\_\+lock}}
+\index{task\+\_\+lock@{task\+\_\+lock}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{task\+\_\+lock}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+rwlock\+\_\+t transfer\+\_\+task\+\_\+t\+::task\+\_\+lock}\label{structtransfer__task__t_a5bde63b1aa3c433cf348f2c53749a706}
+\hypertarget{structtransfer__task__t_a174f3ff2ea40cc3fdef9b23ca708f429}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!to\+\_\+conn@{to\+\_\+conn}}
+\index{to\+\_\+conn@{to\+\_\+conn}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{to\+\_\+conn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Im\+Conn}$\ast$ transfer\+\_\+task\+\_\+t\+::to\+\_\+conn}\label{structtransfer__task__t_a174f3ff2ea40cc3fdef9b23ca708f429}
+\hypertarget{structtransfer__task__t_aa83ca200d0a3a9506ccc56747baed732}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!to\+\_\+user\+\_\+id@{to\+\_\+user\+\_\+id}}
+\index{to\+\_\+user\+\_\+id@{to\+\_\+user\+\_\+id}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{to\+\_\+user\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t transfer\+\_\+task\+\_\+t\+::to\+\_\+user\+\_\+id}\label{structtransfer__task__t_aa83ca200d0a3a9506ccc56747baed732}
+\hypertarget{structtransfer__task__t_aa18fe39975838bbd013e998e415553d6}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!transfer\+\_\+mode@{transfer\+\_\+mode}}
+\index{transfer\+\_\+mode@{transfer\+\_\+mode}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{transfer\+\_\+mode}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t transfer\+\_\+task\+\_\+t\+::transfer\+\_\+mode}\label{structtransfer__task__t_aa18fe39975838bbd013e998e415553d6}
+\hypertarget{structtransfer__task__t_ac93c46acd00166eccb06f6241aaba292}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!transfered\+\_\+size@{transfered\+\_\+size}}
+\index{transfered\+\_\+size@{transfered\+\_\+size}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{transfered\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t transfer\+\_\+task\+\_\+t\+::transfered\+\_\+size}\label{structtransfer__task__t_ac93c46acd00166eccb06f6241aaba292}
+\hypertarget{structtransfer__task__t_a5f744614a5c5e68baf8190f39faba2b9}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!upload\+\_\+packages@{upload\+\_\+packages}}
+\index{upload\+\_\+packages@{upload\+\_\+packages}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{upload\+\_\+packages}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$uint32\+\_\+t, {\bf upload\+\_\+package\+\_\+t}$\ast$$>$ transfer\+\_\+task\+\_\+t\+::upload\+\_\+packages}\label{structtransfer__task__t_a5f744614a5c5e68baf8190f39faba2b9}
+\hypertarget{structtransfer__task__t_a0771c021831d5adc65590d6cfc3cf2eb}{}\index{transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}!worker@{worker}}
+\index{worker@{worker}!transfer\+\_\+task\+\_\+t@{transfer\+\_\+task\+\_\+t}}
+\subsubsection[{worker}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+t transfer\+\_\+task\+\_\+t\+::worker}\label{structtransfer__task__t_a0771c021831d5adc65590d6cfc3cf2eb}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/file\+\_\+server/\hyperlink{file__server__util_8h}{file\+\_\+server\+\_\+util.\+h}\end{DoxyCompactItemize}

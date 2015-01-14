@@ -1,0 +1,143 @@
+\hypertarget{class_c_login_serv_conn}{}\section{C\+Login\+Serv\+Conn Class Reference}
+\label{class_c_login_serv_conn}\index{C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}}
+
+
+{\ttfamily \#include $<$Login\+Serv\+Conn.\+h$>$}
+
+Inheritance diagram for C\+Login\+Serv\+Conn\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_login_serv_conn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_login_serv_conn_a0e92fe21408136a97d2fa610ac1c76c2}{C\+Login\+Serv\+Conn} ()
+\item 
+virtual \hyperlink{class_c_login_serv_conn_acf9687d64da82f956f188c9df6be0a5d}{$\sim$\+C\+Login\+Serv\+Conn} ()
+\item 
+bool \hyperlink{class_c_login_serv_conn_a504b1b8e6d872f806acf5d01916b7027}{Is\+Open} ()
+\item 
+void \hyperlink{class_c_login_serv_conn_a5bf8dd4eeb61d7b6a234df0c4fc43e13}{Connect} (const char $\ast$server\+\_\+ip, uint16\+\_\+t server\+\_\+port, uint32\+\_\+t serv\+\_\+idx)
+\item 
+virtual void \hyperlink{class_c_login_serv_conn_a7d32c9f06c504bf6ac3553dd8dbceb0c}{Close} ()
+\item 
+virtual void \hyperlink{class_c_login_serv_conn_ae0a26aeeeea61a25bf54de47fd21c42e}{On\+Confirm} ()
+\item 
+virtual void \hyperlink{class_c_login_serv_conn_af4b27bd54cd4607ef4c597a352552b07}{On\+Close} ()
+\item 
+virtual void \hyperlink{class_c_login_serv_conn_ae29f6ac0896b52065fab58d6a4d4ed20}{On\+Timer} (uint64\+\_\+t curr\+\_\+tick)
+\item 
+virtual void \hyperlink{class_c_login_serv_conn_a76ce659970c3a2f7b8f841f7ad9713d7}{Handle\+Pdu} (\hyperlink{class_c_im_pdu}{C\+Im\+Pdu} $\ast$p\+Pdu)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_c_login_serv_conn_a26267bf37e8d460ca567e777010081f4}{m\+\_\+b\+Open}
+\item 
+uint32\+\_\+t \hyperlink{class_c_login_serv_conn_a7b2a84eaa018f13fbbc6b9b48b522fe0}{m\+\_\+serv\+\_\+idx}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_login_serv_conn_a0e92fe21408136a97d2fa610ac1c76c2}{}\index{C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}!C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}}
+\index{C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}!C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}}
+\subsubsection[{C\+Login\+Serv\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}C\+Login\+Serv\+Conn\+::\+C\+Login\+Serv\+Conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_login_serv_conn_a0e92fe21408136a97d2fa610ac1c76c2}
+\hypertarget{class_c_login_serv_conn_acf9687d64da82f956f188c9df6be0a5d}{}\index{C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}!````~C\+Login\+Serv\+Conn@{$\sim$\+C\+Login\+Serv\+Conn}}
+\index{````~C\+Login\+Serv\+Conn@{$\sim$\+C\+Login\+Serv\+Conn}!C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}}
+\subsubsection[{$\sim$\+C\+Login\+Serv\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}C\+Login\+Serv\+Conn\+::$\sim$\+C\+Login\+Serv\+Conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_login_serv_conn_acf9687d64da82f956f188c9df6be0a5d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_login_serv_conn_a7d32c9f06c504bf6ac3553dd8dbceb0c}{}\index{C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}!Close@{Close}}
+\index{Close@{Close}!C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Login\+Serv\+Conn\+::\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_login_serv_conn_a7d32c9f06c504bf6ac3553dd8dbceb0c}
+\hypertarget{class_c_login_serv_conn_a5bf8dd4eeb61d7b6a234df0c4fc43e13}{}\index{C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}!Connect@{Connect}}
+\index{Connect@{Connect}!C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Login\+Serv\+Conn\+::\+Connect (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{server\+\_\+ip, }
+\item[{uint16\+\_\+t}]{server\+\_\+port, }
+\item[{uint32\+\_\+t}]{serv\+\_\+idx}
+\end{DoxyParamCaption}
+)}\label{class_c_login_serv_conn_a5bf8dd4eeb61d7b6a234df0c4fc43e13}
+\hypertarget{class_c_login_serv_conn_a76ce659970c3a2f7b8f841f7ad9713d7}{}\index{C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}!Handle\+Pdu@{Handle\+Pdu}}
+\index{Handle\+Pdu@{Handle\+Pdu}!C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}}
+\subsubsection[{Handle\+Pdu}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Login\+Serv\+Conn\+::\+Handle\+Pdu (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_login_serv_conn_a76ce659970c3a2f7b8f841f7ad9713d7}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_a0f3ce1718aadfc944328e872cbfafdb9}{C\+Im\+Conn}.
+
+\hypertarget{class_c_login_serv_conn_a504b1b8e6d872f806acf5d01916b7027}{}\index{C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}!Is\+Open@{Is\+Open}}
+\index{Is\+Open@{Is\+Open}!C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}}
+\subsubsection[{Is\+Open}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Login\+Serv\+Conn\+::\+Is\+Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_login_serv_conn_a504b1b8e6d872f806acf5d01916b7027}
+\hypertarget{class_c_login_serv_conn_af4b27bd54cd4607ef4c597a352552b07}{}\index{C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}!On\+Close@{On\+Close}}
+\index{On\+Close@{On\+Close}!C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}}
+\subsubsection[{On\+Close}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Login\+Serv\+Conn\+::\+On\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_login_serv_conn_af4b27bd54cd4607ef4c597a352552b07}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_a9874ab69df11d0a6147e2c301013508a}{C\+Im\+Conn}.
+
+\hypertarget{class_c_login_serv_conn_ae0a26aeeeea61a25bf54de47fd21c42e}{}\index{C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}!On\+Confirm@{On\+Confirm}}
+\index{On\+Confirm@{On\+Confirm}!C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}}
+\subsubsection[{On\+Confirm}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Login\+Serv\+Conn\+::\+On\+Confirm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_login_serv_conn_ae0a26aeeeea61a25bf54de47fd21c42e}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_a7f173449bf492576c42c9603e85f406a}{C\+Im\+Conn}.
+
+\hypertarget{class_c_login_serv_conn_ae29f6ac0896b52065fab58d6a4d4ed20}{}\index{C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}!On\+Timer@{On\+Timer}}
+\index{On\+Timer@{On\+Timer}!C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}}
+\subsubsection[{On\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Login\+Serv\+Conn\+::\+On\+Timer (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t}]{curr\+\_\+tick}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_login_serv_conn_ae29f6ac0896b52065fab58d6a4d4ed20}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_adc9be86c438a9884b3bf51fd5da180bc}{C\+Im\+Conn}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_login_serv_conn_a26267bf37e8d460ca567e777010081f4}{}\index{C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}!m\+\_\+b\+Open@{m\+\_\+b\+Open}}
+\index{m\+\_\+b\+Open@{m\+\_\+b\+Open}!C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}}
+\subsubsection[{m\+\_\+b\+Open}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Login\+Serv\+Conn\+::m\+\_\+b\+Open\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_login_serv_conn_a26267bf37e8d460ca567e777010081f4}
+\hypertarget{class_c_login_serv_conn_a7b2a84eaa018f13fbbc6b9b48b522fe0}{}\index{C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}!m\+\_\+serv\+\_\+idx@{m\+\_\+serv\+\_\+idx}}
+\index{m\+\_\+serv\+\_\+idx@{m\+\_\+serv\+\_\+idx}!C\+Login\+Serv\+Conn@{C\+Login\+Serv\+Conn}}
+\subsubsection[{m\+\_\+serv\+\_\+idx}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Login\+Serv\+Conn\+::m\+\_\+serv\+\_\+idx\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_login_serv_conn_a7b2a84eaa018f13fbbc6b9b48b522fe0}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\hyperlink{_login_serv_conn_8h}{Login\+Serv\+Conn.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\hyperlink{_login_serv_conn_8cpp}{Login\+Serv\+Conn.\+cpp}\end{DoxyCompactItemize}

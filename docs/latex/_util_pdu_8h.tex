@@ -1,0 +1,71 @@
+\hypertarget{_util_pdu_8h}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\+Util\+Pdu.h File Reference}
+\label{_util_pdu_8h}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\+Util\+Pdu.\+h@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\+Util\+Pdu.\+h}}
+{\ttfamily \#include \char`\"{}ostype.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$set$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$list$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_simple_buffer}{C\+Simple\+Buffer}
+\item 
+class \hyperlink{class_c_byte_stream}{C\+Byte\+Stream}
+\item 
+class \hyperlink{class_c_pdu_exception}{C\+Pdu\+Exception}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_util_pdu_8h_a5048d3dd4689ff62e10d22b883eba714}{D\+L\+L\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R}
+\item 
+\#define \hyperlink{_util_pdu_8h_a0b019d8d848814ccfae0a35e3d765e23}{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+P\+A\+R\+S\+E\+\_\+\+F\+A\+I\+L\+E\+D}~1
+\item 
+\#define \hyperlink{_util_pdu_8h_a6235c97e51fce8e23a1cd1fd3306fe06}{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+W\+R\+O\+N\+G\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D}~2
+\item 
+\#define \hyperlink{_util_pdu_8h_adbe7a2d241e05f182dbc7118a15057f3}{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+W\+R\+O\+N\+G\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+I\+D}~3
+\item 
+\#define \hyperlink{_util_pdu_8h_af63cc1d3ebe4fe503fca2627d867a3d7}{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D}~4
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{_util_pdu_8h_ad9216ca740b026013161948f7093a8d7}{idtourl} (uint32\+\_\+t id)
+\item 
+uint32\+\_\+t \hyperlink{_util_pdu_8h_ad5f2708edf203a84c52b6b00cb6192b6}{urltoid} (const char $\ast$url)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_util_pdu_8h_a5048d3dd4689ff62e10d22b883eba714}{}\index{Util\+Pdu.\+h@{Util\+Pdu.\+h}!D\+L\+L\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R@{D\+L\+L\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R}}
+\index{D\+L\+L\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R@{D\+L\+L\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R}!Util\+Pdu.\+h@{Util\+Pdu.\+h}}
+\subsubsection[{D\+L\+L\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+L\+L\+\_\+\+M\+O\+D\+I\+F\+I\+E\+R}\label{_util_pdu_8h_a5048d3dd4689ff62e10d22b883eba714}
+\hypertarget{_util_pdu_8h_af63cc1d3ebe4fe503fca2627d867a3d7}{}\index{Util\+Pdu.\+h@{Util\+Pdu.\+h}!E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D@{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D}}
+\index{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D@{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D}!Util\+Pdu.\+h@{Util\+Pdu.\+h}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D~4}\label{_util_pdu_8h_af63cc1d3ebe4fe503fca2627d867a3d7}
+\hypertarget{_util_pdu_8h_a0b019d8d848814ccfae0a35e3d765e23}{}\index{Util\+Pdu.\+h@{Util\+Pdu.\+h}!E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+P\+A\+R\+S\+E\+\_\+\+F\+A\+I\+L\+E\+D@{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+P\+A\+R\+S\+E\+\_\+\+F\+A\+I\+L\+E\+D}}
+\index{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+P\+A\+R\+S\+E\+\_\+\+F\+A\+I\+L\+E\+D@{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+P\+A\+R\+S\+E\+\_\+\+F\+A\+I\+L\+E\+D}!Util\+Pdu.\+h@{Util\+Pdu.\+h}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+P\+A\+R\+S\+E\+\_\+\+F\+A\+I\+L\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+P\+A\+R\+S\+E\+\_\+\+F\+A\+I\+L\+E\+D~1}\label{_util_pdu_8h_a0b019d8d848814ccfae0a35e3d765e23}
+\hypertarget{_util_pdu_8h_adbe7a2d241e05f182dbc7118a15057f3}{}\index{Util\+Pdu.\+h@{Util\+Pdu.\+h}!E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+W\+R\+O\+N\+G\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+I\+D@{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+W\+R\+O\+N\+G\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+I\+D}}
+\index{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+W\+R\+O\+N\+G\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+I\+D@{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+W\+R\+O\+N\+G\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+I\+D}!Util\+Pdu.\+h@{Util\+Pdu.\+h}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+W\+R\+O\+N\+G\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+W\+R\+O\+N\+G\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+I\+D~3}\label{_util_pdu_8h_adbe7a2d241e05f182dbc7118a15057f3}
+\hypertarget{_util_pdu_8h_a6235c97e51fce8e23a1cd1fd3306fe06}{}\index{Util\+Pdu.\+h@{Util\+Pdu.\+h}!E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+W\+R\+O\+N\+G\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D@{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+W\+R\+O\+N\+G\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D}}
+\index{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+W\+R\+O\+N\+G\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D@{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+W\+R\+O\+N\+G\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D}!Util\+Pdu.\+h@{Util\+Pdu.\+h}}
+\subsubsection[{E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+W\+R\+O\+N\+G\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+R\+R\+O\+R\+\_\+\+C\+O\+D\+E\+\_\+\+W\+R\+O\+N\+G\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D~2}\label{_util_pdu_8h_a6235c97e51fce8e23a1cd1fd3306fe06}
+
+
+\subsection{Function Documentation}
+\hypertarget{_util_pdu_8h_ad9216ca740b026013161948f7093a8d7}{}\index{Util\+Pdu.\+h@{Util\+Pdu.\+h}!idtourl@{idtourl}}
+\index{idtourl@{idtourl}!Util\+Pdu.\+h@{Util\+Pdu.\+h}}
+\subsubsection[{idtourl}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ idtourl (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{id}
+\end{DoxyParamCaption}
+)}\label{_util_pdu_8h_ad9216ca740b026013161948f7093a8d7}
+\hypertarget{_util_pdu_8h_ad5f2708edf203a84c52b6b00cb6192b6}{}\index{Util\+Pdu.\+h@{Util\+Pdu.\+h}!urltoid@{urltoid}}
+\index{urltoid@{urltoid}!Util\+Pdu.\+h@{Util\+Pdu.\+h}}
+\subsubsection[{urltoid}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t urltoid (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{url}
+\end{DoxyParamCaption}
+)}\label{_util_pdu_8h_ad5f2708edf203a84c52b6b00cb6192b6}

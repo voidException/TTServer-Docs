@@ -1,0 +1,241 @@
+\hypertarget{class_c_route_serv_conn}{}\section{C\+Route\+Serv\+Conn Class Reference}
+\label{class_c_route_serv_conn}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+
+
+{\ttfamily \#include $<$Route\+Serv\+Conn.\+h$>$}
+
+Inheritance diagram for C\+Route\+Serv\+Conn\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_route_serv_conn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_route_serv_conn_afa0d4a12167bc1f33807203453c77402}{C\+Route\+Serv\+Conn} ()
+\item 
+virtual \hyperlink{class_c_route_serv_conn_a3a09c3160bfc93b1dcd90c6a25426026}{$\sim$\+C\+Route\+Serv\+Conn} ()
+\item 
+bool \hyperlink{class_c_route_serv_conn_a03ead86a07973aefb09fa53151248435}{Is\+Open} ()
+\item 
+uint64\+\_\+t \hyperlink{class_c_route_serv_conn_a5ab669ba352ed1c4b3dbcb3d563041c1}{Get\+Connect\+Time} ()
+\item 
+void \hyperlink{class_c_route_serv_conn_a93c15ae50a1120fbfbccab31dbf6c551}{Connect} (const char $\ast$server\+\_\+ip, uint16\+\_\+t server\+\_\+port, uint32\+\_\+t serv\+\_\+idx)
+\item 
+virtual void \hyperlink{class_c_route_serv_conn_adba2951266733539c6be2ea2f14ce918}{Close} ()
+\item 
+virtual void \hyperlink{class_c_route_serv_conn_a23ec68830e9a0828be41e3db58952bf1}{On\+Confirm} ()
+\item 
+virtual void \hyperlink{class_c_route_serv_conn_ae880b5a1e17167ce31c5242f0121f133}{On\+Close} ()
+\item 
+virtual void \hyperlink{class_c_route_serv_conn_a17876c954fa36164e3a4a3debb9dff8f}{On\+Timer} (uint64\+\_\+t curr\+\_\+tick)
+\item 
+virtual void \hyperlink{class_c_route_serv_conn_a898c58ee81e46283a1172acdbc14df81}{Handle\+Pdu} (\hyperlink{class_c_im_pdu}{C\+Im\+Pdu} $\ast$p\+Pdu)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_route_serv_conn_a43657a251b0907368bbeb741ec0e3fd6}{\+\_\+\+Handle\+Kick\+User} (\hyperlink{class_c_im_pdu_server_kick_user}{C\+Im\+Pdu\+Server\+Kick\+User} $\ast$p\+Pdu)
+\item 
+void \hyperlink{class_c_route_serv_conn_a912a02b54b8403db758a3aed943e4c96}{\+\_\+\+Handle\+Friend\+Status\+List} (\hyperlink{class_c_im_pdu_friend_status_list}{C\+Im\+Pdu\+Friend\+Status\+List} $\ast$p\+Pdu)
+\item 
+void \hyperlink{class_c_route_serv_conn_a219bc085d39971870da8a028d6557828}{\+\_\+\+Handle\+Friend\+Status\+Notify} (\hyperlink{class_c_im_pdu_friend_status_notify}{C\+Im\+Pdu\+Friend\+Status\+Notify} $\ast$p\+Pdu)
+\item 
+void \hyperlink{class_c_route_serv_conn_aa3902b6a6acd784727d144fd17c4be0c}{\+\_\+\+Handle\+Msg\+Data} (\hyperlink{class_c_im_pdu_msg_data}{C\+Im\+Pdu\+Msg\+Data} $\ast$p\+Pdu)
+\item 
+void \hyperlink{class_c_route_serv_conn_a0773f5004710bf6cdb712c56f669f0f7}{\+\_\+\+Handle\+P2\+P\+Msg} (\hyperlink{class_c_im_pdu_p2_p_msg}{C\+Im\+Pdu\+P2\+P\+Msg} $\ast$p\+Pdu)
+\item 
+void \hyperlink{class_c_route_serv_conn_a309de46350ca91c53abac0646f9b3ec8}{\+\_\+\+Handle\+Group\+P2\+P\+Msg} (\hyperlink{class_c_im_pdu_group_p2_p_message_response}{C\+Im\+Pdu\+Group\+P2\+P\+Message\+Response} $\ast$p\+Pdu)
+\item 
+void \hyperlink{class_c_route_serv_conn_a3d21d141e38fb3fda533f5d11f797f96}{\+\_\+\+Handle\+User\+Status\+Response} (\hyperlink{class_c_im_pdu_user_status_response}{C\+Im\+Pdu\+User\+Status\+Response} $\ast$p\+Pdu)
+\item 
+void \hyperlink{class_c_route_serv_conn_a084c544a173ef262ad2fec305b1e5c04}{\+\_\+\+Handle\+Users\+Status\+Response} (\hyperlink{class_c_im_pdu_users_status_response}{C\+Im\+Pdu\+Users\+Status\+Response} $\ast$p\+Pdu)
+\item 
+void \hyperlink{class_c_route_serv_conn_aa9da59d5e2f1177298a897ce2514861c}{\+\_\+\+Handle\+User\+Client\+Type\+Response} (\hyperlink{class_c_im_pdu_user_client_type_response}{C\+Im\+Pdu\+User\+Client\+Type\+Response} $\ast$p\+Pdu)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_c_route_serv_conn_a51d21452636645c85e675b0ce8cc00f7}{m\+\_\+b\+Open}
+\item 
+uint32\+\_\+t \hyperlink{class_c_route_serv_conn_a9ab761cb4aa9ae90772bb83630f3cc1e}{m\+\_\+serv\+\_\+idx}
+\item 
+uint64\+\_\+t \hyperlink{class_c_route_serv_conn_a774c1ac5fa9654a68fc633c138ef2033}{m\+\_\+connect\+\_\+time}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_route_serv_conn_afa0d4a12167bc1f33807203453c77402}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{C\+Route\+Serv\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}C\+Route\+Serv\+Conn\+::\+C\+Route\+Serv\+Conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_route_serv_conn_afa0d4a12167bc1f33807203453c77402}
+\hypertarget{class_c_route_serv_conn_a3a09c3160bfc93b1dcd90c6a25426026}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!````~C\+Route\+Serv\+Conn@{$\sim$\+C\+Route\+Serv\+Conn}}
+\index{````~C\+Route\+Serv\+Conn@{$\sim$\+C\+Route\+Serv\+Conn}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{$\sim$\+C\+Route\+Serv\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}C\+Route\+Serv\+Conn\+::$\sim$\+C\+Route\+Serv\+Conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_route_serv_conn_a3a09c3160bfc93b1dcd90c6a25426026}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_route_serv_conn_a912a02b54b8403db758a3aed943e4c96}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!\+\_\+\+Handle\+Friend\+Status\+List@{\+\_\+\+Handle\+Friend\+Status\+List}}
+\index{\+\_\+\+Handle\+Friend\+Status\+List@{\+\_\+\+Handle\+Friend\+Status\+List}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+Friend\+Status\+List}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+\_\+\+Handle\+Friend\+Status\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+Friend\+Status\+List} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_route_serv_conn_a912a02b54b8403db758a3aed943e4c96}
+\hypertarget{class_c_route_serv_conn_a219bc085d39971870da8a028d6557828}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!\+\_\+\+Handle\+Friend\+Status\+Notify@{\+\_\+\+Handle\+Friend\+Status\+Notify}}
+\index{\+\_\+\+Handle\+Friend\+Status\+Notify@{\+\_\+\+Handle\+Friend\+Status\+Notify}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+Friend\+Status\+Notify}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+\_\+\+Handle\+Friend\+Status\+Notify (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+Friend\+Status\+Notify} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_route_serv_conn_a219bc085d39971870da8a028d6557828}
+\hypertarget{class_c_route_serv_conn_a309de46350ca91c53abac0646f9b3ec8}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!\+\_\+\+Handle\+Group\+P2\+P\+Msg@{\+\_\+\+Handle\+Group\+P2\+P\+Msg}}
+\index{\+\_\+\+Handle\+Group\+P2\+P\+Msg@{\+\_\+\+Handle\+Group\+P2\+P\+Msg}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+Group\+P2\+P\+Msg}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+\_\+\+Handle\+Group\+P2\+P\+Msg (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+Group\+P2\+P\+Message\+Response} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_route_serv_conn_a309de46350ca91c53abac0646f9b3ec8}
+\hypertarget{class_c_route_serv_conn_a43657a251b0907368bbeb741ec0e3fd6}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!\+\_\+\+Handle\+Kick\+User@{\+\_\+\+Handle\+Kick\+User}}
+\index{\+\_\+\+Handle\+Kick\+User@{\+\_\+\+Handle\+Kick\+User}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+Kick\+User}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+\_\+\+Handle\+Kick\+User (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+Server\+Kick\+User} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_route_serv_conn_a43657a251b0907368bbeb741ec0e3fd6}
+\hypertarget{class_c_route_serv_conn_aa3902b6a6acd784727d144fd17c4be0c}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!\+\_\+\+Handle\+Msg\+Data@{\+\_\+\+Handle\+Msg\+Data}}
+\index{\+\_\+\+Handle\+Msg\+Data@{\+\_\+\+Handle\+Msg\+Data}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+Msg\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+\_\+\+Handle\+Msg\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+Msg\+Data} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_route_serv_conn_aa3902b6a6acd784727d144fd17c4be0c}
+\hypertarget{class_c_route_serv_conn_a0773f5004710bf6cdb712c56f669f0f7}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!\+\_\+\+Handle\+P2\+P\+Msg@{\+\_\+\+Handle\+P2\+P\+Msg}}
+\index{\+\_\+\+Handle\+P2\+P\+Msg@{\+\_\+\+Handle\+P2\+P\+Msg}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+P2\+P\+Msg}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+\_\+\+Handle\+P2\+P\+Msg (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+P2\+P\+Msg} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_route_serv_conn_a0773f5004710bf6cdb712c56f669f0f7}
+\hypertarget{class_c_route_serv_conn_aa9da59d5e2f1177298a897ce2514861c}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!\+\_\+\+Handle\+User\+Client\+Type\+Response@{\+\_\+\+Handle\+User\+Client\+Type\+Response}}
+\index{\+\_\+\+Handle\+User\+Client\+Type\+Response@{\+\_\+\+Handle\+User\+Client\+Type\+Response}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+User\+Client\+Type\+Response}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+\_\+\+Handle\+User\+Client\+Type\+Response (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+User\+Client\+Type\+Response} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_route_serv_conn_aa9da59d5e2f1177298a897ce2514861c}
+\hypertarget{class_c_route_serv_conn_a084c544a173ef262ad2fec305b1e5c04}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!\+\_\+\+Handle\+Users\+Status\+Response@{\+\_\+\+Handle\+Users\+Status\+Response}}
+\index{\+\_\+\+Handle\+Users\+Status\+Response@{\+\_\+\+Handle\+Users\+Status\+Response}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+Users\+Status\+Response}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+\_\+\+Handle\+Users\+Status\+Response (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+Users\+Status\+Response} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_route_serv_conn_a084c544a173ef262ad2fec305b1e5c04}
+\hypertarget{class_c_route_serv_conn_a3d21d141e38fb3fda533f5d11f797f96}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!\+\_\+\+Handle\+User\+Status\+Response@{\+\_\+\+Handle\+User\+Status\+Response}}
+\index{\+\_\+\+Handle\+User\+Status\+Response@{\+\_\+\+Handle\+User\+Status\+Response}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{\+\_\+\+Handle\+User\+Status\+Response}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+\_\+\+Handle\+User\+Status\+Response (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+User\+Status\+Response} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_route_serv_conn_a3d21d141e38fb3fda533f5d11f797f96}
+\hypertarget{class_c_route_serv_conn_adba2951266733539c6be2ea2f14ce918}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!Close@{Close}}
+\index{Close@{Close}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_route_serv_conn_adba2951266733539c6be2ea2f14ce918}
+\hypertarget{class_c_route_serv_conn_a93c15ae50a1120fbfbccab31dbf6c551}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!Connect@{Connect}}
+\index{Connect@{Connect}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+Connect (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{server\+\_\+ip, }
+\item[{uint16\+\_\+t}]{server\+\_\+port, }
+\item[{uint32\+\_\+t}]{serv\+\_\+idx}
+\end{DoxyParamCaption}
+)}\label{class_c_route_serv_conn_a93c15ae50a1120fbfbccab31dbf6c551}
+\hypertarget{class_c_route_serv_conn_a5ab669ba352ed1c4b3dbcb3d563041c1}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!Get\+Connect\+Time@{Get\+Connect\+Time}}
+\index{Get\+Connect\+Time@{Get\+Connect\+Time}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{Get\+Connect\+Time}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t C\+Route\+Serv\+Conn\+::\+Get\+Connect\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_route_serv_conn_a5ab669ba352ed1c4b3dbcb3d563041c1}
+\hypertarget{class_c_route_serv_conn_a898c58ee81e46283a1172acdbc14df81}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!Handle\+Pdu@{Handle\+Pdu}}
+\index{Handle\+Pdu@{Handle\+Pdu}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{Handle\+Pdu}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+Handle\+Pdu (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_route_serv_conn_a898c58ee81e46283a1172acdbc14df81}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_a0f3ce1718aadfc944328e872cbfafdb9}{C\+Im\+Conn}.
+
+\hypertarget{class_c_route_serv_conn_a03ead86a07973aefb09fa53151248435}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!Is\+Open@{Is\+Open}}
+\index{Is\+Open@{Is\+Open}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{Is\+Open}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Route\+Serv\+Conn\+::\+Is\+Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_route_serv_conn_a03ead86a07973aefb09fa53151248435}
+\hypertarget{class_c_route_serv_conn_ae880b5a1e17167ce31c5242f0121f133}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!On\+Close@{On\+Close}}
+\index{On\+Close@{On\+Close}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{On\+Close}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+On\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_route_serv_conn_ae880b5a1e17167ce31c5242f0121f133}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_a9874ab69df11d0a6147e2c301013508a}{C\+Im\+Conn}.
+
+\hypertarget{class_c_route_serv_conn_a23ec68830e9a0828be41e3db58952bf1}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!On\+Confirm@{On\+Confirm}}
+\index{On\+Confirm@{On\+Confirm}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{On\+Confirm}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+On\+Confirm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_route_serv_conn_a23ec68830e9a0828be41e3db58952bf1}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_a7f173449bf492576c42c9603e85f406a}{C\+Im\+Conn}.
+
+\hypertarget{class_c_route_serv_conn_a17876c954fa36164e3a4a3debb9dff8f}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!On\+Timer@{On\+Timer}}
+\index{On\+Timer@{On\+Timer}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{On\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Route\+Serv\+Conn\+::\+On\+Timer (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t}]{curr\+\_\+tick}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_route_serv_conn_a17876c954fa36164e3a4a3debb9dff8f}
+
+
+Reimplemented from \hyperlink{class_c_im_conn_adc9be86c438a9884b3bf51fd5da180bc}{C\+Im\+Conn}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_route_serv_conn_a51d21452636645c85e675b0ce8cc00f7}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!m\+\_\+b\+Open@{m\+\_\+b\+Open}}
+\index{m\+\_\+b\+Open@{m\+\_\+b\+Open}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{m\+\_\+b\+Open}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Route\+Serv\+Conn\+::m\+\_\+b\+Open\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_route_serv_conn_a51d21452636645c85e675b0ce8cc00f7}
+\hypertarget{class_c_route_serv_conn_a774c1ac5fa9654a68fc633c138ef2033}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!m\+\_\+connect\+\_\+time@{m\+\_\+connect\+\_\+time}}
+\index{m\+\_\+connect\+\_\+time@{m\+\_\+connect\+\_\+time}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{m\+\_\+connect\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t C\+Route\+Serv\+Conn\+::m\+\_\+connect\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_route_serv_conn_a774c1ac5fa9654a68fc633c138ef2033}
+\hypertarget{class_c_route_serv_conn_a9ab761cb4aa9ae90772bb83630f3cc1e}{}\index{C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}!m\+\_\+serv\+\_\+idx@{m\+\_\+serv\+\_\+idx}}
+\index{m\+\_\+serv\+\_\+idx@{m\+\_\+serv\+\_\+idx}!C\+Route\+Serv\+Conn@{C\+Route\+Serv\+Conn}}
+\subsubsection[{m\+\_\+serv\+\_\+idx}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Route\+Serv\+Conn\+::m\+\_\+serv\+\_\+idx\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_route_serv_conn_a9ab761cb4aa9ae90772bb83630f3cc1e}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\hyperlink{_route_serv_conn_8h}{Route\+Serv\+Conn.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\hyperlink{_route_serv_conn_8cpp}{Route\+Serv\+Conn.\+cpp}\end{DoxyCompactItemize}

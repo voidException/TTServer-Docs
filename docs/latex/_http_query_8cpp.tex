@@ -1,0 +1,98 @@
+\hypertarget{_http_query_8cpp}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+Http\+Query.cpp File Reference}
+\label{_http_query_8cpp}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+Http\+Query.\+cpp@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+Http\+Query.\+cpp}}
+{\ttfamily \#include \char`\"{}Http\+Query.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Route\+Serv\+Conn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\+B\+Serv\+Conn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Login\+Serv\+Conn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Im\+User.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Group\+Chat.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_http_query_8cpp_a9bda9e3ad78c15f32f3386c028d93727}{H\+T\+T\+P\+\_\+\+Q\+U\+E\+Y\+R\+\_\+\+H\+E\+A\+D\+E\+R}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{_http_query_8cpp_a0bd98c91006bb1c3ebaa366661dadfd4}{Pack\+Send\+Ok} ()
+\item 
+char \hyperlink{_http_query_8cpp_a6cbfe61cfd0be349753ba68424b4fe6e}{from\+Hex} (const char \&x)
+\item 
+string \hyperlink{_http_query_8cpp_a0911fd4f4594d509be890203bb71abbb}{U\+R\+L\+Decode} (const string \&s\+In)
+\item 
+void \hyperlink{_http_query_8cpp_ae20b243ee40eb560013c5232a3e13ec1}{http\+\_\+query\+\_\+timer\+\_\+callback} (void $\ast$callback\+\_\+data, uint8\+\_\+t msg, uint32\+\_\+t handle, void $\ast$p\+Param)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static uint32\+\_\+t \hyperlink{_http_query_8cpp_a8519bd1f6e5a5968b39a754294e34257}{g\+\_\+total\+\_\+query} = 0
+\item 
+static uint32\+\_\+t \hyperlink{_http_query_8cpp_ab0b988b7337c5e075ef9530f27cfe2cc}{g\+\_\+last\+\_\+year} = 0
+\item 
+static uint32\+\_\+t \hyperlink{_http_query_8cpp_ac12c8c584ede850dbe7e6940a377d724}{g\+\_\+last\+\_\+month} = 0
+\item 
+static uint32\+\_\+t \hyperlink{_http_query_8cpp_a22feb4fb3561b3ed5692482b76711b39}{g\+\_\+last\+\_\+mday} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_http_query_8cpp_a9bda9e3ad78c15f32f3386c028d93727}{}\index{Http\+Query.\+cpp@{Http\+Query.\+cpp}!H\+T\+T\+P\+\_\+\+Q\+U\+E\+Y\+R\+\_\+\+H\+E\+A\+D\+E\+R@{H\+T\+T\+P\+\_\+\+Q\+U\+E\+Y\+R\+\_\+\+H\+E\+A\+D\+E\+R}}
+\index{H\+T\+T\+P\+\_\+\+Q\+U\+E\+Y\+R\+\_\+\+H\+E\+A\+D\+E\+R@{H\+T\+T\+P\+\_\+\+Q\+U\+E\+Y\+R\+\_\+\+H\+E\+A\+D\+E\+R}!Http\+Query.\+cpp@{Http\+Query.\+cpp}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+Q\+U\+E\+Y\+R\+\_\+\+H\+E\+A\+D\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+Q\+U\+E\+Y\+R\+\_\+\+H\+E\+A\+D\+E\+R}\label{_http_query_8cpp_a9bda9e3ad78c15f32f3386c028d93727}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{stringliteral}{"HTTP/1.1 200 OK\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+\textcolor{stringliteral}{"Cache-Control:no-cache\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+\textcolor{stringliteral}{"Connection:close\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+\textcolor{stringliteral}{"Content-Length:%d\(\backslash\)r\(\backslash\)n"}\(\backslash\)
+\textcolor{stringliteral}{"Content-Type:text/html;charset=utf-8\(\backslash\)r\(\backslash\)n\(\backslash\)r\(\backslash\)n%s"}
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\hypertarget{_http_query_8cpp_a6cbfe61cfd0be349753ba68424b4fe6e}{}\index{Http\+Query.\+cpp@{Http\+Query.\+cpp}!from\+Hex@{from\+Hex}}
+\index{from\+Hex@{from\+Hex}!Http\+Query.\+cpp@{Http\+Query.\+cpp}}
+\subsubsection[{from\+Hex}]{\setlength{\rightskip}{0pt plus 5cm}char from\+Hex (
+\begin{DoxyParamCaption}
+\item[{const char \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{_http_query_8cpp_a6cbfe61cfd0be349753ba68424b4fe6e}
+\hypertarget{_http_query_8cpp_ae20b243ee40eb560013c5232a3e13ec1}{}\index{Http\+Query.\+cpp@{Http\+Query.\+cpp}!http\+\_\+query\+\_\+timer\+\_\+callback@{http\+\_\+query\+\_\+timer\+\_\+callback}}
+\index{http\+\_\+query\+\_\+timer\+\_\+callback@{http\+\_\+query\+\_\+timer\+\_\+callback}!Http\+Query.\+cpp@{Http\+Query.\+cpp}}
+\subsubsection[{http\+\_\+query\+\_\+timer\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}void http\+\_\+query\+\_\+timer\+\_\+callback (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{callback\+\_\+data, }
+\item[{uint8\+\_\+t}]{msg, }
+\item[{uint32\+\_\+t}]{handle, }
+\item[{void $\ast$}]{p\+Param}
+\end{DoxyParamCaption}
+)}\label{_http_query_8cpp_ae20b243ee40eb560013c5232a3e13ec1}
+\hypertarget{_http_query_8cpp_a0bd98c91006bb1c3ebaa366661dadfd4}{}\index{Http\+Query.\+cpp@{Http\+Query.\+cpp}!Pack\+Send\+Ok@{Pack\+Send\+Ok}}
+\index{Pack\+Send\+Ok@{Pack\+Send\+Ok}!Http\+Query.\+cpp@{Http\+Query.\+cpp}}
+\subsubsection[{Pack\+Send\+Ok}]{\setlength{\rightskip}{0pt plus 5cm}string Pack\+Send\+Ok (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_http_query_8cpp_a0bd98c91006bb1c3ebaa366661dadfd4}
+\hypertarget{_http_query_8cpp_a0911fd4f4594d509be890203bb71abbb}{}\index{Http\+Query.\+cpp@{Http\+Query.\+cpp}!U\+R\+L\+Decode@{U\+R\+L\+Decode}}
+\index{U\+R\+L\+Decode@{U\+R\+L\+Decode}!Http\+Query.\+cpp@{Http\+Query.\+cpp}}
+\subsubsection[{U\+R\+L\+Decode}]{\setlength{\rightskip}{0pt plus 5cm}string U\+R\+L\+Decode (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{s\+In}
+\end{DoxyParamCaption}
+)}\label{_http_query_8cpp_a0911fd4f4594d509be890203bb71abbb}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_http_query_8cpp_a22feb4fb3561b3ed5692482b76711b39}{}\index{Http\+Query.\+cpp@{Http\+Query.\+cpp}!g\+\_\+last\+\_\+mday@{g\+\_\+last\+\_\+mday}}
+\index{g\+\_\+last\+\_\+mday@{g\+\_\+last\+\_\+mday}!Http\+Query.\+cpp@{Http\+Query.\+cpp}}
+\subsubsection[{g\+\_\+last\+\_\+mday}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t g\+\_\+last\+\_\+mday = 0\hspace{0.3cm}{\ttfamily [static]}}\label{_http_query_8cpp_a22feb4fb3561b3ed5692482b76711b39}
+\hypertarget{_http_query_8cpp_ac12c8c584ede850dbe7e6940a377d724}{}\index{Http\+Query.\+cpp@{Http\+Query.\+cpp}!g\+\_\+last\+\_\+month@{g\+\_\+last\+\_\+month}}
+\index{g\+\_\+last\+\_\+month@{g\+\_\+last\+\_\+month}!Http\+Query.\+cpp@{Http\+Query.\+cpp}}
+\subsubsection[{g\+\_\+last\+\_\+month}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t g\+\_\+last\+\_\+month = 0\hspace{0.3cm}{\ttfamily [static]}}\label{_http_query_8cpp_ac12c8c584ede850dbe7e6940a377d724}
+\hypertarget{_http_query_8cpp_ab0b988b7337c5e075ef9530f27cfe2cc}{}\index{Http\+Query.\+cpp@{Http\+Query.\+cpp}!g\+\_\+last\+\_\+year@{g\+\_\+last\+\_\+year}}
+\index{g\+\_\+last\+\_\+year@{g\+\_\+last\+\_\+year}!Http\+Query.\+cpp@{Http\+Query.\+cpp}}
+\subsubsection[{g\+\_\+last\+\_\+year}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t g\+\_\+last\+\_\+year = 0\hspace{0.3cm}{\ttfamily [static]}}\label{_http_query_8cpp_ab0b988b7337c5e075ef9530f27cfe2cc}
+\hypertarget{_http_query_8cpp_a8519bd1f6e5a5968b39a754294e34257}{}\index{Http\+Query.\+cpp@{Http\+Query.\+cpp}!g\+\_\+total\+\_\+query@{g\+\_\+total\+\_\+query}}
+\index{g\+\_\+total\+\_\+query@{g\+\_\+total\+\_\+query}!Http\+Query.\+cpp@{Http\+Query.\+cpp}}
+\subsubsection[{g\+\_\+total\+\_\+query}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t g\+\_\+total\+\_\+query = 0\hspace{0.3cm}{\ttfamily [static]}}\label{_http_query_8cpp_a8519bd1f6e5a5968b39a754294e34257}

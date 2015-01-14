@@ -1,0 +1,77 @@
+\hypertarget{_route_conn_8cpp}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/route\+\_\+server/\+Route\+Conn.cpp File Reference}
+\label{_route_conn_8cpp}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/route\+\_\+server/\+Route\+Conn.\+cpp@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/route\+\_\+server/\+Route\+Conn.\+cpp}}
+{\ttfamily \#include \char`\"{}netlib.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Route\+Conn.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_user_stat__t}{User\+Stat\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef map$<$ \hyperlink{class_c_route_conn}{C\+Route\+Conn} $\ast$, uint32\+\_\+t $>$ \hyperlink{_route_conn_8cpp_a7ff97af342bcc55f2d9dbb3700509821}{Route\+Conn\+Map\+\_\+t}
+\item 
+typedef hash\+\_\+map$<$ uint32\+\_\+t, \hyperlink{struct_user_stat__t}{User\+Stat\+\_\+t} $>$ \hyperlink{_route_conn_8cpp_a01825a9a3046d51967791dd86d5a4fc4}{User\+Stat\+Map\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_route_conn_8cpp_a7ff97af342bcc55f2d9dbb3700509821}{Route\+Conn\+Map\+\_\+t} $\ast$ \hyperlink{_route_conn_8cpp_a1bc5b1fd599792578708348167457063}{get\+\_\+route\+\_\+conns} (uint32\+\_\+t user\+\_\+id)
+\item 
+void \hyperlink{_route_conn_8cpp_acd20262fcac5c88ac80704a78f1c4ebd}{route\+\_\+serv\+\_\+timer\+\_\+callback} (void $\ast$callback\+\_\+data, uint8\+\_\+t msg, uint32\+\_\+t handle, void $\ast$p\+Param)
+\item 
+void \hyperlink{_route_conn_8cpp_a1c475cb30314e16afbe695c7a096b6c1}{init\+\_\+routeconn\+\_\+timer\+\_\+callback} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{imconn_8h_a1b07337cf5bc653007359de2c69e2dce}{Conn\+Map\+\_\+t} \hyperlink{_route_conn_8cpp_a467cd907338e3bc92356a1cd20bd94cf}{g\+\_\+route\+\_\+conn\+\_\+map}
+\item 
+static \hyperlink{_route_conn_8cpp_a01825a9a3046d51967791dd86d5a4fc4}{User\+Stat\+Map\+\_\+t} \hyperlink{_route_conn_8cpp_af2994e02e2bec7356a97e62618353a18}{g\+\_\+rs\+\_\+user\+\_\+map}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_route_conn_8cpp_a7ff97af342bcc55f2d9dbb3700509821}{}\index{Route\+Conn.\+cpp@{Route\+Conn.\+cpp}!Route\+Conn\+Map\+\_\+t@{Route\+Conn\+Map\+\_\+t}}
+\index{Route\+Conn\+Map\+\_\+t@{Route\+Conn\+Map\+\_\+t}!Route\+Conn.\+cpp@{Route\+Conn.\+cpp}}
+\subsubsection[{Route\+Conn\+Map\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef map$<${\bf C\+Route\+Conn}$\ast$, uint32\+\_\+t$>$ {\bf Route\+Conn\+Map\+\_\+t}}\label{_route_conn_8cpp_a7ff97af342bcc55f2d9dbb3700509821}
+\hypertarget{_route_conn_8cpp_a01825a9a3046d51967791dd86d5a4fc4}{}\index{Route\+Conn.\+cpp@{Route\+Conn.\+cpp}!User\+Stat\+Map\+\_\+t@{User\+Stat\+Map\+\_\+t}}
+\index{User\+Stat\+Map\+\_\+t@{User\+Stat\+Map\+\_\+t}!Route\+Conn.\+cpp@{Route\+Conn.\+cpp}}
+\subsubsection[{User\+Stat\+Map\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef hash\+\_\+map$<$uint32\+\_\+t, {\bf User\+Stat\+\_\+t}$>$ {\bf User\+Stat\+Map\+\_\+t}}\label{_route_conn_8cpp_a01825a9a3046d51967791dd86d5a4fc4}
+
+
+\subsection{Function Documentation}
+\hypertarget{_route_conn_8cpp_a1bc5b1fd599792578708348167457063}{}\index{Route\+Conn.\+cpp@{Route\+Conn.\+cpp}!get\+\_\+route\+\_\+conns@{get\+\_\+route\+\_\+conns}}
+\index{get\+\_\+route\+\_\+conns@{get\+\_\+route\+\_\+conns}!Route\+Conn.\+cpp@{Route\+Conn.\+cpp}}
+\subsubsection[{get\+\_\+route\+\_\+conns}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Route\+Conn\+Map\+\_\+t}$\ast$ get\+\_\+route\+\_\+conns (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{user\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{_route_conn_8cpp_a1bc5b1fd599792578708348167457063}
+\hypertarget{_route_conn_8cpp_a1c475cb30314e16afbe695c7a096b6c1}{}\index{Route\+Conn.\+cpp@{Route\+Conn.\+cpp}!init\+\_\+routeconn\+\_\+timer\+\_\+callback@{init\+\_\+routeconn\+\_\+timer\+\_\+callback}}
+\index{init\+\_\+routeconn\+\_\+timer\+\_\+callback@{init\+\_\+routeconn\+\_\+timer\+\_\+callback}!Route\+Conn.\+cpp@{Route\+Conn.\+cpp}}
+\subsubsection[{init\+\_\+routeconn\+\_\+timer\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+routeconn\+\_\+timer\+\_\+callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_route_conn_8cpp_a1c475cb30314e16afbe695c7a096b6c1}
+\hypertarget{_route_conn_8cpp_acd20262fcac5c88ac80704a78f1c4ebd}{}\index{Route\+Conn.\+cpp@{Route\+Conn.\+cpp}!route\+\_\+serv\+\_\+timer\+\_\+callback@{route\+\_\+serv\+\_\+timer\+\_\+callback}}
+\index{route\+\_\+serv\+\_\+timer\+\_\+callback@{route\+\_\+serv\+\_\+timer\+\_\+callback}!Route\+Conn.\+cpp@{Route\+Conn.\+cpp}}
+\subsubsection[{route\+\_\+serv\+\_\+timer\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}void route\+\_\+serv\+\_\+timer\+\_\+callback (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{callback\+\_\+data, }
+\item[{uint8\+\_\+t}]{msg, }
+\item[{uint32\+\_\+t}]{handle, }
+\item[{void $\ast$}]{p\+Param}
+\end{DoxyParamCaption}
+)}\label{_route_conn_8cpp_acd20262fcac5c88ac80704a78f1c4ebd}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_route_conn_8cpp_a467cd907338e3bc92356a1cd20bd94cf}{}\index{Route\+Conn.\+cpp@{Route\+Conn.\+cpp}!g\+\_\+route\+\_\+conn\+\_\+map@{g\+\_\+route\+\_\+conn\+\_\+map}}
+\index{g\+\_\+route\+\_\+conn\+\_\+map@{g\+\_\+route\+\_\+conn\+\_\+map}!Route\+Conn.\+cpp@{Route\+Conn.\+cpp}}
+\subsubsection[{g\+\_\+route\+\_\+conn\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conn\+Map\+\_\+t} g\+\_\+route\+\_\+conn\+\_\+map\hspace{0.3cm}{\ttfamily [static]}}\label{_route_conn_8cpp_a467cd907338e3bc92356a1cd20bd94cf}
+\hypertarget{_route_conn_8cpp_af2994e02e2bec7356a97e62618353a18}{}\index{Route\+Conn.\+cpp@{Route\+Conn.\+cpp}!g\+\_\+rs\+\_\+user\+\_\+map@{g\+\_\+rs\+\_\+user\+\_\+map}}
+\index{g\+\_\+rs\+\_\+user\+\_\+map@{g\+\_\+rs\+\_\+user\+\_\+map}!Route\+Conn.\+cpp@{Route\+Conn.\+cpp}}
+\subsubsection[{g\+\_\+rs\+\_\+user\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User\+Stat\+Map\+\_\+t} g\+\_\+rs\+\_\+user\+\_\+map\hspace{0.3cm}{\ttfamily [static]}}\label{_route_conn_8cpp_af2994e02e2bec7356a97e62618353a18}

@@ -1,0 +1,147 @@
+\hypertarget{class_c_im_pdu_client_group_change_member_request}{}\section{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request Class Reference}
+\label{class_c_im_pdu_client_group_change_member_request}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+
+
+{\ttfamily \#include $<$Im\+Pdu\+Group.\+h$>$}
+
+Inheritance diagram for C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_im_pdu_client_group_change_member_request}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_im_pdu_client_group_change_member_request_a09f7b11d0dc77667c01a5454fa9bd265}{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request} (\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$buf, uint32\+\_\+t len)
+\item 
+\hyperlink{class_c_im_pdu_client_group_change_member_request_a81e8577e67b2c1ea344af8e710c8804c}{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request} (uint32\+\_\+t change\+\_\+type, const char $\ast$group\+\_\+id, list$<$ \hyperlink{structuser__id__t}{user\+\_\+id\+\_\+t} $>$ $\ast$user\+\_\+list)
+\item 
+virtual \hyperlink{class_c_im_pdu_client_group_change_member_request_abf2455e00660752f8a0e9b6a5ef68a5e}{$\sim$\+C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request} ()
+\item 
+virtual uint16\+\_\+t \hyperlink{class_c_im_pdu_client_group_change_member_request_a158b4067e6b624a77656df06cc6f911f}{Get\+Pdu\+Type} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_group_change_member_request_a053c67348299f264b7972cbf809beae7}{Get\+Change\+Type} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_group_change_member_request_a2aa2a87ae21a41f6c19b6b3d47cab968}{Get\+Group\+Id\+Len} ()
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_client_group_change_member_request_a86fe35a5bb20b62f6c46d3e3981222f6}{Get\+Group\+Id} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_group_change_member_request_aa3830bb24dea23d0c764109d34fa9eec}{Get\+User\+Cnt} ()
+\item 
+\hyperlink{structuser__id__t}{user\+\_\+id\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_client_group_change_member_request_a7375462a81a3f6eb86852f6d09572d42}{Get\+User\+List} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_group_change_member_request_a90423832c1edc34b5f5f1366ad694052}{m\+\_\+group\+\_\+id\+\_\+len}
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_client_group_change_member_request_a439cbb36c070f02dace9ef38db3331b4}{m\+\_\+group\+\_\+id}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_group_change_member_request_a03550182ebc05008e2280e2d76472e06}{m\+\_\+change\+\_\+type}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_group_change_member_request_a2c1f5a8256d1e601ccb8f688f0b46997}{m\+\_\+user\+\_\+cnt}
+\item 
+\hyperlink{structuser__id__t}{user\+\_\+id\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_client_group_change_member_request_a3ab5c3e3ed6c76c17fa4da3fa95cfddf}{m\+\_\+user\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_im_pdu_client_group_change_member_request_a09f7b11d0dc77667c01a5454fa9bd265}{}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\subsubsection[{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+::\+C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf uchar\+\_\+t} $\ast$}]{buf, }
+\item[{uint32\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_client_group_change_member_request_a09f7b11d0dc77667c01a5454fa9bd265}
+\hypertarget{class_c_im_pdu_client_group_change_member_request_a81e8577e67b2c1ea344af8e710c8804c}{}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\subsubsection[{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+::\+C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{change\+\_\+type, }
+\item[{const char $\ast$}]{group\+\_\+id, }
+\item[{list$<$ {\bf user\+\_\+id\+\_\+t} $>$ $\ast$}]{user\+\_\+list}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_client_group_change_member_request_a81e8577e67b2c1ea344af8e710c8804c}
+\hypertarget{class_c_im_pdu_client_group_change_member_request_abf2455e00660752f8a0e9b6a5ef68a5e}{}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!````~C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{$\sim$\+C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\index{````~C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{$\sim$\+C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\subsubsection[{$\sim$\+C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+::$\sim$\+C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_im_pdu_client_group_change_member_request_abf2455e00660752f8a0e9b6a5ef68a5e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_im_pdu_client_group_change_member_request_a053c67348299f264b7972cbf809beae7}{}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!Get\+Change\+Type@{Get\+Change\+Type}}
+\index{Get\+Change\+Type@{Get\+Change\+Type}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\subsubsection[{Get\+Change\+Type}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+::\+Get\+Change\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_group_change_member_request_a053c67348299f264b7972cbf809beae7}
+\hypertarget{class_c_im_pdu_client_group_change_member_request_a86fe35a5bb20b62f6c46d3e3981222f6}{}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!Get\+Group\+Id@{Get\+Group\+Id}}
+\index{Get\+Group\+Id@{Get\+Group\+Id}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\subsubsection[{Get\+Group\+Id}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+::\+Get\+Group\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_group_change_member_request_a86fe35a5bb20b62f6c46d3e3981222f6}
+\hypertarget{class_c_im_pdu_client_group_change_member_request_a2aa2a87ae21a41f6c19b6b3d47cab968}{}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!Get\+Group\+Id\+Len@{Get\+Group\+Id\+Len}}
+\index{Get\+Group\+Id\+Len@{Get\+Group\+Id\+Len}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\subsubsection[{Get\+Group\+Id\+Len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+::\+Get\+Group\+Id\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_group_change_member_request_a2aa2a87ae21a41f6c19b6b3d47cab968}
+\hypertarget{class_c_im_pdu_client_group_change_member_request_a158b4067e6b624a77656df06cc6f911f}{}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!Get\+Pdu\+Type@{Get\+Pdu\+Type}}
+\index{Get\+Pdu\+Type@{Get\+Pdu\+Type}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\subsubsection[{Get\+Pdu\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint16\+\_\+t C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+::\+Get\+Pdu\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_im_pdu_client_group_change_member_request_a158b4067e6b624a77656df06cc6f911f}
+
+
+Reimplemented from \hyperlink{class_c_im_pdu_a887912f445b3e864d33f9e7f2325f1fc}{C\+Im\+Pdu}.
+
+\hypertarget{class_c_im_pdu_client_group_change_member_request_aa3830bb24dea23d0c764109d34fa9eec}{}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!Get\+User\+Cnt@{Get\+User\+Cnt}}
+\index{Get\+User\+Cnt@{Get\+User\+Cnt}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\subsubsection[{Get\+User\+Cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+::\+Get\+User\+Cnt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_group_change_member_request_aa3830bb24dea23d0c764109d34fa9eec}
+\hypertarget{class_c_im_pdu_client_group_change_member_request_a7375462a81a3f6eb86852f6d09572d42}{}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!Get\+User\+List@{Get\+User\+List}}
+\index{Get\+User\+List@{Get\+User\+List}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\subsubsection[{Get\+User\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf user\+\_\+id\+\_\+t}$\ast$ C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+::\+Get\+User\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_group_change_member_request_a7375462a81a3f6eb86852f6d09572d42}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_im_pdu_client_group_change_member_request_a03550182ebc05008e2280e2d76472e06}{}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!m\+\_\+change\+\_\+type@{m\+\_\+change\+\_\+type}}
+\index{m\+\_\+change\+\_\+type@{m\+\_\+change\+\_\+type}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\subsubsection[{m\+\_\+change\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+::m\+\_\+change\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_group_change_member_request_a03550182ebc05008e2280e2d76472e06}
+\hypertarget{class_c_im_pdu_client_group_change_member_request_a439cbb36c070f02dace9ef38db3331b4}{}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!m\+\_\+group\+\_\+id@{m\+\_\+group\+\_\+id}}
+\index{m\+\_\+group\+\_\+id@{m\+\_\+group\+\_\+id}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\subsubsection[{m\+\_\+group\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+::m\+\_\+group\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_group_change_member_request_a439cbb36c070f02dace9ef38db3331b4}
+\hypertarget{class_c_im_pdu_client_group_change_member_request_a90423832c1edc34b5f5f1366ad694052}{}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!m\+\_\+group\+\_\+id\+\_\+len@{m\+\_\+group\+\_\+id\+\_\+len}}
+\index{m\+\_\+group\+\_\+id\+\_\+len@{m\+\_\+group\+\_\+id\+\_\+len}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\subsubsection[{m\+\_\+group\+\_\+id\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+::m\+\_\+group\+\_\+id\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_group_change_member_request_a90423832c1edc34b5f5f1366ad694052}
+\hypertarget{class_c_im_pdu_client_group_change_member_request_a2c1f5a8256d1e601ccb8f688f0b46997}{}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!m\+\_\+user\+\_\+cnt@{m\+\_\+user\+\_\+cnt}}
+\index{m\+\_\+user\+\_\+cnt@{m\+\_\+user\+\_\+cnt}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\subsubsection[{m\+\_\+user\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+::m\+\_\+user\+\_\+cnt\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_group_change_member_request_a2c1f5a8256d1e601ccb8f688f0b46997}
+\hypertarget{class_c_im_pdu_client_group_change_member_request_a3ab5c3e3ed6c76c17fa4da3fa95cfddf}{}\index{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}!m\+\_\+user\+\_\+list@{m\+\_\+user\+\_\+list}}
+\index{m\+\_\+user\+\_\+list@{m\+\_\+user\+\_\+list}!C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request@{C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request}}
+\subsubsection[{m\+\_\+user\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf user\+\_\+id\+\_\+t}$\ast$ C\+Im\+Pdu\+Client\+Group\+Change\+Member\+Request\+::m\+\_\+user\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_group_change_member_request_a3ab5c3e3ed6c76c17fa4da3fa95cfddf}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_group_8h}{Im\+Pdu\+Group.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_group_8cpp}{Im\+Pdu\+Group.\+cpp}\end{DoxyCompactItemize}

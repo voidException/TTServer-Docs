@@ -1,0 +1,246 @@
+\hypertarget{class_c_im_pdu_client_msg_data}{}\section{C\+Im\+Pdu\+Client\+Msg\+Data Class Reference}
+\label{class_c_im_pdu_client_msg_data}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+
+
+{\ttfamily \#include $<$Im\+Pdu\+Client.\+h$>$}
+
+Inheritance diagram for C\+Im\+Pdu\+Client\+Msg\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_im_pdu_client_msg_data}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_im_pdu_client_msg_data_a26020af0c039fd38941edeb0b06f6798}{C\+Im\+Pdu\+Client\+Msg\+Data} (\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$buf, uint32\+\_\+t len)
+\item 
+\hyperlink{class_c_im_pdu_client_msg_data_a34cc1f63ee92ff1ceeeef0fe3935263b}{C\+Im\+Pdu\+Client\+Msg\+Data} (uint32\+\_\+t seq\+\_\+no, const char $\ast$from\+\_\+id\+\_\+url, const char $\ast$to\+\_\+id\+\_\+url, uint32\+\_\+t create\+\_\+time, uint8\+\_\+t msg\+\_\+type, uint32\+\_\+t msg\+\_\+len, \hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$msg\+\_\+data, uint32\+\_\+t attach\+\_\+len, char $\ast$attach\+\_\+data)
+\item 
+virtual \hyperlink{class_c_im_pdu_client_msg_data_a4f75a668e400db7bf8f71c159922ba6c}{$\sim$\+C\+Im\+Pdu\+Client\+Msg\+Data} ()
+\item 
+virtual uint16\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_ad49f330ba5c9fad30ffd1e298256c9cb}{Get\+Pdu\+Type} ()
+\item 
+void \hyperlink{class_c_im_pdu_client_msg_data_a858d584849f37a5c576fbe6691348661}{Add\+Time} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_a219213c1d787e3ed1208c41b99c8ea63}{Get\+Seq\+No} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_aff8034804fb1867a12a04a5547a47ee1}{Get\+From\+Id\+Len} ()
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_client_msg_data_a71e94918a365f05b676dd230083ea0c0}{Get\+From\+Id\+Url} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_a269b8017a7db744cdd2ec1bc002420f1}{Get\+To\+Id\+Len} ()
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_client_msg_data_a2d0113c2e2922ffba5bdf4eb4cdc46d1}{Get\+To\+Id\+Url} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_a2177fbc9b4b487942d150127effc2c0d}{Get\+Create\+Time} ()
+\item 
+uint8\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_a4b902c986cdd07a98beb5b95f28e6c16}{Get\+Msg\+Type} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_a6321c1d736f6eeeaaa840e88e48682ee}{Get\+Msg\+Len} ()
+\item 
+\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_client_msg_data_abd1f96c3065523033ed48bf3ce73902f}{Get\+Msg\+Data} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_a1e78acbed0b3899bdf906df9d1aabbea}{Get\+Attach\+Len} ()
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_client_msg_data_a17ba0ba6b6ad01f807ad6a9c7d5c5092}{Get\+Attach\+Data} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_a2eb1e220425ed3af78f7ea7806286ef2}{m\+\_\+seq\+\_\+no}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_ab498533f19ebc1d83efca62a49c8da4f}{m\+\_\+from\+\_\+id\+\_\+len}
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_client_msg_data_ada59f9aa8ae94f2e77780446f33e0b2a}{m\+\_\+from\+\_\+id\+\_\+url}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_a47d7a192cc2705e5a15e8ba08715cf27}{m\+\_\+to\+\_\+id\+\_\+len}
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_client_msg_data_a59bcf473a08e7ed29909f3590228d82d}{m\+\_\+to\+\_\+id\+\_\+url}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_a248b09aff201e8dd4ccba32fd11b3b27}{m\+\_\+create\+\_\+time}
+\item 
+uint8\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_a844427c694178b641b2c2713a1edad5c}{m\+\_\+msg\+\_\+type}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_acabde8e08641972fa32fa69829afb920}{m\+\_\+msg\+\_\+len}
+\item 
+\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_client_msg_data_a8f806f54923c824216f4359bc4199c31}{m\+\_\+msg\+\_\+data}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_client_msg_data_a351b2b60b9fc9c3bc8522dac9871e531}{m\+\_\+attach\+\_\+len}
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_client_msg_data_ab485963fdcdfd376bf7b2445de414659}{m\+\_\+attach\+\_\+data}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_im_pdu_client_msg_data_a26020af0c039fd38941edeb0b06f6798}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{C\+Im\+Pdu\+Client\+Msg\+Data}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Client\+Msg\+Data\+::\+C\+Im\+Pdu\+Client\+Msg\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf uchar\+\_\+t} $\ast$}]{buf, }
+\item[{uint32\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_client_msg_data_a26020af0c039fd38941edeb0b06f6798}
+\hypertarget{class_c_im_pdu_client_msg_data_a34cc1f63ee92ff1ceeeef0fe3935263b}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{C\+Im\+Pdu\+Client\+Msg\+Data}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Client\+Msg\+Data\+::\+C\+Im\+Pdu\+Client\+Msg\+Data (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{seq\+\_\+no, }
+\item[{const char $\ast$}]{from\+\_\+id\+\_\+url, }
+\item[{const char $\ast$}]{to\+\_\+id\+\_\+url, }
+\item[{uint32\+\_\+t}]{create\+\_\+time, }
+\item[{uint8\+\_\+t}]{msg\+\_\+type, }
+\item[{uint32\+\_\+t}]{msg\+\_\+len, }
+\item[{{\bf uchar\+\_\+t} $\ast$}]{msg\+\_\+data, }
+\item[{uint32\+\_\+t}]{attach\+\_\+len, }
+\item[{char $\ast$}]{attach\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_client_msg_data_a34cc1f63ee92ff1ceeeef0fe3935263b}
+\hypertarget{class_c_im_pdu_client_msg_data_a4f75a668e400db7bf8f71c159922ba6c}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!````~C\+Im\+Pdu\+Client\+Msg\+Data@{$\sim$\+C\+Im\+Pdu\+Client\+Msg\+Data}}
+\index{````~C\+Im\+Pdu\+Client\+Msg\+Data@{$\sim$\+C\+Im\+Pdu\+Client\+Msg\+Data}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{$\sim$\+C\+Im\+Pdu\+Client\+Msg\+Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Im\+Pdu\+Client\+Msg\+Data\+::$\sim$\+C\+Im\+Pdu\+Client\+Msg\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_im_pdu_client_msg_data_a4f75a668e400db7bf8f71c159922ba6c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_im_pdu_client_msg_data_a858d584849f37a5c576fbe6691348661}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!Add\+Time@{Add\+Time}}
+\index{Add\+Time@{Add\+Time}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{Add\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Im\+Pdu\+Client\+Msg\+Data\+::\+Add\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_client_msg_data_a858d584849f37a5c576fbe6691348661}
+\hypertarget{class_c_im_pdu_client_msg_data_a17ba0ba6b6ad01f807ad6a9c7d5c5092}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!Get\+Attach\+Data@{Get\+Attach\+Data}}
+\index{Get\+Attach\+Data@{Get\+Attach\+Data}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{Get\+Attach\+Data}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Client\+Msg\+Data\+::\+Get\+Attach\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_msg_data_a17ba0ba6b6ad01f807ad6a9c7d5c5092}
+\hypertarget{class_c_im_pdu_client_msg_data_a1e78acbed0b3899bdf906df9d1aabbea}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!Get\+Attach\+Len@{Get\+Attach\+Len}}
+\index{Get\+Attach\+Len@{Get\+Attach\+Len}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{Get\+Attach\+Len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::\+Get\+Attach\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_msg_data_a1e78acbed0b3899bdf906df9d1aabbea}
+\hypertarget{class_c_im_pdu_client_msg_data_a2177fbc9b4b487942d150127effc2c0d}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!Get\+Create\+Time@{Get\+Create\+Time}}
+\index{Get\+Create\+Time@{Get\+Create\+Time}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{Get\+Create\+Time}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::\+Get\+Create\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_msg_data_a2177fbc9b4b487942d150127effc2c0d}
+\hypertarget{class_c_im_pdu_client_msg_data_aff8034804fb1867a12a04a5547a47ee1}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!Get\+From\+Id\+Len@{Get\+From\+Id\+Len}}
+\index{Get\+From\+Id\+Len@{Get\+From\+Id\+Len}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{Get\+From\+Id\+Len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::\+Get\+From\+Id\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_msg_data_aff8034804fb1867a12a04a5547a47ee1}
+\hypertarget{class_c_im_pdu_client_msg_data_a71e94918a365f05b676dd230083ea0c0}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!Get\+From\+Id\+Url@{Get\+From\+Id\+Url}}
+\index{Get\+From\+Id\+Url@{Get\+From\+Id\+Url}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{Get\+From\+Id\+Url}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Client\+Msg\+Data\+::\+Get\+From\+Id\+Url (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_msg_data_a71e94918a365f05b676dd230083ea0c0}
+\hypertarget{class_c_im_pdu_client_msg_data_abd1f96c3065523033ed48bf3ce73902f}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!Get\+Msg\+Data@{Get\+Msg\+Data}}
+\index{Get\+Msg\+Data@{Get\+Msg\+Data}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{Get\+Msg\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar\+\_\+t}$\ast$ C\+Im\+Pdu\+Client\+Msg\+Data\+::\+Get\+Msg\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_msg_data_abd1f96c3065523033ed48bf3ce73902f}
+\hypertarget{class_c_im_pdu_client_msg_data_a6321c1d736f6eeeaaa840e88e48682ee}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!Get\+Msg\+Len@{Get\+Msg\+Len}}
+\index{Get\+Msg\+Len@{Get\+Msg\+Len}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{Get\+Msg\+Len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::\+Get\+Msg\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_msg_data_a6321c1d736f6eeeaaa840e88e48682ee}
+\hypertarget{class_c_im_pdu_client_msg_data_a4b902c986cdd07a98beb5b95f28e6c16}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!Get\+Msg\+Type@{Get\+Msg\+Type}}
+\index{Get\+Msg\+Type@{Get\+Msg\+Type}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{Get\+Msg\+Type}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::\+Get\+Msg\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_msg_data_a4b902c986cdd07a98beb5b95f28e6c16}
+\hypertarget{class_c_im_pdu_client_msg_data_ad49f330ba5c9fad30ffd1e298256c9cb}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!Get\+Pdu\+Type@{Get\+Pdu\+Type}}
+\index{Get\+Pdu\+Type@{Get\+Pdu\+Type}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{Get\+Pdu\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint16\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::\+Get\+Pdu\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_im_pdu_client_msg_data_ad49f330ba5c9fad30ffd1e298256c9cb}
+
+
+Reimplemented from \hyperlink{class_c_im_pdu_a887912f445b3e864d33f9e7f2325f1fc}{C\+Im\+Pdu}.
+
+\hypertarget{class_c_im_pdu_client_msg_data_a219213c1d787e3ed1208c41b99c8ea63}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!Get\+Seq\+No@{Get\+Seq\+No}}
+\index{Get\+Seq\+No@{Get\+Seq\+No}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{Get\+Seq\+No}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::\+Get\+Seq\+No (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_msg_data_a219213c1d787e3ed1208c41b99c8ea63}
+\hypertarget{class_c_im_pdu_client_msg_data_a269b8017a7db744cdd2ec1bc002420f1}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!Get\+To\+Id\+Len@{Get\+To\+Id\+Len}}
+\index{Get\+To\+Id\+Len@{Get\+To\+Id\+Len}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{Get\+To\+Id\+Len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::\+Get\+To\+Id\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_msg_data_a269b8017a7db744cdd2ec1bc002420f1}
+\hypertarget{class_c_im_pdu_client_msg_data_a2d0113c2e2922ffba5bdf4eb4cdc46d1}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!Get\+To\+Id\+Url@{Get\+To\+Id\+Url}}
+\index{Get\+To\+Id\+Url@{Get\+To\+Id\+Url}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{Get\+To\+Id\+Url}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Client\+Msg\+Data\+::\+Get\+To\+Id\+Url (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_client_msg_data_a2d0113c2e2922ffba5bdf4eb4cdc46d1}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_im_pdu_client_msg_data_ab485963fdcdfd376bf7b2445de414659}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!m\+\_\+attach\+\_\+data@{m\+\_\+attach\+\_\+data}}
+\index{m\+\_\+attach\+\_\+data@{m\+\_\+attach\+\_\+data}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{m\+\_\+attach\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Client\+Msg\+Data\+::m\+\_\+attach\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_msg_data_ab485963fdcdfd376bf7b2445de414659}
+\hypertarget{class_c_im_pdu_client_msg_data_a351b2b60b9fc9c3bc8522dac9871e531}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!m\+\_\+attach\+\_\+len@{m\+\_\+attach\+\_\+len}}
+\index{m\+\_\+attach\+\_\+len@{m\+\_\+attach\+\_\+len}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{m\+\_\+attach\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::m\+\_\+attach\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_msg_data_a351b2b60b9fc9c3bc8522dac9871e531}
+\hypertarget{class_c_im_pdu_client_msg_data_a248b09aff201e8dd4ccba32fd11b3b27}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!m\+\_\+create\+\_\+time@{m\+\_\+create\+\_\+time}}
+\index{m\+\_\+create\+\_\+time@{m\+\_\+create\+\_\+time}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{m\+\_\+create\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::m\+\_\+create\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_msg_data_a248b09aff201e8dd4ccba32fd11b3b27}
+\hypertarget{class_c_im_pdu_client_msg_data_ab498533f19ebc1d83efca62a49c8da4f}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!m\+\_\+from\+\_\+id\+\_\+len@{m\+\_\+from\+\_\+id\+\_\+len}}
+\index{m\+\_\+from\+\_\+id\+\_\+len@{m\+\_\+from\+\_\+id\+\_\+len}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{m\+\_\+from\+\_\+id\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::m\+\_\+from\+\_\+id\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_msg_data_ab498533f19ebc1d83efca62a49c8da4f}
+\hypertarget{class_c_im_pdu_client_msg_data_ada59f9aa8ae94f2e77780446f33e0b2a}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!m\+\_\+from\+\_\+id\+\_\+url@{m\+\_\+from\+\_\+id\+\_\+url}}
+\index{m\+\_\+from\+\_\+id\+\_\+url@{m\+\_\+from\+\_\+id\+\_\+url}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{m\+\_\+from\+\_\+id\+\_\+url}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Client\+Msg\+Data\+::m\+\_\+from\+\_\+id\+\_\+url\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_msg_data_ada59f9aa8ae94f2e77780446f33e0b2a}
+\hypertarget{class_c_im_pdu_client_msg_data_a8f806f54923c824216f4359bc4199c31}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!m\+\_\+msg\+\_\+data@{m\+\_\+msg\+\_\+data}}
+\index{m\+\_\+msg\+\_\+data@{m\+\_\+msg\+\_\+data}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{m\+\_\+msg\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar\+\_\+t}$\ast$ C\+Im\+Pdu\+Client\+Msg\+Data\+::m\+\_\+msg\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_msg_data_a8f806f54923c824216f4359bc4199c31}
+\hypertarget{class_c_im_pdu_client_msg_data_acabde8e08641972fa32fa69829afb920}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!m\+\_\+msg\+\_\+len@{m\+\_\+msg\+\_\+len}}
+\index{m\+\_\+msg\+\_\+len@{m\+\_\+msg\+\_\+len}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{m\+\_\+msg\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::m\+\_\+msg\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_msg_data_acabde8e08641972fa32fa69829afb920}
+\hypertarget{class_c_im_pdu_client_msg_data_a844427c694178b641b2c2713a1edad5c}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!m\+\_\+msg\+\_\+type@{m\+\_\+msg\+\_\+type}}
+\index{m\+\_\+msg\+\_\+type@{m\+\_\+msg\+\_\+type}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{m\+\_\+msg\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::m\+\_\+msg\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_msg_data_a844427c694178b641b2c2713a1edad5c}
+\hypertarget{class_c_im_pdu_client_msg_data_a2eb1e220425ed3af78f7ea7806286ef2}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!m\+\_\+seq\+\_\+no@{m\+\_\+seq\+\_\+no}}
+\index{m\+\_\+seq\+\_\+no@{m\+\_\+seq\+\_\+no}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{m\+\_\+seq\+\_\+no}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::m\+\_\+seq\+\_\+no\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_msg_data_a2eb1e220425ed3af78f7ea7806286ef2}
+\hypertarget{class_c_im_pdu_client_msg_data_a47d7a192cc2705e5a15e8ba08715cf27}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!m\+\_\+to\+\_\+id\+\_\+len@{m\+\_\+to\+\_\+id\+\_\+len}}
+\index{m\+\_\+to\+\_\+id\+\_\+len@{m\+\_\+to\+\_\+id\+\_\+len}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{m\+\_\+to\+\_\+id\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Client\+Msg\+Data\+::m\+\_\+to\+\_\+id\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_msg_data_a47d7a192cc2705e5a15e8ba08715cf27}
+\hypertarget{class_c_im_pdu_client_msg_data_a59bcf473a08e7ed29909f3590228d82d}{}\index{C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}!m\+\_\+to\+\_\+id\+\_\+url@{m\+\_\+to\+\_\+id\+\_\+url}}
+\index{m\+\_\+to\+\_\+id\+\_\+url@{m\+\_\+to\+\_\+id\+\_\+url}!C\+Im\+Pdu\+Client\+Msg\+Data@{C\+Im\+Pdu\+Client\+Msg\+Data}}
+\subsubsection[{m\+\_\+to\+\_\+id\+\_\+url}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Client\+Msg\+Data\+::m\+\_\+to\+\_\+id\+\_\+url\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_client_msg_data_a59bcf473a08e7ed29909f3590228d82d}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_client_8h}{Im\+Pdu\+Client.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_client_8cpp}{Im\+Pdu\+Client.\+cpp}\end{DoxyCompactItemize}

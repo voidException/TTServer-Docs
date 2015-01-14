@@ -1,0 +1,114 @@
+\hypertarget{msfs_2include_2common_2util_8h}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/include/common/util.h File Reference}
+\label{msfs_2include_2common_2util_8h}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/include/common/util.\+h@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/include/common/util.\+h}}
+{\ttfamily \#include \char`\"{}ostype.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$list$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$stdarg.\+h$>$}\\*
+{\ttfamily \#include $<$pthread.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include $<$sys/time.\+h$>$}\\*
+{\ttfamily \#include $<$ext/hash\+\_\+map$>$}\\*
+{\ttfamily \#include $<$sys/stat.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_thread}{C\+Thread}
+\item 
+class \hyperlink{class_c_event_thread}{C\+Event\+Thread}
+\item 
+class \hyperlink{class_c_thread_lock}{C\+Thread\+Lock}
+\item 
+class \hyperlink{class_c_func_lock}{C\+Func\+Lock}
+\item 
+class \hyperlink{class_c_ref_object}{C\+Ref\+Object}
+\item 
+class \hyperlink{class_c_str_explode}{C\+Str\+Explode}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{msfs_2include_2common_2util_8h_a411c46599e926f8cdf49c63957255359}{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E}
+\item 
+\#define \hyperlink{msfs_2include_2common_2util_8h_afd932992b0afe0ee3014a55ceace90c7}{M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E}~0x4000000
+\item 
+\#define \hyperlink{msfs_2include_2common_2util_8h_a58b4ad71b3f1d9dc7fcfb2704dc64837}{N\+O\+T\+U\+S\+E\+D\+\_\+\+A\+R\+G}(v)~((void)v)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{msfs_2include_2common_2util_8h_a1e76fad2fc6915f89fbc9975e63e8f01}{log} (const char $\ast$fmt,...)
+\item 
+uint64\+\_\+t \hyperlink{msfs_2include_2common_2util_8h_a3e4f8fa11af9cc2cc258d8344c68c17d}{get\+\_\+tick\+\_\+count} ()
+\begin{DoxyCompactList}\small\item\em yunfan modify end \end{DoxyCompactList}\item 
+void \hyperlink{msfs_2include_2common_2util_8h_ae6c38fcb2c4b814fa20ea6d4381e2814}{util\+\_\+sleep} (uint32\+\_\+t millisecond)
+\item 
+int64\+\_\+t \hyperlink{msfs_2include_2common_2util_8h_abe3720629613b201b1fe3e4c41d792d1}{get\+\_\+file\+\_\+size} (const char $\ast$path)
+\item 
+const char $\ast$ \hyperlink{msfs_2include_2common_2util_8h_aaa41d4d4427645c6bbe0ec0c6e0fc24d}{memfind} (const char $\ast$src\+\_\+str, size\+\_\+t src\+\_\+len, const char $\ast$sub\+\_\+str, size\+\_\+t sub\+\_\+len, bool flag=true)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{msfs_2include_2common_2util_8h_a411c46599e926f8cdf49c63957255359}{}\index{msfs/include/common/util.\+h@{msfs/include/common/util.\+h}!\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E@{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E}}
+\index{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E@{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E}!msfs/include/common/util.\+h@{msfs/include/common/util.\+h}}
+\subsubsection[{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E}\label{msfs_2include_2common_2util_8h_a411c46599e926f8cdf49c63957255359}
+\hypertarget{msfs_2include_2common_2util_8h_afd932992b0afe0ee3014a55ceace90c7}{}\index{msfs/include/common/util.\+h@{msfs/include/common/util.\+h}!M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E}}
+\index{M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E}!msfs/include/common/util.\+h@{msfs/include/common/util.\+h}}
+\subsubsection[{M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E~0x4000000}\label{msfs_2include_2common_2util_8h_afd932992b0afe0ee3014a55ceace90c7}
+\hypertarget{msfs_2include_2common_2util_8h_a58b4ad71b3f1d9dc7fcfb2704dc64837}{}\index{msfs/include/common/util.\+h@{msfs/include/common/util.\+h}!N\+O\+T\+U\+S\+E\+D\+\_\+\+A\+R\+G@{N\+O\+T\+U\+S\+E\+D\+\_\+\+A\+R\+G}}
+\index{N\+O\+T\+U\+S\+E\+D\+\_\+\+A\+R\+G@{N\+O\+T\+U\+S\+E\+D\+\_\+\+A\+R\+G}!msfs/include/common/util.\+h@{msfs/include/common/util.\+h}}
+\subsubsection[{N\+O\+T\+U\+S\+E\+D\+\_\+\+A\+R\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+O\+T\+U\+S\+E\+D\+\_\+\+A\+R\+G(
+\begin{DoxyParamCaption}
+\item[{}]{v}
+\end{DoxyParamCaption}
+)~((void)v)}\label{msfs_2include_2common_2util_8h_a58b4ad71b3f1d9dc7fcfb2704dc64837}
+
+
+\subsection{Function Documentation}
+\hypertarget{msfs_2include_2common_2util_8h_abe3720629613b201b1fe3e4c41d792d1}{}\index{msfs/include/common/util.\+h@{msfs/include/common/util.\+h}!get\+\_\+file\+\_\+size@{get\+\_\+file\+\_\+size}}
+\index{get\+\_\+file\+\_\+size@{get\+\_\+file\+\_\+size}!msfs/include/common/util.\+h@{msfs/include/common/util.\+h}}
+\subsubsection[{get\+\_\+file\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t get\+\_\+file\+\_\+size (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}\label{msfs_2include_2common_2util_8h_abe3720629613b201b1fe3e4c41d792d1}
+\hypertarget{msfs_2include_2common_2util_8h_a3e4f8fa11af9cc2cc258d8344c68c17d}{}\index{msfs/include/common/util.\+h@{msfs/include/common/util.\+h}!get\+\_\+tick\+\_\+count@{get\+\_\+tick\+\_\+count}}
+\index{get\+\_\+tick\+\_\+count@{get\+\_\+tick\+\_\+count}!msfs/include/common/util.\+h@{msfs/include/common/util.\+h}}
+\subsubsection[{get\+\_\+tick\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t get\+\_\+tick\+\_\+count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{msfs_2include_2common_2util_8h_a3e4f8fa11af9cc2cc258d8344c68c17d}
+
+
+yunfan modify end 
+
+\hypertarget{msfs_2include_2common_2util_8h_a1e76fad2fc6915f89fbc9975e63e8f01}{}\index{msfs/include/common/util.\+h@{msfs/include/common/util.\+h}!log@{log}}
+\index{log@{log}!msfs/include/common/util.\+h@{msfs/include/common/util.\+h}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}void log (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{fmt, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\label{msfs_2include_2common_2util_8h_a1e76fad2fc6915f89fbc9975e63e8f01}
+\hypertarget{msfs_2include_2common_2util_8h_aaa41d4d4427645c6bbe0ec0c6e0fc24d}{}\index{msfs/include/common/util.\+h@{msfs/include/common/util.\+h}!memfind@{memfind}}
+\index{memfind@{memfind}!msfs/include/common/util.\+h@{msfs/include/common/util.\+h}}
+\subsubsection[{memfind}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ memfind (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{src\+\_\+str, }
+\item[{size\+\_\+t}]{src\+\_\+len, }
+\item[{const char $\ast$}]{sub\+\_\+str, }
+\item[{size\+\_\+t}]{sub\+\_\+len, }
+\item[{bool}]{flag = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{msfs_2include_2common_2util_8h_aaa41d4d4427645c6bbe0ec0c6e0fc24d}
+\hypertarget{msfs_2include_2common_2util_8h_ae6c38fcb2c4b814fa20ea6d4381e2814}{}\index{msfs/include/common/util.\+h@{msfs/include/common/util.\+h}!util\+\_\+sleep@{util\+\_\+sleep}}
+\index{util\+\_\+sleep@{util\+\_\+sleep}!msfs/include/common/util.\+h@{msfs/include/common/util.\+h}}
+\subsubsection[{util\+\_\+sleep}]{\setlength{\rightskip}{0pt plus 5cm}void util\+\_\+sleep (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{millisecond}
+\end{DoxyParamCaption}
+)}\label{msfs_2include_2common_2util_8h_ae6c38fcb2c4b814fa20ea6d4381e2814}

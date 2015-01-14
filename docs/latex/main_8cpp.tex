@@ -1,0 +1,101 @@
+\hypertarget{main_8cpp}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/main.cpp File Reference}
+\label{main_8cpp}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/main.\+cpp@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$signal.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}netlib.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Config\+File\+Reader.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Http\+Conn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}File\+Manager.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Thread\+Pool.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8cpp_ab6f966f240d3b808e8bbf6ba0986b0f5}{closeall} (int fd)
+\item 
+int \hyperlink{main_8cpp_ab3a7b2a6b54dbd8b9490562f9b1c15c3}{daemon} (int nochdir, int noclose, int asroot)
+\item 
+void \hyperlink{main_8cpp_abfe06a571c6062bdf0dfc4e0bfc04368}{http\+\_\+callback} (void $\ast$callback\+\_\+data, uint8\+\_\+t msg, uint32\+\_\+t handle, void $\ast$p\+Param)
+\item 
+void \hyperlink{main_8cpp_ac7aa642d50b566fdaccb9a2e8fc359cc}{do\+Quit\+Job} ()
+\item 
+void \hyperlink{main_8cpp_a72a1fc892c3275ce98231492ca3a0481}{Stop} (int signo)
+\item 
+int \hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmsfs_1_1_file_manager}{File\+Manager} $\ast$ \hyperlink{main_8cpp_a84ccd477d0043d13ff8fe374f9c9532f}{g\+\_\+file\+Manager} = N\+U\+L\+L
+\item 
+\hyperlink{class_c_config_file_reader}{C\+Config\+File\+Reader} \hyperlink{main_8cpp_a3837a9812cea4b11b59b5211f2a1890b}{config\+\_\+file} (\char`\"{}msfs.\+conf\char`\"{})
+\item 
+\hyperlink{class_c_thread_pool}{C\+Thread\+Pool} \hyperlink{main_8cpp_a787477d76fb984164df4a2406a7ebeef}{g\+\_\+\+Post\+Thread\+Pool}
+\item 
+\hyperlink{class_c_thread_pool}{C\+Thread\+Pool} \hyperlink{main_8cpp_a4ad4fb80f36eced4a75d3f45b14e6de0}{g\+\_\+\+Get\+Thread\+Pool}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8cpp_ab6f966f240d3b808e8bbf6ba0986b0f5}{}\index{main.\+cpp@{main.\+cpp}!closeall@{closeall}}
+\index{closeall@{closeall}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{closeall}]{\setlength{\rightskip}{0pt plus 5cm}void closeall (
+\begin{DoxyParamCaption}
+\item[{int}]{fd}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_ab6f966f240d3b808e8bbf6ba0986b0f5}
+\hypertarget{main_8cpp_ab3a7b2a6b54dbd8b9490562f9b1c15c3}{}\index{main.\+cpp@{main.\+cpp}!daemon@{daemon}}
+\index{daemon@{daemon}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{daemon}]{\setlength{\rightskip}{0pt plus 5cm}int daemon (
+\begin{DoxyParamCaption}
+\item[{int}]{nochdir, }
+\item[{int}]{noclose, }
+\item[{int}]{asroot}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_ab3a7b2a6b54dbd8b9490562f9b1c15c3}
+\hypertarget{main_8cpp_ac7aa642d50b566fdaccb9a2e8fc359cc}{}\index{main.\+cpp@{main.\+cpp}!do\+Quit\+Job@{do\+Quit\+Job}}
+\index{do\+Quit\+Job@{do\+Quit\+Job}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{do\+Quit\+Job}]{\setlength{\rightskip}{0pt plus 5cm}void do\+Quit\+Job (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_ac7aa642d50b566fdaccb9a2e8fc359cc}
+\hypertarget{main_8cpp_abfe06a571c6062bdf0dfc4e0bfc04368}{}\index{main.\+cpp@{main.\+cpp}!http\+\_\+callback@{http\+\_\+callback}}
+\index{http\+\_\+callback@{http\+\_\+callback}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{http\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}void http\+\_\+callback (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{callback\+\_\+data, }
+\item[{uint8\+\_\+t}]{msg, }
+\item[{uint32\+\_\+t}]{handle, }
+\item[{void $\ast$}]{p\+Param}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_abfe06a571c6062bdf0dfc4e0bfc04368}
+\hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{}\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+\hypertarget{main_8cpp_a72a1fc892c3275ce98231492ca3a0481}{}\index{main.\+cpp@{main.\+cpp}!Stop@{Stop}}
+\index{Stop@{Stop}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}void Stop (
+\begin{DoxyParamCaption}
+\item[{int}]{signo}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a72a1fc892c3275ce98231492ca3a0481}
+
+
+\subsection{Variable Documentation}
+\hypertarget{main_8cpp_a3837a9812cea4b11b59b5211f2a1890b}{}\index{main.\+cpp@{main.\+cpp}!config\+\_\+file@{config\+\_\+file}}
+\index{config\+\_\+file@{config\+\_\+file}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{config\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Config\+File\+Reader} config\+\_\+file(\char`\"{}msfs.\+conf\char`\"{})}\label{main_8cpp_a3837a9812cea4b11b59b5211f2a1890b}
+\hypertarget{main_8cpp_a84ccd477d0043d13ff8fe374f9c9532f}{}\index{main.\+cpp@{main.\+cpp}!g\+\_\+file\+Manager@{g\+\_\+file\+Manager}}
+\index{g\+\_\+file\+Manager@{g\+\_\+file\+Manager}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{g\+\_\+file\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\+Manager}$\ast$ g\+\_\+file\+Manager = N\+U\+L\+L}\label{main_8cpp_a84ccd477d0043d13ff8fe374f9c9532f}
+\hypertarget{main_8cpp_a4ad4fb80f36eced4a75d3f45b14e6de0}{}\index{main.\+cpp@{main.\+cpp}!g\+\_\+\+Get\+Thread\+Pool@{g\+\_\+\+Get\+Thread\+Pool}}
+\index{g\+\_\+\+Get\+Thread\+Pool@{g\+\_\+\+Get\+Thread\+Pool}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{g\+\_\+\+Get\+Thread\+Pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Thread\+Pool} g\+\_\+\+Get\+Thread\+Pool}\label{main_8cpp_a4ad4fb80f36eced4a75d3f45b14e6de0}
+\hypertarget{main_8cpp_a787477d76fb984164df4a2406a7ebeef}{}\index{main.\+cpp@{main.\+cpp}!g\+\_\+\+Post\+Thread\+Pool@{g\+\_\+\+Post\+Thread\+Pool}}
+\index{g\+\_\+\+Post\+Thread\+Pool@{g\+\_\+\+Post\+Thread\+Pool}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{g\+\_\+\+Post\+Thread\+Pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Thread\+Pool} g\+\_\+\+Post\+Thread\+Pool}\label{main_8cpp_a787477d76fb984164df4a2406a7ebeef}

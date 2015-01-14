@@ -1,0 +1,96 @@
+\hypertarget{class_c_thread_notify}{}\section{C\+Thread\+Notify Class Reference}
+\label{class_c_thread_notify}\index{C\+Thread\+Notify@{C\+Thread\+Notify}}
+
+
+{\ttfamily \#include $<$Thread\+Pool.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_thread_notify_a98f446f6ff57407294c05f60919f2953}{C\+Thread\+Notify} ()
+\item 
+\hyperlink{class_c_thread_notify_aa1a2ab61dacb63c5aef44ec5ef389bd2}{$\sim$\+C\+Thread\+Notify} ()
+\item 
+void \hyperlink{class_c_thread_notify_af35b36f3e0e67a9501c0b98a54f55d96}{Lock} ()
+\item 
+void \hyperlink{class_c_thread_notify_aa952fe44e9266f446ee83ad685589e7d}{Unlock} ()
+\item 
+void \hyperlink{class_c_thread_notify_a080c54c69615a202ffc99b1cc78adac1}{Wait} ()
+\item 
+void \hyperlink{class_c_thread_notify_ad636c603d4b16548ca0f3119c44d60dd}{Signal} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+mutex\+\_\+t \hyperlink{class_c_thread_notify_a94ca2037b602e13f098883a9ef0487f9}{m\+\_\+mutex}
+\item 
+pthread\+\_\+mutexattr\+\_\+t \hyperlink{class_c_thread_notify_a9a70b8192eac3bb5eb661fc28047dfd3}{m\+\_\+mutexattr}
+\item 
+pthread\+\_\+cond\+\_\+t \hyperlink{class_c_thread_notify_ab7b227c91b9b5ab2fbbd7576dd0dd4a3}{m\+\_\+cond}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_thread_notify_a98f446f6ff57407294c05f60919f2953}{}\index{C\+Thread\+Notify@{C\+Thread\+Notify}!C\+Thread\+Notify@{C\+Thread\+Notify}}
+\index{C\+Thread\+Notify@{C\+Thread\+Notify}!C\+Thread\+Notify@{C\+Thread\+Notify}}
+\subsubsection[{C\+Thread\+Notify}]{\setlength{\rightskip}{0pt plus 5cm}C\+Thread\+Notify\+::\+C\+Thread\+Notify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_thread_notify_a98f446f6ff57407294c05f60919f2953}
+\hypertarget{class_c_thread_notify_aa1a2ab61dacb63c5aef44ec5ef389bd2}{}\index{C\+Thread\+Notify@{C\+Thread\+Notify}!````~C\+Thread\+Notify@{$\sim$\+C\+Thread\+Notify}}
+\index{````~C\+Thread\+Notify@{$\sim$\+C\+Thread\+Notify}!C\+Thread\+Notify@{C\+Thread\+Notify}}
+\subsubsection[{$\sim$\+C\+Thread\+Notify}]{\setlength{\rightskip}{0pt plus 5cm}C\+Thread\+Notify\+::$\sim$\+C\+Thread\+Notify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_thread_notify_aa1a2ab61dacb63c5aef44ec5ef389bd2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_thread_notify_af35b36f3e0e67a9501c0b98a54f55d96}{}\index{C\+Thread\+Notify@{C\+Thread\+Notify}!Lock@{Lock}}
+\index{Lock@{Lock}!C\+Thread\+Notify@{C\+Thread\+Notify}}
+\subsubsection[{Lock}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Thread\+Notify\+::\+Lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_thread_notify_af35b36f3e0e67a9501c0b98a54f55d96}
+\hypertarget{class_c_thread_notify_ad636c603d4b16548ca0f3119c44d60dd}{}\index{C\+Thread\+Notify@{C\+Thread\+Notify}!Signal@{Signal}}
+\index{Signal@{Signal}!C\+Thread\+Notify@{C\+Thread\+Notify}}
+\subsubsection[{Signal}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Thread\+Notify\+::\+Signal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_thread_notify_ad636c603d4b16548ca0f3119c44d60dd}
+\hypertarget{class_c_thread_notify_aa952fe44e9266f446ee83ad685589e7d}{}\index{C\+Thread\+Notify@{C\+Thread\+Notify}!Unlock@{Unlock}}
+\index{Unlock@{Unlock}!C\+Thread\+Notify@{C\+Thread\+Notify}}
+\subsubsection[{Unlock}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Thread\+Notify\+::\+Unlock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_thread_notify_aa952fe44e9266f446ee83ad685589e7d}
+\hypertarget{class_c_thread_notify_a080c54c69615a202ffc99b1cc78adac1}{}\index{C\+Thread\+Notify@{C\+Thread\+Notify}!Wait@{Wait}}
+\index{Wait@{Wait}!C\+Thread\+Notify@{C\+Thread\+Notify}}
+\subsubsection[{Wait}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Thread\+Notify\+::\+Wait (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_thread_notify_a080c54c69615a202ffc99b1cc78adac1}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_thread_notify_ab7b227c91b9b5ab2fbbd7576dd0dd4a3}{}\index{C\+Thread\+Notify@{C\+Thread\+Notify}!m\+\_\+cond@{m\+\_\+cond}}
+\index{m\+\_\+cond@{m\+\_\+cond}!C\+Thread\+Notify@{C\+Thread\+Notify}}
+\subsubsection[{m\+\_\+cond}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+cond\+\_\+t C\+Thread\+Notify\+::m\+\_\+cond\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_thread_notify_ab7b227c91b9b5ab2fbbd7576dd0dd4a3}
+\hypertarget{class_c_thread_notify_a94ca2037b602e13f098883a9ef0487f9}{}\index{C\+Thread\+Notify@{C\+Thread\+Notify}!m\+\_\+mutex@{m\+\_\+mutex}}
+\index{m\+\_\+mutex@{m\+\_\+mutex}!C\+Thread\+Notify@{C\+Thread\+Notify}}
+\subsubsection[{m\+\_\+mutex}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+mutex\+\_\+t C\+Thread\+Notify\+::m\+\_\+mutex\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_thread_notify_a94ca2037b602e13f098883a9ef0487f9}
+\hypertarget{class_c_thread_notify_a9a70b8192eac3bb5eb661fc28047dfd3}{}\index{C\+Thread\+Notify@{C\+Thread\+Notify}!m\+\_\+mutexattr@{m\+\_\+mutexattr}}
+\index{m\+\_\+mutexattr@{m\+\_\+mutexattr}!C\+Thread\+Notify@{C\+Thread\+Notify}}
+\subsubsection[{m\+\_\+mutexattr}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+mutexattr\+\_\+t C\+Thread\+Notify\+::m\+\_\+mutexattr\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_thread_notify_a9a70b8192eac3bb5eb661fc28047dfd3}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/include/common/\hyperlink{_thread_pool_8h}{Thread\+Pool.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/common/\hyperlink{_thread_pool_8cpp}{Thread\+Pool.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+\hypertarget{class_c_im_pdu_friend_status_list}{}\section{C\+Im\+Pdu\+Friend\+Status\+List Class Reference}
+\label{class_c_im_pdu_friend_status_list}\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+
+
+{\ttfamily \#include $<$Im\+Pdu\+Server.\+h$>$}
+
+Inheritance diagram for C\+Im\+Pdu\+Friend\+Status\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_im_pdu_friend_status_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_im_pdu_friend_status_list_adb4673ce976a0f0a4696e5aa0ae2461c}{C\+Im\+Pdu\+Friend\+Status\+List} (\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$buf, uint32\+\_\+t len)
+\item 
+\hyperlink{class_c_im_pdu_friend_status_list_a1fef7d503075c9dd8f61c96d42337884}{C\+Im\+Pdu\+Friend\+Status\+List} (uint16\+\_\+t request\+\_\+type, uint32\+\_\+t from\+\_\+user\+\_\+id, list$<$ \hyperlink{structuser__stat__t}{user\+\_\+stat\+\_\+t} $>$ $\ast$friend\+\_\+stat\+\_\+list)
+\item 
+virtual \hyperlink{class_c_im_pdu_friend_status_list_a7edfe4a47c819e7ee80ab4eaa1ed4e20}{$\sim$\+C\+Im\+Pdu\+Friend\+Status\+List} ()
+\item 
+virtual uint16\+\_\+t \hyperlink{class_c_im_pdu_friend_status_list_a927bdb932e25c96648817ea0afe27762}{Get\+Pdu\+Type} ()
+\item 
+uint16\+\_\+t \hyperlink{class_c_im_pdu_friend_status_list_aa42763dace967d61ed74d9f9fb792475}{Get\+Request\+Type} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_friend_status_list_a6a36f64c1d9f904998e341c2f9078304}{Get\+From\+User\+Id} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_friend_status_list_ad2fb950fc714b3a601e4d3255ad5bfed}{Get\+Friend\+Cnt} ()
+\item 
+\hyperlink{structuser__stat__t}{user\+\_\+stat\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_friend_status_list_a0a13d5fc395e77873fd9dc304feb7f99}{Get\+Friend\+Stat\+List} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{class_c_im_pdu_friend_status_list_ab5717327cc66f2da138182fd5077e44c}{m\+\_\+request\+\_\+type}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_friend_status_list_a845020a90bba7df3aab1ba60157cc1b7}{m\+\_\+from\+\_\+user\+\_\+id}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_friend_status_list_a8290f960ad6b8919585341d02658b0e1}{m\+\_\+friend\+\_\+cnt}
+\item 
+\hyperlink{structuser__stat__t}{user\+\_\+stat\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_friend_status_list_a62fa21ce63e58003913c21c34e469fbe}{m\+\_\+friend\+\_\+stat\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_im_pdu_friend_status_list_adb4673ce976a0f0a4696e5aa0ae2461c}{}\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}!C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}!C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+\subsubsection[{C\+Im\+Pdu\+Friend\+Status\+List}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Friend\+Status\+List\+::\+C\+Im\+Pdu\+Friend\+Status\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf uchar\+\_\+t} $\ast$}]{buf, }
+\item[{uint32\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_friend_status_list_adb4673ce976a0f0a4696e5aa0ae2461c}
+\hypertarget{class_c_im_pdu_friend_status_list_a1fef7d503075c9dd8f61c96d42337884}{}\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}!C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}!C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+\subsubsection[{C\+Im\+Pdu\+Friend\+Status\+List}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Friend\+Status\+List\+::\+C\+Im\+Pdu\+Friend\+Status\+List (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{request\+\_\+type, }
+\item[{uint32\+\_\+t}]{from\+\_\+user\+\_\+id, }
+\item[{list$<$ {\bf user\+\_\+stat\+\_\+t} $>$ $\ast$}]{friend\+\_\+stat\+\_\+list}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_friend_status_list_a1fef7d503075c9dd8f61c96d42337884}
+\hypertarget{class_c_im_pdu_friend_status_list_a7edfe4a47c819e7ee80ab4eaa1ed4e20}{}\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}!````~C\+Im\+Pdu\+Friend\+Status\+List@{$\sim$\+C\+Im\+Pdu\+Friend\+Status\+List}}
+\index{````~C\+Im\+Pdu\+Friend\+Status\+List@{$\sim$\+C\+Im\+Pdu\+Friend\+Status\+List}!C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+\subsubsection[{$\sim$\+C\+Im\+Pdu\+Friend\+Status\+List}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Friend\+Status\+List\+::$\sim$\+C\+Im\+Pdu\+Friend\+Status\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_im_pdu_friend_status_list_a7edfe4a47c819e7ee80ab4eaa1ed4e20}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_im_pdu_friend_status_list_ad2fb950fc714b3a601e4d3255ad5bfed}{}\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}!Get\+Friend\+Cnt@{Get\+Friend\+Cnt}}
+\index{Get\+Friend\+Cnt@{Get\+Friend\+Cnt}!C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+\subsubsection[{Get\+Friend\+Cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Friend\+Status\+List\+::\+Get\+Friend\+Cnt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_friend_status_list_ad2fb950fc714b3a601e4d3255ad5bfed}
+\hypertarget{class_c_im_pdu_friend_status_list_a0a13d5fc395e77873fd9dc304feb7f99}{}\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}!Get\+Friend\+Stat\+List@{Get\+Friend\+Stat\+List}}
+\index{Get\+Friend\+Stat\+List@{Get\+Friend\+Stat\+List}!C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+\subsubsection[{Get\+Friend\+Stat\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf user\+\_\+stat\+\_\+t}$\ast$ C\+Im\+Pdu\+Friend\+Status\+List\+::\+Get\+Friend\+Stat\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_friend_status_list_a0a13d5fc395e77873fd9dc304feb7f99}
+\hypertarget{class_c_im_pdu_friend_status_list_a6a36f64c1d9f904998e341c2f9078304}{}\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}!Get\+From\+User\+Id@{Get\+From\+User\+Id}}
+\index{Get\+From\+User\+Id@{Get\+From\+User\+Id}!C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+\subsubsection[{Get\+From\+User\+Id}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Friend\+Status\+List\+::\+Get\+From\+User\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_friend_status_list_a6a36f64c1d9f904998e341c2f9078304}
+\hypertarget{class_c_im_pdu_friend_status_list_a927bdb932e25c96648817ea0afe27762}{}\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}!Get\+Pdu\+Type@{Get\+Pdu\+Type}}
+\index{Get\+Pdu\+Type@{Get\+Pdu\+Type}!C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+\subsubsection[{Get\+Pdu\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint16\+\_\+t C\+Im\+Pdu\+Friend\+Status\+List\+::\+Get\+Pdu\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_im_pdu_friend_status_list_a927bdb932e25c96648817ea0afe27762}
+
+
+Reimplemented from \hyperlink{class_c_im_pdu_a887912f445b3e864d33f9e7f2325f1fc}{C\+Im\+Pdu}.
+
+\hypertarget{class_c_im_pdu_friend_status_list_aa42763dace967d61ed74d9f9fb792475}{}\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}!Get\+Request\+Type@{Get\+Request\+Type}}
+\index{Get\+Request\+Type@{Get\+Request\+Type}!C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+\subsubsection[{Get\+Request\+Type}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t C\+Im\+Pdu\+Friend\+Status\+List\+::\+Get\+Request\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_friend_status_list_aa42763dace967d61ed74d9f9fb792475}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_im_pdu_friend_status_list_a8290f960ad6b8919585341d02658b0e1}{}\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}!m\+\_\+friend\+\_\+cnt@{m\+\_\+friend\+\_\+cnt}}
+\index{m\+\_\+friend\+\_\+cnt@{m\+\_\+friend\+\_\+cnt}!C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+\subsubsection[{m\+\_\+friend\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Friend\+Status\+List\+::m\+\_\+friend\+\_\+cnt\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_friend_status_list_a8290f960ad6b8919585341d02658b0e1}
+\hypertarget{class_c_im_pdu_friend_status_list_a62fa21ce63e58003913c21c34e469fbe}{}\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}!m\+\_\+friend\+\_\+stat\+\_\+list@{m\+\_\+friend\+\_\+stat\+\_\+list}}
+\index{m\+\_\+friend\+\_\+stat\+\_\+list@{m\+\_\+friend\+\_\+stat\+\_\+list}!C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+\subsubsection[{m\+\_\+friend\+\_\+stat\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf user\+\_\+stat\+\_\+t}$\ast$ C\+Im\+Pdu\+Friend\+Status\+List\+::m\+\_\+friend\+\_\+stat\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_friend_status_list_a62fa21ce63e58003913c21c34e469fbe}
+\hypertarget{class_c_im_pdu_friend_status_list_a845020a90bba7df3aab1ba60157cc1b7}{}\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}!m\+\_\+from\+\_\+user\+\_\+id@{m\+\_\+from\+\_\+user\+\_\+id}}
+\index{m\+\_\+from\+\_\+user\+\_\+id@{m\+\_\+from\+\_\+user\+\_\+id}!C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+\subsubsection[{m\+\_\+from\+\_\+user\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Friend\+Status\+List\+::m\+\_\+from\+\_\+user\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_friend_status_list_a845020a90bba7df3aab1ba60157cc1b7}
+\hypertarget{class_c_im_pdu_friend_status_list_ab5717327cc66f2da138182fd5077e44c}{}\index{C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}!m\+\_\+request\+\_\+type@{m\+\_\+request\+\_\+type}}
+\index{m\+\_\+request\+\_\+type@{m\+\_\+request\+\_\+type}!C\+Im\+Pdu\+Friend\+Status\+List@{C\+Im\+Pdu\+Friend\+Status\+List}}
+\subsubsection[{m\+\_\+request\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t C\+Im\+Pdu\+Friend\+Status\+List\+::m\+\_\+request\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_friend_status_list_ab5717327cc66f2da138182fd5077e44c}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_server_8h}{Im\+Pdu\+Server.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_server_8cpp}{Im\+Pdu\+Server.\+cpp}\end{DoxyCompactItemize}

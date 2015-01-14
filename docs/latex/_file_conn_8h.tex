@@ -1,0 +1,53 @@
+\hypertarget{_file_conn_8h}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/file\+\_\+server/\+File\+Conn.h File Reference}
+\label{_file_conn_8h}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/file\+\_\+server/\+File\+Conn.\+h@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/file\+\_\+server/\+File\+Conn.\+h}}
+{\ttfamily \#include \char`\"{}imconn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}impdu.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$deque$>$}\\*
+{\ttfamily \#include $<$pthread.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}file\+\_\+server\+\_\+util.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structfile__stat__t}{file\+\_\+stat\+\_\+t}
+\item 
+class \hyperlink{class_c_file_conn}{C\+File\+Conn}
+\begin{DoxyCompactList}\small\item\em yunfan add end \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef map$<$ string, \hyperlink{structfile__stat__t}{file\+\_\+stat\+\_\+t} $\ast$ $>$ \hyperlink{_file_conn_8h_a97254a81b327945dedc0bf8f0d5f18be}{File\+Map\+\_\+t}
+\item 
+typedef map$<$ std\+::string, \hyperlink{structtransfer__task__t}{transfer\+\_\+task\+\_\+t} $\ast$ $>$ \hyperlink{_file_conn_8h_a74a192a456eb1d91b89db434bd54c3e4}{Task\+Map\+\_\+t}
+\begin{DoxyCompactList}\small\item\em yunfan add 2014.\+8.\+6 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_file_conn_8h_a8e1619db060c01565bff52514a08fa30}{init\+\_\+file\+\_\+conn} (std\+::list$<$ \hyperlink{structsvr__ip__addr__t}{svr\+\_\+ip\+\_\+addr\+\_\+t} $>$ \&, uint32\+\_\+t timeout)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_file_conn_8h_a97254a81b327945dedc0bf8f0d5f18be}{}\index{File\+Conn.\+h@{File\+Conn.\+h}!File\+Map\+\_\+t@{File\+Map\+\_\+t}}
+\index{File\+Map\+\_\+t@{File\+Map\+\_\+t}!File\+Conn.\+h@{File\+Conn.\+h}}
+\subsubsection[{File\+Map\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef map$<$string, {\bf file\+\_\+stat\+\_\+t}$\ast$$>$ {\bf File\+Map\+\_\+t}}\label{_file_conn_8h_a97254a81b327945dedc0bf8f0d5f18be}
+\hypertarget{_file_conn_8h_a74a192a456eb1d91b89db434bd54c3e4}{}\index{File\+Conn.\+h@{File\+Conn.\+h}!Task\+Map\+\_\+t@{Task\+Map\+\_\+t}}
+\index{Task\+Map\+\_\+t@{Task\+Map\+\_\+t}!File\+Conn.\+h@{File\+Conn.\+h}}
+\subsubsection[{Task\+Map\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef map$<$std\+::string, {\bf transfer\+\_\+task\+\_\+t}$\ast$$>$ {\bf Task\+Map\+\_\+t}}\label{_file_conn_8h_a74a192a456eb1d91b89db434bd54c3e4}
+
+
+yunfan add 2014.\+8.\+6 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_file_conn_8h_a8e1619db060c01565bff52514a08fa30}{}\index{File\+Conn.\+h@{File\+Conn.\+h}!init\+\_\+file\+\_\+conn@{init\+\_\+file\+\_\+conn}}
+\index{init\+\_\+file\+\_\+conn@{init\+\_\+file\+\_\+conn}!File\+Conn.\+h@{File\+Conn.\+h}}
+\subsubsection[{init\+\_\+file\+\_\+conn}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+file\+\_\+conn (
+\begin{DoxyParamCaption}
+\item[{std\+::list$<$ {\bf svr\+\_\+ip\+\_\+addr\+\_\+t} $>$ \&}]{, }
+\item[{uint32\+\_\+t}]{timeout}
+\end{DoxyParamCaption}
+)}\label{_file_conn_8h_a8e1619db060c01565bff52514a08fa30}
+yunfan add 2014.\+8.\+12
+
+yunfan add end 

@@ -1,0 +1,122 @@
+\hypertarget{class_c_db_attach_data}{}\section{C\+Db\+Attach\+Data Class Reference}
+\label{class_c_db_attach_data}\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+
+
+{\ttfamily \#include $<$Attach\+Data.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_db_attach_data_ac7fb9057ab2f3f1ea23823095333af79}{C\+Db\+Attach\+Data} (uint32\+\_\+t type, uint32\+\_\+t handle, uint32\+\_\+t service\+\_\+type=0)
+\item 
+\hyperlink{class_c_db_attach_data_a990daa2a5dfca22b32f904e5edceee1a}{C\+Db\+Attach\+Data} (\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$attach\+\_\+data, uint32\+\_\+t attach\+\_\+len)
+\item 
+virtual \hyperlink{class_c_db_attach_data_af617ae54b276921f7febec9686161747}{$\sim$\+C\+Db\+Attach\+Data} ()
+\item 
+\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$ \hyperlink{class_c_db_attach_data_a8995435926ba31bdbfc5326d5d8759f8}{Get\+Buffer} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_db_attach_data_a796c4f5cdd000fdf26df51acae4ee038}{Get\+Length} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_db_attach_data_a3ffd51930a56ec0813bac9aee997d0f6}{Get\+Type} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_db_attach_data_a3a9d55d19dc472a503b4fc9facf805b9}{Get\+Handle} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_db_attach_data_ad1e36fdd239534c2b687fce1cb9676b8}{Get\+Service\+Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_simple_buffer}{C\+Simple\+Buffer} \hyperlink{class_c_db_attach_data_a0613ca11b373ed6950dceefd447a1c0f}{m\+\_\+buf}
+\item 
+uint32\+\_\+t \hyperlink{class_c_db_attach_data_a4d7de732ecb1ddd4387e38394348ad24}{m\+\_\+type}
+\item 
+uint32\+\_\+t \hyperlink{class_c_db_attach_data_add12f3381fed86933831980f292013e0}{m\+\_\+handle}
+\item 
+uint32\+\_\+t \hyperlink{class_c_db_attach_data_aa5ede3c5ce31efb0a6757a09778c5aa3}{m\+\_\+service\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_db_attach_data_ac7fb9057ab2f3f1ea23823095333af79}{}\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}!C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}!C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+\subsubsection[{C\+Db\+Attach\+Data}]{\setlength{\rightskip}{0pt plus 5cm}C\+Db\+Attach\+Data\+::\+C\+Db\+Attach\+Data (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{type, }
+\item[{uint32\+\_\+t}]{handle, }
+\item[{uint32\+\_\+t}]{service\+\_\+type = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_c_db_attach_data_ac7fb9057ab2f3f1ea23823095333af79}
+\hypertarget{class_c_db_attach_data_a990daa2a5dfca22b32f904e5edceee1a}{}\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}!C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}!C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+\subsubsection[{C\+Db\+Attach\+Data}]{\setlength{\rightskip}{0pt plus 5cm}C\+Db\+Attach\+Data\+::\+C\+Db\+Attach\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf uchar\+\_\+t} $\ast$}]{attach\+\_\+data, }
+\item[{uint32\+\_\+t}]{attach\+\_\+len}
+\end{DoxyParamCaption}
+)}\label{class_c_db_attach_data_a990daa2a5dfca22b32f904e5edceee1a}
+\hypertarget{class_c_db_attach_data_af617ae54b276921f7febec9686161747}{}\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}!````~C\+Db\+Attach\+Data@{$\sim$\+C\+Db\+Attach\+Data}}
+\index{````~C\+Db\+Attach\+Data@{$\sim$\+C\+Db\+Attach\+Data}!C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+\subsubsection[{$\sim$\+C\+Db\+Attach\+Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Db\+Attach\+Data\+::$\sim$\+C\+Db\+Attach\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_db_attach_data_af617ae54b276921f7febec9686161747}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_db_attach_data_a8995435926ba31bdbfc5326d5d8759f8}{}\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}!Get\+Buffer@{Get\+Buffer}}
+\index{Get\+Buffer@{Get\+Buffer}!C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+\subsubsection[{Get\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar\+\_\+t}$\ast$ C\+Db\+Attach\+Data\+::\+Get\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_db_attach_data_a8995435926ba31bdbfc5326d5d8759f8}
+\hypertarget{class_c_db_attach_data_a3a9d55d19dc472a503b4fc9facf805b9}{}\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}!Get\+Handle@{Get\+Handle}}
+\index{Get\+Handle@{Get\+Handle}!C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+\subsubsection[{Get\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Db\+Attach\+Data\+::\+Get\+Handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_db_attach_data_a3a9d55d19dc472a503b4fc9facf805b9}
+\hypertarget{class_c_db_attach_data_a796c4f5cdd000fdf26df51acae4ee038}{}\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}!Get\+Length@{Get\+Length}}
+\index{Get\+Length@{Get\+Length}!C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+\subsubsection[{Get\+Length}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Db\+Attach\+Data\+::\+Get\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_db_attach_data_a796c4f5cdd000fdf26df51acae4ee038}
+\hypertarget{class_c_db_attach_data_ad1e36fdd239534c2b687fce1cb9676b8}{}\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}!Get\+Service\+Type@{Get\+Service\+Type}}
+\index{Get\+Service\+Type@{Get\+Service\+Type}!C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+\subsubsection[{Get\+Service\+Type}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Db\+Attach\+Data\+::\+Get\+Service\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_db_attach_data_ad1e36fdd239534c2b687fce1cb9676b8}
+\hypertarget{class_c_db_attach_data_a3ffd51930a56ec0813bac9aee997d0f6}{}\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+\subsubsection[{Get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Db\+Attach\+Data\+::\+Get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_db_attach_data_a3ffd51930a56ec0813bac9aee997d0f6}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_db_attach_data_a0613ca11b373ed6950dceefd447a1c0f}{}\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}!m\+\_\+buf@{m\+\_\+buf}}
+\index{m\+\_\+buf@{m\+\_\+buf}!C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+\subsubsection[{m\+\_\+buf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Simple\+Buffer} C\+Db\+Attach\+Data\+::m\+\_\+buf\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_db_attach_data_a0613ca11b373ed6950dceefd447a1c0f}
+\hypertarget{class_c_db_attach_data_add12f3381fed86933831980f292013e0}{}\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}!m\+\_\+handle@{m\+\_\+handle}}
+\index{m\+\_\+handle@{m\+\_\+handle}!C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+\subsubsection[{m\+\_\+handle}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Db\+Attach\+Data\+::m\+\_\+handle\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_db_attach_data_add12f3381fed86933831980f292013e0}
+\hypertarget{class_c_db_attach_data_aa5ede3c5ce31efb0a6757a09778c5aa3}{}\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}!m\+\_\+service\+\_\+type@{m\+\_\+service\+\_\+type}}
+\index{m\+\_\+service\+\_\+type@{m\+\_\+service\+\_\+type}!C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+\subsubsection[{m\+\_\+service\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Db\+Attach\+Data\+::m\+\_\+service\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_db_attach_data_aa5ede3c5ce31efb0a6757a09778c5aa3}
+\hypertarget{class_c_db_attach_data_a4d7de732ecb1ddd4387e38394348ad24}{}\index{C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}!m\+\_\+type@{m\+\_\+type}}
+\index{m\+\_\+type@{m\+\_\+type}!C\+Db\+Attach\+Data@{C\+Db\+Attach\+Data}}
+\subsubsection[{m\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Db\+Attach\+Data\+::m\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_db_attach_data_a4d7de732ecb1ddd4387e38394348ad24}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\hyperlink{_attach_data_8h}{Attach\+Data.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\hyperlink{_attach_data_8cpp}{Attach\+Data.\+cpp}\end{DoxyCompactItemize}

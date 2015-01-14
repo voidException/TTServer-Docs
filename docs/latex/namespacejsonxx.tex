@@ -1,0 +1,395 @@
+\hypertarget{namespacejsonxx}{}\section{jsonxx Namespace Reference}
+\label{namespacejsonxx}\index{jsonxx@{jsonxx}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacejsonxx_1_1json}{json}
+\item 
+ \hyperlink{namespacejsonxx_1_1xml}{xml}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classjsonxx_1_1_array}{Array}
+\item 
+struct \hyperlink{structjsonxx_1_1_null}{Null}
+\item 
+class \hyperlink{classjsonxx_1_1_object}{Object}
+\item 
+class \hyperlink{classjsonxx_1_1_value}{Value}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef long double \hyperlink{namespacejsonxx_a189d79e326066a8e082664e4062f3fc8}{Number}
+\item 
+typedef bool \hyperlink{namespacejsonxx_aa700abaa02dfd30f2a09ba8e95c6f3eb}{Boolean}
+\item 
+typedef std\+::string \hyperlink{namespacejsonxx_a29c7a7494bb75c227bdbd208dc80a09f}{String}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752}{Settings} \{ \\*
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a612735656e6ae11fd80a50ace53f00cd}{Enabled} = true, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a01e536586478418c25922149ded3c97a}{Disabled} = false, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a035055ec64b9d157a3d2100681c4468d}{Permissive} = true, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a8028aa703306954cd9198b5caa5c8475}{Strict} = false, 
+\\*
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752ac6efbb7b7d438c7c5fb25858c372249f}{Parser} = Permissive, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752af9b43eee0d27916706a893127cbacb8b}{Assertions} = Enabled, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a612735656e6ae11fd80a50ace53f00cd}{Enabled} = true, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a01e536586478418c25922149ded3c97a}{Disabled} = false, 
+\\*
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a035055ec64b9d157a3d2100681c4468d}{Permissive} = true, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a8028aa703306954cd9198b5caa5c8475}{Strict} = false, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752ac6efbb7b7d438c7c5fb25858c372249f}{Parser} = Permissive, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752af9b43eee0d27916706a893127cbacb8b}{Assertions} = Enabled
+ \}
+\item 
+enum \hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455}{Format} \{ \\*
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a04ef3cbf131698b4ad01cee2e2be0eb9}{J\+S\+O\+N} = 0, 
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455af38f9355cff13d4780a62c136d156160}{J\+S\+O\+Nx} = 1, 
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac446c9ed41f1d7a58ad22890d5ce39e8}{J\+X\+M\+L} = 2, 
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac87a084a81195900d3deab8c2cd63380}{J\+X\+M\+Lex} = 3, 
+\\*
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a75078b1cfcdf101edcf5d37a4e2fee11}{Tagged\+X\+M\+L} = 4, 
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a04ef3cbf131698b4ad01cee2e2be0eb9}{J\+S\+O\+N} = 0, 
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455af38f9355cff13d4780a62c136d156160}{J\+S\+O\+Nx} = 1, 
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac446c9ed41f1d7a58ad22890d5ce39e8}{J\+X\+M\+L} = 2, 
+\\*
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac87a084a81195900d3deab8c2cd63380}{J\+X\+M\+Lex} = 3, 
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a75078b1cfcdf101edcf5d37a4e2fee11}{Tagged\+X\+M\+L} = 4
+ \}
+\item 
+enum \hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752}{Settings} \{ \\*
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a612735656e6ae11fd80a50ace53f00cd}{Enabled} = true, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a01e536586478418c25922149ded3c97a}{Disabled} = false, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a035055ec64b9d157a3d2100681c4468d}{Permissive} = true, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a8028aa703306954cd9198b5caa5c8475}{Strict} = false, 
+\\*
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752ac6efbb7b7d438c7c5fb25858c372249f}{Parser} = Permissive, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752af9b43eee0d27916706a893127cbacb8b}{Assertions} = Enabled, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a612735656e6ae11fd80a50ace53f00cd}{Enabled} = true, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a01e536586478418c25922149ded3c97a}{Disabled} = false, 
+\\*
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a035055ec64b9d157a3d2100681c4468d}{Permissive} = true, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752a8028aa703306954cd9198b5caa5c8475}{Strict} = false, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752ac6efbb7b7d438c7c5fb25858c372249f}{Parser} = Permissive, 
+\hyperlink{namespacejsonxx_ae485c19f91d12982144e13a764be5752af9b43eee0d27916706a893127cbacb8b}{Assertions} = Enabled
+ \}
+\item 
+enum \hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455}{Format} \{ \\*
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a04ef3cbf131698b4ad01cee2e2be0eb9}{J\+S\+O\+N} = 0, 
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455af38f9355cff13d4780a62c136d156160}{J\+S\+O\+Nx} = 1, 
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac446c9ed41f1d7a58ad22890d5ce39e8}{J\+X\+M\+L} = 2, 
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac87a084a81195900d3deab8c2cd63380}{J\+X\+M\+Lex} = 3, 
+\\*
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a75078b1cfcdf101edcf5d37a4e2fee11}{Tagged\+X\+M\+L} = 4, 
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a04ef3cbf131698b4ad01cee2e2be0eb9}{J\+S\+O\+N} = 0, 
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455af38f9355cff13d4780a62c136d156160}{J\+S\+O\+Nx} = 1, 
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac446c9ed41f1d7a58ad22890d5ce39e8}{J\+X\+M\+L} = 2, 
+\\*
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac87a084a81195900d3deab8c2cd63380}{J\+X\+M\+Lex} = 3, 
+\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a75078b1cfcdf101edcf5d37a4e2fee11}{Tagged\+X\+M\+L} = 4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacejsonxx_ae776e5d149f1fb6a6d163e408852b137}{match} (const char $\ast$pattern, std\+::istream \&input)
+\item 
+bool \hyperlink{namespacejsonxx_afb393bd02ef1b837516397516ee416ae}{parse\+\_\+array} (std\+::istream \&input, \hyperlink{classjsonxx_1_1_array}{Array} \&array)
+\item 
+bool \hyperlink{namespacejsonxx_afef9054b57f3210e902bda013f95d8be}{parse\+\_\+bool} (std\+::istream \&input, \hyperlink{namespacejsonxx_aa700abaa02dfd30f2a09ba8e95c6f3eb}{Boolean} \&value)
+\item 
+bool \hyperlink{namespacejsonxx_ab4ffd62078e6c7430529cfd2301828f0}{parse\+\_\+comment} (std\+::istream \&input)
+\item 
+bool \hyperlink{namespacejsonxx_a07030da60583d46e35328e3941829ef8}{parse\+\_\+null} (std\+::istream \&input)
+\item 
+bool \hyperlink{namespacejsonxx_abcab6b81755711428a41e855d9cb6f25}{parse\+\_\+number} (std\+::istream \&input, \hyperlink{namespacejsonxx_a189d79e326066a8e082664e4062f3fc8}{Number} \&value)
+\item 
+bool \hyperlink{namespacejsonxx_a521422be00aceffe398c1e48b1252318}{parse\+\_\+object} (std\+::istream \&input, \hyperlink{classjsonxx_1_1_object}{Object} \&object)
+\item 
+bool \hyperlink{namespacejsonxx_acb41195107e0cb6601b35dc25c5d9ad8}{parse\+\_\+string} (std\+::istream \&input, \hyperlink{namespacejsonxx_a29c7a7494bb75c227bdbd208dc80a09f}{String} \&value)
+\item 
+bool \hyperlink{namespacejsonxx_a7ac101d3ef10de8b73255e28de88910c}{parse\+\_\+value} (std\+::istream \&input, \hyperlink{classjsonxx_1_1_value}{Value} \&value)
+\item 
+static std\+::ostream \& \hyperlink{namespacejsonxx_a052e51dfd73ecb2692230a6a971276dc}{stream\+\_\+string} (std\+::ostream \&stream, const std\+::string \&string)
+\item 
+bool \hyperlink{namespacejsonxx_ae30e583f921cbc3ee02ac75b4ce2b3d6}{validate} (std\+::istream \&input)
+\item 
+bool \hyperlink{namespacejsonxx_a5ac22dfe00ed350dc9f05a2083d4c13e}{validate} (const std\+::string \&input)
+\item 
+std\+::string \hyperlink{namespacejsonxx_a7e3cf6a1148be73eaeac22a3a4e91736}{xml} (std\+::istream \&input, unsigned format)
+\item 
+std\+::string \hyperlink{namespacejsonxx_ae6d88608c2b772fce33104de7d9b5e2a}{xml} (const std\+::string \&input, unsigned format)
+\item 
+void \hyperlink{namespacejsonxx_a618a0d9a69323fe8a6ed8e50680ae829}{assertion} (const char $\ast$file, int line, const char $\ast$expression, bool result)
+\item 
+static std\+::ostream \& \hyperlink{namespacejsonxx_a052e51dfd73ecb2692230a6a971276dc}{stream\+\_\+string} (std\+::ostream \&stream, const std\+::string \&string)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{namespacejsonxx_aa700abaa02dfd30f2a09ba8e95c6f3eb}{}\index{jsonxx@{jsonxx}!Boolean@{Boolean}}
+\index{Boolean@{Boolean}!jsonxx@{jsonxx}}
+\subsubsection[{Boolean}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool {\bf jsonxx\+::\+Boolean}}\label{namespacejsonxx_aa700abaa02dfd30f2a09ba8e95c6f3eb}
+\hypertarget{namespacejsonxx_a189d79e326066a8e082664e4062f3fc8}{}\index{jsonxx@{jsonxx}!Number@{Number}}
+\index{Number@{Number}!jsonxx@{jsonxx}}
+\subsubsection[{Number}]{\setlength{\rightskip}{0pt plus 5cm}typedef long double {\bf jsonxx\+::\+Number}}\label{namespacejsonxx_a189d79e326066a8e082664e4062f3fc8}
+\hypertarget{namespacejsonxx_a29c7a7494bb75c227bdbd208dc80a09f}{}\index{jsonxx@{jsonxx}!String@{String}}
+\index{String@{String}!jsonxx@{jsonxx}}
+\subsubsection[{String}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::string {\bf jsonxx\+::\+String}}\label{namespacejsonxx_a29c7a7494bb75c227bdbd208dc80a09f}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455}{}\index{jsonxx@{jsonxx}!Format@{Format}}
+\index{Format@{Format}!jsonxx@{jsonxx}}
+\subsubsection[{Format}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf jsonxx\+::\+Format}}\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{J\+S\+O\+N@{J\+S\+O\+N}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+S\+O\+N@{J\+S\+O\+N}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a04ef3cbf131698b4ad01cee2e2be0eb9}{}J\+S\+O\+N\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a04ef3cbf131698b4ad01cee2e2be0eb9}
+}]\index{J\+S\+O\+Nx@{J\+S\+O\+Nx}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+S\+O\+Nx@{J\+S\+O\+Nx}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455af38f9355cff13d4780a62c136d156160}{}J\+S\+O\+Nx\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455af38f9355cff13d4780a62c136d156160}
+}]\index{J\+X\+M\+L@{J\+X\+M\+L}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+X\+M\+L@{J\+X\+M\+L}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac446c9ed41f1d7a58ad22890d5ce39e8}{}J\+X\+M\+L\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac446c9ed41f1d7a58ad22890d5ce39e8}
+}]\index{J\+X\+M\+Lex@{J\+X\+M\+Lex}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+X\+M\+Lex@{J\+X\+M\+Lex}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac87a084a81195900d3deab8c2cd63380}{}J\+X\+M\+Lex\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac87a084a81195900d3deab8c2cd63380}
+}]\index{Tagged\+X\+M\+L@{Tagged\+X\+M\+L}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Tagged\+X\+M\+L@{Tagged\+X\+M\+L}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a75078b1cfcdf101edcf5d37a4e2fee11}{}Tagged\+X\+M\+L\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a75078b1cfcdf101edcf5d37a4e2fee11}
+}]\index{J\+S\+O\+N@{J\+S\+O\+N}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+S\+O\+N@{J\+S\+O\+N}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a04ef3cbf131698b4ad01cee2e2be0eb9}{}J\+S\+O\+N\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a04ef3cbf131698b4ad01cee2e2be0eb9}
+}]\index{J\+S\+O\+Nx@{J\+S\+O\+Nx}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+S\+O\+Nx@{J\+S\+O\+Nx}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455af38f9355cff13d4780a62c136d156160}{}J\+S\+O\+Nx\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455af38f9355cff13d4780a62c136d156160}
+}]\index{J\+X\+M\+L@{J\+X\+M\+L}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+X\+M\+L@{J\+X\+M\+L}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac446c9ed41f1d7a58ad22890d5ce39e8}{}J\+X\+M\+L\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac446c9ed41f1d7a58ad22890d5ce39e8}
+}]\index{J\+X\+M\+Lex@{J\+X\+M\+Lex}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+X\+M\+Lex@{J\+X\+M\+Lex}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac87a084a81195900d3deab8c2cd63380}{}J\+X\+M\+Lex\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac87a084a81195900d3deab8c2cd63380}
+}]\index{Tagged\+X\+M\+L@{Tagged\+X\+M\+L}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Tagged\+X\+M\+L@{Tagged\+X\+M\+L}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a75078b1cfcdf101edcf5d37a4e2fee11}{}Tagged\+X\+M\+L\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a75078b1cfcdf101edcf5d37a4e2fee11}
+}]\end{description}
+\end{Desc}
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455}{}\index{jsonxx@{jsonxx}!Format@{Format}}
+\index{Format@{Format}!jsonxx@{jsonxx}}
+\subsubsection[{Format}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf jsonxx\+::\+Format}}\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{J\+S\+O\+N@{J\+S\+O\+N}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+S\+O\+N@{J\+S\+O\+N}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a04ef3cbf131698b4ad01cee2e2be0eb9}{}J\+S\+O\+N\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a04ef3cbf131698b4ad01cee2e2be0eb9}
+}]\index{J\+S\+O\+Nx@{J\+S\+O\+Nx}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+S\+O\+Nx@{J\+S\+O\+Nx}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455af38f9355cff13d4780a62c136d156160}{}J\+S\+O\+Nx\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455af38f9355cff13d4780a62c136d156160}
+}]\index{J\+X\+M\+L@{J\+X\+M\+L}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+X\+M\+L@{J\+X\+M\+L}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac446c9ed41f1d7a58ad22890d5ce39e8}{}J\+X\+M\+L\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac446c9ed41f1d7a58ad22890d5ce39e8}
+}]\index{J\+X\+M\+Lex@{J\+X\+M\+Lex}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+X\+M\+Lex@{J\+X\+M\+Lex}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac87a084a81195900d3deab8c2cd63380}{}J\+X\+M\+Lex\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac87a084a81195900d3deab8c2cd63380}
+}]\index{Tagged\+X\+M\+L@{Tagged\+X\+M\+L}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Tagged\+X\+M\+L@{Tagged\+X\+M\+L}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a75078b1cfcdf101edcf5d37a4e2fee11}{}Tagged\+X\+M\+L\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a75078b1cfcdf101edcf5d37a4e2fee11}
+}]\index{J\+S\+O\+N@{J\+S\+O\+N}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+S\+O\+N@{J\+S\+O\+N}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a04ef3cbf131698b4ad01cee2e2be0eb9}{}J\+S\+O\+N\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a04ef3cbf131698b4ad01cee2e2be0eb9}
+}]\index{J\+S\+O\+Nx@{J\+S\+O\+Nx}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+S\+O\+Nx@{J\+S\+O\+Nx}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455af38f9355cff13d4780a62c136d156160}{}J\+S\+O\+Nx\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455af38f9355cff13d4780a62c136d156160}
+}]\index{J\+X\+M\+L@{J\+X\+M\+L}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+X\+M\+L@{J\+X\+M\+L}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac446c9ed41f1d7a58ad22890d5ce39e8}{}J\+X\+M\+L\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac446c9ed41f1d7a58ad22890d5ce39e8}
+}]\index{J\+X\+M\+Lex@{J\+X\+M\+Lex}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!J\+X\+M\+Lex@{J\+X\+M\+Lex}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac87a084a81195900d3deab8c2cd63380}{}J\+X\+M\+Lex\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455ac87a084a81195900d3deab8c2cd63380}
+}]\index{Tagged\+X\+M\+L@{Tagged\+X\+M\+L}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Tagged\+X\+M\+L@{Tagged\+X\+M\+L}}\item[{\em 
+\hypertarget{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a75078b1cfcdf101edcf5d37a4e2fee11}{}Tagged\+X\+M\+L\label{namespacejsonxx_a1dc6d8d59422ab47976163f874939455a75078b1cfcdf101edcf5d37a4e2fee11}
+}]\end{description}
+\end{Desc}
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752}{}\index{jsonxx@{jsonxx}!Settings@{Settings}}
+\index{Settings@{Settings}!jsonxx@{jsonxx}}
+\subsubsection[{Settings}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf jsonxx\+::\+Settings}}\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Enabled@{Enabled}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Enabled@{Enabled}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a612735656e6ae11fd80a50ace53f00cd}{}Enabled\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a612735656e6ae11fd80a50ace53f00cd}
+}]\index{Disabled@{Disabled}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Disabled@{Disabled}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a01e536586478418c25922149ded3c97a}{}Disabled\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a01e536586478418c25922149ded3c97a}
+}]\index{Permissive@{Permissive}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Permissive@{Permissive}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a035055ec64b9d157a3d2100681c4468d}{}Permissive\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a035055ec64b9d157a3d2100681c4468d}
+}]\index{Strict@{Strict}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Strict@{Strict}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a8028aa703306954cd9198b5caa5c8475}{}Strict\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a8028aa703306954cd9198b5caa5c8475}
+}]\index{Parser@{Parser}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Parser@{Parser}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752ac6efbb7b7d438c7c5fb25858c372249f}{}Parser\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752ac6efbb7b7d438c7c5fb25858c372249f}
+}]\index{Assertions@{Assertions}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Assertions@{Assertions}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752af9b43eee0d27916706a893127cbacb8b}{}Assertions\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752af9b43eee0d27916706a893127cbacb8b}
+}]\index{Enabled@{Enabled}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Enabled@{Enabled}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a612735656e6ae11fd80a50ace53f00cd}{}Enabled\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a612735656e6ae11fd80a50ace53f00cd}
+}]\index{Disabled@{Disabled}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Disabled@{Disabled}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a01e536586478418c25922149ded3c97a}{}Disabled\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a01e536586478418c25922149ded3c97a}
+}]\index{Permissive@{Permissive}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Permissive@{Permissive}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a035055ec64b9d157a3d2100681c4468d}{}Permissive\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a035055ec64b9d157a3d2100681c4468d}
+}]\index{Strict@{Strict}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Strict@{Strict}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a8028aa703306954cd9198b5caa5c8475}{}Strict\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a8028aa703306954cd9198b5caa5c8475}
+}]\index{Parser@{Parser}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Parser@{Parser}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752ac6efbb7b7d438c7c5fb25858c372249f}{}Parser\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752ac6efbb7b7d438c7c5fb25858c372249f}
+}]\index{Assertions@{Assertions}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Assertions@{Assertions}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752af9b43eee0d27916706a893127cbacb8b}{}Assertions\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752af9b43eee0d27916706a893127cbacb8b}
+}]\end{description}
+\end{Desc}
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752}{}\index{jsonxx@{jsonxx}!Settings@{Settings}}
+\index{Settings@{Settings}!jsonxx@{jsonxx}}
+\subsubsection[{Settings}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf jsonxx\+::\+Settings}}\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Enabled@{Enabled}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Enabled@{Enabled}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a612735656e6ae11fd80a50ace53f00cd}{}Enabled\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a612735656e6ae11fd80a50ace53f00cd}
+}]\index{Disabled@{Disabled}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Disabled@{Disabled}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a01e536586478418c25922149ded3c97a}{}Disabled\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a01e536586478418c25922149ded3c97a}
+}]\index{Permissive@{Permissive}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Permissive@{Permissive}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a035055ec64b9d157a3d2100681c4468d}{}Permissive\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a035055ec64b9d157a3d2100681c4468d}
+}]\index{Strict@{Strict}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Strict@{Strict}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a8028aa703306954cd9198b5caa5c8475}{}Strict\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a8028aa703306954cd9198b5caa5c8475}
+}]\index{Parser@{Parser}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Parser@{Parser}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752ac6efbb7b7d438c7c5fb25858c372249f}{}Parser\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752ac6efbb7b7d438c7c5fb25858c372249f}
+}]\index{Assertions@{Assertions}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Assertions@{Assertions}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752af9b43eee0d27916706a893127cbacb8b}{}Assertions\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752af9b43eee0d27916706a893127cbacb8b}
+}]\index{Enabled@{Enabled}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Enabled@{Enabled}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a612735656e6ae11fd80a50ace53f00cd}{}Enabled\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a612735656e6ae11fd80a50ace53f00cd}
+}]\index{Disabled@{Disabled}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Disabled@{Disabled}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a01e536586478418c25922149ded3c97a}{}Disabled\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a01e536586478418c25922149ded3c97a}
+}]\index{Permissive@{Permissive}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Permissive@{Permissive}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a035055ec64b9d157a3d2100681c4468d}{}Permissive\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a035055ec64b9d157a3d2100681c4468d}
+}]\index{Strict@{Strict}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Strict@{Strict}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752a8028aa703306954cd9198b5caa5c8475}{}Strict\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752a8028aa703306954cd9198b5caa5c8475}
+}]\index{Parser@{Parser}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Parser@{Parser}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752ac6efbb7b7d438c7c5fb25858c372249f}{}Parser\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752ac6efbb7b7d438c7c5fb25858c372249f}
+}]\index{Assertions@{Assertions}!jsonxx@{jsonxx}}\index{jsonxx@{jsonxx}!Assertions@{Assertions}}\item[{\em 
+\hypertarget{namespacejsonxx_ae485c19f91d12982144e13a764be5752af9b43eee0d27916706a893127cbacb8b}{}Assertions\label{namespacejsonxx_ae485c19f91d12982144e13a764be5752af9b43eee0d27916706a893127cbacb8b}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacejsonxx_a618a0d9a69323fe8a6ed8e50680ae829}{}\index{jsonxx@{jsonxx}!assertion@{assertion}}
+\index{assertion@{assertion}!jsonxx@{jsonxx}}
+\subsubsection[{assertion}]{\setlength{\rightskip}{0pt plus 5cm}void jsonxx\+::assertion (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file, }
+\item[{int}]{line, }
+\item[{const char $\ast$}]{expression, }
+\item[{bool}]{result}
+\end{DoxyParamCaption}
+)}\label{namespacejsonxx_a618a0d9a69323fe8a6ed8e50680ae829}
+\hypertarget{namespacejsonxx_ae776e5d149f1fb6a6d163e408852b137}{}\index{jsonxx@{jsonxx}!match@{match}}
+\index{match@{match}!jsonxx@{jsonxx}}
+\subsubsection[{match}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::match (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{pattern, }
+\item[{std\+::istream \&}]{input}
+\end{DoxyParamCaption}
+)}\label{namespacejsonxx_ae776e5d149f1fb6a6d163e408852b137}
+\hypertarget{namespacejsonxx_afb393bd02ef1b837516397516ee416ae}{}\index{jsonxx@{jsonxx}!parse\+\_\+array@{parse\+\_\+array}}
+\index{parse\+\_\+array@{parse\+\_\+array}!jsonxx@{jsonxx}}
+\subsubsection[{parse\+\_\+array}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::parse\+\_\+array (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input, }
+\item[{{\bf Array} \&}]{array}
+\end{DoxyParamCaption}
+)}\label{namespacejsonxx_afb393bd02ef1b837516397516ee416ae}
+\hypertarget{namespacejsonxx_afef9054b57f3210e902bda013f95d8be}{}\index{jsonxx@{jsonxx}!parse\+\_\+bool@{parse\+\_\+bool}}
+\index{parse\+\_\+bool@{parse\+\_\+bool}!jsonxx@{jsonxx}}
+\subsubsection[{parse\+\_\+bool}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::parse\+\_\+bool (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input, }
+\item[{{\bf Boolean} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{namespacejsonxx_afef9054b57f3210e902bda013f95d8be}
+\hypertarget{namespacejsonxx_ab4ffd62078e6c7430529cfd2301828f0}{}\index{jsonxx@{jsonxx}!parse\+\_\+comment@{parse\+\_\+comment}}
+\index{parse\+\_\+comment@{parse\+\_\+comment}!jsonxx@{jsonxx}}
+\subsubsection[{parse\+\_\+comment}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::parse\+\_\+comment (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input}
+\end{DoxyParamCaption}
+)}\label{namespacejsonxx_ab4ffd62078e6c7430529cfd2301828f0}
+\hypertarget{namespacejsonxx_a07030da60583d46e35328e3941829ef8}{}\index{jsonxx@{jsonxx}!parse\+\_\+null@{parse\+\_\+null}}
+\index{parse\+\_\+null@{parse\+\_\+null}!jsonxx@{jsonxx}}
+\subsubsection[{parse\+\_\+null}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::parse\+\_\+null (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input}
+\end{DoxyParamCaption}
+)}\label{namespacejsonxx_a07030da60583d46e35328e3941829ef8}
+\hypertarget{namespacejsonxx_abcab6b81755711428a41e855d9cb6f25}{}\index{jsonxx@{jsonxx}!parse\+\_\+number@{parse\+\_\+number}}
+\index{parse\+\_\+number@{parse\+\_\+number}!jsonxx@{jsonxx}}
+\subsubsection[{parse\+\_\+number}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::parse\+\_\+number (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input, }
+\item[{{\bf Number} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{namespacejsonxx_abcab6b81755711428a41e855d9cb6f25}
+\hypertarget{namespacejsonxx_a521422be00aceffe398c1e48b1252318}{}\index{jsonxx@{jsonxx}!parse\+\_\+object@{parse\+\_\+object}}
+\index{parse\+\_\+object@{parse\+\_\+object}!jsonxx@{jsonxx}}
+\subsubsection[{parse\+\_\+object}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::parse\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input, }
+\item[{{\bf Object} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{namespacejsonxx_a521422be00aceffe398c1e48b1252318}
+\hypertarget{namespacejsonxx_acb41195107e0cb6601b35dc25c5d9ad8}{}\index{jsonxx@{jsonxx}!parse\+\_\+string@{parse\+\_\+string}}
+\index{parse\+\_\+string@{parse\+\_\+string}!jsonxx@{jsonxx}}
+\subsubsection[{parse\+\_\+string}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::parse\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input, }
+\item[{{\bf String} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{namespacejsonxx_acb41195107e0cb6601b35dc25c5d9ad8}
+\hypertarget{namespacejsonxx_a7ac101d3ef10de8b73255e28de88910c}{}\index{jsonxx@{jsonxx}!parse\+\_\+value@{parse\+\_\+value}}
+\index{parse\+\_\+value@{parse\+\_\+value}!jsonxx@{jsonxx}}
+\subsubsection[{parse\+\_\+value}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::parse\+\_\+value (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input, }
+\item[{{\bf Value} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{namespacejsonxx_a7ac101d3ef10de8b73255e28de88910c}
+\hypertarget{namespacejsonxx_a052e51dfd73ecb2692230a6a971276dc}{}\index{jsonxx@{jsonxx}!stream\+\_\+string@{stream\+\_\+string}}
+\index{stream\+\_\+string@{stream\+\_\+string}!jsonxx@{jsonxx}}
+\subsubsection[{stream\+\_\+string}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::ostream\& jsonxx\+::stream\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{stream, }
+\item[{const std\+::string \&}]{string}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{namespacejsonxx_a052e51dfd73ecb2692230a6a971276dc}
+\hypertarget{namespacejsonxx_a052e51dfd73ecb2692230a6a971276dc}{}\index{jsonxx@{jsonxx}!stream\+\_\+string@{stream\+\_\+string}}
+\index{stream\+\_\+string@{stream\+\_\+string}!jsonxx@{jsonxx}}
+\subsubsection[{stream\+\_\+string}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::ostream\& jsonxx\+::stream\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{stream, }
+\item[{const std\+::string \&}]{string}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{namespacejsonxx_a052e51dfd73ecb2692230a6a971276dc}
+\hypertarget{namespacejsonxx_ae30e583f921cbc3ee02ac75b4ce2b3d6}{}\index{jsonxx@{jsonxx}!validate@{validate}}
+\index{validate@{validate}!jsonxx@{jsonxx}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::validate (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input}
+\end{DoxyParamCaption}
+)}\label{namespacejsonxx_ae30e583f921cbc3ee02ac75b4ce2b3d6}
+\hypertarget{namespacejsonxx_a5ac22dfe00ed350dc9f05a2083d4c13e}{}\index{jsonxx@{jsonxx}!validate@{validate}}
+\index{validate@{validate}!jsonxx@{jsonxx}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::validate (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{input}
+\end{DoxyParamCaption}
+)}\label{namespacejsonxx_a5ac22dfe00ed350dc9f05a2083d4c13e}
+\hypertarget{namespacejsonxx_a7e3cf6a1148be73eaeac22a3a4e91736}{}\index{jsonxx@{jsonxx}!xml@{xml}}
+\index{xml@{xml}!jsonxx@{jsonxx}}
+\subsubsection[{xml}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string jsonxx\+::xml (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input, }
+\item[{unsigned}]{format}
+\end{DoxyParamCaption}
+)}\label{namespacejsonxx_a7e3cf6a1148be73eaeac22a3a4e91736}
+\hypertarget{namespacejsonxx_ae6d88608c2b772fce33104de7d9b5e2a}{}\index{jsonxx@{jsonxx}!xml@{xml}}
+\index{xml@{xml}!jsonxx@{jsonxx}}
+\subsubsection[{xml}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string jsonxx\+::xml (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{input, }
+\item[{unsigned}]{format}
+\end{DoxyParamCaption}
+)}\label{namespacejsonxx_ae6d88608c2b772fce33104de7d9b5e2a}

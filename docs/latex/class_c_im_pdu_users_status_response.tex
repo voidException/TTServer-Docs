@@ -1,0 +1,148 @@
+\hypertarget{class_c_im_pdu_users_status_response}{}\section{C\+Im\+Pdu\+Users\+Status\+Response Class Reference}
+\label{class_c_im_pdu_users_status_response}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+
+
+{\ttfamily \#include $<$Im\+Pdu\+Server.\+h$>$}
+
+Inheritance diagram for C\+Im\+Pdu\+Users\+Status\+Response\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_im_pdu_users_status_response}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_im_pdu_users_status_response_ab42d074c1ea2d74d7ac0c47f2ae64494}{C\+Im\+Pdu\+Users\+Status\+Response} (\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$buf, uint32\+\_\+t len)
+\item 
+\hyperlink{class_c_im_pdu_users_status_response_a0df5cf9dfcd75b22568ab78467fc1ced}{C\+Im\+Pdu\+Users\+Status\+Response} (uint32\+\_\+t request\+\_\+id, const list$<$ \hyperlink{structuser__stat__t}{user\+\_\+stat\+\_\+t} $>$ \&result\+\_\+list, uint32\+\_\+t attach\+\_\+len=0, \hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$attach\+\_\+data=N\+U\+L\+L)
+\item 
+virtual \hyperlink{class_c_im_pdu_users_status_response_a07f4274ea4b2fda105c1f2fbd93399e0}{$\sim$\+C\+Im\+Pdu\+Users\+Status\+Response} ()
+\item 
+virtual uint16\+\_\+t \hyperlink{class_c_im_pdu_users_status_response_aa6656156095cc3563637aa3e6a00800a}{Get\+Pdu\+Type} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_users_status_response_a5d51df4b8d32e5e1a4e10e2db53d5081}{Get\+Request\+Id} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_users_status_response_aced5696daa160ed53dbc4f554ae4e0a6}{Get\+Result\+Count} ()
+\item 
+const list$<$ \hyperlink{structuser__stat__t}{user\+\_\+stat\+\_\+t} $>$ \& \hyperlink{class_c_im_pdu_users_status_response_a2ac0e1cbf7008ebb488f2c53128a3dcf}{Get\+Query\+Result} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_users_status_response_ae52f832f2fa47463607fcbcd2733adc9}{Get\+Attach\+Len} ()
+\item 
+\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_users_status_response_adc12afc1896c7c4537d1a768997cf8a3}{Get\+Attach\+Data} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_users_status_response_af879dfbb40dc8b86a94428bbbd4e7468}{m\+\_\+request\+\_\+id}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_users_status_response_a1081fe313aacd54677a59fae8173bbfb}{m\+\_\+result\+\_\+count}
+\item 
+list$<$ \hyperlink{structuser__stat__t}{user\+\_\+stat\+\_\+t} $>$ \hyperlink{class_c_im_pdu_users_status_response_a9b552aee5a78c3edd25f35af475a401d}{m\+\_\+result\+\_\+list}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_users_status_response_a3086d448345cc6b9b22739566d3f0d06}{m\+\_\+attach\+\_\+len}
+\item 
+\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_users_status_response_a233fc192f51e85eb92d1821327f67bc9}{m\+\_\+attach\+\_\+data}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_im_pdu_users_status_response_ab42d074c1ea2d74d7ac0c47f2ae64494}{}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\subsubsection[{C\+Im\+Pdu\+Users\+Status\+Response}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Users\+Status\+Response\+::\+C\+Im\+Pdu\+Users\+Status\+Response (
+\begin{DoxyParamCaption}
+\item[{{\bf uchar\+\_\+t} $\ast$}]{buf, }
+\item[{uint32\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_users_status_response_ab42d074c1ea2d74d7ac0c47f2ae64494}
+\hypertarget{class_c_im_pdu_users_status_response_a0df5cf9dfcd75b22568ab78467fc1ced}{}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\subsubsection[{C\+Im\+Pdu\+Users\+Status\+Response}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Users\+Status\+Response\+::\+C\+Im\+Pdu\+Users\+Status\+Response (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{request\+\_\+id, }
+\item[{const list$<$ {\bf user\+\_\+stat\+\_\+t} $>$ \&}]{result\+\_\+list, }
+\item[{uint32\+\_\+t}]{attach\+\_\+len = {\ttfamily 0}, }
+\item[{{\bf uchar\+\_\+t} $\ast$}]{attach\+\_\+data = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_users_status_response_a0df5cf9dfcd75b22568ab78467fc1ced}
+\hypertarget{class_c_im_pdu_users_status_response_a07f4274ea4b2fda105c1f2fbd93399e0}{}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!````~C\+Im\+Pdu\+Users\+Status\+Response@{$\sim$\+C\+Im\+Pdu\+Users\+Status\+Response}}
+\index{````~C\+Im\+Pdu\+Users\+Status\+Response@{$\sim$\+C\+Im\+Pdu\+Users\+Status\+Response}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\subsubsection[{$\sim$\+C\+Im\+Pdu\+Users\+Status\+Response}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Im\+Pdu\+Users\+Status\+Response\+::$\sim$\+C\+Im\+Pdu\+Users\+Status\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_im_pdu_users_status_response_a07f4274ea4b2fda105c1f2fbd93399e0}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_im_pdu_users_status_response_adc12afc1896c7c4537d1a768997cf8a3}{}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!Get\+Attach\+Data@{Get\+Attach\+Data}}
+\index{Get\+Attach\+Data@{Get\+Attach\+Data}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\subsubsection[{Get\+Attach\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar\+\_\+t}$\ast$ C\+Im\+Pdu\+Users\+Status\+Response\+::\+Get\+Attach\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_users_status_response_adc12afc1896c7c4537d1a768997cf8a3}
+\hypertarget{class_c_im_pdu_users_status_response_ae52f832f2fa47463607fcbcd2733adc9}{}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!Get\+Attach\+Len@{Get\+Attach\+Len}}
+\index{Get\+Attach\+Len@{Get\+Attach\+Len}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\subsubsection[{Get\+Attach\+Len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Users\+Status\+Response\+::\+Get\+Attach\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_users_status_response_ae52f832f2fa47463607fcbcd2733adc9}
+\hypertarget{class_c_im_pdu_users_status_response_aa6656156095cc3563637aa3e6a00800a}{}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!Get\+Pdu\+Type@{Get\+Pdu\+Type}}
+\index{Get\+Pdu\+Type@{Get\+Pdu\+Type}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\subsubsection[{Get\+Pdu\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint16\+\_\+t C\+Im\+Pdu\+Users\+Status\+Response\+::\+Get\+Pdu\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_im_pdu_users_status_response_aa6656156095cc3563637aa3e6a00800a}
+
+
+Reimplemented from \hyperlink{class_c_im_pdu_a887912f445b3e864d33f9e7f2325f1fc}{C\+Im\+Pdu}.
+
+\hypertarget{class_c_im_pdu_users_status_response_a2ac0e1cbf7008ebb488f2c53128a3dcf}{}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!Get\+Query\+Result@{Get\+Query\+Result}}
+\index{Get\+Query\+Result@{Get\+Query\+Result}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\subsubsection[{Get\+Query\+Result}]{\setlength{\rightskip}{0pt plus 5cm}const list$<${\bf user\+\_\+stat\+\_\+t}$>$\& C\+Im\+Pdu\+Users\+Status\+Response\+::\+Get\+Query\+Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_users_status_response_a2ac0e1cbf7008ebb488f2c53128a3dcf}
+\hypertarget{class_c_im_pdu_users_status_response_a5d51df4b8d32e5e1a4e10e2db53d5081}{}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!Get\+Request\+Id@{Get\+Request\+Id}}
+\index{Get\+Request\+Id@{Get\+Request\+Id}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\subsubsection[{Get\+Request\+Id}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Users\+Status\+Response\+::\+Get\+Request\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_users_status_response_a5d51df4b8d32e5e1a4e10e2db53d5081}
+\hypertarget{class_c_im_pdu_users_status_response_aced5696daa160ed53dbc4f554ae4e0a6}{}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!Get\+Result\+Count@{Get\+Result\+Count}}
+\index{Get\+Result\+Count@{Get\+Result\+Count}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\subsubsection[{Get\+Result\+Count}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Users\+Status\+Response\+::\+Get\+Result\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_users_status_response_aced5696daa160ed53dbc4f554ae4e0a6}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_im_pdu_users_status_response_a233fc192f51e85eb92d1821327f67bc9}{}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!m\+\_\+attach\+\_\+data@{m\+\_\+attach\+\_\+data}}
+\index{m\+\_\+attach\+\_\+data@{m\+\_\+attach\+\_\+data}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\subsubsection[{m\+\_\+attach\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar\+\_\+t}$\ast$ C\+Im\+Pdu\+Users\+Status\+Response\+::m\+\_\+attach\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_users_status_response_a233fc192f51e85eb92d1821327f67bc9}
+\hypertarget{class_c_im_pdu_users_status_response_a3086d448345cc6b9b22739566d3f0d06}{}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!m\+\_\+attach\+\_\+len@{m\+\_\+attach\+\_\+len}}
+\index{m\+\_\+attach\+\_\+len@{m\+\_\+attach\+\_\+len}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\subsubsection[{m\+\_\+attach\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Users\+Status\+Response\+::m\+\_\+attach\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_users_status_response_a3086d448345cc6b9b22739566d3f0d06}
+\hypertarget{class_c_im_pdu_users_status_response_af879dfbb40dc8b86a94428bbbd4e7468}{}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!m\+\_\+request\+\_\+id@{m\+\_\+request\+\_\+id}}
+\index{m\+\_\+request\+\_\+id@{m\+\_\+request\+\_\+id}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\subsubsection[{m\+\_\+request\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Users\+Status\+Response\+::m\+\_\+request\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_users_status_response_af879dfbb40dc8b86a94428bbbd4e7468}
+\hypertarget{class_c_im_pdu_users_status_response_a1081fe313aacd54677a59fae8173bbfb}{}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!m\+\_\+result\+\_\+count@{m\+\_\+result\+\_\+count}}
+\index{m\+\_\+result\+\_\+count@{m\+\_\+result\+\_\+count}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\subsubsection[{m\+\_\+result\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Users\+Status\+Response\+::m\+\_\+result\+\_\+count\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_users_status_response_a1081fe313aacd54677a59fae8173bbfb}
+\hypertarget{class_c_im_pdu_users_status_response_a9b552aee5a78c3edd25f35af475a401d}{}\index{C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}!m\+\_\+result\+\_\+list@{m\+\_\+result\+\_\+list}}
+\index{m\+\_\+result\+\_\+list@{m\+\_\+result\+\_\+list}!C\+Im\+Pdu\+Users\+Status\+Response@{C\+Im\+Pdu\+Users\+Status\+Response}}
+\subsubsection[{m\+\_\+result\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}list$<${\bf user\+\_\+stat\+\_\+t}$>$ C\+Im\+Pdu\+Users\+Status\+Response\+::m\+\_\+result\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_users_status_response_a9b552aee5a78c3edd25f35af475a401d}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_server_8h}{Im\+Pdu\+Server.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_server_8cpp}{Im\+Pdu\+Server.\+cpp}\end{DoxyCompactItemize}

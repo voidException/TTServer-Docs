@@ -1,0 +1,37 @@
+\hypertarget{base_2_event_dispatch_8h}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\+Event\+Dispatch.h File Reference}
+\label{base_2_event_dispatch_8h}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\+Event\+Dispatch.\+h@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\+Event\+Dispatch.\+h}}
+{\ttfamily \#include \char`\"{}ostype.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_event_dispatch}{C\+Event\+Dispatch}
+\item 
+struct \hyperlink{struct_c_event_dispatch_1_1_timer_item}{C\+Event\+Dispatch\+::\+Timer\+Item}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{base_2_event_dispatch_8h_adf764cbdea00d65edcd07bb9953ad2b7a700b2b3224e4eaf43b54d0c2d2fc4d43}{S\+O\+C\+K\+E\+T\+\_\+\+R\+E\+A\+D} = 0x1, 
+\hyperlink{base_2_event_dispatch_8h_adf764cbdea00d65edcd07bb9953ad2b7adf03482a8aced34e56f2c4be80e59a7f}{S\+O\+C\+K\+E\+T\+\_\+\+W\+R\+I\+T\+E} = 0x2, 
+\hyperlink{base_2_event_dispatch_8h_adf764cbdea00d65edcd07bb9953ad2b7aa634405ca0f3eeba980e821e93a38d87}{S\+O\+C\+K\+E\+T\+\_\+\+E\+X\+C\+E\+P} = 0x4, 
+\hyperlink{base_2_event_dispatch_8h_adf764cbdea00d65edcd07bb9953ad2b7a19dc446823088772fd106b1fc12bc56b}{S\+O\+C\+K\+E\+T\+\_\+\+A\+L\+L} = 0x7
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{base_2_event_dispatch_8h_adf764cbdea00d65edcd07bb9953ad2b7}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\label{base_2_event_dispatch_8h_adf764cbdea00d65edcd07bb9953ad2b7}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+O\+C\+K\+E\+T\+\_\+\+R\+E\+A\+D@{S\+O\+C\+K\+E\+T\+\_\+\+R\+E\+A\+D}!base/\+Event\+Dispatch.\+h@{base/\+Event\+Dispatch.\+h}}\index{base/\+Event\+Dispatch.\+h@{base/\+Event\+Dispatch.\+h}!S\+O\+C\+K\+E\+T\+\_\+\+R\+E\+A\+D@{S\+O\+C\+K\+E\+T\+\_\+\+R\+E\+A\+D}}\item[{\em 
+\hypertarget{base_2_event_dispatch_8h_adf764cbdea00d65edcd07bb9953ad2b7a700b2b3224e4eaf43b54d0c2d2fc4d43}{}S\+O\+C\+K\+E\+T\+\_\+\+R\+E\+A\+D\label{base_2_event_dispatch_8h_adf764cbdea00d65edcd07bb9953ad2b7a700b2b3224e4eaf43b54d0c2d2fc4d43}
+}]\index{S\+O\+C\+K\+E\+T\+\_\+\+W\+R\+I\+T\+E@{S\+O\+C\+K\+E\+T\+\_\+\+W\+R\+I\+T\+E}!base/\+Event\+Dispatch.\+h@{base/\+Event\+Dispatch.\+h}}\index{base/\+Event\+Dispatch.\+h@{base/\+Event\+Dispatch.\+h}!S\+O\+C\+K\+E\+T\+\_\+\+W\+R\+I\+T\+E@{S\+O\+C\+K\+E\+T\+\_\+\+W\+R\+I\+T\+E}}\item[{\em 
+\hypertarget{base_2_event_dispatch_8h_adf764cbdea00d65edcd07bb9953ad2b7adf03482a8aced34e56f2c4be80e59a7f}{}S\+O\+C\+K\+E\+T\+\_\+\+W\+R\+I\+T\+E\label{base_2_event_dispatch_8h_adf764cbdea00d65edcd07bb9953ad2b7adf03482a8aced34e56f2c4be80e59a7f}
+}]\index{S\+O\+C\+K\+E\+T\+\_\+\+E\+X\+C\+E\+P@{S\+O\+C\+K\+E\+T\+\_\+\+E\+X\+C\+E\+P}!base/\+Event\+Dispatch.\+h@{base/\+Event\+Dispatch.\+h}}\index{base/\+Event\+Dispatch.\+h@{base/\+Event\+Dispatch.\+h}!S\+O\+C\+K\+E\+T\+\_\+\+E\+X\+C\+E\+P@{S\+O\+C\+K\+E\+T\+\_\+\+E\+X\+C\+E\+P}}\item[{\em 
+\hypertarget{base_2_event_dispatch_8h_adf764cbdea00d65edcd07bb9953ad2b7aa634405ca0f3eeba980e821e93a38d87}{}S\+O\+C\+K\+E\+T\+\_\+\+E\+X\+C\+E\+P\label{base_2_event_dispatch_8h_adf764cbdea00d65edcd07bb9953ad2b7aa634405ca0f3eeba980e821e93a38d87}
+}]\index{S\+O\+C\+K\+E\+T\+\_\+\+A\+L\+L@{S\+O\+C\+K\+E\+T\+\_\+\+A\+L\+L}!base/\+Event\+Dispatch.\+h@{base/\+Event\+Dispatch.\+h}}\index{base/\+Event\+Dispatch.\+h@{base/\+Event\+Dispatch.\+h}!S\+O\+C\+K\+E\+T\+\_\+\+A\+L\+L@{S\+O\+C\+K\+E\+T\+\_\+\+A\+L\+L}}\item[{\em 
+\hypertarget{base_2_event_dispatch_8h_adf764cbdea00d65edcd07bb9953ad2b7a19dc446823088772fd106b1fc12bc56b}{}S\+O\+C\+K\+E\+T\+\_\+\+A\+L\+L\label{base_2_event_dispatch_8h_adf764cbdea00d65edcd07bb9953ad2b7a19dc446823088772fd106b1fc12bc56b}
+}]\end{description}
+\end{Desc}

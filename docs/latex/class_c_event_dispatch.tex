@@ -1,0 +1,260 @@
+\hypertarget{class_c_event_dispatch}{}\section{C\+Event\+Dispatch Class Reference}
+\label{class_c_event_dispatch}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+
+
+{\ttfamily \#include $<$Event\+Dispatch.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_c_event_dispatch_1_1_timer_item}{Timer\+Item}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_c_event_dispatch_ab393952e9e649f29b95c709646d99e7c}{$\sim$\+C\+Event\+Dispatch} ()
+\item 
+void \hyperlink{class_c_event_dispatch_a95cbad2b9e61df610c5dd9534996c272}{Add\+Event} (\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} fd, uint8\+\_\+t socket\+\_\+event)
+\item 
+void \hyperlink{class_c_event_dispatch_aa6d464f2c209691374ef3ac9599d6ac9}{Remove\+Event} (\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} fd, uint8\+\_\+t socket\+\_\+event)
+\item 
+void \hyperlink{class_c_event_dispatch_a6db322cd21109074adc92a85aa5654e9}{Add\+Timer} (\hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$user\+\_\+data, uint64\+\_\+t interval)
+\item 
+void \hyperlink{class_c_event_dispatch_ac5c65d49b2ef0f44f0381a0c187b490a}{Remove\+Timer} (\hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$user\+\_\+data)
+\item 
+void \hyperlink{class_c_event_dispatch_a6b17aa73ff4b3772dd9a9a7a9e24a4a0}{Start\+Dispatch} ()
+\item 
+virtual \hyperlink{class_c_event_dispatch_af9d7c2c1a056271c26a81a535b19b8e8}{$\sim$\+C\+Event\+Dispatch} ()
+\item 
+void \hyperlink{class_c_event_dispatch_a95cbad2b9e61df610c5dd9534996c272}{Add\+Event} (\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} fd, uint8\+\_\+t socket\+\_\+event)
+\item 
+void \hyperlink{class_c_event_dispatch_aa6d464f2c209691374ef3ac9599d6ac9}{Remove\+Event} (\hyperlink{base_2ostype_8h_a8dc8083897335125630f1af5dafd5831}{S\+O\+C\+K\+E\+T} fd, uint8\+\_\+t socket\+\_\+event)
+\item 
+void \hyperlink{class_c_event_dispatch_a6db322cd21109074adc92a85aa5654e9}{Add\+Timer} (\hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$user\+\_\+data, uint64\+\_\+t interval)
+\item 
+void \hyperlink{class_c_event_dispatch_ac5c65d49b2ef0f44f0381a0c187b490a}{Remove\+Timer} (\hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$user\+\_\+data)
+\item 
+void \hyperlink{class_c_event_dispatch_aed347074ca39224d085694bfa3ea12ad}{Add\+Loop} (\hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$user\+\_\+data)
+\item 
+void \hyperlink{class_c_event_dispatch_a2061e62d0c803085accbda160d9d8418}{Start\+Dispatch} (uint32\+\_\+t wait\+\_\+timeout=100)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_event_dispatch}{C\+Event\+Dispatch} $\ast$ \hyperlink{class_c_event_dispatch_a490d4992c0a735f00ff38e7466387f1f}{Instance} ()
+\item 
+static \hyperlink{class_c_event_dispatch}{C\+Event\+Dispatch} $\ast$ \hyperlink{class_c_event_dispatch_a0e2230cbe28a955671bdb1eac4923a10}{Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_event_dispatch_a35d4f8ba651e5d11e1b4eb327dc520f6}{C\+Event\+Dispatch} ()
+\item 
+\hyperlink{class_c_event_dispatch_a35d4f8ba651e5d11e1b4eb327dc520f6}{C\+Event\+Dispatch} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_event_dispatch_aa964904c8edeb3fae834191f917098c1}{\+\_\+\+Check\+Timer} ()
+\item 
+void \hyperlink{class_c_event_dispatch_aa964904c8edeb3fae834191f917098c1}{\+\_\+\+Check\+Timer} ()
+\item 
+void \hyperlink{class_c_event_dispatch_aa50c5baa2e67593570872c8e27cf70cc}{\+\_\+\+Check\+Loop} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_c_event_dispatch_a7b96d723622618132822efb47ad40ee3}{m\+\_\+epfd}
+\item 
+\hyperlink{class_c_thread_lock}{C\+Thread\+Lock} \hyperlink{class_c_event_dispatch_a730961da480e702351187352fabfa902}{m\+\_\+lock}
+\item 
+list$<$ \hyperlink{struct_c_event_dispatch_1_1_timer_item}{Timer\+Item} $\ast$ $>$ \hyperlink{class_c_event_dispatch_aaff9bf41f63d04ee7b942f86c41ab8c6}{m\+\_\+timer\+\_\+list}
+\item 
+list$<$ \hyperlink{struct_c_event_dispatch_1_1_timer_item}{Timer\+Item} $\ast$ $>$ \hyperlink{class_c_event_dispatch_aebc1eb1b5a2dff3d5b1cf06fa3196aec}{m\+\_\+loop\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_event_dispatch}{C\+Event\+Dispatch} $\ast$ \hyperlink{class_c_event_dispatch_a97c2ac9ef802368d22feb01d5470caa2}{m\+\_\+p\+Event\+Dispatch} = N\+U\+L\+L
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_event_dispatch_ab393952e9e649f29b95c709646d99e7c}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!````~C\+Event\+Dispatch@{$\sim$\+C\+Event\+Dispatch}}
+\index{````~C\+Event\+Dispatch@{$\sim$\+C\+Event\+Dispatch}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{$\sim$\+C\+Event\+Dispatch}]{\setlength{\rightskip}{0pt plus 5cm}C\+Event\+Dispatch\+::$\sim$\+C\+Event\+Dispatch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_event_dispatch_ab393952e9e649f29b95c709646d99e7c}
+\hypertarget{class_c_event_dispatch_a35d4f8ba651e5d11e1b4eb327dc520f6}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{C\+Event\+Dispatch}]{\setlength{\rightskip}{0pt plus 5cm}C\+Event\+Dispatch\+::\+C\+Event\+Dispatch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_event_dispatch_a35d4f8ba651e5d11e1b4eb327dc520f6}
+\hypertarget{class_c_event_dispatch_af9d7c2c1a056271c26a81a535b19b8e8}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!````~C\+Event\+Dispatch@{$\sim$\+C\+Event\+Dispatch}}
+\index{````~C\+Event\+Dispatch@{$\sim$\+C\+Event\+Dispatch}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{$\sim$\+C\+Event\+Dispatch}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Event\+Dispatch\+::$\sim$\+C\+Event\+Dispatch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_event_dispatch_af9d7c2c1a056271c26a81a535b19b8e8}
+\hypertarget{class_c_event_dispatch_a35d4f8ba651e5d11e1b4eb327dc520f6}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{C\+Event\+Dispatch}]{\setlength{\rightskip}{0pt plus 5cm}C\+Event\+Dispatch\+::\+C\+Event\+Dispatch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_event_dispatch_a35d4f8ba651e5d11e1b4eb327dc520f6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_event_dispatch_aa50c5baa2e67593570872c8e27cf70cc}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!\+\_\+\+Check\+Loop@{\+\_\+\+Check\+Loop}}
+\index{\+\_\+\+Check\+Loop@{\+\_\+\+Check\+Loop}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{\+\_\+\+Check\+Loop}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Event\+Dispatch\+::\+\_\+\+Check\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_event_dispatch_aa50c5baa2e67593570872c8e27cf70cc}
+\hypertarget{class_c_event_dispatch_aa964904c8edeb3fae834191f917098c1}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!\+\_\+\+Check\+Timer@{\+\_\+\+Check\+Timer}}
+\index{\+\_\+\+Check\+Timer@{\+\_\+\+Check\+Timer}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{\+\_\+\+Check\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Event\+Dispatch\+::\+\_\+\+Check\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_event_dispatch_aa964904c8edeb3fae834191f917098c1}
+\hypertarget{class_c_event_dispatch_aa964904c8edeb3fae834191f917098c1}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!\+\_\+\+Check\+Timer@{\+\_\+\+Check\+Timer}}
+\index{\+\_\+\+Check\+Timer@{\+\_\+\+Check\+Timer}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{\+\_\+\+Check\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Event\+Dispatch\+::\+\_\+\+Check\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_event_dispatch_aa964904c8edeb3fae834191f917098c1}
+\hypertarget{class_c_event_dispatch_a95cbad2b9e61df610c5dd9534996c272}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!Add\+Event@{Add\+Event}}
+\index{Add\+Event@{Add\+Event}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{Add\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Event\+Dispatch\+::\+Add\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+O\+C\+K\+E\+T}}]{fd, }
+\item[{uint8\+\_\+t}]{socket\+\_\+event}
+\end{DoxyParamCaption}
+)}\label{class_c_event_dispatch_a95cbad2b9e61df610c5dd9534996c272}
+\hypertarget{class_c_event_dispatch_a95cbad2b9e61df610c5dd9534996c272}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!Add\+Event@{Add\+Event}}
+\index{Add\+Event@{Add\+Event}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{Add\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Event\+Dispatch\+::\+Add\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+O\+C\+K\+E\+T}}]{fd, }
+\item[{uint8\+\_\+t}]{socket\+\_\+event}
+\end{DoxyParamCaption}
+)}\label{class_c_event_dispatch_a95cbad2b9e61df610c5dd9534996c272}
+\hypertarget{class_c_event_dispatch_aed347074ca39224d085694bfa3ea12ad}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!Add\+Loop@{Add\+Loop}}
+\index{Add\+Loop@{Add\+Loop}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{Add\+Loop}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Event\+Dispatch\+::\+Add\+Loop (
+\begin{DoxyParamCaption}
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{user\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{class_c_event_dispatch_aed347074ca39224d085694bfa3ea12ad}
+\hypertarget{class_c_event_dispatch_a6db322cd21109074adc92a85aa5654e9}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!Add\+Timer@{Add\+Timer}}
+\index{Add\+Timer@{Add\+Timer}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{Add\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Event\+Dispatch\+::\+Add\+Timer (
+\begin{DoxyParamCaption}
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{user\+\_\+data, }
+\item[{uint64\+\_\+t}]{interval}
+\end{DoxyParamCaption}
+)}\label{class_c_event_dispatch_a6db322cd21109074adc92a85aa5654e9}
+\hypertarget{class_c_event_dispatch_a6db322cd21109074adc92a85aa5654e9}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!Add\+Timer@{Add\+Timer}}
+\index{Add\+Timer@{Add\+Timer}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{Add\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Event\+Dispatch\+::\+Add\+Timer (
+\begin{DoxyParamCaption}
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{user\+\_\+data, }
+\item[{uint64\+\_\+t}]{interval}
+\end{DoxyParamCaption}
+)}\label{class_c_event_dispatch_a6db322cd21109074adc92a85aa5654e9}
+\hypertarget{class_c_event_dispatch_a490d4992c0a735f00ff38e7466387f1f}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!Instance@{Instance}}
+\index{Instance@{Instance}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Event\+Dispatch} $\ast$ C\+Event\+Dispatch\+::\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_event_dispatch_a490d4992c0a735f00ff38e7466387f1f}
+\hypertarget{class_c_event_dispatch_a0e2230cbe28a955671bdb1eac4923a10}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!Instance@{Instance}}
+\index{Instance@{Instance}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf C\+Event\+Dispatch}$\ast$ C\+Event\+Dispatch\+::\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_event_dispatch_a0e2230cbe28a955671bdb1eac4923a10}
+\hypertarget{class_c_event_dispatch_aa6d464f2c209691374ef3ac9599d6ac9}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!Remove\+Event@{Remove\+Event}}
+\index{Remove\+Event@{Remove\+Event}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{Remove\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Event\+Dispatch\+::\+Remove\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+O\+C\+K\+E\+T}}]{fd, }
+\item[{uint8\+\_\+t}]{socket\+\_\+event}
+\end{DoxyParamCaption}
+)}\label{class_c_event_dispatch_aa6d464f2c209691374ef3ac9599d6ac9}
+\hypertarget{class_c_event_dispatch_aa6d464f2c209691374ef3ac9599d6ac9}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!Remove\+Event@{Remove\+Event}}
+\index{Remove\+Event@{Remove\+Event}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{Remove\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Event\+Dispatch\+::\+Remove\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+O\+C\+K\+E\+T}}]{fd, }
+\item[{uint8\+\_\+t}]{socket\+\_\+event}
+\end{DoxyParamCaption}
+)}\label{class_c_event_dispatch_aa6d464f2c209691374ef3ac9599d6ac9}
+\hypertarget{class_c_event_dispatch_ac5c65d49b2ef0f44f0381a0c187b490a}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!Remove\+Timer@{Remove\+Timer}}
+\index{Remove\+Timer@{Remove\+Timer}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{Remove\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Event\+Dispatch\+::\+Remove\+Timer (
+\begin{DoxyParamCaption}
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{user\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{class_c_event_dispatch_ac5c65d49b2ef0f44f0381a0c187b490a}
+\hypertarget{class_c_event_dispatch_ac5c65d49b2ef0f44f0381a0c187b490a}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!Remove\+Timer@{Remove\+Timer}}
+\index{Remove\+Timer@{Remove\+Timer}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{Remove\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Event\+Dispatch\+::\+Remove\+Timer (
+\begin{DoxyParamCaption}
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{user\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{class_c_event_dispatch_ac5c65d49b2ef0f44f0381a0c187b490a}
+\hypertarget{class_c_event_dispatch_a6b17aa73ff4b3772dd9a9a7a9e24a4a0}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!Start\+Dispatch@{Start\+Dispatch}}
+\index{Start\+Dispatch@{Start\+Dispatch}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{Start\+Dispatch}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Event\+Dispatch\+::\+Start\+Dispatch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_event_dispatch_a6b17aa73ff4b3772dd9a9a7a9e24a4a0}
+\hypertarget{class_c_event_dispatch_a2061e62d0c803085accbda160d9d8418}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!Start\+Dispatch@{Start\+Dispatch}}
+\index{Start\+Dispatch@{Start\+Dispatch}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{Start\+Dispatch}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Event\+Dispatch\+::\+Start\+Dispatch (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{wait\+\_\+timeout = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}\label{class_c_event_dispatch_a2061e62d0c803085accbda160d9d8418}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_event_dispatch_a7b96d723622618132822efb47ad40ee3}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!m\+\_\+epfd@{m\+\_\+epfd}}
+\index{m\+\_\+epfd@{m\+\_\+epfd}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{m\+\_\+epfd}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Event\+Dispatch\+::m\+\_\+epfd\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_event_dispatch_a7b96d723622618132822efb47ad40ee3}
+\hypertarget{class_c_event_dispatch_a730961da480e702351187352fabfa902}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!m\+\_\+lock@{m\+\_\+lock}}
+\index{m\+\_\+lock@{m\+\_\+lock}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{m\+\_\+lock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Thread\+Lock} C\+Event\+Dispatch\+::m\+\_\+lock\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_event_dispatch_a730961da480e702351187352fabfa902}
+\hypertarget{class_c_event_dispatch_aebc1eb1b5a2dff3d5b1cf06fa3196aec}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!m\+\_\+loop\+\_\+list@{m\+\_\+loop\+\_\+list}}
+\index{m\+\_\+loop\+\_\+list@{m\+\_\+loop\+\_\+list}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{m\+\_\+loop\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}list$<${\bf Timer\+Item}$\ast$$>$ C\+Event\+Dispatch\+::m\+\_\+loop\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_event_dispatch_aebc1eb1b5a2dff3d5b1cf06fa3196aec}
+\hypertarget{class_c_event_dispatch_a97c2ac9ef802368d22feb01d5470caa2}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!m\+\_\+p\+Event\+Dispatch@{m\+\_\+p\+Event\+Dispatch}}
+\index{m\+\_\+p\+Event\+Dispatch@{m\+\_\+p\+Event\+Dispatch}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{m\+\_\+p\+Event\+Dispatch}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf C\+Event\+Dispatch} $\ast$ C\+Event\+Dispatch\+::m\+\_\+p\+Event\+Dispatch = N\+U\+L\+L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_c_event_dispatch_a97c2ac9ef802368d22feb01d5470caa2}
+\hypertarget{class_c_event_dispatch_aaff9bf41f63d04ee7b942f86c41ab8c6}{}\index{C\+Event\+Dispatch@{C\+Event\+Dispatch}!m\+\_\+timer\+\_\+list@{m\+\_\+timer\+\_\+list}}
+\index{m\+\_\+timer\+\_\+list@{m\+\_\+timer\+\_\+list}!C\+Event\+Dispatch@{C\+Event\+Dispatch}}
+\subsubsection[{m\+\_\+timer\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ {\bf Timer\+Item} $\ast$ $>$ C\+Event\+Dispatch\+::m\+\_\+timer\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_event_dispatch_aaff9bf41f63d04ee7b942f86c41ab8c6}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{base_2_event_dispatch_8h}{Event\+Dispatch.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{base_2_event_dispatch_8cpp}{Event\+Dispatch.\+cpp}\end{DoxyCompactItemize}

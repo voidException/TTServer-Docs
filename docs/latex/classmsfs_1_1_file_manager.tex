@@ -1,0 +1,322 @@
+\hypertarget{classmsfs_1_1_file_manager}{}\section{msfs\+:\+:File\+Manager Class Reference}
+\label{classmsfs_1_1_file_manager}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+
+
+{\ttfamily \#include $<$File\+Manager.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmsfs_1_1_file_manager_1_1_entry}{Entry}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmsfs_1_1_file_manager_aef5145c0efa010f4e6a72f2a4a376ee7}{init\+Dir} ()
+\item 
+\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_manager_a612fec74e0a1ded297aeff5a7e1888bb}{get\+File\+Cnt\+Curr} ()
+\item 
+int \hyperlink{classmsfs_1_1_file_manager_a95fa961158553ba05ba84e7a3da41e48}{get\+First\+Dir} ()
+\item 
+int \hyperlink{classmsfs_1_1_file_manager_adfd478a84c588d2d08ae9da2d28220f9}{get\+Second\+Dir} ()
+\item 
+string \hyperlink{classmsfs_1_1_file_manager_aa55b5c0e23dd43990f8321ea78706e6f}{create\+File\+Relate\+Path} ()
+\item 
+int \hyperlink{classmsfs_1_1_file_manager_a2a0b9d8d0ca59b11c099886f13229940}{upload\+File} (const char $\ast$type, const void $\ast$content, \hyperlink{_portable_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32} size, char $\ast$url, char $\ast$ext=N\+U\+L\+L)
+\item 
+int \hyperlink{classmsfs_1_1_file_manager_a9364c93a7c47a3008ebfdb2d99680210}{download\+File\+By\+Url} (char $\ast$url\+En, void $\ast$buf, \hyperlink{_portable_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32} $\ast$size)
+\item 
+int \hyperlink{classmsfs_1_1_file_manager_ad367ad7756df006613d1f863a9b8658b}{get\+Relate\+Path\+By\+Url} (const string \&url, string \&path)
+\item 
+int \hyperlink{classmsfs_1_1_file_manager_a0c7333a3172c84717dd19e8762402dfd}{get\+Abs\+Path\+By\+Url} (const string \&url, string \&path)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmsfs_1_1_file_manager}{File\+Manager} $\ast$ \hyperlink{classmsfs_1_1_file_manager_a44eebff93b8d448b0c3abed6c89277c1}{get\+Instance} (const char $\ast$host, const char $\ast$disk, int tot\+Files, int files\+Per\+Dir)
+\item 
+static void \hyperlink{classmsfs_1_1_file_manager_ac4644f005c160ccfaea46a7a9538736c}{destroy\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, \hyperlink{structmsfs_1_1_file_manager_1_1_entry}{Entry} $\ast$ $>$ \hyperlink{classmsfs_1_1_file_manager_a645a98d3bf6d0dafa69369db633f7f7f}{Entry\+Map}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmsfs_1_1_file_manager_a83efae8193c47cdec2ce3c54bff57f6f}{insert\+Entry} (const std\+::string \&url, size\+\_\+t filesize, const void $\ast$content)
+\item 
+\hyperlink{structmsfs_1_1_file_manager_1_1_entry}{Entry} $\ast$ \hyperlink{classmsfs_1_1_file_manager_aa1c283c8d5f8a0bbc012afaf865251ad}{get\+Entry} (const std\+::string \&url) const 
+\item 
+\hyperlink{structmsfs_1_1_file_manager_1_1_entry}{Entry} $\ast$ \hyperlink{classmsfs_1_1_file_manager_afa727a7272dcd6d0f14136f0849eb281}{get\+Or\+Create\+Entry} (const std\+::string \&url, bool create)
+\item 
+void \hyperlink{classmsfs_1_1_file_manager_ac1e1707b64e3c88e0f5bbad8c4e32479}{release\+File\+Cache} (const std\+::string \&url)
+\item 
+void \hyperlink{classmsfs_1_1_file_manager_a0ec42a0deb1bc3e5075871ebc04a7efa}{update\+Map\+Cache} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmsfs_1_1_file_manager_af71f3f5539a88cd85c44ecc477754bdf}{File\+Manager} ()
+\item 
+\hyperlink{classmsfs_1_1_file_manager_a7af2ac4dd2216a5c09ff48fc495c5ad1}{File\+Manager} (const char $\ast$host, const char $\ast$disk, int tot\+Files, int files\+Per\+Dir)
+\item 
+\hyperlink{classmsfs_1_1_file_manager_a5ffab97358f38c103935554a24a8af1b}{$\sim$\+File\+Manager} ()
+\item 
+\hyperlink{classmsfs_1_1_file_manager_a9b5172d615b1dfd3948e0fa612d336fe}{File\+Manager} (const \hyperlink{classmsfs_1_1_file_manager}{File\+Manager} \&)
+\item 
+\hyperlink{classmsfs_1_1_file_manager}{File\+Manager} \hyperlink{classmsfs_1_1_file_manager_ace7d6749384579633164fdb8f4b479fd}{operator=} (const \hyperlink{classmsfs_1_1_file_manager}{File\+Manager} \&)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{classmsfs_1_1_file_manager_a00dd6d302cdaae608649666aace89964}{m\+\_\+host}
+\item 
+char $\ast$ \hyperlink{classmsfs_1_1_file_manager_abf76498ababce7cf7f9c79734387b5e5}{m\+\_\+disk}
+\item 
+\hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_manager_a15069dab9b5a271b2577e287fc4e3487}{m\+\_\+tot\+Files}
+\item 
+\hyperlink{classmsfs_1_1_critical_section}{Critical\+Section} \hyperlink{classmsfs_1_1_file_manager_a6bec4a07b367b1d75c517a30e517fcd6}{m\+\_\+files\+Cs}
+\item 
+int \hyperlink{classmsfs_1_1_file_manager_a16a6bec0eb9a3ea5fa6298b5c8541b33}{m\+\_\+files\+Per\+Dir}
+\item 
+\hyperlink{classmsfs_1_1_file_manager_a645a98d3bf6d0dafa69369db633f7f7f}{Entry\+Map} \hyperlink{classmsfs_1_1_file_manager_ad0fc7a5fdeb2def16f0d6bcb6e12a7e3}{m\+\_\+map}
+\item 
+\hyperlink{classmsfs_1_1_critical_section}{Critical\+Section} \hyperlink{classmsfs_1_1_file_manager_acd847a59540982f996ee4c678b062c1f}{m\+\_\+cs}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{_portable_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32} \hyperlink{classmsfs_1_1_file_manager_a67c779dc06afccdc92bb3f5fbd52b540}{M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+P\+E\+R\+\_\+\+F\+I\+L\+E} = 5 $\ast$ 1024 $\ast$ 1024
+\item 
+static const int \hyperlink{classmsfs_1_1_file_manager_a8d26710d14449def8ef3fbf2d9548b5f}{F\+I\+R\+S\+T\+\_\+\+D\+I\+R\+\_\+\+M\+A\+X} =255
+\item 
+static const int \hyperlink{classmsfs_1_1_file_manager_a8d45d9f54bb93a6f1f4520f05fb74086}{S\+E\+C\+O\+N\+D\+\_\+\+D\+I\+R\+\_\+\+M\+A\+X} =255
+\item 
+static \hyperlink{classmsfs_1_1_file_manager}{File\+Manager} $\ast$ \hyperlink{classmsfs_1_1_file_manager_a0db4b217b8aa4a66440fcc0484e7e1d9}{m\+\_\+instance} = N\+U\+L\+L
+\item 
+static const \hyperlink{_portable_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64} \hyperlink{classmsfs_1_1_file_manager_a8912c6b7358cf5aa91cd85ea70f1758e}{M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+\_\+\+M\+A\+P} = 10000
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmsfs_1_1_file_manager_a645a98d3bf6d0dafa69369db633f7f7f}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!Entry\+Map@{Entry\+Map}}
+\index{Entry\+Map@{Entry\+Map}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{Entry\+Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Entry}$\ast$$>$ {\bf msfs\+::\+File\+Manager\+::\+Entry\+Map}\hspace{0.3cm}{\ttfamily [protected]}}\label{classmsfs_1_1_file_manager_a645a98d3bf6d0dafa69369db633f7f7f}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmsfs_1_1_file_manager_af71f3f5539a88cd85c44ecc477754bdf}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!File\+Manager@{File\+Manager}}
+\index{File\+Manager@{File\+Manager}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{File\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}msfs\+::\+File\+Manager\+::\+File\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classmsfs_1_1_file_manager_af71f3f5539a88cd85c44ecc477754bdf}
+\hypertarget{classmsfs_1_1_file_manager_a7af2ac4dd2216a5c09ff48fc495c5ad1}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!File\+Manager@{File\+Manager}}
+\index{File\+Manager@{File\+Manager}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{File\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}msfs\+::\+File\+Manager\+::\+File\+Manager (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{host, }
+\item[{const char $\ast$}]{disk, }
+\item[{int}]{tot\+Files, }
+\item[{int}]{files\+Per\+Dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classmsfs_1_1_file_manager_a7af2ac4dd2216a5c09ff48fc495c5ad1}
+\hypertarget{classmsfs_1_1_file_manager_a5ffab97358f38c103935554a24a8af1b}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!````~File\+Manager@{$\sim$\+File\+Manager}}
+\index{````~File\+Manager@{$\sim$\+File\+Manager}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{$\sim$\+File\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}msfs\+::\+File\+Manager\+::$\sim$\+File\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classmsfs_1_1_file_manager_a5ffab97358f38c103935554a24a8af1b}
+\hypertarget{classmsfs_1_1_file_manager_a9b5172d615b1dfd3948e0fa612d336fe}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!File\+Manager@{File\+Manager}}
+\index{File\+Manager@{File\+Manager}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{File\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}msfs\+::\+File\+Manager\+::\+File\+Manager (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\+Manager} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classmsfs_1_1_file_manager_a9b5172d615b1dfd3948e0fa612d336fe}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmsfs_1_1_file_manager_aa55b5c0e23dd43990f8321ea78706e6f}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!create\+File\+Relate\+Path@{create\+File\+Relate\+Path}}
+\index{create\+File\+Relate\+Path@{create\+File\+Relate\+Path}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{create\+File\+Relate\+Path}]{\setlength{\rightskip}{0pt plus 5cm}string msfs\+::\+File\+Manager\+::create\+File\+Relate\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_manager_aa55b5c0e23dd43990f8321ea78706e6f}
+\hypertarget{classmsfs_1_1_file_manager_ac4644f005c160ccfaea46a7a9538736c}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!destroy\+Instance@{destroy\+Instance}}
+\index{destroy\+Instance@{destroy\+Instance}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{destroy\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}static void msfs\+::\+File\+Manager\+::destroy\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classmsfs_1_1_file_manager_ac4644f005c160ccfaea46a7a9538736c}
+\hypertarget{classmsfs_1_1_file_manager_a9364c93a7c47a3008ebfdb2d99680210}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!download\+File\+By\+Url@{download\+File\+By\+Url}}
+\index{download\+File\+By\+Url@{download\+File\+By\+Url}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{download\+File\+By\+Url}]{\setlength{\rightskip}{0pt plus 5cm}int msfs\+::\+File\+Manager\+::download\+File\+By\+Url (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{url\+En, }
+\item[{void $\ast$}]{buf, }
+\item[{{\bf u32} $\ast$}]{size}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_manager_a9364c93a7c47a3008ebfdb2d99680210}
+\hypertarget{classmsfs_1_1_file_manager_a0c7333a3172c84717dd19e8762402dfd}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!get\+Abs\+Path\+By\+Url@{get\+Abs\+Path\+By\+Url}}
+\index{get\+Abs\+Path\+By\+Url@{get\+Abs\+Path\+By\+Url}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{get\+Abs\+Path\+By\+Url}]{\setlength{\rightskip}{0pt plus 5cm}int msfs\+::\+File\+Manager\+::get\+Abs\+Path\+By\+Url (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{url, }
+\item[{string \&}]{path}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_manager_a0c7333a3172c84717dd19e8762402dfd}
+\hypertarget{classmsfs_1_1_file_manager_aa1c283c8d5f8a0bbc012afaf865251ad}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!get\+Entry@{get\+Entry}}
+\index{get\+Entry@{get\+Entry}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{get\+Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entry}$\ast$ msfs\+::\+File\+Manager\+::get\+Entry (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{url}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classmsfs_1_1_file_manager_aa1c283c8d5f8a0bbc012afaf865251ad}
+\hypertarget{classmsfs_1_1_file_manager_a612fec74e0a1ded297aeff5a7e1888bb}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!get\+File\+Cnt\+Curr@{get\+File\+Cnt\+Curr}}
+\index{get\+File\+Cnt\+Curr@{get\+File\+Cnt\+Curr}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{get\+File\+Cnt\+Curr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+Manager\+::get\+File\+Cnt\+Curr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmsfs_1_1_file_manager_a612fec74e0a1ded297aeff5a7e1888bb}
+\hypertarget{classmsfs_1_1_file_manager_a95fa961158553ba05ba84e7a3da41e48}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!get\+First\+Dir@{get\+First\+Dir}}
+\index{get\+First\+Dir@{get\+First\+Dir}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{get\+First\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}int msfs\+::\+File\+Manager\+::get\+First\+Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmsfs_1_1_file_manager_a95fa961158553ba05ba84e7a3da41e48}
+\hypertarget{classmsfs_1_1_file_manager_a44eebff93b8d448b0c3abed6c89277c1}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf File\+Manager}$\ast$ msfs\+::\+File\+Manager\+::get\+Instance (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{host, }
+\item[{const char $\ast$}]{disk, }
+\item[{int}]{tot\+Files, }
+\item[{int}]{files\+Per\+Dir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classmsfs_1_1_file_manager_a44eebff93b8d448b0c3abed6c89277c1}
+\hypertarget{classmsfs_1_1_file_manager_afa727a7272dcd6d0f14136f0849eb281}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!get\+Or\+Create\+Entry@{get\+Or\+Create\+Entry}}
+\index{get\+Or\+Create\+Entry@{get\+Or\+Create\+Entry}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{get\+Or\+Create\+Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\+Manager\+::\+Entry} $\ast$ msfs\+::\+File\+Manager\+::get\+Or\+Create\+Entry (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{url, }
+\item[{bool}]{create}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmsfs_1_1_file_manager_afa727a7272dcd6d0f14136f0849eb281}
+\hypertarget{classmsfs_1_1_file_manager_ad367ad7756df006613d1f863a9b8658b}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!get\+Relate\+Path\+By\+Url@{get\+Relate\+Path\+By\+Url}}
+\index{get\+Relate\+Path\+By\+Url@{get\+Relate\+Path\+By\+Url}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{get\+Relate\+Path\+By\+Url}]{\setlength{\rightskip}{0pt plus 5cm}int msfs\+::\+File\+Manager\+::get\+Relate\+Path\+By\+Url (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{url, }
+\item[{string \&}]{path}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_manager_ad367ad7756df006613d1f863a9b8658b}
+\hypertarget{classmsfs_1_1_file_manager_adfd478a84c588d2d08ae9da2d28220f9}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!get\+Second\+Dir@{get\+Second\+Dir}}
+\index{get\+Second\+Dir@{get\+Second\+Dir}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{get\+Second\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}int msfs\+::\+File\+Manager\+::get\+Second\+Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmsfs_1_1_file_manager_adfd478a84c588d2d08ae9da2d28220f9}
+\hypertarget{classmsfs_1_1_file_manager_aef5145c0efa010f4e6a72f2a4a376ee7}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!init\+Dir@{init\+Dir}}
+\index{init\+Dir@{init\+Dir}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{init\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}int msfs\+::\+File\+Manager\+::init\+Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_manager_aef5145c0efa010f4e6a72f2a4a376ee7}
+\hypertarget{classmsfs_1_1_file_manager_a83efae8193c47cdec2ce3c54bff57f6f}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!insert\+Entry@{insert\+Entry}}
+\index{insert\+Entry@{insert\+Entry}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{insert\+Entry}]{\setlength{\rightskip}{0pt plus 5cm}int msfs\+::\+File\+Manager\+::insert\+Entry (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{url, }
+\item[{size\+\_\+t}]{filesize, }
+\item[{const void $\ast$}]{content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmsfs_1_1_file_manager_a83efae8193c47cdec2ce3c54bff57f6f}
+\hypertarget{classmsfs_1_1_file_manager_ace7d6749384579633164fdb8f4b479fd}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\+Manager} msfs\+::\+File\+Manager\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\+Manager} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classmsfs_1_1_file_manager_ace7d6749384579633164fdb8f4b479fd}
+\hypertarget{classmsfs_1_1_file_manager_ac1e1707b64e3c88e0f5bbad8c4e32479}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!release\+File\+Cache@{release\+File\+Cache}}
+\index{release\+File\+Cache@{release\+File\+Cache}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{release\+File\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}void msfs\+::\+File\+Manager\+::release\+File\+Cache (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmsfs_1_1_file_manager_ac1e1707b64e3c88e0f5bbad8c4e32479}
+\hypertarget{classmsfs_1_1_file_manager_a0ec42a0deb1bc3e5075871ebc04a7efa}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!update\+Map\+Cache@{update\+Map\+Cache}}
+\index{update\+Map\+Cache@{update\+Map\+Cache}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{update\+Map\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}void msfs\+::\+File\+Manager\+::update\+Map\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classmsfs_1_1_file_manager_a0ec42a0deb1bc3e5075871ebc04a7efa}
+\hypertarget{classmsfs_1_1_file_manager_a2a0b9d8d0ca59b11c099886f13229940}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!upload\+File@{upload\+File}}
+\index{upload\+File@{upload\+File}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{upload\+File}]{\setlength{\rightskip}{0pt plus 5cm}int msfs\+::\+File\+Manager\+::upload\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{type, }
+\item[{const void $\ast$}]{content, }
+\item[{{\bf u32}}]{size, }
+\item[{char $\ast$}]{url, }
+\item[{char $\ast$}]{ext = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{classmsfs_1_1_file_manager_a2a0b9d8d0ca59b11c099886f13229940}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classmsfs_1_1_file_manager_a8d26710d14449def8ef3fbf2d9548b5f}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!F\+I\+R\+S\+T\+\_\+\+D\+I\+R\+\_\+\+M\+A\+X@{F\+I\+R\+S\+T\+\_\+\+D\+I\+R\+\_\+\+M\+A\+X}}
+\index{F\+I\+R\+S\+T\+\_\+\+D\+I\+R\+\_\+\+M\+A\+X@{F\+I\+R\+S\+T\+\_\+\+D\+I\+R\+\_\+\+M\+A\+X}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{F\+I\+R\+S\+T\+\_\+\+D\+I\+R\+\_\+\+M\+A\+X}]{\setlength{\rightskip}{0pt plus 5cm}const int msfs\+::\+File\+Manager\+::\+F\+I\+R\+S\+T\+\_\+\+D\+I\+R\+\_\+\+M\+A\+X =255\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classmsfs_1_1_file_manager_a8d26710d14449def8ef3fbf2d9548b5f}
+\hypertarget{classmsfs_1_1_file_manager_acd847a59540982f996ee4c678b062c1f}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!m\+\_\+cs@{m\+\_\+cs}}
+\index{m\+\_\+cs@{m\+\_\+cs}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{m\+\_\+cs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Critical\+Section} msfs\+::\+File\+Manager\+::m\+\_\+cs\hspace{0.3cm}{\ttfamily [private]}}\label{classmsfs_1_1_file_manager_acd847a59540982f996ee4c678b062c1f}
+\hypertarget{classmsfs_1_1_file_manager_abf76498ababce7cf7f9c79734387b5e5}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!m\+\_\+disk@{m\+\_\+disk}}
+\index{m\+\_\+disk@{m\+\_\+disk}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{m\+\_\+disk}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ msfs\+::\+File\+Manager\+::m\+\_\+disk\hspace{0.3cm}{\ttfamily [private]}}\label{classmsfs_1_1_file_manager_abf76498ababce7cf7f9c79734387b5e5}
+\hypertarget{classmsfs_1_1_file_manager_a6bec4a07b367b1d75c517a30e517fcd6}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!m\+\_\+files\+Cs@{m\+\_\+files\+Cs}}
+\index{m\+\_\+files\+Cs@{m\+\_\+files\+Cs}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{m\+\_\+files\+Cs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Critical\+Section} msfs\+::\+File\+Manager\+::m\+\_\+files\+Cs\hspace{0.3cm}{\ttfamily [private]}}\label{classmsfs_1_1_file_manager_a6bec4a07b367b1d75c517a30e517fcd6}
+\hypertarget{classmsfs_1_1_file_manager_a16a6bec0eb9a3ea5fa6298b5c8541b33}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!m\+\_\+files\+Per\+Dir@{m\+\_\+files\+Per\+Dir}}
+\index{m\+\_\+files\+Per\+Dir@{m\+\_\+files\+Per\+Dir}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{m\+\_\+files\+Per\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}int msfs\+::\+File\+Manager\+::m\+\_\+files\+Per\+Dir\hspace{0.3cm}{\ttfamily [private]}}\label{classmsfs_1_1_file_manager_a16a6bec0eb9a3ea5fa6298b5c8541b33}
+\hypertarget{classmsfs_1_1_file_manager_a00dd6d302cdaae608649666aace89964}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!m\+\_\+host@{m\+\_\+host}}
+\index{m\+\_\+host@{m\+\_\+host}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{m\+\_\+host}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ msfs\+::\+File\+Manager\+::m\+\_\+host\hspace{0.3cm}{\ttfamily [private]}}\label{classmsfs_1_1_file_manager_a00dd6d302cdaae608649666aace89964}
+\hypertarget{classmsfs_1_1_file_manager_a0db4b217b8aa4a66440fcc0484e7e1d9}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!m\+\_\+instance@{m\+\_\+instance}}
+\index{m\+\_\+instance@{m\+\_\+instance}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{m\+\_\+instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\+Manager} $\ast$ File\+Manager\+::m\+\_\+instance = N\+U\+L\+L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classmsfs_1_1_file_manager_a0db4b217b8aa4a66440fcc0484e7e1d9}
+\hypertarget{classmsfs_1_1_file_manager_ad0fc7a5fdeb2def16f0d6bcb6e12a7e3}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!m\+\_\+map@{m\+\_\+map}}
+\index{m\+\_\+map@{m\+\_\+map}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{m\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entry\+Map} msfs\+::\+File\+Manager\+::m\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}\label{classmsfs_1_1_file_manager_ad0fc7a5fdeb2def16f0d6bcb6e12a7e3}
+\hypertarget{classmsfs_1_1_file_manager_a15069dab9b5a271b2577e287fc4e3487}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!m\+\_\+tot\+Files@{m\+\_\+tot\+Files}}
+\index{m\+\_\+tot\+Files@{m\+\_\+tot\+Files}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{m\+\_\+tot\+Files}]{\setlength{\rightskip}{0pt plus 5cm}{\bf u64} msfs\+::\+File\+Manager\+::m\+\_\+tot\+Files\hspace{0.3cm}{\ttfamily [private]}}\label{classmsfs_1_1_file_manager_a15069dab9b5a271b2577e287fc4e3487}
+\hypertarget{classmsfs_1_1_file_manager_a8912c6b7358cf5aa91cd85ea70f1758e}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+\_\+\+M\+A\+P@{M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+\_\+\+M\+A\+P}}
+\index{M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+\_\+\+M\+A\+P@{M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+\_\+\+M\+A\+P}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+\_\+\+M\+A\+P}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf u64} msfs\+::\+File\+Manager\+::\+M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+\_\+\+M\+A\+P = 10000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classmsfs_1_1_file_manager_a8912c6b7358cf5aa91cd85ea70f1758e}
+\hypertarget{classmsfs_1_1_file_manager_a67c779dc06afccdc92bb3f5fbd52b540}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+P\+E\+R\+\_\+\+F\+I\+L\+E@{M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+P\+E\+R\+\_\+\+F\+I\+L\+E}}
+\index{M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+P\+E\+R\+\_\+\+F\+I\+L\+E@{M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+P\+E\+R\+\_\+\+F\+I\+L\+E}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+P\+E\+R\+\_\+\+F\+I\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf u32} msfs\+::\+File\+Manager\+::\+M\+A\+X\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E\+\_\+\+P\+E\+R\+\_\+\+F\+I\+L\+E = 5 $\ast$ 1024 $\ast$ 1024\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classmsfs_1_1_file_manager_a67c779dc06afccdc92bb3f5fbd52b540}
+\hypertarget{classmsfs_1_1_file_manager_a8d45d9f54bb93a6f1f4520f05fb74086}{}\index{msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}!S\+E\+C\+O\+N\+D\+\_\+\+D\+I\+R\+\_\+\+M\+A\+X@{S\+E\+C\+O\+N\+D\+\_\+\+D\+I\+R\+\_\+\+M\+A\+X}}
+\index{S\+E\+C\+O\+N\+D\+\_\+\+D\+I\+R\+\_\+\+M\+A\+X@{S\+E\+C\+O\+N\+D\+\_\+\+D\+I\+R\+\_\+\+M\+A\+X}!msfs\+::\+File\+Manager@{msfs\+::\+File\+Manager}}
+\subsubsection[{S\+E\+C\+O\+N\+D\+\_\+\+D\+I\+R\+\_\+\+M\+A\+X}]{\setlength{\rightskip}{0pt plus 5cm}const int msfs\+::\+File\+Manager\+::\+S\+E\+C\+O\+N\+D\+\_\+\+D\+I\+R\+\_\+\+M\+A\+X =255\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classmsfs_1_1_file_manager_a8d45d9f54bb93a6f1f4520f05fb74086}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/include/storage/\hyperlink{_file_manager_8h}{File\+Manager.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/\hyperlink{main_8cpp}{main.\+cpp}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/storage/\hyperlink{_file_manager_8cpp}{File\+Manager.\+cpp}\end{DoxyCompactItemize}

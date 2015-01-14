@@ -1,0 +1,104 @@
+\hypertarget{base_2util_8h}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/util.h File Reference}
+\label{base_2util_8h}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/util.\+h@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/util.\+h}}
+{\ttfamily \#include \char`\"{}ostype.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Util\+Pdu.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$stdarg.\+h$>$}\\*
+{\ttfamily \#include $<$pthread.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include $<$sys/time.\+h$>$}\\*
+{\ttfamily \#include $<$ext/hash\+\_\+map$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_thread}{C\+Thread}
+\item 
+class \hyperlink{class_c_event_thread}{C\+Event\+Thread}
+\item 
+class \hyperlink{class_c_thread_lock}{C\+Thread\+Lock}
+\item 
+class \hyperlink{class_c_func_lock}{C\+Func\+Lock}
+\item 
+class \hyperlink{class_c_ref_object}{C\+Ref\+Object}
+\item 
+class \hyperlink{class_c_str_explode}{C\+Str\+Explode}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{base_2util_8h_a411c46599e926f8cdf49c63957255359}{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E}
+\item 
+\#define \hyperlink{base_2util_8h_afd932992b0afe0ee3014a55ceace90c7}{M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E}~0x4000000
+\item 
+\#define \hyperlink{base_2util_8h_a58b4ad71b3f1d9dc7fcfb2704dc64837}{N\+O\+T\+U\+S\+E\+D\+\_\+\+A\+R\+G}(v)~((void)v)
+\item 
+\#define \hyperlink{base_2util_8h_a8aae08d19894f7af60ec6e296a52561e}{log}(fmt,  args...)~\hyperlink{base_2util_8h_a5c5ce3413f64789fb447802a61229a09}{logger}(\char`\"{}$<$\%s$>$$\vert$$<$\%d$>$$\vert$$<$\%s$>$,\char`\"{} fmt, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+, \#\#args)
+\begin{DoxyCompactList}\small\item\em yunfan modify 2014.\+8.\+12 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{base_2util_8h_a5c5ce3413f64789fb447802a61229a09}{logger} (const char $\ast$fmt,...)
+\item 
+uint64\+\_\+t \hyperlink{base_2util_8h_a3e4f8fa11af9cc2cc258d8344c68c17d}{get\+\_\+tick\+\_\+count} ()
+\begin{DoxyCompactList}\small\item\em yunfan modify end \end{DoxyCompactList}\item 
+void \hyperlink{base_2util_8h_ae6c38fcb2c4b814fa20ea6d4381e2814}{util\+\_\+sleep} (uint32\+\_\+t millisecond)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{base_2util_8h_a411c46599e926f8cdf49c63957255359}{}\index{base/util.\+h@{base/util.\+h}!\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E@{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E}}
+\index{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E@{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E}!base/util.\+h@{base/util.\+h}}
+\subsubsection[{\+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+C\+R\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+N\+O\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E}\label{base_2util_8h_a411c46599e926f8cdf49c63957255359}
+\hypertarget{base_2util_8h_a8aae08d19894f7af60ec6e296a52561e}{}\index{base/util.\+h@{base/util.\+h}!log@{log}}
+\index{log@{log}!base/util.\+h@{base/util.\+h}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}\#define log(
+\begin{DoxyParamCaption}
+\item[{}]{fmt, }
+\item[{}]{args...}
+\end{DoxyParamCaption}
+)~{\bf logger}(\char`\"{}$<$\%s$>$$\vert$$<$\%d$>$$\vert$$<$\%s$>$,\char`\"{} fmt, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+, \#\#args)}\label{base_2util_8h_a8aae08d19894f7af60ec6e296a52561e}
+
+
+yunfan modify 2014.\+8.\+12 
+
+\hypertarget{base_2util_8h_afd932992b0afe0ee3014a55ceace90c7}{}\index{base/util.\+h@{base/util.\+h}!M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E}}
+\index{M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E}!base/util.\+h@{base/util.\+h}}
+\subsubsection[{M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+S\+I\+Z\+E~0x4000000}\label{base_2util_8h_afd932992b0afe0ee3014a55ceace90c7}
+\hypertarget{base_2util_8h_a58b4ad71b3f1d9dc7fcfb2704dc64837}{}\index{base/util.\+h@{base/util.\+h}!N\+O\+T\+U\+S\+E\+D\+\_\+\+A\+R\+G@{N\+O\+T\+U\+S\+E\+D\+\_\+\+A\+R\+G}}
+\index{N\+O\+T\+U\+S\+E\+D\+\_\+\+A\+R\+G@{N\+O\+T\+U\+S\+E\+D\+\_\+\+A\+R\+G}!base/util.\+h@{base/util.\+h}}
+\subsubsection[{N\+O\+T\+U\+S\+E\+D\+\_\+\+A\+R\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+O\+T\+U\+S\+E\+D\+\_\+\+A\+R\+G(
+\begin{DoxyParamCaption}
+\item[{}]{v}
+\end{DoxyParamCaption}
+)~((void)v)}\label{base_2util_8h_a58b4ad71b3f1d9dc7fcfb2704dc64837}
+
+
+\subsection{Function Documentation}
+\hypertarget{base_2util_8h_a3e4f8fa11af9cc2cc258d8344c68c17d}{}\index{base/util.\+h@{base/util.\+h}!get\+\_\+tick\+\_\+count@{get\+\_\+tick\+\_\+count}}
+\index{get\+\_\+tick\+\_\+count@{get\+\_\+tick\+\_\+count}!base/util.\+h@{base/util.\+h}}
+\subsubsection[{get\+\_\+tick\+\_\+count}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t get\+\_\+tick\+\_\+count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{base_2util_8h_a3e4f8fa11af9cc2cc258d8344c68c17d}
+
+
+yunfan modify end 
+
+\hypertarget{base_2util_8h_a5c5ce3413f64789fb447802a61229a09}{}\index{base/util.\+h@{base/util.\+h}!logger@{logger}}
+\index{logger@{logger}!base/util.\+h@{base/util.\+h}}
+\subsubsection[{logger}]{\setlength{\rightskip}{0pt plus 5cm}void logger (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{fmt, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\label{base_2util_8h_a5c5ce3413f64789fb447802a61229a09}
+\hypertarget{base_2util_8h_ae6c38fcb2c4b814fa20ea6d4381e2814}{}\index{base/util.\+h@{base/util.\+h}!util\+\_\+sleep@{util\+\_\+sleep}}
+\index{util\+\_\+sleep@{util\+\_\+sleep}!base/util.\+h@{base/util.\+h}}
+\subsubsection[{util\+\_\+sleep}]{\setlength{\rightskip}{0pt plus 5cm}void util\+\_\+sleep (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{millisecond}
+\end{DoxyParamCaption}
+)}\label{base_2util_8h_ae6c38fcb2c4b814fa20ea6d4381e2814}

@@ -1,0 +1,68 @@
+\hypertarget{imconn_8cpp}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/imconn.cpp File Reference}
+\label{imconn_8cpp}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/imconn.\+cpp@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/imconn.\+cpp}}
+{\ttfamily \#include \char`\"{}imconn.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{imconn_8cpp_a51a115ba7be3e587999e0d926fc228a1}{P\+O\+L\+I\+C\+Y\+\_\+\+F\+I\+L\+E\+\_\+\+N\+A\+M\+E}~\char`\"{}policy.\+xml\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_im_conn}{C\+Im\+Conn} $\ast$ \hyperlink{imconn_8cpp_aa7413f55da40ebe44a27a972b6145f25}{Find\+Im\+Conn} (\hyperlink{imconn_8h_a1b07337cf5bc653007359de2c69e2dce}{Conn\+Map\+\_\+t} $\ast$imconn\+\_\+map, \hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} handle)
+\item 
+void \hyperlink{imconn_8cpp_ad395d80257f8218e54d97433111eb6df}{imconn\+\_\+callback} (void $\ast$callback\+\_\+data, uint8\+\_\+t msg, uint32\+\_\+t handle, void $\ast$p\+Param)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static char $\ast$ \hyperlink{imconn_8cpp_a42bf57d7d3d0b54ceca28391375914c5}{g\+\_\+policy\+\_\+content} = N\+U\+L\+L
+\item 
+static uint32\+\_\+t \hyperlink{imconn_8cpp_ad11aa8eee783bbc79175f93da2816567}{g\+\_\+policy\+\_\+len} = 0
+\item 
+static uint32\+\_\+t \hyperlink{imconn_8cpp_a4fc5af79b5e96ce83c3ffc112733f241}{g\+\_\+send\+\_\+pkt\+\_\+cnt} = 0
+\item 
+static uint32\+\_\+t \hyperlink{imconn_8cpp_a7601a7655a852ea4e96e88a13f21270f}{g\+\_\+recv\+\_\+pkt\+\_\+cnt} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{imconn_8cpp_a51a115ba7be3e587999e0d926fc228a1}{}\index{imconn.\+cpp@{imconn.\+cpp}!P\+O\+L\+I\+C\+Y\+\_\+\+F\+I\+L\+E\+\_\+\+N\+A\+M\+E@{P\+O\+L\+I\+C\+Y\+\_\+\+F\+I\+L\+E\+\_\+\+N\+A\+M\+E}}
+\index{P\+O\+L\+I\+C\+Y\+\_\+\+F\+I\+L\+E\+\_\+\+N\+A\+M\+E@{P\+O\+L\+I\+C\+Y\+\_\+\+F\+I\+L\+E\+\_\+\+N\+A\+M\+E}!imconn.\+cpp@{imconn.\+cpp}}
+\subsubsection[{P\+O\+L\+I\+C\+Y\+\_\+\+F\+I\+L\+E\+\_\+\+N\+A\+M\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+O\+L\+I\+C\+Y\+\_\+\+F\+I\+L\+E\+\_\+\+N\+A\+M\+E~\char`\"{}policy.\+xml\char`\"{}}\label{imconn_8cpp_a51a115ba7be3e587999e0d926fc228a1}
+
+
+\subsection{Function Documentation}
+\hypertarget{imconn_8cpp_aa7413f55da40ebe44a27a972b6145f25}{}\index{imconn.\+cpp@{imconn.\+cpp}!Find\+Im\+Conn@{Find\+Im\+Conn}}
+\index{Find\+Im\+Conn@{Find\+Im\+Conn}!imconn.\+cpp@{imconn.\+cpp}}
+\subsubsection[{Find\+Im\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf C\+Im\+Conn}$\ast$ Find\+Im\+Conn (
+\begin{DoxyParamCaption}
+\item[{{\bf Conn\+Map\+\_\+t} $\ast$}]{imconn\+\_\+map, }
+\item[{{\bf net\+\_\+handle\+\_\+t}}]{handle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{imconn_8cpp_aa7413f55da40ebe44a27a972b6145f25}
+\hypertarget{imconn_8cpp_ad395d80257f8218e54d97433111eb6df}{}\index{imconn.\+cpp@{imconn.\+cpp}!imconn\+\_\+callback@{imconn\+\_\+callback}}
+\index{imconn\+\_\+callback@{imconn\+\_\+callback}!imconn.\+cpp@{imconn.\+cpp}}
+\subsubsection[{imconn\+\_\+callback}]{\setlength{\rightskip}{0pt plus 5cm}void imconn\+\_\+callback (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{callback\+\_\+data, }
+\item[{uint8\+\_\+t}]{msg, }
+\item[{uint32\+\_\+t}]{handle, }
+\item[{void $\ast$}]{p\+Param}
+\end{DoxyParamCaption}
+)}\label{imconn_8cpp_ad395d80257f8218e54d97433111eb6df}
+
+
+\subsection{Variable Documentation}
+\hypertarget{imconn_8cpp_a42bf57d7d3d0b54ceca28391375914c5}{}\index{imconn.\+cpp@{imconn.\+cpp}!g\+\_\+policy\+\_\+content@{g\+\_\+policy\+\_\+content}}
+\index{g\+\_\+policy\+\_\+content@{g\+\_\+policy\+\_\+content}!imconn.\+cpp@{imconn.\+cpp}}
+\subsubsection[{g\+\_\+policy\+\_\+content}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ g\+\_\+policy\+\_\+content = N\+U\+L\+L\hspace{0.3cm}{\ttfamily [static]}}\label{imconn_8cpp_a42bf57d7d3d0b54ceca28391375914c5}
+\hypertarget{imconn_8cpp_ad11aa8eee783bbc79175f93da2816567}{}\index{imconn.\+cpp@{imconn.\+cpp}!g\+\_\+policy\+\_\+len@{g\+\_\+policy\+\_\+len}}
+\index{g\+\_\+policy\+\_\+len@{g\+\_\+policy\+\_\+len}!imconn.\+cpp@{imconn.\+cpp}}
+\subsubsection[{g\+\_\+policy\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t g\+\_\+policy\+\_\+len = 0\hspace{0.3cm}{\ttfamily [static]}}\label{imconn_8cpp_ad11aa8eee783bbc79175f93da2816567}
+\hypertarget{imconn_8cpp_a7601a7655a852ea4e96e88a13f21270f}{}\index{imconn.\+cpp@{imconn.\+cpp}!g\+\_\+recv\+\_\+pkt\+\_\+cnt@{g\+\_\+recv\+\_\+pkt\+\_\+cnt}}
+\index{g\+\_\+recv\+\_\+pkt\+\_\+cnt@{g\+\_\+recv\+\_\+pkt\+\_\+cnt}!imconn.\+cpp@{imconn.\+cpp}}
+\subsubsection[{g\+\_\+recv\+\_\+pkt\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t g\+\_\+recv\+\_\+pkt\+\_\+cnt = 0\hspace{0.3cm}{\ttfamily [static]}}\label{imconn_8cpp_a7601a7655a852ea4e96e88a13f21270f}
+\hypertarget{imconn_8cpp_a4fc5af79b5e96ce83c3ffc112733f241}{}\index{imconn.\+cpp@{imconn.\+cpp}!g\+\_\+send\+\_\+pkt\+\_\+cnt@{g\+\_\+send\+\_\+pkt\+\_\+cnt}}
+\index{g\+\_\+send\+\_\+pkt\+\_\+cnt@{g\+\_\+send\+\_\+pkt\+\_\+cnt}!imconn.\+cpp@{imconn.\+cpp}}
+\subsubsection[{g\+\_\+send\+\_\+pkt\+\_\+cnt}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t g\+\_\+send\+\_\+pkt\+\_\+cnt = 0\hspace{0.3cm}{\ttfamily [static]}}\label{imconn_8cpp_a4fc5af79b5e96ce83c3ffc112733f241}

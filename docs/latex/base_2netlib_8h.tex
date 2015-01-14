@@ -1,0 +1,174 @@
+\hypertarget{base_2netlib_8h}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/netlib.h File Reference}
+\label{base_2netlib_8h}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/netlib.\+h@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/netlib.\+h}}
+{\ttfamily \#include \char`\"{}ostype.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{base_2netlib_8h_ad1b1646b0ba157cbecb9cad52c7282f7}{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K}~1
+\item 
+\#define \hyperlink{base_2netlib_8h_aba80723d0471859efe9200134880a4ee}{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+D\+A\+T\+A}~2
+\item 
+\#define \hyperlink{base_2netlib_8h_a842a01798bb055c5c98b20bc665ecd23}{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+I\+P}~3
+\item 
+\#define \hyperlink{base_2netlib_8h_a07d6c3f2b787e7147b30494eea296dc0}{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+P\+O\+R\+T}~4
+\item 
+\#define \hyperlink{base_2netlib_8h_a9e44937482409656131546b547fef76b}{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+P}~5
+\item 
+\#define \hyperlink{base_2netlib_8h_acbb076172b1e917efaedd8d01e618813}{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+P\+O\+R\+T}~6
+\item 
+\#define \hyperlink{base_2netlib_8h_ad598bed6bf96362440d2b83e8c86a119}{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+S\+E\+N\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}~7
+\item 
+\#define \hyperlink{base_2netlib_8h_a2a04909d650d1775218a355f6620407b}{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+R\+E\+C\+V\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}~8
+\item 
+\#define \hyperlink{base_2netlib_8h_abc907f17d3074c0784470f1a63915d0c}{N\+E\+T\+L\+I\+B\+\_\+\+M\+A\+X\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}~(128 $\ast$ 1024)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{base_2netlib_8h_af84c0b4757647afcd1707c3b5fdb41a3}{netlib\+\_\+init} ()
+\item 
+int \hyperlink{base_2netlib_8h_aecff4c335cea77c3d4ee25d382ab56be}{netlib\+\_\+destroy} ()
+\item 
+int \hyperlink{base_2netlib_8h_a2003104b4c09085ae3474ec149a90a74}{netlib\+\_\+listen} (const char $\ast$server\+\_\+ip, uint16\+\_\+t port, \hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$callback\+\_\+data)
+\item 
+\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} \hyperlink{base_2netlib_8h_a8490958224a438284765c4d989e1b11c}{netlib\+\_\+connect} (const char $\ast$server\+\_\+ip, uint16\+\_\+t port, \hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$callback\+\_\+data)
+\item 
+int \hyperlink{base_2netlib_8h_adab326de3ca9628300f014a9a023ba71}{netlib\+\_\+send} (\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} handle, void $\ast$buf, int len)
+\item 
+int \hyperlink{base_2netlib_8h_a509f18d0fc256a886bdb99c722a4105a}{netlib\+\_\+recv} (\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} handle, void $\ast$buf, int len)
+\item 
+int \hyperlink{base_2netlib_8h_a30f0a952783345b428dd7eefc4af4358}{netlib\+\_\+close} (\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} handle)
+\item 
+int \hyperlink{base_2netlib_8h_abb70122c000c3b27e63fcb23bb4438b0}{netlib\+\_\+option} (\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} handle, int opt, void $\ast$optval)
+\item 
+int \hyperlink{base_2netlib_8h_ac2e1cd673fe00e7277643e47eae17e19}{netlib\+\_\+register\+\_\+timer} (\hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$user\+\_\+data, uint64\+\_\+t interval)
+\item 
+int \hyperlink{base_2netlib_8h_a97c632e80a8aa09371fea2595e3ba515}{netlib\+\_\+delete\+\_\+timer} (\hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$user\+\_\+data)
+\item 
+void \hyperlink{base_2netlib_8h_a2a3dcd551adebc6b19e2ac082a9ad268}{netlib\+\_\+eventloop} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{base_2netlib_8h_abc907f17d3074c0784470f1a63915d0c}{}\index{base/netlib.\+h@{base/netlib.\+h}!N\+E\+T\+L\+I\+B\+\_\+\+M\+A\+X\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E@{N\+E\+T\+L\+I\+B\+\_\+\+M\+A\+X\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}}
+\index{N\+E\+T\+L\+I\+B\+\_\+\+M\+A\+X\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E@{N\+E\+T\+L\+I\+B\+\_\+\+M\+A\+X\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{N\+E\+T\+L\+I\+B\+\_\+\+M\+A\+X\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+E\+T\+L\+I\+B\+\_\+\+M\+A\+X\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E~(128 $\ast$ 1024)}\label{base_2netlib_8h_abc907f17d3074c0784470f1a63915d0c}
+\hypertarget{base_2netlib_8h_a9e44937482409656131546b547fef76b}{}\index{base/netlib.\+h@{base/netlib.\+h}!N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+P@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+P}}
+\index{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+P@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+P}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+P~5}\label{base_2netlib_8h_a9e44937482409656131546b547fef76b}
+\hypertarget{base_2netlib_8h_acbb076172b1e917efaedd8d01e618813}{}\index{base/netlib.\+h@{base/netlib.\+h}!N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+P\+O\+R\+T@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+P\+O\+R\+T}}
+\index{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+P\+O\+R\+T@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+P\+O\+R\+T}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+P\+O\+R\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+P\+O\+R\+T~6}\label{base_2netlib_8h_acbb076172b1e917efaedd8d01e618813}
+\hypertarget{base_2netlib_8h_a842a01798bb055c5c98b20bc665ecd23}{}\index{base/netlib.\+h@{base/netlib.\+h}!N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+I\+P@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+I\+P}}
+\index{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+I\+P@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+I\+P}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+I\+P~3}\label{base_2netlib_8h_a842a01798bb055c5c98b20bc665ecd23}
+\hypertarget{base_2netlib_8h_a07d6c3f2b787e7147b30494eea296dc0}{}\index{base/netlib.\+h@{base/netlib.\+h}!N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+P\+O\+R\+T@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+P\+O\+R\+T}}
+\index{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+P\+O\+R\+T@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+P\+O\+R\+T}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+P\+O\+R\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+G\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+P\+O\+R\+T~4}\label{base_2netlib_8h_a07d6c3f2b787e7147b30494eea296dc0}
+\hypertarget{base_2netlib_8h_ad1b1646b0ba157cbecb9cad52c7282f7}{}\index{base/netlib.\+h@{base/netlib.\+h}!N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K}}
+\index{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K~1}\label{base_2netlib_8h_ad1b1646b0ba157cbecb9cad52c7282f7}
+\hypertarget{base_2netlib_8h_aba80723d0471859efe9200134880a4ee}{}\index{base/netlib.\+h@{base/netlib.\+h}!N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+D\+A\+T\+A@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+D\+A\+T\+A}}
+\index{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+D\+A\+T\+A@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+D\+A\+T\+A}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+D\+A\+T\+A}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+D\+A\+T\+A~2}\label{base_2netlib_8h_aba80723d0471859efe9200134880a4ee}
+\hypertarget{base_2netlib_8h_a2a04909d650d1775218a355f6620407b}{}\index{base/netlib.\+h@{base/netlib.\+h}!N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+R\+E\+C\+V\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+R\+E\+C\+V\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}}
+\index{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+R\+E\+C\+V\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+R\+E\+C\+V\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+R\+E\+C\+V\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+R\+E\+C\+V\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E~8}\label{base_2netlib_8h_a2a04909d650d1775218a355f6620407b}
+\hypertarget{base_2netlib_8h_ad598bed6bf96362440d2b83e8c86a119}{}\index{base/netlib.\+h@{base/netlib.\+h}!N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+S\+E\+N\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+S\+E\+N\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}}
+\index{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+S\+E\+N\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E@{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+S\+E\+N\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+S\+E\+N\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+E\+T\+L\+I\+B\+\_\+\+O\+P\+T\+\_\+\+S\+E\+T\+\_\+\+S\+E\+N\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E~7}\label{base_2netlib_8h_ad598bed6bf96362440d2b83e8c86a119}
+
+
+\subsection{Function Documentation}
+\hypertarget{base_2netlib_8h_a30f0a952783345b428dd7eefc4af4358}{}\index{base/netlib.\+h@{base/netlib.\+h}!netlib\+\_\+close@{netlib\+\_\+close}}
+\index{netlib\+\_\+close@{netlib\+\_\+close}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{netlib\+\_\+close}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+close (
+\begin{DoxyParamCaption}
+\item[{{\bf net\+\_\+handle\+\_\+t}}]{handle}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8h_a30f0a952783345b428dd7eefc4af4358}
+\hypertarget{base_2netlib_8h_a8490958224a438284765c4d989e1b11c}{}\index{base/netlib.\+h@{base/netlib.\+h}!netlib\+\_\+connect@{netlib\+\_\+connect}}
+\index{netlib\+\_\+connect@{netlib\+\_\+connect}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{netlib\+\_\+connect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf net\+\_\+handle\+\_\+t} netlib\+\_\+connect (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{server\+\_\+ip, }
+\item[{uint16\+\_\+t}]{port, }
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{callback\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8h_a8490958224a438284765c4d989e1b11c}
+\hypertarget{base_2netlib_8h_a97c632e80a8aa09371fea2595e3ba515}{}\index{base/netlib.\+h@{base/netlib.\+h}!netlib\+\_\+delete\+\_\+timer@{netlib\+\_\+delete\+\_\+timer}}
+\index{netlib\+\_\+delete\+\_\+timer@{netlib\+\_\+delete\+\_\+timer}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{netlib\+\_\+delete\+\_\+timer}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+delete\+\_\+timer (
+\begin{DoxyParamCaption}
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{user\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8h_a97c632e80a8aa09371fea2595e3ba515}
+\hypertarget{base_2netlib_8h_aecff4c335cea77c3d4ee25d382ab56be}{}\index{base/netlib.\+h@{base/netlib.\+h}!netlib\+\_\+destroy@{netlib\+\_\+destroy}}
+\index{netlib\+\_\+destroy@{netlib\+\_\+destroy}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{netlib\+\_\+destroy}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8h_aecff4c335cea77c3d4ee25d382ab56be}
+\hypertarget{base_2netlib_8h_a2a3dcd551adebc6b19e2ac082a9ad268}{}\index{base/netlib.\+h@{base/netlib.\+h}!netlib\+\_\+eventloop@{netlib\+\_\+eventloop}}
+\index{netlib\+\_\+eventloop@{netlib\+\_\+eventloop}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{netlib\+\_\+eventloop}]{\setlength{\rightskip}{0pt plus 5cm}void netlib\+\_\+eventloop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8h_a2a3dcd551adebc6b19e2ac082a9ad268}
+\hypertarget{base_2netlib_8h_af84c0b4757647afcd1707c3b5fdb41a3}{}\index{base/netlib.\+h@{base/netlib.\+h}!netlib\+\_\+init@{netlib\+\_\+init}}
+\index{netlib\+\_\+init@{netlib\+\_\+init}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{netlib\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8h_af84c0b4757647afcd1707c3b5fdb41a3}
+\hypertarget{base_2netlib_8h_a2003104b4c09085ae3474ec149a90a74}{}\index{base/netlib.\+h@{base/netlib.\+h}!netlib\+\_\+listen@{netlib\+\_\+listen}}
+\index{netlib\+\_\+listen@{netlib\+\_\+listen}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{netlib\+\_\+listen}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+listen (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{server\+\_\+ip, }
+\item[{uint16\+\_\+t}]{port, }
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{callback\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8h_a2003104b4c09085ae3474ec149a90a74}
+\hypertarget{base_2netlib_8h_abb70122c000c3b27e63fcb23bb4438b0}{}\index{base/netlib.\+h@{base/netlib.\+h}!netlib\+\_\+option@{netlib\+\_\+option}}
+\index{netlib\+\_\+option@{netlib\+\_\+option}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{netlib\+\_\+option}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+option (
+\begin{DoxyParamCaption}
+\item[{{\bf net\+\_\+handle\+\_\+t}}]{handle, }
+\item[{int}]{opt, }
+\item[{void $\ast$}]{optval}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8h_abb70122c000c3b27e63fcb23bb4438b0}
+\hypertarget{base_2netlib_8h_a509f18d0fc256a886bdb99c722a4105a}{}\index{base/netlib.\+h@{base/netlib.\+h}!netlib\+\_\+recv@{netlib\+\_\+recv}}
+\index{netlib\+\_\+recv@{netlib\+\_\+recv}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{netlib\+\_\+recv}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{{\bf net\+\_\+handle\+\_\+t}}]{handle, }
+\item[{void $\ast$}]{buf, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8h_a509f18d0fc256a886bdb99c722a4105a}
+\hypertarget{base_2netlib_8h_ac2e1cd673fe00e7277643e47eae17e19}{}\index{base/netlib.\+h@{base/netlib.\+h}!netlib\+\_\+register\+\_\+timer@{netlib\+\_\+register\+\_\+timer}}
+\index{netlib\+\_\+register\+\_\+timer@{netlib\+\_\+register\+\_\+timer}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{netlib\+\_\+register\+\_\+timer}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+register\+\_\+timer (
+\begin{DoxyParamCaption}
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{user\+\_\+data, }
+\item[{uint64\+\_\+t}]{interval}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8h_ac2e1cd673fe00e7277643e47eae17e19}
+\hypertarget{base_2netlib_8h_adab326de3ca9628300f014a9a023ba71}{}\index{base/netlib.\+h@{base/netlib.\+h}!netlib\+\_\+send@{netlib\+\_\+send}}
+\index{netlib\+\_\+send@{netlib\+\_\+send}!base/netlib.\+h@{base/netlib.\+h}}
+\subsubsection[{netlib\+\_\+send}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{{\bf net\+\_\+handle\+\_\+t}}]{handle, }
+\item[{void $\ast$}]{buf, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8h_adab326de3ca9628300f014a9a023ba71}

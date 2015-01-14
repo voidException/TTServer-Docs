@@ -1,0 +1,172 @@
+\hypertarget{class_c_config_file_reader}{}\section{C\+Config\+File\+Reader Class Reference}
+\label{class_c_config_file_reader}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+
+
+{\ttfamily \#include $<$Config\+File\+Reader.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_config_file_reader_af7dfba388997ac70863ef5110d097247}{C\+Config\+File\+Reader} (const char $\ast$filename)
+\item 
+\hyperlink{class_c_config_file_reader_a0e685ca3d54be982bd23fb6d8c1151ca}{$\sim$\+C\+Config\+File\+Reader} ()
+\item 
+char $\ast$ \hyperlink{class_c_config_file_reader_a6ff268e30ab9875fec76e3fccaa5b2f7}{Get\+Config\+Name} (const char $\ast$\hyperlink{http__parser_8c_a8f8f80d37794cde9472343e4487ba3eb}{name})
+\item 
+\hyperlink{class_c_config_file_reader_af7dfba388997ac70863ef5110d097247}{C\+Config\+File\+Reader} (const char $\ast$filename)
+\item 
+\hyperlink{class_c_config_file_reader_a0e685ca3d54be982bd23fb6d8c1151ca}{$\sim$\+C\+Config\+File\+Reader} ()
+\item 
+char $\ast$ \hyperlink{class_c_config_file_reader_a612dfb3253981f5dec7492eac57bb3b5}{Get\+Config\+Name} (const char $\ast$\hyperlink{http__parser_8c_a8f8f80d37794cde9472343e4487ba3eb}{name})
+\item 
+int \hyperlink{class_c_config_file_reader_a13f96f4261792c3ca3b0f7fd49b203de}{Set\+Config\+Value} (const char $\ast$\hyperlink{http__parser_8c_a8f8f80d37794cde9472343e4487ba3eb}{name}, const char $\ast$value)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_config_file_reader_adbcd0625f7710a89b30f9a3ff0a79372}{\+\_\+\+Load\+File} (const char $\ast$filename)
+\item 
+void \hyperlink{class_c_config_file_reader_a345994fb698e6e55d87ca8d1da3387be}{\+\_\+\+Parse\+Line} (char $\ast$line)
+\item 
+char $\ast$ \hyperlink{class_c_config_file_reader_a5251387a3e23b85debfb14a4e6af837c}{\+\_\+\+Trim\+Space} (char $\ast$\hyperlink{http__parser_8c_a8f8f80d37794cde9472343e4487ba3eb}{name})
+\item 
+void \hyperlink{class_c_config_file_reader_adbcd0625f7710a89b30f9a3ff0a79372}{\+\_\+\+Load\+File} (const char $\ast$filename)
+\item 
+int \hyperlink{class_c_config_file_reader_ab45aef198eda5987fee94510c549fbbe}{\+\_\+\+Write\+F\+Ile} (const char $\ast$filename=N\+U\+L\+L)
+\item 
+void \hyperlink{class_c_config_file_reader_a345994fb698e6e55d87ca8d1da3387be}{\+\_\+\+Parse\+Line} (char $\ast$line)
+\item 
+char $\ast$ \hyperlink{class_c_config_file_reader_a94910b7533dfaad8e4d6d33ebe4c22cf}{\+\_\+\+Trim\+Space} (char $\ast$\hyperlink{http__parser_8c_a8f8f80d37794cde9472343e4487ba3eb}{name})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_c_config_file_reader_aece2f8ddd83db181c2b2c50ede873483}{m\+\_\+load\+\_\+ok}
+\item 
+map$<$ string, string $>$ $\ast$ \hyperlink{class_c_config_file_reader_aa49348ac308eae6be2d2c7e0d2ab21bf}{m\+\_\+config\+\_\+map}
+\item 
+string \hyperlink{class_c_config_file_reader_a6aca4d63a315b0fad0b96e1d013d486e}{m\+\_\+config\+\_\+file}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_config_file_reader_af7dfba388997ac70863ef5110d097247}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{C\+Config\+File\+Reader}]{\setlength{\rightskip}{0pt plus 5cm}C\+Config\+File\+Reader\+::\+C\+Config\+File\+Reader (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\label{class_c_config_file_reader_af7dfba388997ac70863ef5110d097247}
+\hypertarget{class_c_config_file_reader_a0e685ca3d54be982bd23fb6d8c1151ca}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!````~C\+Config\+File\+Reader@{$\sim$\+C\+Config\+File\+Reader}}
+\index{````~C\+Config\+File\+Reader@{$\sim$\+C\+Config\+File\+Reader}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{$\sim$\+C\+Config\+File\+Reader}]{\setlength{\rightskip}{0pt plus 5cm}C\+Config\+File\+Reader\+::$\sim$\+C\+Config\+File\+Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_config_file_reader_a0e685ca3d54be982bd23fb6d8c1151ca}
+\hypertarget{class_c_config_file_reader_af7dfba388997ac70863ef5110d097247}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{C\+Config\+File\+Reader}]{\setlength{\rightskip}{0pt plus 5cm}C\+Config\+File\+Reader\+::\+C\+Config\+File\+Reader (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\label{class_c_config_file_reader_af7dfba388997ac70863ef5110d097247}
+\hypertarget{class_c_config_file_reader_a0e685ca3d54be982bd23fb6d8c1151ca}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!````~C\+Config\+File\+Reader@{$\sim$\+C\+Config\+File\+Reader}}
+\index{````~C\+Config\+File\+Reader@{$\sim$\+C\+Config\+File\+Reader}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{$\sim$\+C\+Config\+File\+Reader}]{\setlength{\rightskip}{0pt plus 5cm}C\+Config\+File\+Reader\+::$\sim$\+C\+Config\+File\+Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_config_file_reader_a0e685ca3d54be982bd23fb6d8c1151ca}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_config_file_reader_adbcd0625f7710a89b30f9a3ff0a79372}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!\+\_\+\+Load\+File@{\+\_\+\+Load\+File}}
+\index{\+\_\+\+Load\+File@{\+\_\+\+Load\+File}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{\+\_\+\+Load\+File}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Config\+File\+Reader\+::\+\_\+\+Load\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_config_file_reader_adbcd0625f7710a89b30f9a3ff0a79372}
+\hypertarget{class_c_config_file_reader_adbcd0625f7710a89b30f9a3ff0a79372}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!\+\_\+\+Load\+File@{\+\_\+\+Load\+File}}
+\index{\+\_\+\+Load\+File@{\+\_\+\+Load\+File}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{\+\_\+\+Load\+File}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Config\+File\+Reader\+::\+\_\+\+Load\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_config_file_reader_adbcd0625f7710a89b30f9a3ff0a79372}
+\hypertarget{class_c_config_file_reader_a345994fb698e6e55d87ca8d1da3387be}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!\+\_\+\+Parse\+Line@{\+\_\+\+Parse\+Line}}
+\index{\+\_\+\+Parse\+Line@{\+\_\+\+Parse\+Line}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{\+\_\+\+Parse\+Line}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Config\+File\+Reader\+::\+\_\+\+Parse\+Line (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_config_file_reader_a345994fb698e6e55d87ca8d1da3387be}
+\hypertarget{class_c_config_file_reader_a345994fb698e6e55d87ca8d1da3387be}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!\+\_\+\+Parse\+Line@{\+\_\+\+Parse\+Line}}
+\index{\+\_\+\+Parse\+Line@{\+\_\+\+Parse\+Line}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{\+\_\+\+Parse\+Line}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Config\+File\+Reader\+::\+\_\+\+Parse\+Line (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_config_file_reader_a345994fb698e6e55d87ca8d1da3387be}
+\hypertarget{class_c_config_file_reader_a5251387a3e23b85debfb14a4e6af837c}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!\+\_\+\+Trim\+Space@{\+\_\+\+Trim\+Space}}
+\index{\+\_\+\+Trim\+Space@{\+\_\+\+Trim\+Space}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{\+\_\+\+Trim\+Space}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ C\+Config\+File\+Reader\+::\+\_\+\+Trim\+Space (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_config_file_reader_a5251387a3e23b85debfb14a4e6af837c}
+\hypertarget{class_c_config_file_reader_a94910b7533dfaad8e4d6d33ebe4c22cf}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!\+\_\+\+Trim\+Space@{\+\_\+\+Trim\+Space}}
+\index{\+\_\+\+Trim\+Space@{\+\_\+\+Trim\+Space}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{\+\_\+\+Trim\+Space}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Config\+File\+Reader\+::\+\_\+\+Trim\+Space (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_config_file_reader_a94910b7533dfaad8e4d6d33ebe4c22cf}
+\hypertarget{class_c_config_file_reader_ab45aef198eda5987fee94510c549fbbe}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!\+\_\+\+Write\+F\+Ile@{\+\_\+\+Write\+F\+Ile}}
+\index{\+\_\+\+Write\+F\+Ile@{\+\_\+\+Write\+F\+Ile}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{\+\_\+\+Write\+F\+Ile}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Config\+File\+Reader\+::\+\_\+\+Write\+F\+Ile (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_config_file_reader_ab45aef198eda5987fee94510c549fbbe}
+\hypertarget{class_c_config_file_reader_a6ff268e30ab9875fec76e3fccaa5b2f7}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!Get\+Config\+Name@{Get\+Config\+Name}}
+\index{Get\+Config\+Name@{Get\+Config\+Name}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{Get\+Config\+Name}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ C\+Config\+File\+Reader\+::\+Get\+Config\+Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\label{class_c_config_file_reader_a6ff268e30ab9875fec76e3fccaa5b2f7}
+\hypertarget{class_c_config_file_reader_a612dfb3253981f5dec7492eac57bb3b5}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!Get\+Config\+Name@{Get\+Config\+Name}}
+\index{Get\+Config\+Name@{Get\+Config\+Name}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{Get\+Config\+Name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Config\+File\+Reader\+::\+Get\+Config\+Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\label{class_c_config_file_reader_a612dfb3253981f5dec7492eac57bb3b5}
+\hypertarget{class_c_config_file_reader_a13f96f4261792c3ca3b0f7fd49b203de}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!Set\+Config\+Value@{Set\+Config\+Value}}
+\index{Set\+Config\+Value@{Set\+Config\+Value}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{Set\+Config\+Value}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Config\+File\+Reader\+::\+Set\+Config\+Value (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{value}
+\end{DoxyParamCaption}
+)}\label{class_c_config_file_reader_a13f96f4261792c3ca3b0f7fd49b203de}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_config_file_reader_a6aca4d63a315b0fad0b96e1d013d486e}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!m\+\_\+config\+\_\+file@{m\+\_\+config\+\_\+file}}
+\index{m\+\_\+config\+\_\+file@{m\+\_\+config\+\_\+file}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{m\+\_\+config\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Config\+File\+Reader\+::m\+\_\+config\+\_\+file\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_config_file_reader_a6aca4d63a315b0fad0b96e1d013d486e}
+\hypertarget{class_c_config_file_reader_aa49348ac308eae6be2d2c7e0d2ab21bf}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!m\+\_\+config\+\_\+map@{m\+\_\+config\+\_\+map}}
+\index{m\+\_\+config\+\_\+map@{m\+\_\+config\+\_\+map}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{m\+\_\+config\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}map$<$ string, string $>$ $\ast$ C\+Config\+File\+Reader\+::m\+\_\+config\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_config_file_reader_aa49348ac308eae6be2d2c7e0d2ab21bf}
+\hypertarget{class_c_config_file_reader_aece2f8ddd83db181c2b2c50ede873483}{}\index{C\+Config\+File\+Reader@{C\+Config\+File\+Reader}!m\+\_\+load\+\_\+ok@{m\+\_\+load\+\_\+ok}}
+\index{m\+\_\+load\+\_\+ok@{m\+\_\+load\+\_\+ok}!C\+Config\+File\+Reader@{C\+Config\+File\+Reader}}
+\subsubsection[{m\+\_\+load\+\_\+ok}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Config\+File\+Reader\+::m\+\_\+load\+\_\+ok\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_config_file_reader_aece2f8ddd83db181c2b2c50ede873483}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{base_2_config_file_reader_8h}{Config\+File\+Reader.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{base_2_config_file_reader_8cpp}{Config\+File\+Reader.\+cpp}\end{DoxyCompactItemize}

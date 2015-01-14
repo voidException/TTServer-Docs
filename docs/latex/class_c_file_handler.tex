@@ -1,0 +1,121 @@
+\hypertarget{class_c_file_handler}{}\section{C\+File\+Handler Class Reference}
+\label{class_c_file_handler}\index{C\+File\+Handler@{C\+File\+Handler}}
+
+
+{\ttfamily \#include $<$File\+Handler.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_c_file_handler_a42941ca26442e67fbc5dcb31e9ee241c}{$\sim$\+C\+File\+Handler} ()
+\item 
+void \hyperlink{class_c_file_handler_a9669692b1e2d61144f61561561c113db}{Handle\+Client\+File\+Request} (\hyperlink{class_c_msg_conn}{C\+Msg\+Conn} $\ast$p\+Msg\+Conn, \hyperlink{class_c_im_pdu_client_file_request}{C\+Im\+Pdu\+Client\+File\+Request} $\ast$p\+Pdu)
+\item 
+void \hyperlink{class_c_file_handler_a1aa12d7d7d89cfccf6eabb90a05506d5}{Handle\+Client\+File\+Has\+Offline\+Req} (\hyperlink{class_c_msg_conn}{C\+Msg\+Conn} $\ast$p\+Msg\+Conn, \hyperlink{class_c_im_pdu_client_file_has_offline_req}{C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Req} $\ast$p\+Pdu)
+\item 
+void \hyperlink{class_c_file_handler_a718cd2c43dd067ce108f43c07811e7af}{Handle\+Client\+File\+Add\+Offline\+Req} (\hyperlink{class_c_im_pdu_client_file_add_offline_req}{C\+Im\+Pdu\+Client\+File\+Add\+Offline\+Req} $\ast$p\+Pdu)
+\item 
+void \hyperlink{class_c_file_handler_a159ca025a7e2c40669965d80b19821b5}{Handle\+Client\+File\+Del\+Offline\+Req} (\hyperlink{class_c_im_pdu_client_file_del_offline_req}{C\+Im\+Pdu\+Client\+File\+Del\+Offline\+Req} $\ast$p\+Pdu)
+\item 
+void \hyperlink{class_c_file_handler_a9a801a1b6c6473779ca132be8b318f37}{Handle\+File\+Has\+Offline\+Res} (\hyperlink{class_c_im_pdu_file_has_offline_res}{C\+Im\+Pdu\+File\+Has\+Offline\+Res} $\ast$p\+Pdu)
+\item 
+void \hyperlink{class_c_file_handler_afbd71e9f40e81ec17c445dfdbf0acd7c}{Handle\+File\+Notify} (\hyperlink{class_c_im_pdu_file_notify}{C\+Im\+Pdu\+File\+Notify} $\ast$p\+Pdu)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_file_handler}{C\+File\+Handler} $\ast$ \hyperlink{class_c_file_handler_a24c96218e81fab2d2ee011db1952c3e1}{get\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_file_handler_ae2d17fa4e8aa4b104c09618e2e3c8740}{C\+File\+Handler} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_file_handler}{C\+File\+Handler} $\ast$ \hyperlink{class_c_file_handler_a9270a8f6dff31c5a07162d73bb0f2140}{s\+\_\+handler\+\_\+instance} = N\+U\+L\+L
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_file_handler_a42941ca26442e67fbc5dcb31e9ee241c}{}\index{C\+File\+Handler@{C\+File\+Handler}!````~C\+File\+Handler@{$\sim$\+C\+File\+Handler}}
+\index{````~C\+File\+Handler@{$\sim$\+C\+File\+Handler}!C\+File\+Handler@{C\+File\+Handler}}
+\subsubsection[{$\sim$\+C\+File\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+File\+Handler\+::$\sim$\+C\+File\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_file_handler_a42941ca26442e67fbc5dcb31e9ee241c}
+\hypertarget{class_c_file_handler_ae2d17fa4e8aa4b104c09618e2e3c8740}{}\index{C\+File\+Handler@{C\+File\+Handler}!C\+File\+Handler@{C\+File\+Handler}}
+\index{C\+File\+Handler@{C\+File\+Handler}!C\+File\+Handler@{C\+File\+Handler}}
+\subsubsection[{C\+File\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}C\+File\+Handler\+::\+C\+File\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_c_file_handler_ae2d17fa4e8aa4b104c09618e2e3c8740}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_file_handler_a24c96218e81fab2d2ee011db1952c3e1}{}\index{C\+File\+Handler@{C\+File\+Handler}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!C\+File\+Handler@{C\+File\+Handler}}
+\subsubsection[{get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+File\+Handler} $\ast$ C\+File\+Handler\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_file_handler_a24c96218e81fab2d2ee011db1952c3e1}
+\hypertarget{class_c_file_handler_a718cd2c43dd067ce108f43c07811e7af}{}\index{C\+File\+Handler@{C\+File\+Handler}!Handle\+Client\+File\+Add\+Offline\+Req@{Handle\+Client\+File\+Add\+Offline\+Req}}
+\index{Handle\+Client\+File\+Add\+Offline\+Req@{Handle\+Client\+File\+Add\+Offline\+Req}!C\+File\+Handler@{C\+File\+Handler}}
+\subsubsection[{Handle\+Client\+File\+Add\+Offline\+Req}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Handler\+::\+Handle\+Client\+File\+Add\+Offline\+Req (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+Client\+File\+Add\+Offline\+Req} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)}\label{class_c_file_handler_a718cd2c43dd067ce108f43c07811e7af}
+\hypertarget{class_c_file_handler_a159ca025a7e2c40669965d80b19821b5}{}\index{C\+File\+Handler@{C\+File\+Handler}!Handle\+Client\+File\+Del\+Offline\+Req@{Handle\+Client\+File\+Del\+Offline\+Req}}
+\index{Handle\+Client\+File\+Del\+Offline\+Req@{Handle\+Client\+File\+Del\+Offline\+Req}!C\+File\+Handler@{C\+File\+Handler}}
+\subsubsection[{Handle\+Client\+File\+Del\+Offline\+Req}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Handler\+::\+Handle\+Client\+File\+Del\+Offline\+Req (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+Client\+File\+Del\+Offline\+Req} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)}\label{class_c_file_handler_a159ca025a7e2c40669965d80b19821b5}
+\hypertarget{class_c_file_handler_a1aa12d7d7d89cfccf6eabb90a05506d5}{}\index{C\+File\+Handler@{C\+File\+Handler}!Handle\+Client\+File\+Has\+Offline\+Req@{Handle\+Client\+File\+Has\+Offline\+Req}}
+\index{Handle\+Client\+File\+Has\+Offline\+Req@{Handle\+Client\+File\+Has\+Offline\+Req}!C\+File\+Handler@{C\+File\+Handler}}
+\subsubsection[{Handle\+Client\+File\+Has\+Offline\+Req}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Handler\+::\+Handle\+Client\+File\+Has\+Offline\+Req (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Msg\+Conn} $\ast$}]{p\+Msg\+Conn, }
+\item[{{\bf C\+Im\+Pdu\+Client\+File\+Has\+Offline\+Req} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)}\label{class_c_file_handler_a1aa12d7d7d89cfccf6eabb90a05506d5}
+\hypertarget{class_c_file_handler_a9669692b1e2d61144f61561561c113db}{}\index{C\+File\+Handler@{C\+File\+Handler}!Handle\+Client\+File\+Request@{Handle\+Client\+File\+Request}}
+\index{Handle\+Client\+File\+Request@{Handle\+Client\+File\+Request}!C\+File\+Handler@{C\+File\+Handler}}
+\subsubsection[{Handle\+Client\+File\+Request}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Handler\+::\+Handle\+Client\+File\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Msg\+Conn} $\ast$}]{p\+Msg\+Conn, }
+\item[{{\bf C\+Im\+Pdu\+Client\+File\+Request} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)}\label{class_c_file_handler_a9669692b1e2d61144f61561561c113db}
+\hypertarget{class_c_file_handler_a9a801a1b6c6473779ca132be8b318f37}{}\index{C\+File\+Handler@{C\+File\+Handler}!Handle\+File\+Has\+Offline\+Res@{Handle\+File\+Has\+Offline\+Res}}
+\index{Handle\+File\+Has\+Offline\+Res@{Handle\+File\+Has\+Offline\+Res}!C\+File\+Handler@{C\+File\+Handler}}
+\subsubsection[{Handle\+File\+Has\+Offline\+Res}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Handler\+::\+Handle\+File\+Has\+Offline\+Res (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+File\+Has\+Offline\+Res} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)}\label{class_c_file_handler_a9a801a1b6c6473779ca132be8b318f37}
+\hypertarget{class_c_file_handler_afbd71e9f40e81ec17c445dfdbf0acd7c}{}\index{C\+File\+Handler@{C\+File\+Handler}!Handle\+File\+Notify@{Handle\+File\+Notify}}
+\index{Handle\+File\+Notify@{Handle\+File\+Notify}!C\+File\+Handler@{C\+File\+Handler}}
+\subsubsection[{Handle\+File\+Notify}]{\setlength{\rightskip}{0pt plus 5cm}void C\+File\+Handler\+::\+Handle\+File\+Notify (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu\+File\+Notify} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)}\label{class_c_file_handler_afbd71e9f40e81ec17c445dfdbf0acd7c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_file_handler_a9270a8f6dff31c5a07162d73bb0f2140}{}\index{C\+File\+Handler@{C\+File\+Handler}!s\+\_\+handler\+\_\+instance@{s\+\_\+handler\+\_\+instance}}
+\index{s\+\_\+handler\+\_\+instance@{s\+\_\+handler\+\_\+instance}!C\+File\+Handler@{C\+File\+Handler}}
+\subsubsection[{s\+\_\+handler\+\_\+instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+File\+Handler} $\ast$ C\+File\+Handler\+::s\+\_\+handler\+\_\+instance = N\+U\+L\+L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_c_file_handler_a9270a8f6dff31c5a07162d73bb0f2140}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\hyperlink{_file_handler_8h}{File\+Handler.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\hyperlink{_file_handler_8cpp}{File\+Handler.\+cpp}\end{DoxyCompactItemize}

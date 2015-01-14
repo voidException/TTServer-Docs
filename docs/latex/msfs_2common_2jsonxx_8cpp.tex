@@ -1,0 +1,84 @@
+\hypertarget{msfs_2common_2jsonxx_8cpp}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/common/jsonxx.cpp File Reference}
+\label{msfs_2common_2jsonxx_8cpp}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/common/jsonxx.\+cpp@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/common/jsonxx.\+cpp}}
+{\ttfamily \#include \char`\"{}jsonxx.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$cctype$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$limits$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$cassert$>$}\\*
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacejsonxx}{jsonxx}
+\item 
+ \hyperlink{namespacejsonxx_1_1json}{jsonxx\+::json}
+\item 
+ \hyperlink{namespacejsonxx_1_1xml}{jsonxx\+::xml}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacejsonxx_ae776e5d149f1fb6a6d163e408852b137}{jsonxx\+::match} (const char $\ast$pattern, std\+::istream \&input)
+\item 
+bool \hyperlink{namespacejsonxx_afb393bd02ef1b837516397516ee416ae}{jsonxx\+::parse\+\_\+array} (std\+::istream \&input, Array \&array)
+\item 
+bool \hyperlink{namespacejsonxx_afef9054b57f3210e902bda013f95d8be}{jsonxx\+::parse\+\_\+bool} (std\+::istream \&input, Boolean \&value)
+\item 
+bool \hyperlink{namespacejsonxx_ab4ffd62078e6c7430529cfd2301828f0}{jsonxx\+::parse\+\_\+comment} (std\+::istream \&input)
+\item 
+bool \hyperlink{namespacejsonxx_a07030da60583d46e35328e3941829ef8}{jsonxx\+::parse\+\_\+null} (std\+::istream \&input)
+\item 
+bool \hyperlink{namespacejsonxx_abcab6b81755711428a41e855d9cb6f25}{jsonxx\+::parse\+\_\+number} (std\+::istream \&input, Number \&value)
+\item 
+bool \hyperlink{namespacejsonxx_a521422be00aceffe398c1e48b1252318}{jsonxx\+::parse\+\_\+object} (std\+::istream \&input, Object \&object)
+\item 
+bool \hyperlink{namespacejsonxx_acb41195107e0cb6601b35dc25c5d9ad8}{jsonxx\+::parse\+\_\+string} (std\+::istream \&input, String \&value)
+\item 
+bool \hyperlink{namespacejsonxx_a7ac101d3ef10de8b73255e28de88910c}{jsonxx\+::parse\+\_\+value} (std\+::istream \&input, Value \&value)
+\item 
+static std\+::ostream \& \hyperlink{namespacejsonxx_a052e51dfd73ecb2692230a6a971276dc}{jsonxx\+::stream\+\_\+string} (std\+::ostream \&stream, const std\+::string \&string)
+\item 
+std\+::ostream \& \hyperlink{msfs_2common_2jsonxx_8cpp_a796b09d7adea2b44d8a7664d00129b13}{operator$<$$<$} (std\+::ostream \&stream, const \hyperlink{classjsonxx_1_1_value}{jsonxx\+::\+Value} \&v)
+\item 
+std\+::ostream \& \hyperlink{msfs_2common_2jsonxx_8cpp_a46f8255c63a7934d18fedc35e72383f8}{operator$<$$<$} (std\+::ostream \&stream, const \hyperlink{classjsonxx_1_1_array}{jsonxx\+::\+Array} \&v)
+\item 
+std\+::ostream \& \hyperlink{msfs_2common_2jsonxx_8cpp_a5c79ec6746ab2dbb82e3e662ab45d670}{operator$<$$<$} (std\+::ostream \&stream, const \hyperlink{classjsonxx_1_1_object}{jsonxx\+::\+Object} \&v)
+\item 
+bool \hyperlink{namespacejsonxx_ae30e583f921cbc3ee02ac75b4ce2b3d6}{jsonxx\+::validate} (std\+::istream \&input)
+\item 
+bool \hyperlink{namespacejsonxx_a5ac22dfe00ed350dc9f05a2083d4c13e}{jsonxx\+::validate} (const std\+::string \&input)
+\item 
+std\+::string \hyperlink{namespacejsonxx_a7e3cf6a1148be73eaeac22a3a4e91736}{jsonxx\+::xml} (std\+::istream \&input, unsigned format)
+\item 
+std\+::string \hyperlink{namespacejsonxx_ae6d88608c2b772fce33104de7d9b5e2a}{jsonxx\+::xml} (const std\+::string \&input, unsigned format)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{msfs_2common_2jsonxx_8cpp_a796b09d7adea2b44d8a7664d00129b13}{}\index{msfs/common/jsonxx.\+cpp@{msfs/common/jsonxx.\+cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!msfs/common/jsonxx.\+cpp@{msfs/common/jsonxx.\+cpp}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{stream, }
+\item[{const {\bf jsonxx\+::\+Value} \&}]{v}
+\end{DoxyParamCaption}
+)}\label{msfs_2common_2jsonxx_8cpp_a796b09d7adea2b44d8a7664d00129b13}
+\hypertarget{msfs_2common_2jsonxx_8cpp_a46f8255c63a7934d18fedc35e72383f8}{}\index{msfs/common/jsonxx.\+cpp@{msfs/common/jsonxx.\+cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!msfs/common/jsonxx.\+cpp@{msfs/common/jsonxx.\+cpp}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{stream, }
+\item[{const {\bf jsonxx\+::\+Array} \&}]{v}
+\end{DoxyParamCaption}
+)}\label{msfs_2common_2jsonxx_8cpp_a46f8255c63a7934d18fedc35e72383f8}
+\hypertarget{msfs_2common_2jsonxx_8cpp_a5c79ec6746ab2dbb82e3e662ab45d670}{}\index{msfs/common/jsonxx.\+cpp@{msfs/common/jsonxx.\+cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!msfs/common/jsonxx.\+cpp@{msfs/common/jsonxx.\+cpp}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{stream, }
+\item[{const {\bf jsonxx\+::\+Object} \&}]{v}
+\end{DoxyParamCaption}
+)}\label{msfs_2common_2jsonxx_8cpp_a5c79ec6746ab2dbb82e3e662ab45d670}

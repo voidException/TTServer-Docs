@@ -1,0 +1,125 @@
+\hypertarget{base_2netlib_8cpp}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/netlib.cpp File Reference}
+\label{base_2netlib_8cpp}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/netlib.\+cpp@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/netlib.\+cpp}}
+{\ttfamily \#include \char`\"{}netlib.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Base\+Socket.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Event\+Dispatch.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{base_2netlib_8cpp_af84c0b4757647afcd1707c3b5fdb41a3}{netlib\+\_\+init} ()
+\item 
+int \hyperlink{base_2netlib_8cpp_aecff4c335cea77c3d4ee25d382ab56be}{netlib\+\_\+destroy} ()
+\item 
+int \hyperlink{base_2netlib_8cpp_a2003104b4c09085ae3474ec149a90a74}{netlib\+\_\+listen} (const char $\ast$server\+\_\+ip, uint16\+\_\+t port, \hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$callback\+\_\+data)
+\item 
+\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} \hyperlink{base_2netlib_8cpp_a8490958224a438284765c4d989e1b11c}{netlib\+\_\+connect} (const char $\ast$server\+\_\+ip, uint16\+\_\+t port, \hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$callback\+\_\+data)
+\item 
+int \hyperlink{base_2netlib_8cpp_adab326de3ca9628300f014a9a023ba71}{netlib\+\_\+send} (\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} handle, void $\ast$buf, int len)
+\item 
+int \hyperlink{base_2netlib_8cpp_a509f18d0fc256a886bdb99c722a4105a}{netlib\+\_\+recv} (\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} handle, void $\ast$buf, int len)
+\item 
+int \hyperlink{base_2netlib_8cpp_a30f0a952783345b428dd7eefc4af4358}{netlib\+\_\+close} (\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} handle)
+\item 
+int \hyperlink{base_2netlib_8cpp_abb70122c000c3b27e63fcb23bb4438b0}{netlib\+\_\+option} (\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} handle, int opt, void $\ast$optval)
+\item 
+int \hyperlink{base_2netlib_8cpp_ac2e1cd673fe00e7277643e47eae17e19}{netlib\+\_\+register\+\_\+timer} (\hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$user\+\_\+data, uint64\+\_\+t interval)
+\item 
+int \hyperlink{base_2netlib_8cpp_a97c632e80a8aa09371fea2595e3ba515}{netlib\+\_\+delete\+\_\+timer} (\hyperlink{msfs_2include_2common_2ostype_8h_a126e68a4e9bb7ecb6c88b2eeb66a0ee7}{callback\+\_\+t} callback, void $\ast$user\+\_\+data)
+\item 
+void \hyperlink{base_2netlib_8cpp_a2a3dcd551adebc6b19e2ac082a9ad268}{netlib\+\_\+eventloop} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{base_2netlib_8cpp_a30f0a952783345b428dd7eefc4af4358}{}\index{base/netlib.\+cpp@{base/netlib.\+cpp}!netlib\+\_\+close@{netlib\+\_\+close}}
+\index{netlib\+\_\+close@{netlib\+\_\+close}!base/netlib.\+cpp@{base/netlib.\+cpp}}
+\subsubsection[{netlib\+\_\+close}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+close (
+\begin{DoxyParamCaption}
+\item[{{\bf net\+\_\+handle\+\_\+t}}]{handle}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8cpp_a30f0a952783345b428dd7eefc4af4358}
+\hypertarget{base_2netlib_8cpp_a8490958224a438284765c4d989e1b11c}{}\index{base/netlib.\+cpp@{base/netlib.\+cpp}!netlib\+\_\+connect@{netlib\+\_\+connect}}
+\index{netlib\+\_\+connect@{netlib\+\_\+connect}!base/netlib.\+cpp@{base/netlib.\+cpp}}
+\subsubsection[{netlib\+\_\+connect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf net\+\_\+handle\+\_\+t} netlib\+\_\+connect (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{server\+\_\+ip, }
+\item[{uint16\+\_\+t}]{port, }
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{callback\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8cpp_a8490958224a438284765c4d989e1b11c}
+\hypertarget{base_2netlib_8cpp_a97c632e80a8aa09371fea2595e3ba515}{}\index{base/netlib.\+cpp@{base/netlib.\+cpp}!netlib\+\_\+delete\+\_\+timer@{netlib\+\_\+delete\+\_\+timer}}
+\index{netlib\+\_\+delete\+\_\+timer@{netlib\+\_\+delete\+\_\+timer}!base/netlib.\+cpp@{base/netlib.\+cpp}}
+\subsubsection[{netlib\+\_\+delete\+\_\+timer}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+delete\+\_\+timer (
+\begin{DoxyParamCaption}
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{user\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8cpp_a97c632e80a8aa09371fea2595e3ba515}
+\hypertarget{base_2netlib_8cpp_aecff4c335cea77c3d4ee25d382ab56be}{}\index{base/netlib.\+cpp@{base/netlib.\+cpp}!netlib\+\_\+destroy@{netlib\+\_\+destroy}}
+\index{netlib\+\_\+destroy@{netlib\+\_\+destroy}!base/netlib.\+cpp@{base/netlib.\+cpp}}
+\subsubsection[{netlib\+\_\+destroy}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8cpp_aecff4c335cea77c3d4ee25d382ab56be}
+\hypertarget{base_2netlib_8cpp_a2a3dcd551adebc6b19e2ac082a9ad268}{}\index{base/netlib.\+cpp@{base/netlib.\+cpp}!netlib\+\_\+eventloop@{netlib\+\_\+eventloop}}
+\index{netlib\+\_\+eventloop@{netlib\+\_\+eventloop}!base/netlib.\+cpp@{base/netlib.\+cpp}}
+\subsubsection[{netlib\+\_\+eventloop}]{\setlength{\rightskip}{0pt plus 5cm}void netlib\+\_\+eventloop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8cpp_a2a3dcd551adebc6b19e2ac082a9ad268}
+\hypertarget{base_2netlib_8cpp_af84c0b4757647afcd1707c3b5fdb41a3}{}\index{base/netlib.\+cpp@{base/netlib.\+cpp}!netlib\+\_\+init@{netlib\+\_\+init}}
+\index{netlib\+\_\+init@{netlib\+\_\+init}!base/netlib.\+cpp@{base/netlib.\+cpp}}
+\subsubsection[{netlib\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8cpp_af84c0b4757647afcd1707c3b5fdb41a3}
+\hypertarget{base_2netlib_8cpp_a2003104b4c09085ae3474ec149a90a74}{}\index{base/netlib.\+cpp@{base/netlib.\+cpp}!netlib\+\_\+listen@{netlib\+\_\+listen}}
+\index{netlib\+\_\+listen@{netlib\+\_\+listen}!base/netlib.\+cpp@{base/netlib.\+cpp}}
+\subsubsection[{netlib\+\_\+listen}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+listen (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{server\+\_\+ip, }
+\item[{uint16\+\_\+t}]{port, }
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{callback\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8cpp_a2003104b4c09085ae3474ec149a90a74}
+\hypertarget{base_2netlib_8cpp_abb70122c000c3b27e63fcb23bb4438b0}{}\index{base/netlib.\+cpp@{base/netlib.\+cpp}!netlib\+\_\+option@{netlib\+\_\+option}}
+\index{netlib\+\_\+option@{netlib\+\_\+option}!base/netlib.\+cpp@{base/netlib.\+cpp}}
+\subsubsection[{netlib\+\_\+option}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+option (
+\begin{DoxyParamCaption}
+\item[{{\bf net\+\_\+handle\+\_\+t}}]{handle, }
+\item[{int}]{opt, }
+\item[{void $\ast$}]{optval}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8cpp_abb70122c000c3b27e63fcb23bb4438b0}
+\hypertarget{base_2netlib_8cpp_a509f18d0fc256a886bdb99c722a4105a}{}\index{base/netlib.\+cpp@{base/netlib.\+cpp}!netlib\+\_\+recv@{netlib\+\_\+recv}}
+\index{netlib\+\_\+recv@{netlib\+\_\+recv}!base/netlib.\+cpp@{base/netlib.\+cpp}}
+\subsubsection[{netlib\+\_\+recv}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{{\bf net\+\_\+handle\+\_\+t}}]{handle, }
+\item[{void $\ast$}]{buf, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8cpp_a509f18d0fc256a886bdb99c722a4105a}
+\hypertarget{base_2netlib_8cpp_ac2e1cd673fe00e7277643e47eae17e19}{}\index{base/netlib.\+cpp@{base/netlib.\+cpp}!netlib\+\_\+register\+\_\+timer@{netlib\+\_\+register\+\_\+timer}}
+\index{netlib\+\_\+register\+\_\+timer@{netlib\+\_\+register\+\_\+timer}!base/netlib.\+cpp@{base/netlib.\+cpp}}
+\subsubsection[{netlib\+\_\+register\+\_\+timer}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+register\+\_\+timer (
+\begin{DoxyParamCaption}
+\item[{{\bf callback\+\_\+t}}]{callback, }
+\item[{void $\ast$}]{user\+\_\+data, }
+\item[{uint64\+\_\+t}]{interval}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8cpp_ac2e1cd673fe00e7277643e47eae17e19}
+\hypertarget{base_2netlib_8cpp_adab326de3ca9628300f014a9a023ba71}{}\index{base/netlib.\+cpp@{base/netlib.\+cpp}!netlib\+\_\+send@{netlib\+\_\+send}}
+\index{netlib\+\_\+send@{netlib\+\_\+send}!base/netlib.\+cpp@{base/netlib.\+cpp}}
+\subsubsection[{netlib\+\_\+send}]{\setlength{\rightskip}{0pt plus 5cm}int netlib\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{{\bf net\+\_\+handle\+\_\+t}}]{handle, }
+\item[{void $\ast$}]{buf, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\label{base_2netlib_8cpp_adab326de3ca9628300f014a9a023ba71}

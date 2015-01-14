@@ -1,0 +1,52 @@
+\hypertarget{_route_serv_conn_8h}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+Route\+Serv\+Conn.h File Reference}
+\label{_route_serv_conn_8h}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+Route\+Serv\+Conn.\+h@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+Route\+Serv\+Conn.\+h}}
+{\ttfamily \#include \char`\"{}imconn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Serv\+Info.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_route_serv_conn}{C\+Route\+Serv\+Conn}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_route_serv_conn_8h_a5164b50ad8031499aa02a06b030e2404}{init\+\_\+route\+\_\+serv\+\_\+conn} (\hyperlink{structserv__info__t}{serv\+\_\+info\+\_\+t} $\ast$server\+\_\+list, uint32\+\_\+t server\+\_\+count)
+\item 
+bool \hyperlink{_route_serv_conn_8h_a4d3020ed04152bbc6d1b81087c63f311}{is\+\_\+route\+\_\+server\+\_\+available} ()
+\item 
+void \hyperlink{_route_serv_conn_8h_ab4a8530027ede37cd77e1944938f2b4e}{send\+\_\+to\+\_\+all\+\_\+route\+\_\+server} (\hyperlink{class_c_im_pdu}{C\+Im\+Pdu} $\ast$p\+Pdu)
+\item 
+\hyperlink{class_c_route_serv_conn}{C\+Route\+Serv\+Conn} $\ast$ \hyperlink{_route_serv_conn_8h_a6bec42a4280aa047f67187017200d0ff}{get\+\_\+route\+\_\+serv\+\_\+conn} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_route_serv_conn_8h_a6bec42a4280aa047f67187017200d0ff}{}\index{Route\+Serv\+Conn.\+h@{Route\+Serv\+Conn.\+h}!get\+\_\+route\+\_\+serv\+\_\+conn@{get\+\_\+route\+\_\+serv\+\_\+conn}}
+\index{get\+\_\+route\+\_\+serv\+\_\+conn@{get\+\_\+route\+\_\+serv\+\_\+conn}!Route\+Serv\+Conn.\+h@{Route\+Serv\+Conn.\+h}}
+\subsubsection[{get\+\_\+route\+\_\+serv\+\_\+conn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Route\+Serv\+Conn}$\ast$ get\+\_\+route\+\_\+serv\+\_\+conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_route_serv_conn_8h_a6bec42a4280aa047f67187017200d0ff}
+\hypertarget{_route_serv_conn_8h_a5164b50ad8031499aa02a06b030e2404}{}\index{Route\+Serv\+Conn.\+h@{Route\+Serv\+Conn.\+h}!init\+\_\+route\+\_\+serv\+\_\+conn@{init\+\_\+route\+\_\+serv\+\_\+conn}}
+\index{init\+\_\+route\+\_\+serv\+\_\+conn@{init\+\_\+route\+\_\+serv\+\_\+conn}!Route\+Serv\+Conn.\+h@{Route\+Serv\+Conn.\+h}}
+\subsubsection[{init\+\_\+route\+\_\+serv\+\_\+conn}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+route\+\_\+serv\+\_\+conn (
+\begin{DoxyParamCaption}
+\item[{{\bf serv\+\_\+info\+\_\+t} $\ast$}]{server\+\_\+list, }
+\item[{uint32\+\_\+t}]{server\+\_\+count}
+\end{DoxyParamCaption}
+)}\label{_route_serv_conn_8h_a5164b50ad8031499aa02a06b030e2404}
+\hypertarget{_route_serv_conn_8h_a4d3020ed04152bbc6d1b81087c63f311}{}\index{Route\+Serv\+Conn.\+h@{Route\+Serv\+Conn.\+h}!is\+\_\+route\+\_\+server\+\_\+available@{is\+\_\+route\+\_\+server\+\_\+available}}
+\index{is\+\_\+route\+\_\+server\+\_\+available@{is\+\_\+route\+\_\+server\+\_\+available}!Route\+Serv\+Conn.\+h@{Route\+Serv\+Conn.\+h}}
+\subsubsection[{is\+\_\+route\+\_\+server\+\_\+available}]{\setlength{\rightskip}{0pt plus 5cm}bool is\+\_\+route\+\_\+server\+\_\+available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_route_serv_conn_8h_a4d3020ed04152bbc6d1b81087c63f311}
+\hypertarget{_route_serv_conn_8h_ab4a8530027ede37cd77e1944938f2b4e}{}\index{Route\+Serv\+Conn.\+h@{Route\+Serv\+Conn.\+h}!send\+\_\+to\+\_\+all\+\_\+route\+\_\+server@{send\+\_\+to\+\_\+all\+\_\+route\+\_\+server}}
+\index{send\+\_\+to\+\_\+all\+\_\+route\+\_\+server@{send\+\_\+to\+\_\+all\+\_\+route\+\_\+server}!Route\+Serv\+Conn.\+h@{Route\+Serv\+Conn.\+h}}
+\subsubsection[{send\+\_\+to\+\_\+all\+\_\+route\+\_\+server}]{\setlength{\rightskip}{0pt plus 5cm}void send\+\_\+to\+\_\+all\+\_\+route\+\_\+server (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)}\label{_route_serv_conn_8h_ab4a8530027ede37cd77e1944938f2b4e}

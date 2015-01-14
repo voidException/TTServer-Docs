@@ -1,0 +1,745 @@
+\hypertarget{class_c_http_parser_wrapper}{}\section{C\+Http\+Parser\+Wrapper Class Reference}
+\label{class_c_http_parser_wrapper}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+
+
+{\ttfamily \#include $<$Http\+Parser\+Wrapper.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_http_parser_wrapper_a2049e652a14370c7a33c4d8ddbbe070e}{C\+Http\+Parser\+Wrapper} ()
+\item 
+virtual \hyperlink{class_c_http_parser_wrapper_a859edcf69bb55c5d8a4cbce26cfb53fa}{$\sim$\+C\+Http\+Parser\+Wrapper} ()
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a163b6568b8f7bbf6e263a8c403407b4f}{Parse\+Http\+Content} (const char $\ast$buf, uint32\+\_\+t len)
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_a6317df2e1c61752060f4853fed0d8e5b}{Is\+Read\+All} ()
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_aa72b44a6fb86ae3131dc4af01fe3ad29}{Is\+Read\+Referer} ()
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_ac78ed3db55eade31ae48cbbf1f13defa}{Has\+Read\+Referer} ()
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_ace83bc953d56ef9495a573e5ae3b6551}{Is\+Read\+Forward\+I\+P} ()
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_ae5cd1d99cea2c048508ef4bc10ef4f38}{Has\+Read\+Forward\+I\+P} ()
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_a7533bab5e22b1cc8b8043347eca64ced}{Is\+Read\+User\+Agent} ()
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_a89d61d176573b8150445f12d175c3488}{Has\+Read\+User\+Agent} ()
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_abdd8e317ea7129f7ec4947cb60dc1183}{Is\+Read\+Content\+Type} ()
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_a4a33df7e6bbbf7b6b68c175f0c0764db}{Has\+Read\+Content\+Type} ()
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_aab3cf06aab056c83eb6bcc1122fbdc56}{Is\+Read\+Content\+Len} ()
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_a5297f1f0be59709d7d3f178b2679d12d}{Has\+Read\+Content\+Len} ()
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_ab5917110e0ecbf3365d23d1d6e17ab9c}{Is\+Read\+Host} ()
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_a9f192162a7d6a20bd460a42dce3522a8}{Has\+Read\+Host} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_http_parser_wrapper_a557d7299aef783b0db0ebff11bf7f88c}{Get\+Total\+Length} ()
+\item 
+char $\ast$ \hyperlink{class_c_http_parser_wrapper_aafccf315c7b4f4c75cef0b98a8b56858}{Get\+Url} ()
+\item 
+char $\ast$ \hyperlink{class_c_http_parser_wrapper_a3b0c8298e7567cf1a092c429609c8494}{Get\+Body\+Content} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_http_parser_wrapper_a8f997f682aa253bf9b635106be15d1e9}{Get\+Body\+Content\+Len} ()
+\item 
+char $\ast$ \hyperlink{class_c_http_parser_wrapper_a52643fdaaf0b99f9fae390e9dfe6ac4f}{Get\+Referer} ()
+\item 
+char $\ast$ \hyperlink{class_c_http_parser_wrapper_ac2bad07ac2d2831bdc3131defd5e6ef6}{Get\+Forward\+I\+P} ()
+\item 
+char $\ast$ \hyperlink{class_c_http_parser_wrapper_aa4aa608f73388c2c0d9c0ef4518ec7b0}{Get\+User\+Agent} ()
+\item 
+char \hyperlink{class_c_http_parser_wrapper_af149784a7127b0da55b6453367d5bd2d}{Get\+Method} ()
+\item 
+char $\ast$ \hyperlink{class_c_http_parser_wrapper_a944e144e999b4622c5b29f412a8ec1fd}{Get\+Content\+Type} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_http_parser_wrapper_a58728121d12bf8411969cf7c4ac57610}{Get\+Content\+Len} ()
+\item 
+char $\ast$ \hyperlink{class_c_http_parser_wrapper_a2610085f6a364470e55ab74587af6531}{Get\+Host} ()
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a2601a18c62f8f7dfbc88a555f625d765}{Set\+Url} (const char $\ast$url, size\+\_\+t length)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a0a5171972f6a85fde1d601e74e7c8dd0}{Set\+Referer} (const char $\ast$referer, size\+\_\+t length)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_ab6b8c657b308e2f2ea96643d6f019a12}{Set\+Forward\+I\+P} (const char $\ast$forward\+\_\+ip, size\+\_\+t length)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_afc6f617343b61a8354e15fa8e6527cd2}{Set\+User\+Agent} (const char $\ast$user\+\_\+agent, size\+\_\+t length)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_ac9ca2f62addee35a489e671ca72dc558}{Set\+Body\+Content} (const char $\ast$content, size\+\_\+t length)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a8d343ccd92e3c3cac6140627b9e0192d}{Set\+Content\+Type} (const char $\ast$content\+\_\+type, size\+\_\+t length)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a537c4440f0df4e846ada288e1ae63f2f}{Set\+Content\+Len} (uint32\+\_\+t content\+\_\+len)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_af3c58761ba5106e516767256393a2ccc}{Set\+Total\+Length} (uint32\+\_\+t total\+\_\+len)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a87a8fd914f3277ae88455cf8b1e4fc18}{Set\+Host} (const char $\ast$host, size\+\_\+t length)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a915fd9ee3c6e5c6f77289c11d3d515a2}{Set\+Read\+All} ()
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a5b166ca4ca9a08a68e08da60c621da61}{Set\+Read\+Referer} (bool read\+\_\+referer)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a84d8515b2a050124e60ab9597a73a1d3}{Set\+Read\+Forward\+I\+P} (bool read\+\_\+forward\+\_\+ip)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a7a82a07a46f5419866f7b481256718ff}{Set\+Read\+User\+Agent} (bool read\+\_\+user\+\_\+agent)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a04082b1caf7fbf5e3a2a485416cce725}{Set\+Read\+Content\+Type} (bool read\+\_\+content\+\_\+type)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a0fd584cd495d1e80bd577a871ef2614a}{Set\+Read\+Content\+Len} (bool read\+\_\+content\+\_\+len)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_afec5e1051d9035145213f0cdd56ecddb}{Set\+Read\+Host} (bool read\+\_\+host)
+\item 
+virtual \hyperlink{class_c_http_parser_wrapper_a859edcf69bb55c5d8a4cbce26cfb53fa}{$\sim$\+C\+Http\+Parser\+Wrapper} ()
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a163b6568b8f7bbf6e263a8c403407b4f}{Parse\+Http\+Content} (const char $\ast$buf, uint32\+\_\+t len)
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_a6317df2e1c61752060f4853fed0d8e5b}{Is\+Read\+All} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_http_parser_wrapper_a557d7299aef783b0db0ebff11bf7f88c}{Get\+Total\+Length} ()
+\item 
+string \& \hyperlink{class_c_http_parser_wrapper_a15d7a1b685c3b0a13a4fbd033bb37b96}{Get\+Url} ()
+\item 
+string \& \hyperlink{class_c_http_parser_wrapper_aac4b2aee55f2d29e85b858da7b227402}{Get\+Body\+Content} ()
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a2601a18c62f8f7dfbc88a555f625d765}{Set\+Url} (const char $\ast$url, size\+\_\+t length)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_ac9ca2f62addee35a489e671ca72dc558}{Set\+Body\+Content} (const char $\ast$content, size\+\_\+t length)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_af3c58761ba5106e516767256393a2ccc}{Set\+Total\+Length} (uint32\+\_\+t total\+\_\+len)
+\item 
+void \hyperlink{class_c_http_parser_wrapper_a915fd9ee3c6e5c6f77289c11d3d515a2}{Set\+Read\+All} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_c_http_parser_wrapper_a1b3842eeed6852aa8b724f555a729837}{On\+Url} (\hyperlink{structhttp__parser}{http\+\_\+parser} $\ast$parser, const char $\ast$at, size\+\_\+t length, void $\ast$obj)
+\item 
+static int \hyperlink{class_c_http_parser_wrapper_a2393e185ef1cecb21f808466c53c1787}{On\+Header\+Field} (\hyperlink{structhttp__parser}{http\+\_\+parser} $\ast$parser, const char $\ast$at, size\+\_\+t length, void $\ast$obj)
+\item 
+static int \hyperlink{class_c_http_parser_wrapper_a630bd0b8418280158984dd17f7c3ddb8}{On\+Header\+Value} (\hyperlink{structhttp__parser}{http\+\_\+parser} $\ast$parser, const char $\ast$at, size\+\_\+t length, void $\ast$obj)
+\item 
+static int \hyperlink{class_c_http_parser_wrapper_a1b5d26dff5126716f2a1db491991041e}{On\+Headers\+Complete} (\hyperlink{structhttp__parser}{http\+\_\+parser} $\ast$parser, void $\ast$obj)
+\item 
+static int \hyperlink{class_c_http_parser_wrapper_a6d175dabbaaf04c6f760c1bda80fcb9d}{On\+Body} (\hyperlink{structhttp__parser}{http\+\_\+parser} $\ast$parser, const char $\ast$at, size\+\_\+t length, void $\ast$obj)
+\item 
+static int \hyperlink{class_c_http_parser_wrapper_af20a9dd4cc1705825278662f33e7b594}{On\+Message\+Complete} (\hyperlink{structhttp__parser}{http\+\_\+parser} $\ast$parser, void $\ast$obj)
+\item 
+static \hyperlink{class_c_http_parser_wrapper}{C\+Http\+Parser\+Wrapper} $\ast$ \hyperlink{class_c_http_parser_wrapper_afa738e8644efdd2517858cd967f8cc02}{Get\+Instance} ()
+\item 
+static int \hyperlink{class_c_http_parser_wrapper_a308ca34453d52f3c9bf2eb5a80c84faa}{On\+Url} (\hyperlink{structhttp__parser}{http\+\_\+parser} $\ast$parser, const char $\ast$at, size\+\_\+t length)
+\item 
+static int \hyperlink{class_c_http_parser_wrapper_a7a1b7ed56f544551207b59ed59e3d3f9}{On\+Headers\+Complete} (\hyperlink{structhttp__parser}{http\+\_\+parser} $\ast$parser)
+\item 
+static int \hyperlink{class_c_http_parser_wrapper_a2eaba9bb1582a290d83b8b46d0d465d5}{On\+Body} (\hyperlink{structhttp__parser}{http\+\_\+parser} $\ast$parser, const char $\ast$at, size\+\_\+t length)
+\item 
+static int \hyperlink{class_c_http_parser_wrapper_a15417c5c2390182dc09b3398cee29e76}{On\+Message\+Complete} (\hyperlink{structhttp__parser}{http\+\_\+parser} $\ast$parser)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_http_parser_wrapper_a2049e652a14370c7a33c4d8ddbbe070e}{C\+Http\+Parser\+Wrapper} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structhttp__parser}{http\+\_\+parser} \hyperlink{class_c_http_parser_wrapper_ad1f59698d3f8171a895c332f3ce3d4de}{m\+\_\+http\+\_\+parser}
+\item 
+\hyperlink{structhttp__parser__settings}{http\+\_\+parser\+\_\+settings} \hyperlink{class_c_http_parser_wrapper_a9fccb894a6c0dd9e663a5b515ecb3c29}{m\+\_\+settings}
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_a7e0c8bfd8cfa3e59b77480c2204548dd}{m\+\_\+read\+\_\+all}
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_a7348de61f43161e9ee48becc0d3877e6}{m\+\_\+read\+\_\+referer}
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_ac572e17c1571dc9f2e98ce0aeae66af2}{m\+\_\+read\+\_\+forward\+\_\+ip}
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_ac96aecf14f9880e9aef1472deb111008}{m\+\_\+read\+\_\+user\+\_\+agent}
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_abbb23d0903842b53d03362574c91da5d}{m\+\_\+read\+\_\+content\+\_\+type}
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_a90ac8c4d85f31c3c38fe5eb19cfb59af}{m\+\_\+read\+\_\+content\+\_\+len}
+\item 
+bool \hyperlink{class_c_http_parser_wrapper_aa8a18bebb4b514762954c85edf17d0d2}{m\+\_\+read\+\_\+host}
+\item 
+uint32\+\_\+t \hyperlink{class_c_http_parser_wrapper_a0533f3ca12018fd75a42648cb76f7db9}{m\+\_\+total\+\_\+length}
+\item 
+string \hyperlink{class_c_http_parser_wrapper_a9f5239015aea78ed1d87d3f06d607f7a}{m\+\_\+url}
+\item 
+string \hyperlink{class_c_http_parser_wrapper_a9ebe569e94d37ff41e1518d474082b83}{m\+\_\+body\+\_\+content}
+\item 
+string \hyperlink{class_c_http_parser_wrapper_a51fda8acea14a968c7534686037116f0}{m\+\_\+referer}
+\item 
+string \hyperlink{class_c_http_parser_wrapper_a73df97dd8aed05df746ac1c223753999}{m\+\_\+forward\+\_\+ip}
+\item 
+string \hyperlink{class_c_http_parser_wrapper_ab403f435670bec6cb88e8023c433d382}{m\+\_\+user\+\_\+agent}
+\item 
+string \hyperlink{class_c_http_parser_wrapper_a3d2da5b1a77dc205eda2197699a9fe7d}{m\+\_\+content\+\_\+type}
+\item 
+uint32\+\_\+t \hyperlink{class_c_http_parser_wrapper_a7ab1c37d20e5eedf553c60558ad17aa3}{m\+\_\+content\+\_\+len}
+\item 
+string \hyperlink{class_c_http_parser_wrapper_a55169f989cfea22b564268a79ca6cd86}{m\+\_\+host}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_http_parser_wrapper}{C\+Http\+Parser\+Wrapper} $\ast$ \hyperlink{class_c_http_parser_wrapper_abd584f1e3b85df65db935006ec03309f}{m\+\_\+instance} = N\+U\+L\+L
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_http_parser_wrapper_a2049e652a14370c7a33c4d8ddbbe070e}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{C\+Http\+Parser\+Wrapper}]{\setlength{\rightskip}{0pt plus 5cm}C\+Http\+Parser\+Wrapper\+::\+C\+Http\+Parser\+Wrapper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_http_parser_wrapper_a2049e652a14370c7a33c4d8ddbbe070e}
+\hypertarget{class_c_http_parser_wrapper_a859edcf69bb55c5d8a4cbce26cfb53fa}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!````~C\+Http\+Parser\+Wrapper@{$\sim$\+C\+Http\+Parser\+Wrapper}}
+\index{````~C\+Http\+Parser\+Wrapper@{$\sim$\+C\+Http\+Parser\+Wrapper}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{$\sim$\+C\+Http\+Parser\+Wrapper}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Http\+Parser\+Wrapper\+::$\sim$\+C\+Http\+Parser\+Wrapper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_http_parser_wrapper_a859edcf69bb55c5d8a4cbce26cfb53fa}
+\hypertarget{class_c_http_parser_wrapper_a859edcf69bb55c5d8a4cbce26cfb53fa}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!````~C\+Http\+Parser\+Wrapper@{$\sim$\+C\+Http\+Parser\+Wrapper}}
+\index{````~C\+Http\+Parser\+Wrapper@{$\sim$\+C\+Http\+Parser\+Wrapper}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{$\sim$\+C\+Http\+Parser\+Wrapper}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Http\+Parser\+Wrapper\+::$\sim$\+C\+Http\+Parser\+Wrapper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_http_parser_wrapper_a859edcf69bb55c5d8a4cbce26cfb53fa}
+\hypertarget{class_c_http_parser_wrapper_a2049e652a14370c7a33c4d8ddbbe070e}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{C\+Http\+Parser\+Wrapper}]{\setlength{\rightskip}{0pt plus 5cm}C\+Http\+Parser\+Wrapper\+::\+C\+Http\+Parser\+Wrapper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_a2049e652a14370c7a33c4d8ddbbe070e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_http_parser_wrapper_aac4b2aee55f2d29e85b858da7b227402}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+Body\+Content@{Get\+Body\+Content}}
+\index{Get\+Body\+Content@{Get\+Body\+Content}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+Body\+Content}]{\setlength{\rightskip}{0pt plus 5cm}string\& C\+Http\+Parser\+Wrapper\+::\+Get\+Body\+Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_aac4b2aee55f2d29e85b858da7b227402}
+\hypertarget{class_c_http_parser_wrapper_a3b0c8298e7567cf1a092c429609c8494}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+Body\+Content@{Get\+Body\+Content}}
+\index{Get\+Body\+Content@{Get\+Body\+Content}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+Body\+Content}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Http\+Parser\+Wrapper\+::\+Get\+Body\+Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a3b0c8298e7567cf1a092c429609c8494}
+\hypertarget{class_c_http_parser_wrapper_a8f997f682aa253bf9b635106be15d1e9}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+Body\+Content\+Len@{Get\+Body\+Content\+Len}}
+\index{Get\+Body\+Content\+Len@{Get\+Body\+Content\+Len}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+Body\+Content\+Len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Http\+Parser\+Wrapper\+::\+Get\+Body\+Content\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a8f997f682aa253bf9b635106be15d1e9}
+\hypertarget{class_c_http_parser_wrapper_a58728121d12bf8411969cf7c4ac57610}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+Content\+Len@{Get\+Content\+Len}}
+\index{Get\+Content\+Len@{Get\+Content\+Len}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+Content\+Len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Http\+Parser\+Wrapper\+::\+Get\+Content\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a58728121d12bf8411969cf7c4ac57610}
+\hypertarget{class_c_http_parser_wrapper_a944e144e999b4622c5b29f412a8ec1fd}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+Content\+Type@{Get\+Content\+Type}}
+\index{Get\+Content\+Type@{Get\+Content\+Type}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+Content\+Type}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Http\+Parser\+Wrapper\+::\+Get\+Content\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a944e144e999b4622c5b29f412a8ec1fd}
+\hypertarget{class_c_http_parser_wrapper_ac2bad07ac2d2831bdc3131defd5e6ef6}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+Forward\+I\+P@{Get\+Forward\+I\+P}}
+\index{Get\+Forward\+I\+P@{Get\+Forward\+I\+P}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+Forward\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Http\+Parser\+Wrapper\+::\+Get\+Forward\+I\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_ac2bad07ac2d2831bdc3131defd5e6ef6}
+\hypertarget{class_c_http_parser_wrapper_a2610085f6a364470e55ab74587af6531}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+Host@{Get\+Host}}
+\index{Get\+Host@{Get\+Host}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+Host}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Http\+Parser\+Wrapper\+::\+Get\+Host (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a2610085f6a364470e55ab74587af6531}
+\hypertarget{class_c_http_parser_wrapper_afa738e8644efdd2517858cd967f8cc02}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+Instance@{Get\+Instance}}
+\index{Get\+Instance@{Get\+Instance}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Http\+Parser\+Wrapper} $\ast$ C\+Http\+Parser\+Wrapper\+::\+Get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_parser_wrapper_afa738e8644efdd2517858cd967f8cc02}
+\hypertarget{class_c_http_parser_wrapper_af149784a7127b0da55b6453367d5bd2d}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+Method@{Get\+Method}}
+\index{Get\+Method@{Get\+Method}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+Method}]{\setlength{\rightskip}{0pt plus 5cm}char C\+Http\+Parser\+Wrapper\+::\+Get\+Method (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_af149784a7127b0da55b6453367d5bd2d}
+\hypertarget{class_c_http_parser_wrapper_a52643fdaaf0b99f9fae390e9dfe6ac4f}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+Referer@{Get\+Referer}}
+\index{Get\+Referer@{Get\+Referer}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+Referer}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Http\+Parser\+Wrapper\+::\+Get\+Referer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a52643fdaaf0b99f9fae390e9dfe6ac4f}
+\hypertarget{class_c_http_parser_wrapper_a557d7299aef783b0db0ebff11bf7f88c}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+Total\+Length@{Get\+Total\+Length}}
+\index{Get\+Total\+Length@{Get\+Total\+Length}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+Total\+Length}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Http\+Parser\+Wrapper\+::\+Get\+Total\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a557d7299aef783b0db0ebff11bf7f88c}
+\hypertarget{class_c_http_parser_wrapper_a557d7299aef783b0db0ebff11bf7f88c}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+Total\+Length@{Get\+Total\+Length}}
+\index{Get\+Total\+Length@{Get\+Total\+Length}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+Total\+Length}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Http\+Parser\+Wrapper\+::\+Get\+Total\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a557d7299aef783b0db0ebff11bf7f88c}
+\hypertarget{class_c_http_parser_wrapper_a15d7a1b685c3b0a13a4fbd033bb37b96}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+Url@{Get\+Url}}
+\index{Get\+Url@{Get\+Url}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+Url}]{\setlength{\rightskip}{0pt plus 5cm}string\& C\+Http\+Parser\+Wrapper\+::\+Get\+Url (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a15d7a1b685c3b0a13a4fbd033bb37b96}
+\hypertarget{class_c_http_parser_wrapper_aafccf315c7b4f4c75cef0b98a8b56858}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+Url@{Get\+Url}}
+\index{Get\+Url@{Get\+Url}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+Url}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Http\+Parser\+Wrapper\+::\+Get\+Url (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_aafccf315c7b4f4c75cef0b98a8b56858}
+\hypertarget{class_c_http_parser_wrapper_aa4aa608f73388c2c0d9c0ef4518ec7b0}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Get\+User\+Agent@{Get\+User\+Agent}}
+\index{Get\+User\+Agent@{Get\+User\+Agent}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Get\+User\+Agent}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Http\+Parser\+Wrapper\+::\+Get\+User\+Agent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_aa4aa608f73388c2c0d9c0ef4518ec7b0}
+\hypertarget{class_c_http_parser_wrapper_a5297f1f0be59709d7d3f178b2679d12d}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Has\+Read\+Content\+Len@{Has\+Read\+Content\+Len}}
+\index{Has\+Read\+Content\+Len@{Has\+Read\+Content\+Len}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Has\+Read\+Content\+Len}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::\+Has\+Read\+Content\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a5297f1f0be59709d7d3f178b2679d12d}
+\hypertarget{class_c_http_parser_wrapper_a4a33df7e6bbbf7b6b68c175f0c0764db}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Has\+Read\+Content\+Type@{Has\+Read\+Content\+Type}}
+\index{Has\+Read\+Content\+Type@{Has\+Read\+Content\+Type}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Has\+Read\+Content\+Type}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::\+Has\+Read\+Content\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a4a33df7e6bbbf7b6b68c175f0c0764db}
+\hypertarget{class_c_http_parser_wrapper_ae5cd1d99cea2c048508ef4bc10ef4f38}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Has\+Read\+Forward\+I\+P@{Has\+Read\+Forward\+I\+P}}
+\index{Has\+Read\+Forward\+I\+P@{Has\+Read\+Forward\+I\+P}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Has\+Read\+Forward\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::\+Has\+Read\+Forward\+I\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_ae5cd1d99cea2c048508ef4bc10ef4f38}
+\hypertarget{class_c_http_parser_wrapper_a9f192162a7d6a20bd460a42dce3522a8}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Has\+Read\+Host@{Has\+Read\+Host}}
+\index{Has\+Read\+Host@{Has\+Read\+Host}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Has\+Read\+Host}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::\+Has\+Read\+Host (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a9f192162a7d6a20bd460a42dce3522a8}
+\hypertarget{class_c_http_parser_wrapper_ac78ed3db55eade31ae48cbbf1f13defa}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Has\+Read\+Referer@{Has\+Read\+Referer}}
+\index{Has\+Read\+Referer@{Has\+Read\+Referer}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Has\+Read\+Referer}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::\+Has\+Read\+Referer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_ac78ed3db55eade31ae48cbbf1f13defa}
+\hypertarget{class_c_http_parser_wrapper_a89d61d176573b8150445f12d175c3488}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Has\+Read\+User\+Agent@{Has\+Read\+User\+Agent}}
+\index{Has\+Read\+User\+Agent@{Has\+Read\+User\+Agent}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Has\+Read\+User\+Agent}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::\+Has\+Read\+User\+Agent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a89d61d176573b8150445f12d175c3488}
+\hypertarget{class_c_http_parser_wrapper_a6317df2e1c61752060f4853fed0d8e5b}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Is\+Read\+All@{Is\+Read\+All}}
+\index{Is\+Read\+All@{Is\+Read\+All}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Is\+Read\+All}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::\+Is\+Read\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a6317df2e1c61752060f4853fed0d8e5b}
+\hypertarget{class_c_http_parser_wrapper_a6317df2e1c61752060f4853fed0d8e5b}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Is\+Read\+All@{Is\+Read\+All}}
+\index{Is\+Read\+All@{Is\+Read\+All}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Is\+Read\+All}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::\+Is\+Read\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a6317df2e1c61752060f4853fed0d8e5b}
+\hypertarget{class_c_http_parser_wrapper_aab3cf06aab056c83eb6bcc1122fbdc56}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Is\+Read\+Content\+Len@{Is\+Read\+Content\+Len}}
+\index{Is\+Read\+Content\+Len@{Is\+Read\+Content\+Len}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Is\+Read\+Content\+Len}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::\+Is\+Read\+Content\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_aab3cf06aab056c83eb6bcc1122fbdc56}
+\hypertarget{class_c_http_parser_wrapper_abdd8e317ea7129f7ec4947cb60dc1183}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Is\+Read\+Content\+Type@{Is\+Read\+Content\+Type}}
+\index{Is\+Read\+Content\+Type@{Is\+Read\+Content\+Type}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Is\+Read\+Content\+Type}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::\+Is\+Read\+Content\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_abdd8e317ea7129f7ec4947cb60dc1183}
+\hypertarget{class_c_http_parser_wrapper_ace83bc953d56ef9495a573e5ae3b6551}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Is\+Read\+Forward\+I\+P@{Is\+Read\+Forward\+I\+P}}
+\index{Is\+Read\+Forward\+I\+P@{Is\+Read\+Forward\+I\+P}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Is\+Read\+Forward\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::\+Is\+Read\+Forward\+I\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_ace83bc953d56ef9495a573e5ae3b6551}
+\hypertarget{class_c_http_parser_wrapper_ab5917110e0ecbf3365d23d1d6e17ab9c}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Is\+Read\+Host@{Is\+Read\+Host}}
+\index{Is\+Read\+Host@{Is\+Read\+Host}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Is\+Read\+Host}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::\+Is\+Read\+Host (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_ab5917110e0ecbf3365d23d1d6e17ab9c}
+\hypertarget{class_c_http_parser_wrapper_aa72b44a6fb86ae3131dc4af01fe3ad29}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Is\+Read\+Referer@{Is\+Read\+Referer}}
+\index{Is\+Read\+Referer@{Is\+Read\+Referer}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Is\+Read\+Referer}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::\+Is\+Read\+Referer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_aa72b44a6fb86ae3131dc4af01fe3ad29}
+\hypertarget{class_c_http_parser_wrapper_a7533bab5e22b1cc8b8043347eca64ced}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Is\+Read\+User\+Agent@{Is\+Read\+User\+Agent}}
+\index{Is\+Read\+User\+Agent@{Is\+Read\+User\+Agent}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Is\+Read\+User\+Agent}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::\+Is\+Read\+User\+Agent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a7533bab5e22b1cc8b8043347eca64ced}
+\hypertarget{class_c_http_parser_wrapper_a2eaba9bb1582a290d83b8b46d0d465d5}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!On\+Body@{On\+Body}}
+\index{On\+Body@{On\+Body}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{On\+Body}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Http\+Parser\+Wrapper\+::\+On\+Body (
+\begin{DoxyParamCaption}
+\item[{{\bf http\+\_\+parser} $\ast$}]{parser, }
+\item[{const char $\ast$}]{at, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_parser_wrapper_a2eaba9bb1582a290d83b8b46d0d465d5}
+\hypertarget{class_c_http_parser_wrapper_a6d175dabbaaf04c6f760c1bda80fcb9d}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!On\+Body@{On\+Body}}
+\index{On\+Body@{On\+Body}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{On\+Body}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Http\+Parser\+Wrapper\+::\+On\+Body (
+\begin{DoxyParamCaption}
+\item[{{\bf http\+\_\+parser} $\ast$}]{parser, }
+\item[{const char $\ast$}]{at, }
+\item[{size\+\_\+t}]{length, }
+\item[{void $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_parser_wrapper_a6d175dabbaaf04c6f760c1bda80fcb9d}
+\hypertarget{class_c_http_parser_wrapper_a2393e185ef1cecb21f808466c53c1787}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!On\+Header\+Field@{On\+Header\+Field}}
+\index{On\+Header\+Field@{On\+Header\+Field}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{On\+Header\+Field}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Http\+Parser\+Wrapper\+::\+On\+Header\+Field (
+\begin{DoxyParamCaption}
+\item[{{\bf http\+\_\+parser} $\ast$}]{parser, }
+\item[{const char $\ast$}]{at, }
+\item[{size\+\_\+t}]{length, }
+\item[{void $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_parser_wrapper_a2393e185ef1cecb21f808466c53c1787}
+\hypertarget{class_c_http_parser_wrapper_a7a1b7ed56f544551207b59ed59e3d3f9}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!On\+Headers\+Complete@{On\+Headers\+Complete}}
+\index{On\+Headers\+Complete@{On\+Headers\+Complete}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{On\+Headers\+Complete}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Http\+Parser\+Wrapper\+::\+On\+Headers\+Complete (
+\begin{DoxyParamCaption}
+\item[{{\bf http\+\_\+parser} $\ast$}]{parser}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_parser_wrapper_a7a1b7ed56f544551207b59ed59e3d3f9}
+\hypertarget{class_c_http_parser_wrapper_a1b5d26dff5126716f2a1db491991041e}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!On\+Headers\+Complete@{On\+Headers\+Complete}}
+\index{On\+Headers\+Complete@{On\+Headers\+Complete}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{On\+Headers\+Complete}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Http\+Parser\+Wrapper\+::\+On\+Headers\+Complete (
+\begin{DoxyParamCaption}
+\item[{{\bf http\+\_\+parser} $\ast$}]{parser, }
+\item[{void $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_parser_wrapper_a1b5d26dff5126716f2a1db491991041e}
+\hypertarget{class_c_http_parser_wrapper_a630bd0b8418280158984dd17f7c3ddb8}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!On\+Header\+Value@{On\+Header\+Value}}
+\index{On\+Header\+Value@{On\+Header\+Value}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{On\+Header\+Value}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Http\+Parser\+Wrapper\+::\+On\+Header\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf http\+\_\+parser} $\ast$}]{parser, }
+\item[{const char $\ast$}]{at, }
+\item[{size\+\_\+t}]{length, }
+\item[{void $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_parser_wrapper_a630bd0b8418280158984dd17f7c3ddb8}
+\hypertarget{class_c_http_parser_wrapper_a15417c5c2390182dc09b3398cee29e76}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!On\+Message\+Complete@{On\+Message\+Complete}}
+\index{On\+Message\+Complete@{On\+Message\+Complete}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{On\+Message\+Complete}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Http\+Parser\+Wrapper\+::\+On\+Message\+Complete (
+\begin{DoxyParamCaption}
+\item[{{\bf http\+\_\+parser} $\ast$}]{parser}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_parser_wrapper_a15417c5c2390182dc09b3398cee29e76}
+\hypertarget{class_c_http_parser_wrapper_af20a9dd4cc1705825278662f33e7b594}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!On\+Message\+Complete@{On\+Message\+Complete}}
+\index{On\+Message\+Complete@{On\+Message\+Complete}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{On\+Message\+Complete}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Http\+Parser\+Wrapper\+::\+On\+Message\+Complete (
+\begin{DoxyParamCaption}
+\item[{{\bf http\+\_\+parser} $\ast$}]{parser, }
+\item[{void $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_parser_wrapper_af20a9dd4cc1705825278662f33e7b594}
+\hypertarget{class_c_http_parser_wrapper_a308ca34453d52f3c9bf2eb5a80c84faa}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!On\+Url@{On\+Url}}
+\index{On\+Url@{On\+Url}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{On\+Url}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Http\+Parser\+Wrapper\+::\+On\+Url (
+\begin{DoxyParamCaption}
+\item[{{\bf http\+\_\+parser} $\ast$}]{parser, }
+\item[{const char $\ast$}]{at, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_parser_wrapper_a308ca34453d52f3c9bf2eb5a80c84faa}
+\hypertarget{class_c_http_parser_wrapper_a1b3842eeed6852aa8b724f555a729837}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!On\+Url@{On\+Url}}
+\index{On\+Url@{On\+Url}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{On\+Url}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Http\+Parser\+Wrapper\+::\+On\+Url (
+\begin{DoxyParamCaption}
+\item[{{\bf http\+\_\+parser} $\ast$}]{parser, }
+\item[{const char $\ast$}]{at, }
+\item[{size\+\_\+t}]{length, }
+\item[{void $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_parser_wrapper_a1b3842eeed6852aa8b724f555a729837}
+\hypertarget{class_c_http_parser_wrapper_a163b6568b8f7bbf6e263a8c403407b4f}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Parse\+Http\+Content@{Parse\+Http\+Content}}
+\index{Parse\+Http\+Content@{Parse\+Http\+Content}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Parse\+Http\+Content}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Parse\+Http\+Content (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{buf, }
+\item[{uint32\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_http_parser_wrapper_a163b6568b8f7bbf6e263a8c403407b4f}
+\hypertarget{class_c_http_parser_wrapper_a163b6568b8f7bbf6e263a8c403407b4f}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Parse\+Http\+Content@{Parse\+Http\+Content}}
+\index{Parse\+Http\+Content@{Parse\+Http\+Content}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Parse\+Http\+Content}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Parse\+Http\+Content (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{buf, }
+\item[{uint32\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_http_parser_wrapper_a163b6568b8f7bbf6e263a8c403407b4f}
+\hypertarget{class_c_http_parser_wrapper_ac9ca2f62addee35a489e671ca72dc558}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Body\+Content@{Set\+Body\+Content}}
+\index{Set\+Body\+Content@{Set\+Body\+Content}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Body\+Content}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Body\+Content (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{content, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_ac9ca2f62addee35a489e671ca72dc558}
+\hypertarget{class_c_http_parser_wrapper_ac9ca2f62addee35a489e671ca72dc558}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Body\+Content@{Set\+Body\+Content}}
+\index{Set\+Body\+Content@{Set\+Body\+Content}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Body\+Content}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Body\+Content (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{content, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_ac9ca2f62addee35a489e671ca72dc558}
+\hypertarget{class_c_http_parser_wrapper_a537c4440f0df4e846ada288e1ae63f2f}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Content\+Len@{Set\+Content\+Len}}
+\index{Set\+Content\+Len@{Set\+Content\+Len}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Content\+Len}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Content\+Len (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{content\+\_\+len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a537c4440f0df4e846ada288e1ae63f2f}
+\hypertarget{class_c_http_parser_wrapper_a8d343ccd92e3c3cac6140627b9e0192d}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Content\+Type@{Set\+Content\+Type}}
+\index{Set\+Content\+Type@{Set\+Content\+Type}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Content\+Type}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Content\+Type (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{content\+\_\+type, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a8d343ccd92e3c3cac6140627b9e0192d}
+\hypertarget{class_c_http_parser_wrapper_ab6b8c657b308e2f2ea96643d6f019a12}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Forward\+I\+P@{Set\+Forward\+I\+P}}
+\index{Set\+Forward\+I\+P@{Set\+Forward\+I\+P}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Forward\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Forward\+I\+P (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{forward\+\_\+ip, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_ab6b8c657b308e2f2ea96643d6f019a12}
+\hypertarget{class_c_http_parser_wrapper_a87a8fd914f3277ae88455cf8b1e4fc18}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Host@{Set\+Host}}
+\index{Set\+Host@{Set\+Host}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Host}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Host (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{host, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a87a8fd914f3277ae88455cf8b1e4fc18}
+\hypertarget{class_c_http_parser_wrapper_a915fd9ee3c6e5c6f77289c11d3d515a2}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Read\+All@{Set\+Read\+All}}
+\index{Set\+Read\+All@{Set\+Read\+All}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Read\+All}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Read\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a915fd9ee3c6e5c6f77289c11d3d515a2}
+\hypertarget{class_c_http_parser_wrapper_a915fd9ee3c6e5c6f77289c11d3d515a2}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Read\+All@{Set\+Read\+All}}
+\index{Set\+Read\+All@{Set\+Read\+All}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Read\+All}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Read\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a915fd9ee3c6e5c6f77289c11d3d515a2}
+\hypertarget{class_c_http_parser_wrapper_a0fd584cd495d1e80bd577a871ef2614a}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Read\+Content\+Len@{Set\+Read\+Content\+Len}}
+\index{Set\+Read\+Content\+Len@{Set\+Read\+Content\+Len}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Read\+Content\+Len}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Read\+Content\+Len (
+\begin{DoxyParamCaption}
+\item[{bool}]{read\+\_\+content\+\_\+len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a0fd584cd495d1e80bd577a871ef2614a}
+\hypertarget{class_c_http_parser_wrapper_a04082b1caf7fbf5e3a2a485416cce725}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Read\+Content\+Type@{Set\+Read\+Content\+Type}}
+\index{Set\+Read\+Content\+Type@{Set\+Read\+Content\+Type}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Read\+Content\+Type}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Read\+Content\+Type (
+\begin{DoxyParamCaption}
+\item[{bool}]{read\+\_\+content\+\_\+type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a04082b1caf7fbf5e3a2a485416cce725}
+\hypertarget{class_c_http_parser_wrapper_a84d8515b2a050124e60ab9597a73a1d3}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Read\+Forward\+I\+P@{Set\+Read\+Forward\+I\+P}}
+\index{Set\+Read\+Forward\+I\+P@{Set\+Read\+Forward\+I\+P}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Read\+Forward\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Read\+Forward\+I\+P (
+\begin{DoxyParamCaption}
+\item[{bool}]{read\+\_\+forward\+\_\+ip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a84d8515b2a050124e60ab9597a73a1d3}
+\hypertarget{class_c_http_parser_wrapper_afec5e1051d9035145213f0cdd56ecddb}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Read\+Host@{Set\+Read\+Host}}
+\index{Set\+Read\+Host@{Set\+Read\+Host}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Read\+Host}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Read\+Host (
+\begin{DoxyParamCaption}
+\item[{bool}]{read\+\_\+host}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_afec5e1051d9035145213f0cdd56ecddb}
+\hypertarget{class_c_http_parser_wrapper_a5b166ca4ca9a08a68e08da60c621da61}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Read\+Referer@{Set\+Read\+Referer}}
+\index{Set\+Read\+Referer@{Set\+Read\+Referer}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Read\+Referer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Read\+Referer (
+\begin{DoxyParamCaption}
+\item[{bool}]{read\+\_\+referer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a5b166ca4ca9a08a68e08da60c621da61}
+\hypertarget{class_c_http_parser_wrapper_a7a82a07a46f5419866f7b481256718ff}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Read\+User\+Agent@{Set\+Read\+User\+Agent}}
+\index{Set\+Read\+User\+Agent@{Set\+Read\+User\+Agent}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Read\+User\+Agent}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Read\+User\+Agent (
+\begin{DoxyParamCaption}
+\item[{bool}]{read\+\_\+user\+\_\+agent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a7a82a07a46f5419866f7b481256718ff}
+\hypertarget{class_c_http_parser_wrapper_a0a5171972f6a85fde1d601e74e7c8dd0}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Referer@{Set\+Referer}}
+\index{Set\+Referer@{Set\+Referer}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Referer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Referer (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{referer, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a0a5171972f6a85fde1d601e74e7c8dd0}
+\hypertarget{class_c_http_parser_wrapper_af3c58761ba5106e516767256393a2ccc}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Total\+Length@{Set\+Total\+Length}}
+\index{Set\+Total\+Length@{Set\+Total\+Length}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Total\+Length}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Total\+Length (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{total\+\_\+len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_af3c58761ba5106e516767256393a2ccc}
+\hypertarget{class_c_http_parser_wrapper_af3c58761ba5106e516767256393a2ccc}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Total\+Length@{Set\+Total\+Length}}
+\index{Set\+Total\+Length@{Set\+Total\+Length}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Total\+Length}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Total\+Length (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{total\+\_\+len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_af3c58761ba5106e516767256393a2ccc}
+\hypertarget{class_c_http_parser_wrapper_a2601a18c62f8f7dfbc88a555f625d765}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Url@{Set\+Url}}
+\index{Set\+Url@{Set\+Url}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Url}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Url (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{url, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a2601a18c62f8f7dfbc88a555f625d765}
+\hypertarget{class_c_http_parser_wrapper_a2601a18c62f8f7dfbc88a555f625d765}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+Url@{Set\+Url}}
+\index{Set\+Url@{Set\+Url}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+Url}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+Url (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{url, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_a2601a18c62f8f7dfbc88a555f625d765}
+\hypertarget{class_c_http_parser_wrapper_afc6f617343b61a8354e15fa8e6527cd2}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!Set\+User\+Agent@{Set\+User\+Agent}}
+\index{Set\+User\+Agent@{Set\+User\+Agent}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{Set\+User\+Agent}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Parser\+Wrapper\+::\+Set\+User\+Agent (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{user\+\_\+agent, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_parser_wrapper_afc6f617343b61a8354e15fa8e6527cd2}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_http_parser_wrapper_a9ebe569e94d37ff41e1518d474082b83}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+body\+\_\+content@{m\+\_\+body\+\_\+content}}
+\index{m\+\_\+body\+\_\+content@{m\+\_\+body\+\_\+content}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+body\+\_\+content}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Http\+Parser\+Wrapper\+::m\+\_\+body\+\_\+content\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_a9ebe569e94d37ff41e1518d474082b83}
+\hypertarget{class_c_http_parser_wrapper_a7ab1c37d20e5eedf553c60558ad17aa3}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+content\+\_\+len@{m\+\_\+content\+\_\+len}}
+\index{m\+\_\+content\+\_\+len@{m\+\_\+content\+\_\+len}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+content\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Http\+Parser\+Wrapper\+::m\+\_\+content\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_a7ab1c37d20e5eedf553c60558ad17aa3}
+\hypertarget{class_c_http_parser_wrapper_a3d2da5b1a77dc205eda2197699a9fe7d}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+content\+\_\+type@{m\+\_\+content\+\_\+type}}
+\index{m\+\_\+content\+\_\+type@{m\+\_\+content\+\_\+type}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+content\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Http\+Parser\+Wrapper\+::m\+\_\+content\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_a3d2da5b1a77dc205eda2197699a9fe7d}
+\hypertarget{class_c_http_parser_wrapper_a73df97dd8aed05df746ac1c223753999}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+forward\+\_\+ip@{m\+\_\+forward\+\_\+ip}}
+\index{m\+\_\+forward\+\_\+ip@{m\+\_\+forward\+\_\+ip}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+forward\+\_\+ip}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Http\+Parser\+Wrapper\+::m\+\_\+forward\+\_\+ip\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_a73df97dd8aed05df746ac1c223753999}
+\hypertarget{class_c_http_parser_wrapper_a55169f989cfea22b564268a79ca6cd86}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+host@{m\+\_\+host}}
+\index{m\+\_\+host@{m\+\_\+host}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+host}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Http\+Parser\+Wrapper\+::m\+\_\+host\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_a55169f989cfea22b564268a79ca6cd86}
+\hypertarget{class_c_http_parser_wrapper_ad1f59698d3f8171a895c332f3ce3d4de}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+http\+\_\+parser@{m\+\_\+http\+\_\+parser}}
+\index{m\+\_\+http\+\_\+parser@{m\+\_\+http\+\_\+parser}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+http\+\_\+parser}]{\setlength{\rightskip}{0pt plus 5cm}{\bf http\+\_\+parser} C\+Http\+Parser\+Wrapper\+::m\+\_\+http\+\_\+parser\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_ad1f59698d3f8171a895c332f3ce3d4de}
+\hypertarget{class_c_http_parser_wrapper_abd584f1e3b85df65db935006ec03309f}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+instance@{m\+\_\+instance}}
+\index{m\+\_\+instance@{m\+\_\+instance}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Http\+Parser\+Wrapper} $\ast$ C\+Http\+Parser\+Wrapper\+::m\+\_\+instance = N\+U\+L\+L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_c_http_parser_wrapper_abd584f1e3b85df65db935006ec03309f}
+\hypertarget{class_c_http_parser_wrapper_a7e0c8bfd8cfa3e59b77480c2204548dd}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+read\+\_\+all@{m\+\_\+read\+\_\+all}}
+\index{m\+\_\+read\+\_\+all@{m\+\_\+read\+\_\+all}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+read\+\_\+all}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::m\+\_\+read\+\_\+all\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_a7e0c8bfd8cfa3e59b77480c2204548dd}
+\hypertarget{class_c_http_parser_wrapper_a90ac8c4d85f31c3c38fe5eb19cfb59af}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+read\+\_\+content\+\_\+len@{m\+\_\+read\+\_\+content\+\_\+len}}
+\index{m\+\_\+read\+\_\+content\+\_\+len@{m\+\_\+read\+\_\+content\+\_\+len}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+read\+\_\+content\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::m\+\_\+read\+\_\+content\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_a90ac8c4d85f31c3c38fe5eb19cfb59af}
+\hypertarget{class_c_http_parser_wrapper_abbb23d0903842b53d03362574c91da5d}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+read\+\_\+content\+\_\+type@{m\+\_\+read\+\_\+content\+\_\+type}}
+\index{m\+\_\+read\+\_\+content\+\_\+type@{m\+\_\+read\+\_\+content\+\_\+type}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+read\+\_\+content\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::m\+\_\+read\+\_\+content\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_abbb23d0903842b53d03362574c91da5d}
+\hypertarget{class_c_http_parser_wrapper_ac572e17c1571dc9f2e98ce0aeae66af2}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+read\+\_\+forward\+\_\+ip@{m\+\_\+read\+\_\+forward\+\_\+ip}}
+\index{m\+\_\+read\+\_\+forward\+\_\+ip@{m\+\_\+read\+\_\+forward\+\_\+ip}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+read\+\_\+forward\+\_\+ip}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::m\+\_\+read\+\_\+forward\+\_\+ip\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_ac572e17c1571dc9f2e98ce0aeae66af2}
+\hypertarget{class_c_http_parser_wrapper_aa8a18bebb4b514762954c85edf17d0d2}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+read\+\_\+host@{m\+\_\+read\+\_\+host}}
+\index{m\+\_\+read\+\_\+host@{m\+\_\+read\+\_\+host}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+read\+\_\+host}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::m\+\_\+read\+\_\+host\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_aa8a18bebb4b514762954c85edf17d0d2}
+\hypertarget{class_c_http_parser_wrapper_a7348de61f43161e9ee48becc0d3877e6}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+read\+\_\+referer@{m\+\_\+read\+\_\+referer}}
+\index{m\+\_\+read\+\_\+referer@{m\+\_\+read\+\_\+referer}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+read\+\_\+referer}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::m\+\_\+read\+\_\+referer\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_a7348de61f43161e9ee48becc0d3877e6}
+\hypertarget{class_c_http_parser_wrapper_ac96aecf14f9880e9aef1472deb111008}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+read\+\_\+user\+\_\+agent@{m\+\_\+read\+\_\+user\+\_\+agent}}
+\index{m\+\_\+read\+\_\+user\+\_\+agent@{m\+\_\+read\+\_\+user\+\_\+agent}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+read\+\_\+user\+\_\+agent}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Parser\+Wrapper\+::m\+\_\+read\+\_\+user\+\_\+agent\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_ac96aecf14f9880e9aef1472deb111008}
+\hypertarget{class_c_http_parser_wrapper_a51fda8acea14a968c7534686037116f0}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+referer@{m\+\_\+referer}}
+\index{m\+\_\+referer@{m\+\_\+referer}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+referer}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Http\+Parser\+Wrapper\+::m\+\_\+referer\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_a51fda8acea14a968c7534686037116f0}
+\hypertarget{class_c_http_parser_wrapper_a9fccb894a6c0dd9e663a5b515ecb3c29}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+settings@{m\+\_\+settings}}
+\index{m\+\_\+settings@{m\+\_\+settings}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+settings}]{\setlength{\rightskip}{0pt plus 5cm}{\bf http\+\_\+parser\+\_\+settings} C\+Http\+Parser\+Wrapper\+::m\+\_\+settings\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_a9fccb894a6c0dd9e663a5b515ecb3c29}
+\hypertarget{class_c_http_parser_wrapper_a0533f3ca12018fd75a42648cb76f7db9}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+total\+\_\+length@{m\+\_\+total\+\_\+length}}
+\index{m\+\_\+total\+\_\+length@{m\+\_\+total\+\_\+length}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+total\+\_\+length}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Http\+Parser\+Wrapper\+::m\+\_\+total\+\_\+length\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_a0533f3ca12018fd75a42648cb76f7db9}
+\hypertarget{class_c_http_parser_wrapper_a9f5239015aea78ed1d87d3f06d607f7a}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+url@{m\+\_\+url}}
+\index{m\+\_\+url@{m\+\_\+url}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+url}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Http\+Parser\+Wrapper\+::m\+\_\+url\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_a9f5239015aea78ed1d87d3f06d607f7a}
+\hypertarget{class_c_http_parser_wrapper_ab403f435670bec6cb88e8023c433d382}{}\index{C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}!m\+\_\+user\+\_\+agent@{m\+\_\+user\+\_\+agent}}
+\index{m\+\_\+user\+\_\+agent@{m\+\_\+user\+\_\+agent}!C\+Http\+Parser\+Wrapper@{C\+Http\+Parser\+Wrapper}}
+\subsubsection[{m\+\_\+user\+\_\+agent}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Http\+Parser\+Wrapper\+::m\+\_\+user\+\_\+agent\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_http_parser_wrapper_ab403f435670bec6cb88e8023c433d382}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/include/http/\hyperlink{msfs_2include_2http_2_http_parser_wrapper_8h}{Http\+Parser\+Wrapper.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/http/\hyperlink{msfs_2http_2_http_parser_wrapper_8cpp}{Http\+Parser\+Wrapper.\+cpp}\end{DoxyCompactItemize}

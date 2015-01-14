@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['callback_5fdata',['CALLBACK_DATA',['../_http_parser_8cpp.html#ac9ba0825311d1217085b8778d9db15ba',1,'CALLBACK_DATA():&#160;HttpParser.cpp'],['../http__parser_8c.html#ac9ba0825311d1217085b8778d9db15ba',1,'CALLBACK_DATA():&#160;http_parser.c']]],
+  ['callback_5fdata_5f',['CALLBACK_DATA_',['../_http_parser_8cpp.html#a8b1286a97c53328f38ddd44edadf3e41',1,'CALLBACK_DATA_():&#160;HttpParser.cpp'],['../http__parser_8c.html#a8b1286a97c53328f38ddd44edadf3e41',1,'CALLBACK_DATA_():&#160;http_parser.c']]],
+  ['callback_5fdata_5fnoadvance',['CALLBACK_DATA_NOADVANCE',['../_http_parser_8cpp.html#a0e64b3b96c722bc7b1f4a817b631fb23',1,'CALLBACK_DATA_NOADVANCE():&#160;HttpParser.cpp'],['../http__parser_8c.html#a0e64b3b96c722bc7b1f4a817b631fb23',1,'CALLBACK_DATA_NOADVANCE():&#160;http_parser.c']]],
+  ['callback_5fnotify',['CALLBACK_NOTIFY',['../_http_parser_8cpp.html#a3c9632a9d6bb3127511c39488a9c8988',1,'CALLBACK_NOTIFY():&#160;HttpParser.cpp'],['../http__parser_8c.html#a3c9632a9d6bb3127511c39488a9c8988',1,'CALLBACK_NOTIFY():&#160;http_parser.c']]],
+  ['callback_5fnotify_5f',['CALLBACK_NOTIFY_',['../_http_parser_8cpp.html#a113a1652ef40761708379bdca7621b22',1,'CALLBACK_NOTIFY_():&#160;HttpParser.cpp'],['../http__parser_8c.html#a113a1652ef40761708379bdca7621b22',1,'CALLBACK_NOTIFY_():&#160;http_parser.c']]],
+  ['callback_5fnotify_5fnoadvance',['CALLBACK_NOTIFY_NOADVANCE',['../_http_parser_8cpp.html#af6454f57e0dd52996e34e40d55cc5157',1,'CALLBACK_NOTIFY_NOADVANCE():&#160;HttpParser.cpp'],['../http__parser_8c.html#af6454f57e0dd52996e34e40d55cc5157',1,'CALLBACK_NOTIFY_NOADVANCE():&#160;http_parser.c']]],
+  ['check_5fclient_5ftype_5fmobile',['CHECK_CLIENT_TYPE_MOBILE',['../_im_pdu_base_8h.html#ad31cee518aba40227ef74fb0032ee472',1,'ImPduBase.h']]],
+  ['check_5fclient_5ftype_5fpc',['CHECK_CLIENT_TYPE_PC',['../_im_pdu_base_8h.html#a5262d01a006332ca12fe325dd804888a',1,'ImPduBase.h']]],
+  ['check_5fmsg_5ftype_5fgroup',['CHECK_MSG_TYPE_GROUP',['../_im_pdu_base_8h.html#a643e03f84f8b3d2e5d42aac785c1aa9e',1,'ImPduBase.h']]],
+  ['chunked',['CHUNKED',['../_http_parser_8cpp.html#a330b228059a71c76fa8b2070e824bcab',1,'CHUNKED():&#160;HttpParser.cpp'],['../http__parser_8c.html#a330b228059a71c76fa8b2070e824bcab',1,'CHUNKED():&#160;http_parser.c']]],
+  ['client_5fheartbeat_5finterval',['CLIENT_HEARTBEAT_INTERVAL',['../imconn_8h.html#a2e1c114f770640a86dbdae1160b0d52c',1,'imconn.h']]],
+  ['client_5ftimeout',['CLIENT_TIMEOUT',['../imconn_8h.html#acbb5358766b3fd26fcb09271b5f8b1e3',1,'imconn.h']]],
+  ['client_5ftype_5fflag_5fboth',['CLIENT_TYPE_FLAG_BOTH',['../_im_pdu_base_8h.html#a241801de82bea85113837bf451d21c6d',1,'ImPduBase.h']]],
+  ['client_5ftype_5fflag_5fmobile',['CLIENT_TYPE_FLAG_MOBILE',['../_im_pdu_base_8h.html#a51872696985aeb1525a2ae3d652a2e43',1,'ImPduBase.h']]],
+  ['client_5ftype_5fflag_5fnone',['CLIENT_TYPE_FLAG_NONE',['../_im_pdu_base_8h.html#a01ea97c3f835df5c9225e2b26af9cef6',1,'ImPduBase.h']]],
+  ['client_5ftype_5fflag_5fpc',['CLIENT_TYPE_FLAG_PC',['../_im_pdu_base_8h.html#afad237114f603670684c9e1e2a392286',1,'ImPduBase.h']]],
+  ['close',['CLOSE',['../_http_parser_8cpp.html#a0e29f488071372aa0530842e60b64511',1,'CLOSE():&#160;HttpParser.cpp'],['../http__parser_8c.html#a0e29f488071372aa0530842e60b64511',1,'CLOSE():&#160;http_parser.c']]],
+  ['closesocket',['closesocket',['../base_2ostype_8h.html#afdbb9d84bd17efd2ae7290e664992c48',1,'closesocket():&#160;ostype.h'],['../msfs_2include_2common_2ostype_8h.html#afdbb9d84bd17efd2ae7290e664992c48',1,'closesocket():&#160;ostype.h']]],
+  ['connection',['CONNECTION',['../_http_parser_8cpp.html#a624c91af530a96b476c8da486df55de9',1,'CONNECTION():&#160;HttpParser.cpp'],['../http__parser_8c.html#a624c91af530a96b476c8da486df55de9',1,'CONNECTION():&#160;http_parser.c']]],
+  ['content_5fdisposition',['CONTENT_DISPOSITION',['../msfs_2_http_conn_8h.html#a7dbacf63a58ed10d1ee7e1bea591d744',1,'HttpConn.h']]],
+  ['content_5flength',['CONTENT_LENGTH',['../_http_parser_8cpp.html#a750427eb640fda48be359218c08748e9',1,'CONTENT_LENGTH():&#160;HttpParser.cpp'],['../http__parser_8c.html#a750427eb640fda48be359218c08748e9',1,'CONTENT_LENGTH():&#160;http_parser.c']]],
+  ['content_5ftype',['CONTENT_TYPE',['../msfs_2_http_conn_8h.html#a5c988fd3cd44b01dbbecdf58dedd8016',1,'HttpConn.h']]],
+  ['cr',['CR',['../_http_parser_8cpp.html#a876ce77f3c672c7162658151e648389e',1,'CR():&#160;HttpParser.cpp'],['../http__parser_8c.html#a876ce77f3c672c7162658151e648389e',1,'CR():&#160;http_parser.c']]]
+];

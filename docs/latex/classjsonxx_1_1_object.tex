@@ -1,0 +1,500 @@
+\hypertarget{classjsonxx_1_1_object}{}\section{jsonxx\+:\+:Object Class Reference}
+\label{classjsonxx_1_1_object}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+
+
+{\ttfamily \#include $<$jsonxx.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, \hyperlink{classjsonxx_1_1_value}{Value} $\ast$ $>$ \hyperlink{classjsonxx_1_1_object_af02f54697643d924551867c0e959ee09}{container}
+\item 
+typedef std\+::map$<$ std\+::string, \hyperlink{classjsonxx_1_1_value}{Value} $\ast$ $>$ \hyperlink{classjsonxx_1_1_object_af02f54697643d924551867c0e959ee09}{container}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classjsonxx_1_1_object_ada73d1b6614d97372349c2dc81fcf1cb}{Object} ()
+\item 
+\hyperlink{classjsonxx_1_1_object_ae4cfde759f40c3c6d7b75a7b24e6b98a}{$\sim$\+Object} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classjsonxx_1_1_object_addbf3358df897753b4b5957b1d1296d0}{has} (const std\+::string \&key) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{http__parser_8c_ad24d0de3f597ca60dd95c4bc59c2ff73}{T} \& \hyperlink{classjsonxx_1_1_object_a15cfa259a8731a8d470b5679324f17ff}{get} (const std\+::string \&key)
+\item 
+{\footnotesize template$<$typename T $>$ }\\const \hyperlink{http__parser_8c_ad24d0de3f597ca60dd95c4bc59c2ff73}{T} \& \hyperlink{classjsonxx_1_1_object_a01913d98cbf89aa075a09dd56571b217}{get} (const std\+::string \&key) const 
+\item 
+size\+\_\+t \hyperlink{classjsonxx_1_1_object_a86962bd92e24121f2c94cf6406975a05}{size} () const 
+\item 
+bool \hyperlink{classjsonxx_1_1_object_aa6763556b7fb29a405fd489a13d67e2f}{empty} () const 
+\item 
+const std\+::map$<$ std\+::string, \hyperlink{classjsonxx_1_1_value}{Value} $\ast$ $>$ \& \hyperlink{classjsonxx_1_1_object_aec94c0de40e49993adeaf3a08502b514}{kv\+\_\+map} () const 
+\item 
+std\+::string \hyperlink{classjsonxx_1_1_object_a6af0b2df182bae783c22425c8ad01c83}{json} () const 
+\item 
+std\+::string \hyperlink{classjsonxx_1_1_object_a6bd2fbc3dc8a672645bf2545e89bc204}{xml} (unsigned format=\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455af38f9355cff13d4780a62c136d156160}{J\+S\+O\+Nx}, const std\+::string \&header=std\+::string(), const std\+::string \&attrib=std\+::string()) const 
+\item 
+std\+::string \hyperlink{classjsonxx_1_1_object_ad3737bea1e8eb0d6fcccb3a3541ea1d4}{write} (unsigned format) const 
+\item 
+void \hyperlink{classjsonxx_1_1_object_a3f7350672e4b24b869d0a0db804656b2}{reset} ()
+\item 
+bool \hyperlink{classjsonxx_1_1_object_a3e44c6d5d666260fe71e97554b7fd064}{parse} (std\+::istream \&input)
+\item 
+bool \hyperlink{classjsonxx_1_1_object_a47ea79b45b1835b48e4b476c1262e043}{parse} (const std\+::string \&input)
+\item 
+void \hyperlink{classjsonxx_1_1_object_a8edcd474c4d95435f140344e4315c532}{import} (const \hyperlink{classjsonxx_1_1_object}{Object} \&other)
+\item 
+void \hyperlink{classjsonxx_1_1_object_aeb845054d8332110e5eb220ba0da5b36}{import} (const std\+::string \&key, const \hyperlink{classjsonxx_1_1_value}{Value} \&value)
+\item 
+\hyperlink{classjsonxx_1_1_object}{Object} \& \hyperlink{classjsonxx_1_1_object_a8ff34caae5e5efc40ffb95edc1c1a2e7}{operator$<$$<$} (const \hyperlink{classjsonxx_1_1_value}{Value} \&value)
+\item 
+\hyperlink{classjsonxx_1_1_object}{Object} \& \hyperlink{classjsonxx_1_1_object_aa551f12db9c9f42ed67ea73fde5dc4e8}{operator$<$$<$} (const \hyperlink{classjsonxx_1_1_object}{Object} \&value)
+\item 
+\hyperlink{classjsonxx_1_1_object}{Object} \& \hyperlink{classjsonxx_1_1_object_aca850ab6e41e273bce140aa2398311de}{operator=} (const \hyperlink{classjsonxx_1_1_object}{Object} \&value)
+\item 
+\hyperlink{classjsonxx_1_1_object_ae0ccdde1acc4a57262304a2d2f6dcd3f}{Object} (const \hyperlink{classjsonxx_1_1_object}{Object} \&other)
+\item 
+\hyperlink{classjsonxx_1_1_object_adffab98b45e7b85a84634c2ddb50978c}{Object} (const std\+::string \&key, const \hyperlink{classjsonxx_1_1_value}{Value} \&value)
+\item 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\\hyperlink{classjsonxx_1_1_object_a31c9f8a65e7a8a6f7569edb7e626efc5}{Object} (const char(\&key)\mbox{[}N\mbox{]}, const \hyperlink{classjsonxx_1_1_value}{Value} \&value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classjsonxx_1_1_object}{Object} \& \hyperlink{classjsonxx_1_1_object_ac4974bfebe7a874a93963c7b791f7403}{operator$<$$<$} (const \hyperlink{http__parser_8c_ad24d0de3f597ca60dd95c4bc59c2ff73}{T} \&value)
+\item 
+\hyperlink{classjsonxx_1_1_object_ada73d1b6614d97372349c2dc81fcf1cb}{Object} ()
+\item 
+\hyperlink{classjsonxx_1_1_object_ae4cfde759f40c3c6d7b75a7b24e6b98a}{$\sim$\+Object} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classjsonxx_1_1_object_addbf3358df897753b4b5957b1d1296d0}{has} (const std\+::string \&key) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{http__parser_8c_ad24d0de3f597ca60dd95c4bc59c2ff73}{T} \& \hyperlink{classjsonxx_1_1_object_a7d2e8ae9c1dc2912cc38e014665f05d4}{get} (const std\+::string \&key)
+\item 
+{\footnotesize template$<$typename T $>$ }\\const \hyperlink{http__parser_8c_ad24d0de3f597ca60dd95c4bc59c2ff73}{T} \& \hyperlink{classjsonxx_1_1_object_a226eb9bb87f7551c715e73b55a2941f0}{get} (const std\+::string \&key) const 
+\item 
+size\+\_\+t \hyperlink{classjsonxx_1_1_object_a86962bd92e24121f2c94cf6406975a05}{size} () const 
+\item 
+bool \hyperlink{classjsonxx_1_1_object_aa6763556b7fb29a405fd489a13d67e2f}{empty} () const 
+\item 
+const std\+::map$<$ std\+::string, \hyperlink{classjsonxx_1_1_value}{Value} $\ast$ $>$ \& \hyperlink{classjsonxx_1_1_object_a8a84b6684c7cbf72dc8f2ceb5151f1f0}{kv\+\_\+map} () const 
+\item 
+std\+::string \hyperlink{classjsonxx_1_1_object_a6af0b2df182bae783c22425c8ad01c83}{json} () const 
+\item 
+std\+::string \hyperlink{classjsonxx_1_1_object_a6bd2fbc3dc8a672645bf2545e89bc204}{xml} (unsigned format=\hyperlink{namespacejsonxx_a1dc6d8d59422ab47976163f874939455af38f9355cff13d4780a62c136d156160}{J\+S\+O\+Nx}, const std\+::string \&header=std\+::string(), const std\+::string \&attrib=std\+::string()) const 
+\item 
+std\+::string \hyperlink{classjsonxx_1_1_object_ad3737bea1e8eb0d6fcccb3a3541ea1d4}{write} (unsigned format) const 
+\item 
+void \hyperlink{classjsonxx_1_1_object_a3f7350672e4b24b869d0a0db804656b2}{reset} ()
+\item 
+bool \hyperlink{classjsonxx_1_1_object_a3e44c6d5d666260fe71e97554b7fd064}{parse} (std\+::istream \&input)
+\item 
+bool \hyperlink{classjsonxx_1_1_object_a47ea79b45b1835b48e4b476c1262e043}{parse} (const std\+::string \&input)
+\item 
+void \hyperlink{classjsonxx_1_1_object_a8edcd474c4d95435f140344e4315c532}{import} (const \hyperlink{classjsonxx_1_1_object}{Object} \&other)
+\item 
+void \hyperlink{classjsonxx_1_1_object_aeb845054d8332110e5eb220ba0da5b36}{import} (const std\+::string \&key, const \hyperlink{classjsonxx_1_1_value}{Value} \&value)
+\item 
+\hyperlink{classjsonxx_1_1_object}{Object} \& \hyperlink{classjsonxx_1_1_object_a7e543a99c644a2071e18fd4248d00f89}{operator$<$$<$} (const \hyperlink{classjsonxx_1_1_value}{Value} \&value)
+\item 
+\hyperlink{classjsonxx_1_1_object}{Object} \& \hyperlink{classjsonxx_1_1_object_a6627f50e8c19495cd9d024f1e99289ee}{operator$<$$<$} (const \hyperlink{classjsonxx_1_1_object}{Object} \&value)
+\item 
+\hyperlink{classjsonxx_1_1_object}{Object} \& \hyperlink{classjsonxx_1_1_object_a08589383b82f320c4a0daf46b3fe1a03}{operator=} (const \hyperlink{classjsonxx_1_1_object}{Object} \&value)
+\item 
+\hyperlink{classjsonxx_1_1_object_ae0ccdde1acc4a57262304a2d2f6dcd3f}{Object} (const \hyperlink{classjsonxx_1_1_object}{Object} \&other)
+\item 
+\hyperlink{classjsonxx_1_1_object_adffab98b45e7b85a84634c2ddb50978c}{Object} (const std\+::string \&key, const \hyperlink{classjsonxx_1_1_value}{Value} \&value)
+\item 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\\hyperlink{classjsonxx_1_1_object_a31c9f8a65e7a8a6f7569edb7e626efc5}{Object} (const char(\&key)\mbox{[}N\mbox{]}, const \hyperlink{classjsonxx_1_1_value}{Value} \&value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classjsonxx_1_1_object}{Object} \& \hyperlink{classjsonxx_1_1_object_ac3f753909eae006a9cafa7655c397a26}{operator$<$$<$} (const \hyperlink{http__parser_8c_ad24d0de3f597ca60dd95c4bc59c2ff73}{T} \&value)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classjsonxx_1_1_object_aee66a6d70a66687907ca26df9130b465}{parse} (std\+::istream \&input, \hyperlink{classjsonxx_1_1_object}{Object} \&object)
+\item 
+static bool \hyperlink{classjsonxx_1_1_object_a0a013471a157812acfc5c6a39782319b}{parse} (std\+::istream \&input, \hyperlink{classjsonxx_1_1_object}{Object} \&object)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classjsonxx_1_1_object_af02f54697643d924551867c0e959ee09}{container} \hyperlink{classjsonxx_1_1_object_a62b42bf6c5e7ac37f5c0311c737cc66b}{value\+\_\+map\+\_\+}
+\item 
+std\+::string \hyperlink{classjsonxx_1_1_object_afd8fcb788db78b318d3a90d18c353b2c}{odd}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classjsonxx_1_1_object_af02f54697643d924551867c0e959ee09}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!container@{container}}
+\index{container@{container}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{container}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Value}$\ast$$>$ {\bf jsonxx\+::\+Object\+::container}}\label{classjsonxx_1_1_object_af02f54697643d924551867c0e959ee09}
+\hypertarget{classjsonxx_1_1_object_af02f54697643d924551867c0e959ee09}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!container@{container}}
+\index{container@{container}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{container}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::map$<$std\+::string, {\bf Value}$\ast$$>$ {\bf jsonxx\+::\+Object\+::container}}\label{classjsonxx_1_1_object_af02f54697643d924551867c0e959ee09}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjsonxx_1_1_object_ada73d1b6614d97372349c2dc81fcf1cb}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!Object@{Object}}
+\index{Object@{Object}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}jsonxx\+::\+Object\+::\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_ada73d1b6614d97372349c2dc81fcf1cb}
+\hypertarget{classjsonxx_1_1_object_ae4cfde759f40c3c6d7b75a7b24e6b98a}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!````~Object@{$\sim$\+Object}}
+\index{````~Object@{$\sim$\+Object}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{$\sim$\+Object}]{\setlength{\rightskip}{0pt plus 5cm}jsonxx\+::\+Object\+::$\sim$\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_ae4cfde759f40c3c6d7b75a7b24e6b98a}
+\hypertarget{classjsonxx_1_1_object_ae0ccdde1acc4a57262304a2d2f6dcd3f}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!Object@{Object}}
+\index{Object@{Object}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}jsonxx\+::\+Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_ae0ccdde1acc4a57262304a2d2f6dcd3f}
+\hypertarget{classjsonxx_1_1_object_adffab98b45e7b85a84634c2ddb50978c}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!Object@{Object}}
+\index{Object@{Object}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}jsonxx\+::\+Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key, }
+\item[{const {\bf Value} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_adffab98b45e7b85a84634c2ddb50978c}
+\hypertarget{classjsonxx_1_1_object_a31c9f8a65e7a8a6f7569edb7e626efc5}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!Object@{Object}}
+\index{Object@{Object}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N$>$ jsonxx\+::\+Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{const char(\&)}]{key\mbox{[}\+N\mbox{]}, }
+\item[{const {\bf Value} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classjsonxx_1_1_object_a31c9f8a65e7a8a6f7569edb7e626efc5}
+\hypertarget{classjsonxx_1_1_object_ada73d1b6614d97372349c2dc81fcf1cb}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!Object@{Object}}
+\index{Object@{Object}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}jsonxx\+::\+Object\+::\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_ada73d1b6614d97372349c2dc81fcf1cb}
+\hypertarget{classjsonxx_1_1_object_ae4cfde759f40c3c6d7b75a7b24e6b98a}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!````~Object@{$\sim$\+Object}}
+\index{````~Object@{$\sim$\+Object}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{$\sim$\+Object}]{\setlength{\rightskip}{0pt plus 5cm}jsonxx\+::\+Object\+::$\sim$\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_ae4cfde759f40c3c6d7b75a7b24e6b98a}
+\hypertarget{classjsonxx_1_1_object_ae0ccdde1acc4a57262304a2d2f6dcd3f}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!Object@{Object}}
+\index{Object@{Object}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}jsonxx\+::\+Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_ae0ccdde1acc4a57262304a2d2f6dcd3f}
+\hypertarget{classjsonxx_1_1_object_adffab98b45e7b85a84634c2ddb50978c}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!Object@{Object}}
+\index{Object@{Object}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}jsonxx\+::\+Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key, }
+\item[{const {\bf Value} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_adffab98b45e7b85a84634c2ddb50978c}
+\hypertarget{classjsonxx_1_1_object_a31c9f8a65e7a8a6f7569edb7e626efc5}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!Object@{Object}}
+\index{Object@{Object}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}template$<$size\+\_\+t N$>$ jsonxx\+::\+Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{const char(\&)}]{key\mbox{[}\+N\mbox{]}, }
+\item[{const {\bf Value} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classjsonxx_1_1_object_a31c9f8a65e7a8a6f7569edb7e626efc5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjsonxx_1_1_object_aa6763556b7fb29a405fd489a13d67e2f}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!empty@{empty}}
+\index{empty@{empty}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::\+Object\+::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_aa6763556b7fb29a405fd489a13d67e2f}
+\hypertarget{classjsonxx_1_1_object_aa6763556b7fb29a405fd489a13d67e2f}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!empty@{empty}}
+\index{empty@{empty}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::\+Object\+::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_aa6763556b7fb29a405fd489a13d67e2f}
+\hypertarget{classjsonxx_1_1_object_a15cfa259a8731a8d470b5679324f17ff}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!get@{get}}
+\index{get@{get}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf T} \& jsonxx\+::\+Object\+::get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_a15cfa259a8731a8d470b5679324f17ff}
+\hypertarget{classjsonxx_1_1_object_a7d2e8ae9c1dc2912cc38e014665f05d4}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!get@{get}}
+\index{get@{get}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf T}\& jsonxx\+::\+Object\+::get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_a7d2e8ae9c1dc2912cc38e014665f05d4}
+\hypertarget{classjsonxx_1_1_object_a226eb9bb87f7551c715e73b55a2941f0}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!get@{get}}
+\index{get@{get}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const {\bf T}\& jsonxx\+::\+Object\+::get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_a226eb9bb87f7551c715e73b55a2941f0}
+\hypertarget{classjsonxx_1_1_object_a01913d98cbf89aa075a09dd56571b217}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!get@{get}}
+\index{get@{get}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const {\bf T} \& jsonxx\+::\+Object\+::get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_a01913d98cbf89aa075a09dd56571b217}
+\hypertarget{classjsonxx_1_1_object_addbf3358df897753b4b5957b1d1296d0}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!has@{has}}
+\index{has@{has}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{has}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool jsonxx\+::\+Object\+::has (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_addbf3358df897753b4b5957b1d1296d0}
+\hypertarget{classjsonxx_1_1_object_addbf3358df897753b4b5957b1d1296d0}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!has@{has}}
+\index{has@{has}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{has}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool jsonxx\+::\+Object\+::has (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_addbf3358df897753b4b5957b1d1296d0}
+\hypertarget{classjsonxx_1_1_object_a8edcd474c4d95435f140344e4315c532}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!import@{import}}
+\index{import@{import}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{import}]{\setlength{\rightskip}{0pt plus 5cm}void jsonxx\+::\+Object\+::import (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_a8edcd474c4d95435f140344e4315c532}
+\hypertarget{classjsonxx_1_1_object_a8edcd474c4d95435f140344e4315c532}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!import@{import}}
+\index{import@{import}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{import}]{\setlength{\rightskip}{0pt plus 5cm}void jsonxx\+::\+Object\+::import (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object} \&}]{other}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_a8edcd474c4d95435f140344e4315c532}
+\hypertarget{classjsonxx_1_1_object_aeb845054d8332110e5eb220ba0da5b36}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!import@{import}}
+\index{import@{import}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{import}]{\setlength{\rightskip}{0pt plus 5cm}void jsonxx\+::\+Object\+::import (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key, }
+\item[{const {\bf Value} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_aeb845054d8332110e5eb220ba0da5b36}
+\hypertarget{classjsonxx_1_1_object_aeb845054d8332110e5eb220ba0da5b36}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!import@{import}}
+\index{import@{import}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{import}]{\setlength{\rightskip}{0pt plus 5cm}void jsonxx\+::\+Object\+::import (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key, }
+\item[{const {\bf Value} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_aeb845054d8332110e5eb220ba0da5b36}
+\hypertarget{classjsonxx_1_1_object_a6af0b2df182bae783c22425c8ad01c83}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!json@{json}}
+\index{json@{json}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{json}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string jsonxx\+::\+Object\+::json (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_a6af0b2df182bae783c22425c8ad01c83}
+\hypertarget{classjsonxx_1_1_object_a6af0b2df182bae783c22425c8ad01c83}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!json@{json}}
+\index{json@{json}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{json}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string jsonxx\+::\+Object\+::json (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_a6af0b2df182bae783c22425c8ad01c83}
+\hypertarget{classjsonxx_1_1_object_a8a84b6684c7cbf72dc8f2ceb5151f1f0}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!kv\+\_\+map@{kv\+\_\+map}}
+\index{kv\+\_\+map@{kv\+\_\+map}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{kv\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::map$<$std\+::string, {\bf Value}$\ast$$>$\& jsonxx\+::\+Object\+::kv\+\_\+map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_a8a84b6684c7cbf72dc8f2ceb5151f1f0}
+\hypertarget{classjsonxx_1_1_object_aec94c0de40e49993adeaf3a08502b514}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!kv\+\_\+map@{kv\+\_\+map}}
+\index{kv\+\_\+map@{kv\+\_\+map}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{kv\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::map$<$ std\+::string, {\bf Value} $\ast$ $>$ \& jsonxx\+::\+Object\+::kv\+\_\+map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_aec94c0de40e49993adeaf3a08502b514}
+\hypertarget{classjsonxx_1_1_object_a7e543a99c644a2071e18fd4248d00f89}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object}\& jsonxx\+::\+Object\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Value} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_a7e543a99c644a2071e18fd4248d00f89}
+\hypertarget{classjsonxx_1_1_object_a8ff34caae5e5efc40ffb95edc1c1a2e7}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object} \& jsonxx\+::\+Object\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Value} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_a8ff34caae5e5efc40ffb95edc1c1a2e7}
+\hypertarget{classjsonxx_1_1_object_aa551f12db9c9f42ed67ea73fde5dc4e8}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object} \& jsonxx\+::\+Object\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_aa551f12db9c9f42ed67ea73fde5dc4e8}
+\hypertarget{classjsonxx_1_1_object_a6627f50e8c19495cd9d024f1e99289ee}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object}\& jsonxx\+::\+Object\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_a6627f50e8c19495cd9d024f1e99289ee}
+\hypertarget{classjsonxx_1_1_object_ac4974bfebe7a874a93963c7b791f7403}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Object} \& jsonxx\+::\+Object\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf T} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classjsonxx_1_1_object_ac4974bfebe7a874a93963c7b791f7403}
+\hypertarget{classjsonxx_1_1_object_ac3f753909eae006a9cafa7655c397a26}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Object}\& jsonxx\+::\+Object\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf T} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_ac3f753909eae006a9cafa7655c397a26}
+\hypertarget{classjsonxx_1_1_object_aca850ab6e41e273bce140aa2398311de}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!operator=@{operator=}}
+\index{operator=@{operator=}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object} \& jsonxx\+::\+Object\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_aca850ab6e41e273bce140aa2398311de}
+\hypertarget{classjsonxx_1_1_object_a08589383b82f320c4a0daf46b3fe1a03}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!operator=@{operator=}}
+\index{operator=@{operator=}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object}\& jsonxx\+::\+Object\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object} \&}]{value}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_a08589383b82f320c4a0daf46b3fe1a03}
+\hypertarget{classjsonxx_1_1_object_a3e44c6d5d666260fe71e97554b7fd064}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!parse@{parse}}
+\index{parse@{parse}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::\+Object\+::parse (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_a3e44c6d5d666260fe71e97554b7fd064}
+\hypertarget{classjsonxx_1_1_object_a3e44c6d5d666260fe71e97554b7fd064}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!parse@{parse}}
+\index{parse@{parse}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::\+Object\+::parse (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_a3e44c6d5d666260fe71e97554b7fd064}
+\hypertarget{classjsonxx_1_1_object_a47ea79b45b1835b48e4b476c1262e043}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!parse@{parse}}
+\index{parse@{parse}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::\+Object\+::parse (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{input}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_a47ea79b45b1835b48e4b476c1262e043}
+\hypertarget{classjsonxx_1_1_object_a47ea79b45b1835b48e4b476c1262e043}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!parse@{parse}}
+\index{parse@{parse}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::\+Object\+::parse (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{input}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_a47ea79b45b1835b48e4b476c1262e043}
+\hypertarget{classjsonxx_1_1_object_aee66a6d70a66687907ca26df9130b465}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!parse@{parse}}
+\index{parse@{parse}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}bool jsonxx\+::\+Object\+::parse (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input, }
+\item[{{\bf Object} \&}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classjsonxx_1_1_object_aee66a6d70a66687907ca26df9130b465}
+\hypertarget{classjsonxx_1_1_object_a0a013471a157812acfc5c6a39782319b}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!parse@{parse}}
+\index{parse@{parse}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}static bool jsonxx\+::\+Object\+::parse (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{input, }
+\item[{{\bf Object} \&}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classjsonxx_1_1_object_a0a013471a157812acfc5c6a39782319b}
+\hypertarget{classjsonxx_1_1_object_a3f7350672e4b24b869d0a0db804656b2}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!reset@{reset}}
+\index{reset@{reset}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void jsonxx\+::\+Object\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_a3f7350672e4b24b869d0a0db804656b2}
+\hypertarget{classjsonxx_1_1_object_a3f7350672e4b24b869d0a0db804656b2}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!reset@{reset}}
+\index{reset@{reset}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void jsonxx\+::\+Object\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classjsonxx_1_1_object_a3f7350672e4b24b869d0a0db804656b2}
+\hypertarget{classjsonxx_1_1_object_a86962bd92e24121f2c94cf6406975a05}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!size@{size}}
+\index{size@{size}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t jsonxx\+::\+Object\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_a86962bd92e24121f2c94cf6406975a05}
+\hypertarget{classjsonxx_1_1_object_a86962bd92e24121f2c94cf6406975a05}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!size@{size}}
+\index{size@{size}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t jsonxx\+::\+Object\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_a86962bd92e24121f2c94cf6406975a05}
+\hypertarget{classjsonxx_1_1_object_ad3737bea1e8eb0d6fcccb3a3541ea1d4}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!write@{write}}
+\index{write@{write}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string jsonxx\+::\+Object\+::write (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{format}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_ad3737bea1e8eb0d6fcccb3a3541ea1d4}
+\hypertarget{classjsonxx_1_1_object_ad3737bea1e8eb0d6fcccb3a3541ea1d4}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!write@{write}}
+\index{write@{write}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string jsonxx\+::\+Object\+::write (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{format}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_ad3737bea1e8eb0d6fcccb3a3541ea1d4}
+\hypertarget{classjsonxx_1_1_object_a6bd2fbc3dc8a672645bf2545e89bc204}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!xml@{xml}}
+\index{xml@{xml}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{xml}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string jsonxx\+::\+Object\+::xml (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{format = {\ttfamily {\bf J\+S\+O\+Nx}}, }
+\item[{const std\+::string \&}]{header = {\ttfamily std\+:\+:string()}, }
+\item[{const std\+::string \&}]{attrib = {\ttfamily std\+:\+:string()}}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_a6bd2fbc3dc8a672645bf2545e89bc204}
+\hypertarget{classjsonxx_1_1_object_a6bd2fbc3dc8a672645bf2545e89bc204}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!xml@{xml}}
+\index{xml@{xml}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{xml}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string jsonxx\+::\+Object\+::xml (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{format = {\ttfamily {\bf J\+S\+O\+Nx}}, }
+\item[{const std\+::string \&}]{header = {\ttfamily std\+:\+:string()}, }
+\item[{const std\+::string \&}]{attrib = {\ttfamily std\+:\+:string()}}
+\end{DoxyParamCaption}
+) const}\label{classjsonxx_1_1_object_a6bd2fbc3dc8a672645bf2545e89bc204}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjsonxx_1_1_object_afd8fcb788db78b318d3a90d18c353b2c}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!odd@{odd}}
+\index{odd@{odd}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{odd}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string jsonxx\+::\+Object\+::odd\hspace{0.3cm}{\ttfamily [protected]}}\label{classjsonxx_1_1_object_afd8fcb788db78b318d3a90d18c353b2c}
+\hypertarget{classjsonxx_1_1_object_a62b42bf6c5e7ac37f5c0311c737cc66b}{}\index{jsonxx\+::\+Object@{jsonxx\+::\+Object}!value\+\_\+map\+\_\+@{value\+\_\+map\+\_\+}}
+\index{value\+\_\+map\+\_\+@{value\+\_\+map\+\_\+}!jsonxx\+::\+Object@{jsonxx\+::\+Object}}
+\subsubsection[{value\+\_\+map\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf container} jsonxx\+::\+Object\+::value\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\label{classjsonxx_1_1_object_a62b42bf6c5e7ac37f5c0311c737cc66b}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/include/common/\hyperlink{msfs_2include_2common_2jsonxx_8h}{jsonxx.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/common/\hyperlink{msfs_2common_2jsonxx_8cpp}{jsonxx.\+cpp}\end{DoxyCompactItemize}

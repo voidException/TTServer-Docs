@@ -1,0 +1,86 @@
+\hypertarget{msg__server_2_http_conn_8h}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+Http\+Conn.h File Reference}
+\label{msg__server_2_http_conn_8h}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+Http\+Conn.\+h@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+Http\+Conn.\+h}}
+{\ttfamily \#include \char`\"{}netlib.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_http_conn}{C\+Http\+Conn}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{msg__server_2_http_conn_8h_aada9ed9ef0c00b4665564104a37be97b}{H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T}~60000
+\item 
+\#define \hyperlink{msg__server_2_http_conn_8h_a4245ea3fba0358165b402a7a615419bb}{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}~2048
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef hash\+\_\+map$<$ uint32\+\_\+t, \hyperlink{class_c_http_conn}{C\+Http\+Conn} $\ast$ $>$ \hyperlink{msg__server_2_http_conn_8h_a0eda7ca5c4fec5d93f00f76c977fa349}{Http\+Conn\+Map\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{msg__server_2_http_conn_8h_a16685eea158879e41b101ca3634de462a6307465d1ec3517c8ff03d8de9f690cd}{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+L\+E}, 
+\hyperlink{msg__server_2_http_conn_8h_a16685eea158879e41b101ca3634de462a082028666c4d63346c5c50b844d32c46}{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D}, 
+\hyperlink{msg__server_2_http_conn_8h_a16685eea158879e41b101ca3634de462a80e13dc8a9783959bed85f5be1f3f406}{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+N}, 
+\hyperlink{msg__server_2_http_conn_8h_a16685eea158879e41b101ca3634de462a789a51a79c10caae10604554eb601e74}{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+E\+D}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_http_conn}{C\+Http\+Conn} $\ast$ \hyperlink{msg__server_2_http_conn_8h_a51dafa2a11b28fe48dc9928ac0b548c9}{Find\+Http\+Conn\+By\+Handle} (uint32\+\_\+t handle)
+\item 
+void \hyperlink{msg__server_2_http_conn_8h_aed77736e4f9f6d48ebe6e69483df2ed9}{init\+\_\+http\+\_\+conn} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{msg__server_2_http_conn_8h_aada9ed9ef0c00b4665564104a37be97b}{}\index{msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}!H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T@{H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T}}
+\index{H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T@{H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T}!msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}}
+\subsubsection[{H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+T\+T\+P\+\_\+\+C\+O\+N\+N\+\_\+\+T\+I\+M\+E\+O\+U\+T~60000}\label{msg__server_2_http_conn_8h_aada9ed9ef0c00b4665564104a37be97b}
+\hypertarget{msg__server_2_http_conn_8h_a4245ea3fba0358165b402a7a615419bb}{}\index{msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}!R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E@{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}}
+\index{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E@{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}!msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}}
+\subsubsection[{R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+A\+D\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E~2048}\label{msg__server_2_http_conn_8h_a4245ea3fba0358165b402a7a615419bb}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{msg__server_2_http_conn_8h_a0eda7ca5c4fec5d93f00f76c977fa349}{}\index{msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}!Http\+Conn\+Map\+\_\+t@{Http\+Conn\+Map\+\_\+t}}
+\index{Http\+Conn\+Map\+\_\+t@{Http\+Conn\+Map\+\_\+t}!msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}}
+\subsubsection[{Http\+Conn\+Map\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef hash\+\_\+map$<$uint32\+\_\+t, {\bf C\+Http\+Conn}$\ast$$>$ {\bf Http\+Conn\+Map\+\_\+t}}\label{msg__server_2_http_conn_8h_a0eda7ca5c4fec5d93f00f76c977fa349}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{msg__server_2_http_conn_8h_a16685eea158879e41b101ca3634de462}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\label{msg__server_2_http_conn_8h_a16685eea158879e41b101ca3634de462}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+L\+E@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+L\+E}!msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}}\index{msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}!C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+L\+E@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+L\+E}}\item[{\em 
+\hypertarget{msg__server_2_http_conn_8h_a16685eea158879e41b101ca3634de462a6307465d1ec3517c8ff03d8de9f690cd}{}C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+L\+E\label{msg__server_2_http_conn_8h_a16685eea158879e41b101ca3634de462a6307465d1ec3517c8ff03d8de9f690cd}
+}]\index{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D}!msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}}\index{msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}!C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D}}\item[{\em 
+\hypertarget{msg__server_2_http_conn_8h_a16685eea158879e41b101ca3634de462a082028666c4d63346c5c50b844d32c46}{}C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+E\+D\label{msg__server_2_http_conn_8h_a16685eea158879e41b101ca3634de462a082028666c4d63346c5c50b844d32c46}
+}]\index{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+N@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+N}!msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}}\index{msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}!C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+N@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+N}}\item[{\em 
+\hypertarget{msg__server_2_http_conn_8h_a16685eea158879e41b101ca3634de462a80e13dc8a9783959bed85f5be1f3f406}{}C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+P\+E\+N\label{msg__server_2_http_conn_8h_a16685eea158879e41b101ca3634de462a80e13dc8a9783959bed85f5be1f3f406}
+}]\index{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+E\+D@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+E\+D}!msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}}\index{msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}!C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+E\+D@{C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+E\+D}}\item[{\em 
+\hypertarget{msg__server_2_http_conn_8h_a16685eea158879e41b101ca3634de462a789a51a79c10caae10604554eb601e74}{}C\+O\+N\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+L\+O\+S\+E\+D\label{msg__server_2_http_conn_8h_a16685eea158879e41b101ca3634de462a789a51a79c10caae10604554eb601e74}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{msg__server_2_http_conn_8h_a51dafa2a11b28fe48dc9928ac0b548c9}{}\index{msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}!Find\+Http\+Conn\+By\+Handle@{Find\+Http\+Conn\+By\+Handle}}
+\index{Find\+Http\+Conn\+By\+Handle@{Find\+Http\+Conn\+By\+Handle}!msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}}
+\subsubsection[{Find\+Http\+Conn\+By\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Http\+Conn}$\ast$ Find\+Http\+Conn\+By\+Handle (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{handle}
+\end{DoxyParamCaption}
+)}\label{msg__server_2_http_conn_8h_a51dafa2a11b28fe48dc9928ac0b548c9}
+\hypertarget{msg__server_2_http_conn_8h_aed77736e4f9f6d48ebe6e69483df2ed9}{}\index{msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}!init\+\_\+http\+\_\+conn@{init\+\_\+http\+\_\+conn}}
+\index{init\+\_\+http\+\_\+conn@{init\+\_\+http\+\_\+conn}!msg\+\_\+server/\+Http\+Conn.\+h@{msg\+\_\+server/\+Http\+Conn.\+h}}
+\subsubsection[{init\+\_\+http\+\_\+conn}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+http\+\_\+conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{msg__server_2_http_conn_8h_aed77736e4f9f6d48ebe6e69483df2ed9}

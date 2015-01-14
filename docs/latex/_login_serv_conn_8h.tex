@@ -1,0 +1,47 @@
+\hypertarget{_login_serv_conn_8h}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+Login\+Serv\+Conn.h File Reference}
+\label{_login_serv_conn_8h}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+Login\+Serv\+Conn.\+h@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\+Login\+Serv\+Conn.\+h}}
+{\ttfamily \#include \char`\"{}imconn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Serv\+Info.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_login_serv_conn}{C\+Login\+Serv\+Conn}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_login_serv_conn_8h_a6d2e6b523147368775c5fbee79095ea7}{init\+\_\+login\+\_\+serv\+\_\+conn} (\hyperlink{structserv__info__t}{serv\+\_\+info\+\_\+t} $\ast$server\+\_\+list, uint32\+\_\+t server\+\_\+count, const char $\ast$msg\+\_\+server\+\_\+ip\+\_\+addr1, const char $\ast$msg\+\_\+server\+\_\+ip\+\_\+addr2, uint16\+\_\+t msg\+\_\+server\+\_\+port, uint32\+\_\+t max\+\_\+conn\+\_\+cnt)
+\item 
+bool \hyperlink{_login_serv_conn_8h_ae180ee6bb068b1ee3ae807392690f338}{is\+\_\+login\+\_\+server\+\_\+available} ()
+\item 
+void \hyperlink{_login_serv_conn_8h_a5e39f0ec53aba972fff29d33a11bc62d}{send\+\_\+to\+\_\+all\+\_\+login\+\_\+server} (\hyperlink{class_c_im_pdu}{C\+Im\+Pdu} $\ast$p\+Pdu)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_login_serv_conn_8h_a6d2e6b523147368775c5fbee79095ea7}{}\index{Login\+Serv\+Conn.\+h@{Login\+Serv\+Conn.\+h}!init\+\_\+login\+\_\+serv\+\_\+conn@{init\+\_\+login\+\_\+serv\+\_\+conn}}
+\index{init\+\_\+login\+\_\+serv\+\_\+conn@{init\+\_\+login\+\_\+serv\+\_\+conn}!Login\+Serv\+Conn.\+h@{Login\+Serv\+Conn.\+h}}
+\subsubsection[{init\+\_\+login\+\_\+serv\+\_\+conn}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+login\+\_\+serv\+\_\+conn (
+\begin{DoxyParamCaption}
+\item[{{\bf serv\+\_\+info\+\_\+t} $\ast$}]{server\+\_\+list, }
+\item[{uint32\+\_\+t}]{server\+\_\+count, }
+\item[{const char $\ast$}]{msg\+\_\+server\+\_\+ip\+\_\+addr1, }
+\item[{const char $\ast$}]{msg\+\_\+server\+\_\+ip\+\_\+addr2, }
+\item[{uint16\+\_\+t}]{msg\+\_\+server\+\_\+port, }
+\item[{uint32\+\_\+t}]{max\+\_\+conn\+\_\+cnt}
+\end{DoxyParamCaption}
+)}\label{_login_serv_conn_8h_a6d2e6b523147368775c5fbee79095ea7}
+\hypertarget{_login_serv_conn_8h_ae180ee6bb068b1ee3ae807392690f338}{}\index{Login\+Serv\+Conn.\+h@{Login\+Serv\+Conn.\+h}!is\+\_\+login\+\_\+server\+\_\+available@{is\+\_\+login\+\_\+server\+\_\+available}}
+\index{is\+\_\+login\+\_\+server\+\_\+available@{is\+\_\+login\+\_\+server\+\_\+available}!Login\+Serv\+Conn.\+h@{Login\+Serv\+Conn.\+h}}
+\subsubsection[{is\+\_\+login\+\_\+server\+\_\+available}]{\setlength{\rightskip}{0pt plus 5cm}bool is\+\_\+login\+\_\+server\+\_\+available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_login_serv_conn_8h_ae180ee6bb068b1ee3ae807392690f338}
+\hypertarget{_login_serv_conn_8h_a5e39f0ec53aba972fff29d33a11bc62d}{}\index{Login\+Serv\+Conn.\+h@{Login\+Serv\+Conn.\+h}!send\+\_\+to\+\_\+all\+\_\+login\+\_\+server@{send\+\_\+to\+\_\+all\+\_\+login\+\_\+server}}
+\index{send\+\_\+to\+\_\+all\+\_\+login\+\_\+server@{send\+\_\+to\+\_\+all\+\_\+login\+\_\+server}!Login\+Serv\+Conn.\+h@{Login\+Serv\+Conn.\+h}}
+\subsubsection[{send\+\_\+to\+\_\+all\+\_\+login\+\_\+server}]{\setlength{\rightskip}{0pt plus 5cm}void send\+\_\+to\+\_\+all\+\_\+login\+\_\+server (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Im\+Pdu} $\ast$}]{p\+Pdu}
+\end{DoxyParamCaption}
+)}\label{_login_serv_conn_8h_a5e39f0ec53aba972fff29d33a11bc62d}

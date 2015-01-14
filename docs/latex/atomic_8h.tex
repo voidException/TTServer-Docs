@@ -1,0 +1,68 @@
+\hypertarget{atomic_8h}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/include/common/atomic.h File Reference}
+\label{atomic_8h}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/include/common/atomic.\+h@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/include/common/atomic.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{atomic_8h_ae870573c25a8d5e67109b97e3a3bab2d}{A\+T\+O\+M\+I\+C\+\_\+\+A\+D\+D}(src\+\_\+ptr,  v)~(void)\+\_\+\+\_\+sync\+\_\+add\+\_\+and\+\_\+fetch(src\+\_\+ptr, v)
+\item 
+\#define \hyperlink{atomic_8h_a37b044dd7a021068b871399ba3a5cbbb}{A\+T\+O\+M\+I\+C\+\_\+\+S\+U\+B\+\_\+\+A\+N\+D\+\_\+\+F\+E\+T\+C\+H}(src\+\_\+ptr,  v)~\+\_\+\+\_\+sync\+\_\+sub\+\_\+and\+\_\+fetch(src\+\_\+ptr, v)
+\item 
+\#define \hyperlink{atomic_8h_af5d3775bba80b278f32b7023d7407091}{A\+T\+O\+M\+I\+C\+\_\+\+A\+D\+D\+\_\+\+A\+N\+D\+\_\+\+F\+E\+T\+C\+H}(src\+\_\+ptr,  v)~\+\_\+\+\_\+sync\+\_\+add\+\_\+and\+\_\+fetch(src\+\_\+ptr, v)
+\item 
+\#define \hyperlink{atomic_8h_a8eab17a1e8abbd2e18093beaa701ac94}{A\+T\+O\+M\+I\+C\+\_\+\+F\+E\+T\+C\+H}(src\+\_\+ptr)~\+\_\+\+\_\+sync\+\_\+add\+\_\+and\+\_\+fetch(src\+\_\+ptr, 0)
+\item 
+\#define \hyperlink{atomic_8h_a042646361a3d6a84f62c75c33364a1e6}{A\+T\+O\+M\+I\+C\+\_\+\+S\+E\+T}(src\+\_\+ptr,  v)~(void)\+\_\+\+\_\+sync\+\_\+bool\+\_\+compare\+\_\+and\+\_\+swap(src\+\_\+ptr, $\ast$(src\+\_\+ptr), v)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef volatile long \hyperlink{atomic_8h_a620d50a1508238bf4dc09842c1602167}{atomic\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{atomic_8h_ae870573c25a8d5e67109b97e3a3bab2d}{}\index{atomic.\+h@{atomic.\+h}!A\+T\+O\+M\+I\+C\+\_\+\+A\+D\+D@{A\+T\+O\+M\+I\+C\+\_\+\+A\+D\+D}}
+\index{A\+T\+O\+M\+I\+C\+\_\+\+A\+D\+D@{A\+T\+O\+M\+I\+C\+\_\+\+A\+D\+D}!atomic.\+h@{atomic.\+h}}
+\subsubsection[{A\+T\+O\+M\+I\+C\+\_\+\+A\+D\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+O\+M\+I\+C\+\_\+\+A\+D\+D(
+\begin{DoxyParamCaption}
+\item[{}]{src\+\_\+ptr, }
+\item[{}]{v}
+\end{DoxyParamCaption}
+)~(void)\+\_\+\+\_\+sync\+\_\+add\+\_\+and\+\_\+fetch(src\+\_\+ptr, v)}\label{atomic_8h_ae870573c25a8d5e67109b97e3a3bab2d}
+\hypertarget{atomic_8h_af5d3775bba80b278f32b7023d7407091}{}\index{atomic.\+h@{atomic.\+h}!A\+T\+O\+M\+I\+C\+\_\+\+A\+D\+D\+\_\+\+A\+N\+D\+\_\+\+F\+E\+T\+C\+H@{A\+T\+O\+M\+I\+C\+\_\+\+A\+D\+D\+\_\+\+A\+N\+D\+\_\+\+F\+E\+T\+C\+H}}
+\index{A\+T\+O\+M\+I\+C\+\_\+\+A\+D\+D\+\_\+\+A\+N\+D\+\_\+\+F\+E\+T\+C\+H@{A\+T\+O\+M\+I\+C\+\_\+\+A\+D\+D\+\_\+\+A\+N\+D\+\_\+\+F\+E\+T\+C\+H}!atomic.\+h@{atomic.\+h}}
+\subsubsection[{A\+T\+O\+M\+I\+C\+\_\+\+A\+D\+D\+\_\+\+A\+N\+D\+\_\+\+F\+E\+T\+C\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+O\+M\+I\+C\+\_\+\+A\+D\+D\+\_\+\+A\+N\+D\+\_\+\+F\+E\+T\+C\+H(
+\begin{DoxyParamCaption}
+\item[{}]{src\+\_\+ptr, }
+\item[{}]{v}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+sync\+\_\+add\+\_\+and\+\_\+fetch(src\+\_\+ptr, v)}\label{atomic_8h_af5d3775bba80b278f32b7023d7407091}
+\hypertarget{atomic_8h_a8eab17a1e8abbd2e18093beaa701ac94}{}\index{atomic.\+h@{atomic.\+h}!A\+T\+O\+M\+I\+C\+\_\+\+F\+E\+T\+C\+H@{A\+T\+O\+M\+I\+C\+\_\+\+F\+E\+T\+C\+H}}
+\index{A\+T\+O\+M\+I\+C\+\_\+\+F\+E\+T\+C\+H@{A\+T\+O\+M\+I\+C\+\_\+\+F\+E\+T\+C\+H}!atomic.\+h@{atomic.\+h}}
+\subsubsection[{A\+T\+O\+M\+I\+C\+\_\+\+F\+E\+T\+C\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+O\+M\+I\+C\+\_\+\+F\+E\+T\+C\+H(
+\begin{DoxyParamCaption}
+\item[{}]{src\+\_\+ptr}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+sync\+\_\+add\+\_\+and\+\_\+fetch(src\+\_\+ptr, 0)}\label{atomic_8h_a8eab17a1e8abbd2e18093beaa701ac94}
+\hypertarget{atomic_8h_a042646361a3d6a84f62c75c33364a1e6}{}\index{atomic.\+h@{atomic.\+h}!A\+T\+O\+M\+I\+C\+\_\+\+S\+E\+T@{A\+T\+O\+M\+I\+C\+\_\+\+S\+E\+T}}
+\index{A\+T\+O\+M\+I\+C\+\_\+\+S\+E\+T@{A\+T\+O\+M\+I\+C\+\_\+\+S\+E\+T}!atomic.\+h@{atomic.\+h}}
+\subsubsection[{A\+T\+O\+M\+I\+C\+\_\+\+S\+E\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+O\+M\+I\+C\+\_\+\+S\+E\+T(
+\begin{DoxyParamCaption}
+\item[{}]{src\+\_\+ptr, }
+\item[{}]{v}
+\end{DoxyParamCaption}
+)~(void)\+\_\+\+\_\+sync\+\_\+bool\+\_\+compare\+\_\+and\+\_\+swap(src\+\_\+ptr, $\ast$(src\+\_\+ptr), v)}\label{atomic_8h_a042646361a3d6a84f62c75c33364a1e6}
+\hypertarget{atomic_8h_a37b044dd7a021068b871399ba3a5cbbb}{}\index{atomic.\+h@{atomic.\+h}!A\+T\+O\+M\+I\+C\+\_\+\+S\+U\+B\+\_\+\+A\+N\+D\+\_\+\+F\+E\+T\+C\+H@{A\+T\+O\+M\+I\+C\+\_\+\+S\+U\+B\+\_\+\+A\+N\+D\+\_\+\+F\+E\+T\+C\+H}}
+\index{A\+T\+O\+M\+I\+C\+\_\+\+S\+U\+B\+\_\+\+A\+N\+D\+\_\+\+F\+E\+T\+C\+H@{A\+T\+O\+M\+I\+C\+\_\+\+S\+U\+B\+\_\+\+A\+N\+D\+\_\+\+F\+E\+T\+C\+H}!atomic.\+h@{atomic.\+h}}
+\subsubsection[{A\+T\+O\+M\+I\+C\+\_\+\+S\+U\+B\+\_\+\+A\+N\+D\+\_\+\+F\+E\+T\+C\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+O\+M\+I\+C\+\_\+\+S\+U\+B\+\_\+\+A\+N\+D\+\_\+\+F\+E\+T\+C\+H(
+\begin{DoxyParamCaption}
+\item[{}]{src\+\_\+ptr, }
+\item[{}]{v}
+\end{DoxyParamCaption}
+)~\+\_\+\+\_\+sync\+\_\+sub\+\_\+and\+\_\+fetch(src\+\_\+ptr, v)}\label{atomic_8h_a37b044dd7a021068b871399ba3a5cbbb}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{atomic_8h_a620d50a1508238bf4dc09842c1602167}{}\index{atomic.\+h@{atomic.\+h}!atomic\+\_\+t@{atomic\+\_\+t}}
+\index{atomic\+\_\+t@{atomic\+\_\+t}!atomic.\+h@{atomic.\+h}}
+\subsubsection[{atomic\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef volatile long {\bf atomic\+\_\+t}}\label{atomic_8h_a620d50a1508238bf4dc09842c1602167}

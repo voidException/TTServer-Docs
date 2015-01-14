@@ -1,0 +1,164 @@
+\hypertarget{class_c_im_pdu_validate_response}{}\section{C\+Im\+Pdu\+Validate\+Response Class Reference}
+\label{class_c_im_pdu_validate_response}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+
+
+{\ttfamily \#include $<$Im\+Pdu\+Server.\+h$>$}
+
+Inheritance diagram for C\+Im\+Pdu\+Validate\+Response\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_im_pdu_validate_response}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_im_pdu_validate_response_aaae37c48c088dbfcd54065ff68af9fd4}{C\+Im\+Pdu\+Validate\+Response} (\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$buf, uint32\+\_\+t len)
+\item 
+\hyperlink{class_c_im_pdu_validate_response_a7fae2cd3b9c3b2776ce4bf58a2534a76}{C\+Im\+Pdu\+Validate\+Response} (const char $\ast$user\+\_\+name, uint32\+\_\+t result, const \hyperlink{structuser__info__t}{user\+\_\+info\+\_\+t} $\ast$user, uint32\+\_\+t attach\+\_\+len=0, \hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$attach\+\_\+data=N\+U\+L\+L, uint32\+\_\+t reserved=0)
+\item 
+virtual \hyperlink{class_c_im_pdu_validate_response_a8c69d8e04db56d373dccf81eb99afbe9}{$\sim$\+C\+Im\+Pdu\+Validate\+Response} ()
+\item 
+virtual uint16\+\_\+t \hyperlink{class_c_im_pdu_validate_response_ae82feee69cf1bd0a49ed9305c37d8eb4}{Get\+Pdu\+Type} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_validate_response_ac6d0c7b5e760c0e78485ceab3cfcf46f}{Get\+User\+Name\+Len} ()
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_validate_response_ab599c62836c05e9ba6a5d8475faec173}{Get\+User\+Name} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_validate_response_a26b88c984f5555770aa875db2bdf2156}{Get\+Result} ()
+\item 
+\hyperlink{structuser__info__t}{user\+\_\+info\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_validate_response_a449e49751d2463892d864561c22d6a4e}{Get\+User\+Info} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_validate_response_ac01111c334aaadd7c3f1d5101639421e}{Get\+Attach\+Len} ()
+\item 
+\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_validate_response_a794d78e60f5e9b212d103ae3579225f0}{Get\+Attach\+Data} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_validate_response_a1f65ea70a0875c14d15a28ebeefd56a1}{m\+\_\+user\+\_\+name\+\_\+len}
+\item 
+char $\ast$ \hyperlink{class_c_im_pdu_validate_response_a333deb2b3cea43b54f522abd6765ae22}{m\+\_\+user\+\_\+name}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_validate_response_afec021ad7aa5184704562e7daef7de8c}{m\+\_\+result}
+\item 
+\hyperlink{structuser__info__t}{user\+\_\+info\+\_\+t} \hyperlink{class_c_im_pdu_validate_response_abdb470ee4181aa7456e07ed481f9712b}{m\+\_\+user}
+\item 
+uint32\+\_\+t \hyperlink{class_c_im_pdu_validate_response_ad932acb485aea70539275c36ae61cf1e}{m\+\_\+attach\+\_\+len}
+\item 
+\hyperlink{base_2ostype_8h_a124ea0f8f4a23a0a286b5582137f0b8d}{uchar\+\_\+t} $\ast$ \hyperlink{class_c_im_pdu_validate_response_a9d1af07a2c5e64756788cb222f13aec9}{m\+\_\+attach\+\_\+data}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_im_pdu_validate_response_aaae37c48c088dbfcd54065ff68af9fd4}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{C\+Im\+Pdu\+Validate\+Response}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Validate\+Response\+::\+C\+Im\+Pdu\+Validate\+Response (
+\begin{DoxyParamCaption}
+\item[{{\bf uchar\+\_\+t} $\ast$}]{buf, }
+\item[{uint32\+\_\+t}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_validate_response_aaae37c48c088dbfcd54065ff68af9fd4}
+\hypertarget{class_c_im_pdu_validate_response_a7fae2cd3b9c3b2776ce4bf58a2534a76}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{C\+Im\+Pdu\+Validate\+Response}]{\setlength{\rightskip}{0pt plus 5cm}C\+Im\+Pdu\+Validate\+Response\+::\+C\+Im\+Pdu\+Validate\+Response (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{user\+\_\+name, }
+\item[{uint32\+\_\+t}]{result, }
+\item[{const {\bf user\+\_\+info\+\_\+t} $\ast$}]{user, }
+\item[{uint32\+\_\+t}]{attach\+\_\+len = {\ttfamily 0}, }
+\item[{{\bf uchar\+\_\+t} $\ast$}]{attach\+\_\+data = {\ttfamily NULL}, }
+\item[{uint32\+\_\+t}]{reserved = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_c_im_pdu_validate_response_a7fae2cd3b9c3b2776ce4bf58a2534a76}
+\hypertarget{class_c_im_pdu_validate_response_a8c69d8e04db56d373dccf81eb99afbe9}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!````~C\+Im\+Pdu\+Validate\+Response@{$\sim$\+C\+Im\+Pdu\+Validate\+Response}}
+\index{````~C\+Im\+Pdu\+Validate\+Response@{$\sim$\+C\+Im\+Pdu\+Validate\+Response}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{$\sim$\+C\+Im\+Pdu\+Validate\+Response}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Im\+Pdu\+Validate\+Response\+::$\sim$\+C\+Im\+Pdu\+Validate\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_im_pdu_validate_response_a8c69d8e04db56d373dccf81eb99afbe9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_im_pdu_validate_response_a794d78e60f5e9b212d103ae3579225f0}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!Get\+Attach\+Data@{Get\+Attach\+Data}}
+\index{Get\+Attach\+Data@{Get\+Attach\+Data}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{Get\+Attach\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar\+\_\+t}$\ast$ C\+Im\+Pdu\+Validate\+Response\+::\+Get\+Attach\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_validate_response_a794d78e60f5e9b212d103ae3579225f0}
+\hypertarget{class_c_im_pdu_validate_response_ac01111c334aaadd7c3f1d5101639421e}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!Get\+Attach\+Len@{Get\+Attach\+Len}}
+\index{Get\+Attach\+Len@{Get\+Attach\+Len}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{Get\+Attach\+Len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Validate\+Response\+::\+Get\+Attach\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_validate_response_ac01111c334aaadd7c3f1d5101639421e}
+\hypertarget{class_c_im_pdu_validate_response_ae82feee69cf1bd0a49ed9305c37d8eb4}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!Get\+Pdu\+Type@{Get\+Pdu\+Type}}
+\index{Get\+Pdu\+Type@{Get\+Pdu\+Type}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{Get\+Pdu\+Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint16\+\_\+t C\+Im\+Pdu\+Validate\+Response\+::\+Get\+Pdu\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_im_pdu_validate_response_ae82feee69cf1bd0a49ed9305c37d8eb4}
+
+
+Reimplemented from \hyperlink{class_c_im_pdu_a887912f445b3e864d33f9e7f2325f1fc}{C\+Im\+Pdu}.
+
+\hypertarget{class_c_im_pdu_validate_response_a26b88c984f5555770aa875db2bdf2156}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!Get\+Result@{Get\+Result}}
+\index{Get\+Result@{Get\+Result}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{Get\+Result}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Validate\+Response\+::\+Get\+Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_validate_response_a26b88c984f5555770aa875db2bdf2156}
+\hypertarget{class_c_im_pdu_validate_response_a449e49751d2463892d864561c22d6a4e}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!Get\+User\+Info@{Get\+User\+Info}}
+\index{Get\+User\+Info@{Get\+User\+Info}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{Get\+User\+Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf user\+\_\+info\+\_\+t}$\ast$ C\+Im\+Pdu\+Validate\+Response\+::\+Get\+User\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_validate_response_a449e49751d2463892d864561c22d6a4e}
+\hypertarget{class_c_im_pdu_validate_response_ab599c62836c05e9ba6a5d8475faec173}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!Get\+User\+Name@{Get\+User\+Name}}
+\index{Get\+User\+Name@{Get\+User\+Name}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{Get\+User\+Name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Validate\+Response\+::\+Get\+User\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_validate_response_ab599c62836c05e9ba6a5d8475faec173}
+\hypertarget{class_c_im_pdu_validate_response_ac6d0c7b5e760c0e78485ceab3cfcf46f}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!Get\+User\+Name\+Len@{Get\+User\+Name\+Len}}
+\index{Get\+User\+Name\+Len@{Get\+User\+Name\+Len}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{Get\+User\+Name\+Len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Validate\+Response\+::\+Get\+User\+Name\+Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_im_pdu_validate_response_ac6d0c7b5e760c0e78485ceab3cfcf46f}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_im_pdu_validate_response_a9d1af07a2c5e64756788cb222f13aec9}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!m\+\_\+attach\+\_\+data@{m\+\_\+attach\+\_\+data}}
+\index{m\+\_\+attach\+\_\+data@{m\+\_\+attach\+\_\+data}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{m\+\_\+attach\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar\+\_\+t}$\ast$ C\+Im\+Pdu\+Validate\+Response\+::m\+\_\+attach\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_validate_response_a9d1af07a2c5e64756788cb222f13aec9}
+\hypertarget{class_c_im_pdu_validate_response_ad932acb485aea70539275c36ae61cf1e}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!m\+\_\+attach\+\_\+len@{m\+\_\+attach\+\_\+len}}
+\index{m\+\_\+attach\+\_\+len@{m\+\_\+attach\+\_\+len}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{m\+\_\+attach\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Validate\+Response\+::m\+\_\+attach\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_validate_response_ad932acb485aea70539275c36ae61cf1e}
+\hypertarget{class_c_im_pdu_validate_response_afec021ad7aa5184704562e7daef7de8c}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!m\+\_\+result@{m\+\_\+result}}
+\index{m\+\_\+result@{m\+\_\+result}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{m\+\_\+result}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Validate\+Response\+::m\+\_\+result\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_validate_response_afec021ad7aa5184704562e7daef7de8c}
+\hypertarget{class_c_im_pdu_validate_response_abdb470ee4181aa7456e07ed481f9712b}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!m\+\_\+user@{m\+\_\+user}}
+\index{m\+\_\+user@{m\+\_\+user}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{m\+\_\+user}]{\setlength{\rightskip}{0pt plus 5cm}{\bf user\+\_\+info\+\_\+t} C\+Im\+Pdu\+Validate\+Response\+::m\+\_\+user\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_validate_response_abdb470ee4181aa7456e07ed481f9712b}
+\hypertarget{class_c_im_pdu_validate_response_a333deb2b3cea43b54f522abd6765ae22}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!m\+\_\+user\+\_\+name@{m\+\_\+user\+\_\+name}}
+\index{m\+\_\+user\+\_\+name@{m\+\_\+user\+\_\+name}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{m\+\_\+user\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Im\+Pdu\+Validate\+Response\+::m\+\_\+user\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_validate_response_a333deb2b3cea43b54f522abd6765ae22}
+\hypertarget{class_c_im_pdu_validate_response_a1f65ea70a0875c14d15a28ebeefd56a1}{}\index{C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}!m\+\_\+user\+\_\+name\+\_\+len@{m\+\_\+user\+\_\+name\+\_\+len}}
+\index{m\+\_\+user\+\_\+name\+\_\+len@{m\+\_\+user\+\_\+name\+\_\+len}!C\+Im\+Pdu\+Validate\+Response@{C\+Im\+Pdu\+Validate\+Response}}
+\subsubsection[{m\+\_\+user\+\_\+name\+\_\+len}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Im\+Pdu\+Validate\+Response\+::m\+\_\+user\+\_\+name\+\_\+len\hspace{0.3cm}{\ttfamily [private]}}\label{class_c_im_pdu_validate_response_a1f65ea70a0875c14d15a28ebeefd56a1}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_server_8h}{Im\+Pdu\+Server.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{_im_pdu_server_8cpp}{Im\+Pdu\+Server.\+cpp}\end{DoxyCompactItemize}

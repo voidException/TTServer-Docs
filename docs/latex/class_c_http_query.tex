@@ -1,0 +1,99 @@
+\hypertarget{class_c_http_query}{}\section{C\+Http\+Query Class Reference}
+\label{class_c_http_query}\index{C\+Http\+Query@{C\+Http\+Query}}
+
+
+{\ttfamily \#include $<$Http\+Query.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_c_http_query_a2bb574b4a8d716e2fab3ce7d460d182f}{$\sim$\+C\+Http\+Query} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_http_query}{C\+Http\+Query} $\ast$ \hyperlink{class_c_http_query_a97df39ff88a2c421b6722d3a8c56a1a9}{Get\+Instance} ()
+\item 
+static void \hyperlink{class_c_http_query_ad0b1d846811ecf1eb64da81fc13b3287}{Dispatch\+Query} (std\+::string \&url, std\+::string \&post\+\_\+data, \hyperlink{class_c_http_conn}{C\+Http\+Conn} $\ast$p\+Http\+Conn)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_http_query_a70983a4268a9f249825a1a3322938485}{C\+Http\+Query} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_c_http_query_a258f1156578be58ea22fc805e52eee7d}{\+\_\+\+Query\+Create\+Normal\+Group} (\hyperlink{classjsonxx_1_1_object}{jsonxx\+::\+Object} \&post\+\_\+json\+\_\+obj, \hyperlink{class_c_http_conn}{C\+Http\+Conn} $\ast$p\+Http\+Conn)
+\item 
+static void \hyperlink{class_c_http_query_adbb3291f507245eed85cc3ccff0360bd}{\+\_\+\+Query\+Change\+Member} (\hyperlink{classjsonxx_1_1_object}{jsonxx\+::\+Object} \&post\+\_\+json\+\_\+obj, \hyperlink{class_c_http_conn}{C\+Http\+Conn} $\ast$p\+Http\+Conn)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_http_query}{C\+Http\+Query} $\ast$ \hyperlink{class_c_http_query_a59fb2e4f4937cafdd4e175515c92d39d}{m\+\_\+query\+\_\+instance} = N\+U\+L\+L
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_http_query_a2bb574b4a8d716e2fab3ce7d460d182f}{}\index{C\+Http\+Query@{C\+Http\+Query}!````~C\+Http\+Query@{$\sim$\+C\+Http\+Query}}
+\index{````~C\+Http\+Query@{$\sim$\+C\+Http\+Query}!C\+Http\+Query@{C\+Http\+Query}}
+\subsubsection[{$\sim$\+C\+Http\+Query}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Http\+Query\+::$\sim$\+C\+Http\+Query (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_http_query_a2bb574b4a8d716e2fab3ce7d460d182f}
+\hypertarget{class_c_http_query_a70983a4268a9f249825a1a3322938485}{}\index{C\+Http\+Query@{C\+Http\+Query}!C\+Http\+Query@{C\+Http\+Query}}
+\index{C\+Http\+Query@{C\+Http\+Query}!C\+Http\+Query@{C\+Http\+Query}}
+\subsubsection[{C\+Http\+Query}]{\setlength{\rightskip}{0pt plus 5cm}C\+Http\+Query\+::\+C\+Http\+Query (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{class_c_http_query_a70983a4268a9f249825a1a3322938485}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_http_query_adbb3291f507245eed85cc3ccff0360bd}{}\index{C\+Http\+Query@{C\+Http\+Query}!\+\_\+\+Query\+Change\+Member@{\+\_\+\+Query\+Change\+Member}}
+\index{\+\_\+\+Query\+Change\+Member@{\+\_\+\+Query\+Change\+Member}!C\+Http\+Query@{C\+Http\+Query}}
+\subsubsection[{\+\_\+\+Query\+Change\+Member}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Query\+::\+\_\+\+Query\+Change\+Member (
+\begin{DoxyParamCaption}
+\item[{{\bf jsonxx\+::\+Object} \&}]{post\+\_\+json\+\_\+obj, }
+\item[{{\bf C\+Http\+Conn} $\ast$}]{p\+Http\+Conn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_c_http_query_adbb3291f507245eed85cc3ccff0360bd}
+\hypertarget{class_c_http_query_a258f1156578be58ea22fc805e52eee7d}{}\index{C\+Http\+Query@{C\+Http\+Query}!\+\_\+\+Query\+Create\+Normal\+Group@{\+\_\+\+Query\+Create\+Normal\+Group}}
+\index{\+\_\+\+Query\+Create\+Normal\+Group@{\+\_\+\+Query\+Create\+Normal\+Group}!C\+Http\+Query@{C\+Http\+Query}}
+\subsubsection[{\+\_\+\+Query\+Create\+Normal\+Group}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Query\+::\+\_\+\+Query\+Create\+Normal\+Group (
+\begin{DoxyParamCaption}
+\item[{{\bf jsonxx\+::\+Object} \&}]{post\+\_\+json\+\_\+obj, }
+\item[{{\bf C\+Http\+Conn} $\ast$}]{p\+Http\+Conn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_c_http_query_a258f1156578be58ea22fc805e52eee7d}
+\hypertarget{class_c_http_query_ad0b1d846811ecf1eb64da81fc13b3287}{}\index{C\+Http\+Query@{C\+Http\+Query}!Dispatch\+Query@{Dispatch\+Query}}
+\index{Dispatch\+Query@{Dispatch\+Query}!C\+Http\+Query@{C\+Http\+Query}}
+\subsubsection[{Dispatch\+Query}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Query\+::\+Dispatch\+Query (
+\begin{DoxyParamCaption}
+\item[{std\+::string \&}]{url, }
+\item[{std\+::string \&}]{post\+\_\+data, }
+\item[{{\bf C\+Http\+Conn} $\ast$}]{p\+Http\+Conn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_query_ad0b1d846811ecf1eb64da81fc13b3287}
+\hypertarget{class_c_http_query_a97df39ff88a2c421b6722d3a8c56a1a9}{}\index{C\+Http\+Query@{C\+Http\+Query}!Get\+Instance@{Get\+Instance}}
+\index{Get\+Instance@{Get\+Instance}!C\+Http\+Query@{C\+Http\+Query}}
+\subsubsection[{Get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Http\+Query} $\ast$ C\+Http\+Query\+::\+Get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_query_a97df39ff88a2c421b6722d3a8c56a1a9}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_http_query_a59fb2e4f4937cafdd4e175515c92d39d}{}\index{C\+Http\+Query@{C\+Http\+Query}!m\+\_\+query\+\_\+instance@{m\+\_\+query\+\_\+instance}}
+\index{m\+\_\+query\+\_\+instance@{m\+\_\+query\+\_\+instance}!C\+Http\+Query@{C\+Http\+Query}}
+\subsubsection[{m\+\_\+query\+\_\+instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Http\+Query} $\ast$ C\+Http\+Query\+::m\+\_\+query\+\_\+instance = N\+U\+L\+L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{class_c_http_query_a59fb2e4f4937cafdd4e175515c92d39d}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\hyperlink{_http_query_8h}{Http\+Query.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msg\+\_\+server/\hyperlink{_http_query_8cpp}{Http\+Query.\+cpp}\end{DoxyCompactItemize}

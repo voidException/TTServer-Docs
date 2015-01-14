@@ -1,0 +1,343 @@
+\hypertarget{class_c_http_conn}{}\section{C\+Http\+Conn Class Reference}
+\label{class_c_http_conn}\index{C\+Http\+Conn@{C\+Http\+Conn}}
+
+
+{\ttfamily \#include $<$Http\+Conn.\+h$>$}
+
+Inheritance diagram for C\+Http\+Conn\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_http_conn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_http_conn_a8b4eb7a9a17014dbcc3395c1c2c3ddeb}{C\+Http\+Conn} ()
+\item 
+virtual \hyperlink{class_c_http_conn_ada432083ec16cffa3c07c9322a0c3e10}{$\sim$\+C\+Http\+Conn} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_http_conn_a4d4524311aa0cddadaacd8d1757fd9e7}{Get\+Conn\+Handle} ()
+\item 
+char $\ast$ \hyperlink{class_c_http_conn_ae3e27507d3262f10dcf4fccee79d2541}{Get\+Peer\+I\+P} ()
+\item 
+int \hyperlink{class_c_http_conn_ab205a0ff06d6d0a629b9c23760bf0177}{Send} (void $\ast$data, int len)
+\item 
+void \hyperlink{class_c_http_conn_a6e100e44d55155584384ed0fb8e91903}{Close} ()
+\item 
+void \hyperlink{class_c_http_conn_a1cac21a83a16edc06a8fea0bccc212de}{On\+Connect} (\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} handle)
+\item 
+void \hyperlink{class_c_http_conn_a1d53fa2c5ef56337b305c036a526b248}{On\+Read} ()
+\item 
+void \hyperlink{class_c_http_conn_a5472986aa83ff3ee4278b44d4fa107d3}{On\+Write} ()
+\item 
+void \hyperlink{class_c_http_conn_a41bfb10253014f84ddb95a15485339e3}{On\+Close} ()
+\item 
+void \hyperlink{class_c_http_conn_ae12aba0480560dbb9c1c59cada86dec7}{On\+Timer} (uint64\+\_\+t curr\+\_\+tick)
+\item 
+void \hyperlink{class_c_http_conn_a252f22137666ecc593a7b2822235d78c}{On\+Send\+Complete} ()
+\item 
+\hyperlink{class_c_http_conn_a8b4eb7a9a17014dbcc3395c1c2c3ddeb}{C\+Http\+Conn} ()
+\item 
+virtual \hyperlink{class_c_http_conn_a0cd6f177a4d6f42d725126c9fd5a61d5}{$\sim$\+C\+Http\+Conn} ()
+\item 
+uint32\+\_\+t \hyperlink{class_c_http_conn_a4d4524311aa0cddadaacd8d1757fd9e7}{Get\+Conn\+Handle} ()
+\item 
+char $\ast$ \hyperlink{class_c_http_conn_ae3e27507d3262f10dcf4fccee79d2541}{Get\+Peer\+I\+P} ()
+\item 
+int \hyperlink{class_c_http_conn_ab205a0ff06d6d0a629b9c23760bf0177}{Send} (void $\ast$data, int len)
+\item 
+void \hyperlink{class_c_http_conn_a6e100e44d55155584384ed0fb8e91903}{Close} ()
+\item 
+void \hyperlink{class_c_http_conn_a1cac21a83a16edc06a8fea0bccc212de}{On\+Connect} (\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} handle)
+\item 
+void \hyperlink{class_c_http_conn_a1d53fa2c5ef56337b305c036a526b248}{On\+Read} ()
+\item 
+void \hyperlink{class_c_http_conn_a5472986aa83ff3ee4278b44d4fa107d3}{On\+Write} ()
+\item 
+void \hyperlink{class_c_http_conn_a41bfb10253014f84ddb95a15485339e3}{On\+Close} ()
+\item 
+void \hyperlink{class_c_http_conn_ae12aba0480560dbb9c1c59cada86dec7}{On\+Timer} (uint64\+\_\+t curr\+\_\+tick)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_c_http_conn_aacccd7b33f51ca113b029b1ab1eba895}{Add\+Response\+Pdu} (uint32\+\_\+t conn\+\_\+handle, char $\ast$p\+Content, int n\+Len)
+\item 
+static void \hyperlink{class_c_http_conn_a222a879d24e9a2f2716cc02d7483c701}{Send\+Response\+Pdu\+List} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{base_2ostype_8h_a5e1697fa312aa00ac7305460abf166fd}{net\+\_\+handle\+\_\+t} \hyperlink{class_c_http_conn_a4d153604db1c99917afe230fdc74fa32}{m\+\_\+sock\+\_\+handle}
+\item 
+uint32\+\_\+t \hyperlink{class_c_http_conn_aeaa7109faf07e286701fc2f8d3f580c3}{m\+\_\+conn\+\_\+handle}
+\item 
+bool \hyperlink{class_c_http_conn_a76b293a06ec3b273f0b5d876e88dac0b}{m\+\_\+busy}
+\item 
+uint32\+\_\+t \hyperlink{class_c_http_conn_a8305fcc34ba4659d8e2be63abb0316ca}{m\+\_\+state}
+\item 
+string \hyperlink{class_c_http_conn_af0e7b21f89078b710ec5db50a4780bb0}{m\+\_\+peer\+\_\+ip}
+\item 
+uint16\+\_\+t \hyperlink{class_c_http_conn_ab4cdd416f3d2971c8c2dc1df7ff77056}{m\+\_\+peer\+\_\+port}
+\item 
+string \hyperlink{class_c_http_conn_a17d4473dead0652b2f84365c9579344a}{m\+\_\+access\+\_\+host}
+\item 
+\hyperlink{class_c_simple_buffer}{C\+Simple\+Buffer} \hyperlink{class_c_http_conn_a79f063dfb2647cfd2802802740961009}{m\+\_\+in\+\_\+buf}
+\item 
+\hyperlink{class_c_simple_buffer}{C\+Simple\+Buffer} \hyperlink{class_c_http_conn_a60dcb5c32e294791754f0ef27ff5ebf9}{m\+\_\+out\+\_\+buf}
+\item 
+uint64\+\_\+t \hyperlink{class_c_http_conn_aa7e0b04c9d7ddade0caff62f3df26712}{m\+\_\+last\+\_\+send\+\_\+tick}
+\item 
+uint64\+\_\+t \hyperlink{class_c_http_conn_a0aa0f9c33898a2fe9869f99c8d2680cc}{m\+\_\+last\+\_\+recv\+\_\+tick}
+\item 
+\hyperlink{class_c_http_parser_wrapper}{C\+Http\+Parser\+Wrapper} \hyperlink{class_c_http_conn_a116ef03e7203ab16e49ccc8385e7b7ca}{m\+\_\+\+Http\+Parser}
+\item 
+std\+::string \hyperlink{class_c_http_conn_ae7fe9fe05089bf65f266a561f409980a}{m\+\_\+peer\+\_\+ip}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_thread_lock}{C\+Thread\+Lock} \hyperlink{class_c_http_conn_ab23eadafce99e325a29b3f7d4fe42664}{s\+\_\+list\+\_\+lock}
+\item 
+static list$<$ \hyperlink{struct_response__t}{Response\+\_\+t} $\ast$ $>$ \hyperlink{class_c_http_conn_a120c90e3459db4e7a25f7d2bf491d147}{s\+\_\+response\+\_\+pdu\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_http_conn_a8b4eb7a9a17014dbcc3395c1c2c3ddeb}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!C\+Http\+Conn@{C\+Http\+Conn}}
+\index{C\+Http\+Conn@{C\+Http\+Conn}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{C\+Http\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}C\+Http\+Conn\+::\+C\+Http\+Conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_a8b4eb7a9a17014dbcc3395c1c2c3ddeb}
+\hypertarget{class_c_http_conn_ada432083ec16cffa3c07c9322a0c3e10}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!````~C\+Http\+Conn@{$\sim$\+C\+Http\+Conn}}
+\index{````~C\+Http\+Conn@{$\sim$\+C\+Http\+Conn}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{$\sim$\+C\+Http\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}C\+Http\+Conn\+::$\sim$\+C\+Http\+Conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_http_conn_ada432083ec16cffa3c07c9322a0c3e10}
+\hypertarget{class_c_http_conn_a8b4eb7a9a17014dbcc3395c1c2c3ddeb}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!C\+Http\+Conn@{C\+Http\+Conn}}
+\index{C\+Http\+Conn@{C\+Http\+Conn}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{C\+Http\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}C\+Http\+Conn\+::\+C\+Http\+Conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_a8b4eb7a9a17014dbcc3395c1c2c3ddeb}
+\hypertarget{class_c_http_conn_a0cd6f177a4d6f42d725126c9fd5a61d5}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!````~C\+Http\+Conn@{$\sim$\+C\+Http\+Conn}}
+\index{````~C\+Http\+Conn@{$\sim$\+C\+Http\+Conn}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{$\sim$\+C\+Http\+Conn}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Http\+Conn\+::$\sim$\+C\+Http\+Conn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_http_conn_a0cd6f177a4d6f42d725126c9fd5a61d5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_http_conn_aacccd7b33f51ca113b029b1ab1eba895}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!Add\+Response\+Pdu@{Add\+Response\+Pdu}}
+\index{Add\+Response\+Pdu@{Add\+Response\+Pdu}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{Add\+Response\+Pdu}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+Add\+Response\+Pdu (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{conn\+\_\+handle, }
+\item[{char $\ast$}]{p\+Content, }
+\item[{int}]{n\+Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_conn_aacccd7b33f51ca113b029b1ab1eba895}
+\hypertarget{class_c_http_conn_a6e100e44d55155584384ed0fb8e91903}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!Close@{Close}}
+\index{Close@{Close}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_a6e100e44d55155584384ed0fb8e91903}
+\hypertarget{class_c_http_conn_a6e100e44d55155584384ed0fb8e91903}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!Close@{Close}}
+\index{Close@{Close}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_a6e100e44d55155584384ed0fb8e91903}
+\hypertarget{class_c_http_conn_a4d4524311aa0cddadaacd8d1757fd9e7}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!Get\+Conn\+Handle@{Get\+Conn\+Handle}}
+\index{Get\+Conn\+Handle@{Get\+Conn\+Handle}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{Get\+Conn\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Http\+Conn\+::\+Get\+Conn\+Handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_conn_a4d4524311aa0cddadaacd8d1757fd9e7}
+\hypertarget{class_c_http_conn_a4d4524311aa0cddadaacd8d1757fd9e7}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!Get\+Conn\+Handle@{Get\+Conn\+Handle}}
+\index{Get\+Conn\+Handle@{Get\+Conn\+Handle}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{Get\+Conn\+Handle}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Http\+Conn\+::\+Get\+Conn\+Handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_conn_a4d4524311aa0cddadaacd8d1757fd9e7}
+\hypertarget{class_c_http_conn_ae3e27507d3262f10dcf4fccee79d2541}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!Get\+Peer\+I\+P@{Get\+Peer\+I\+P}}
+\index{Get\+Peer\+I\+P@{Get\+Peer\+I\+P}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{Get\+Peer\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Http\+Conn\+::\+Get\+Peer\+I\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_conn_ae3e27507d3262f10dcf4fccee79d2541}
+\hypertarget{class_c_http_conn_ae3e27507d3262f10dcf4fccee79d2541}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!Get\+Peer\+I\+P@{Get\+Peer\+I\+P}}
+\index{Get\+Peer\+I\+P@{Get\+Peer\+I\+P}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{Get\+Peer\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ C\+Http\+Conn\+::\+Get\+Peer\+I\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_http_conn_ae3e27507d3262f10dcf4fccee79d2541}
+\hypertarget{class_c_http_conn_a41bfb10253014f84ddb95a15485339e3}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!On\+Close@{On\+Close}}
+\index{On\+Close@{On\+Close}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{On\+Close}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+On\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_a41bfb10253014f84ddb95a15485339e3}
+\hypertarget{class_c_http_conn_a41bfb10253014f84ddb95a15485339e3}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!On\+Close@{On\+Close}}
+\index{On\+Close@{On\+Close}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{On\+Close}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+On\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_a41bfb10253014f84ddb95a15485339e3}
+\hypertarget{class_c_http_conn_a1cac21a83a16edc06a8fea0bccc212de}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!On\+Connect@{On\+Connect}}
+\index{On\+Connect@{On\+Connect}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{On\+Connect}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+On\+Connect (
+\begin{DoxyParamCaption}
+\item[{{\bf net\+\_\+handle\+\_\+t}}]{handle}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_a1cac21a83a16edc06a8fea0bccc212de}
+\hypertarget{class_c_http_conn_a1cac21a83a16edc06a8fea0bccc212de}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!On\+Connect@{On\+Connect}}
+\index{On\+Connect@{On\+Connect}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{On\+Connect}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+On\+Connect (
+\begin{DoxyParamCaption}
+\item[{{\bf net\+\_\+handle\+\_\+t}}]{handle}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_a1cac21a83a16edc06a8fea0bccc212de}
+\hypertarget{class_c_http_conn_a1d53fa2c5ef56337b305c036a526b248}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!On\+Read@{On\+Read}}
+\index{On\+Read@{On\+Read}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{On\+Read}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+On\+Read (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_a1d53fa2c5ef56337b305c036a526b248}
+\hypertarget{class_c_http_conn_a1d53fa2c5ef56337b305c036a526b248}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!On\+Read@{On\+Read}}
+\index{On\+Read@{On\+Read}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{On\+Read}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+On\+Read (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_a1d53fa2c5ef56337b305c036a526b248}
+\hypertarget{class_c_http_conn_a252f22137666ecc593a7b2822235d78c}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!On\+Send\+Complete@{On\+Send\+Complete}}
+\index{On\+Send\+Complete@{On\+Send\+Complete}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{On\+Send\+Complete}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+On\+Send\+Complete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_a252f22137666ecc593a7b2822235d78c}
+\hypertarget{class_c_http_conn_ae12aba0480560dbb9c1c59cada86dec7}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!On\+Timer@{On\+Timer}}
+\index{On\+Timer@{On\+Timer}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{On\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+On\+Timer (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t}]{curr\+\_\+tick}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_ae12aba0480560dbb9c1c59cada86dec7}
+\hypertarget{class_c_http_conn_ae12aba0480560dbb9c1c59cada86dec7}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!On\+Timer@{On\+Timer}}
+\index{On\+Timer@{On\+Timer}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{On\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+On\+Timer (
+\begin{DoxyParamCaption}
+\item[{uint64\+\_\+t}]{curr\+\_\+tick}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_ae12aba0480560dbb9c1c59cada86dec7}
+\hypertarget{class_c_http_conn_a5472986aa83ff3ee4278b44d4fa107d3}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!On\+Write@{On\+Write}}
+\index{On\+Write@{On\+Write}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{On\+Write}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+On\+Write (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_a5472986aa83ff3ee4278b44d4fa107d3}
+\hypertarget{class_c_http_conn_a5472986aa83ff3ee4278b44d4fa107d3}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!On\+Write@{On\+Write}}
+\index{On\+Write@{On\+Write}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{On\+Write}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+On\+Write (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_a5472986aa83ff3ee4278b44d4fa107d3}
+\hypertarget{class_c_http_conn_ab205a0ff06d6d0a629b9c23760bf0177}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!Send@{Send}}
+\index{Send@{Send}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{Send}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Http\+Conn\+::\+Send (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_ab205a0ff06d6d0a629b9c23760bf0177}
+\hypertarget{class_c_http_conn_ab205a0ff06d6d0a629b9c23760bf0177}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!Send@{Send}}
+\index{Send@{Send}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{Send}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Http\+Conn\+::\+Send (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\label{class_c_http_conn_ab205a0ff06d6d0a629b9c23760bf0177}
+\hypertarget{class_c_http_conn_a222a879d24e9a2f2716cc02d7483c701}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!Send\+Response\+Pdu\+List@{Send\+Response\+Pdu\+List}}
+\index{Send\+Response\+Pdu\+List@{Send\+Response\+Pdu\+List}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{Send\+Response\+Pdu\+List}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Http\+Conn\+::\+Send\+Response\+Pdu\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_http_conn_a222a879d24e9a2f2716cc02d7483c701}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_http_conn_a17d4473dead0652b2f84365c9579344a}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!m\+\_\+access\+\_\+host@{m\+\_\+access\+\_\+host}}
+\index{m\+\_\+access\+\_\+host@{m\+\_\+access\+\_\+host}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{m\+\_\+access\+\_\+host}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Http\+Conn\+::m\+\_\+access\+\_\+host\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_http_conn_a17d4473dead0652b2f84365c9579344a}
+\hypertarget{class_c_http_conn_a76b293a06ec3b273f0b5d876e88dac0b}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!m\+\_\+busy@{m\+\_\+busy}}
+\index{m\+\_\+busy@{m\+\_\+busy}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{m\+\_\+busy}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Http\+Conn\+::m\+\_\+busy\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_http_conn_a76b293a06ec3b273f0b5d876e88dac0b}
+\hypertarget{class_c_http_conn_aeaa7109faf07e286701fc2f8d3f580c3}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!m\+\_\+conn\+\_\+handle@{m\+\_\+conn\+\_\+handle}}
+\index{m\+\_\+conn\+\_\+handle@{m\+\_\+conn\+\_\+handle}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{m\+\_\+conn\+\_\+handle}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Http\+Conn\+::m\+\_\+conn\+\_\+handle\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_http_conn_aeaa7109faf07e286701fc2f8d3f580c3}
+\hypertarget{class_c_http_conn_a116ef03e7203ab16e49ccc8385e7b7ca}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!m\+\_\+\+Http\+Parser@{m\+\_\+\+Http\+Parser}}
+\index{m\+\_\+\+Http\+Parser@{m\+\_\+\+Http\+Parser}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{m\+\_\+\+Http\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Http\+Parser\+Wrapper} C\+Http\+Conn\+::m\+\_\+\+Http\+Parser\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_http_conn_a116ef03e7203ab16e49ccc8385e7b7ca}
+\hypertarget{class_c_http_conn_a79f063dfb2647cfd2802802740961009}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!m\+\_\+in\+\_\+buf@{m\+\_\+in\+\_\+buf}}
+\index{m\+\_\+in\+\_\+buf@{m\+\_\+in\+\_\+buf}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{m\+\_\+in\+\_\+buf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Simple\+Buffer} C\+Http\+Conn\+::m\+\_\+in\+\_\+buf\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_http_conn_a79f063dfb2647cfd2802802740961009}
+\hypertarget{class_c_http_conn_a0aa0f9c33898a2fe9869f99c8d2680cc}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!m\+\_\+last\+\_\+recv\+\_\+tick@{m\+\_\+last\+\_\+recv\+\_\+tick}}
+\index{m\+\_\+last\+\_\+recv\+\_\+tick@{m\+\_\+last\+\_\+recv\+\_\+tick}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{m\+\_\+last\+\_\+recv\+\_\+tick}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t C\+Http\+Conn\+::m\+\_\+last\+\_\+recv\+\_\+tick\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_http_conn_a0aa0f9c33898a2fe9869f99c8d2680cc}
+\hypertarget{class_c_http_conn_aa7e0b04c9d7ddade0caff62f3df26712}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!m\+\_\+last\+\_\+send\+\_\+tick@{m\+\_\+last\+\_\+send\+\_\+tick}}
+\index{m\+\_\+last\+\_\+send\+\_\+tick@{m\+\_\+last\+\_\+send\+\_\+tick}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{m\+\_\+last\+\_\+send\+\_\+tick}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t C\+Http\+Conn\+::m\+\_\+last\+\_\+send\+\_\+tick\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_http_conn_aa7e0b04c9d7ddade0caff62f3df26712}
+\hypertarget{class_c_http_conn_a60dcb5c32e294791754f0ef27ff5ebf9}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!m\+\_\+out\+\_\+buf@{m\+\_\+out\+\_\+buf}}
+\index{m\+\_\+out\+\_\+buf@{m\+\_\+out\+\_\+buf}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{m\+\_\+out\+\_\+buf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Simple\+Buffer} C\+Http\+Conn\+::m\+\_\+out\+\_\+buf\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_http_conn_a60dcb5c32e294791754f0ef27ff5ebf9}
+\hypertarget{class_c_http_conn_ae7fe9fe05089bf65f266a561f409980a}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!m\+\_\+peer\+\_\+ip@{m\+\_\+peer\+\_\+ip}}
+\index{m\+\_\+peer\+\_\+ip@{m\+\_\+peer\+\_\+ip}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{m\+\_\+peer\+\_\+ip}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+Http\+Conn\+::m\+\_\+peer\+\_\+ip\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_http_conn_ae7fe9fe05089bf65f266a561f409980a}
+\hypertarget{class_c_http_conn_af0e7b21f89078b710ec5db50a4780bb0}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!m\+\_\+peer\+\_\+ip@{m\+\_\+peer\+\_\+ip}}
+\index{m\+\_\+peer\+\_\+ip@{m\+\_\+peer\+\_\+ip}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{m\+\_\+peer\+\_\+ip}]{\setlength{\rightskip}{0pt plus 5cm}string C\+Http\+Conn\+::m\+\_\+peer\+\_\+ip\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_http_conn_af0e7b21f89078b710ec5db50a4780bb0}
+\hypertarget{class_c_http_conn_ab4cdd416f3d2971c8c2dc1df7ff77056}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!m\+\_\+peer\+\_\+port@{m\+\_\+peer\+\_\+port}}
+\index{m\+\_\+peer\+\_\+port@{m\+\_\+peer\+\_\+port}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{m\+\_\+peer\+\_\+port}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t C\+Http\+Conn\+::m\+\_\+peer\+\_\+port\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_http_conn_ab4cdd416f3d2971c8c2dc1df7ff77056}
+\hypertarget{class_c_http_conn_a4d153604db1c99917afe230fdc74fa32}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!m\+\_\+sock\+\_\+handle@{m\+\_\+sock\+\_\+handle}}
+\index{m\+\_\+sock\+\_\+handle@{m\+\_\+sock\+\_\+handle}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{m\+\_\+sock\+\_\+handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf net\+\_\+handle\+\_\+t} C\+Http\+Conn\+::m\+\_\+sock\+\_\+handle\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_http_conn_a4d153604db1c99917afe230fdc74fa32}
+\hypertarget{class_c_http_conn_a8305fcc34ba4659d8e2be63abb0316ca}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!m\+\_\+state@{m\+\_\+state}}
+\index{m\+\_\+state@{m\+\_\+state}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{m\+\_\+state}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t C\+Http\+Conn\+::m\+\_\+state\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_http_conn_a8305fcc34ba4659d8e2be63abb0316ca}
+\hypertarget{class_c_http_conn_ab23eadafce99e325a29b3f7d4fe42664}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!s\+\_\+list\+\_\+lock@{s\+\_\+list\+\_\+lock}}
+\index{s\+\_\+list\+\_\+lock@{s\+\_\+list\+\_\+lock}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{s\+\_\+list\+\_\+lock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Thread\+Lock} C\+Http\+Conn\+::s\+\_\+list\+\_\+lock\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{class_c_http_conn_ab23eadafce99e325a29b3f7d4fe42664}
+\hypertarget{class_c_http_conn_a120c90e3459db4e7a25f7d2bf491d147}{}\index{C\+Http\+Conn@{C\+Http\+Conn}!s\+\_\+response\+\_\+pdu\+\_\+list@{s\+\_\+response\+\_\+pdu\+\_\+list}}
+\index{s\+\_\+response\+\_\+pdu\+\_\+list@{s\+\_\+response\+\_\+pdu\+\_\+list}!C\+Http\+Conn@{C\+Http\+Conn}}
+\subsubsection[{s\+\_\+response\+\_\+pdu\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ {\bf Response\+\_\+t} $\ast$ $>$ C\+Http\+Conn\+::s\+\_\+response\+\_\+pdu\+\_\+list\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{class_c_http_conn_a120c90e3459db4e7a25f7d2bf491d147}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/\hyperlink{msfs_2_http_conn_8h}{Http\+Conn.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/msfs/\hyperlink{msfs_2_http_conn_8cpp}{Http\+Conn.\+cpp}\end{DoxyCompactItemize}

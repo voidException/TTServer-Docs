@@ -1,0 +1,147 @@
+\hypertarget{class_c_thread}{}\section{C\+Thread Class Reference}
+\label{class_c_thread}\index{C\+Thread@{C\+Thread}}
+
+
+{\ttfamily \#include $<$util.\+h$>$}
+
+Inheritance diagram for C\+Thread\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_thread}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_thread_ad256868eded3b90abee1b5f656bb678e}{C\+Thread} ()
+\item 
+virtual \hyperlink{class_c_thread_a85a583b2edf56a6448e71e3a9ad301d2}{$\sim$\+C\+Thread} ()
+\item 
+virtual void \hyperlink{class_c_thread_a76897a8f3a57f1acbec44599c4dc2315}{Start\+Thread} (void)
+\item 
+virtual void \hyperlink{class_c_thread_afe1bfa3f5be22b19c0dbd4c7c29d670c}{On\+Thread\+Run} (void)=0
+\item 
+\hyperlink{class_c_thread_ad256868eded3b90abee1b5f656bb678e}{C\+Thread} ()
+\item 
+virtual \hyperlink{class_c_thread_aaa6753fc8114c0eac21f9726b791cfa2}{$\sim$\+C\+Thread} ()
+\item 
+virtual void \hyperlink{class_c_thread_a82d41c0abec6b8dc073d77631a6ab3f8}{Start\+Thread} (void)
+\item 
+virtual void \hyperlink{class_c_thread_afe1bfa3f5be22b19c0dbd4c7c29d670c}{On\+Thread\+Run} (void)=0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ \hyperlink{class_c_thread_a02b1c05e14956d21badc48dd06d8a845}{Start\+Routine} (void $\ast$arg)
+\item 
+static void $\ast$ \hyperlink{class_c_thread_a945a0bc4af2c91d97fef2339fd3e559b}{Start\+Routine} (void $\ast$arg)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+t \hyperlink{class_c_thread_ab0cdf089d81214033a7d9d855aec1292}{m\+\_\+thread\+\_\+id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_thread_ad256868eded3b90abee1b5f656bb678e}{}\index{C\+Thread@{C\+Thread}!C\+Thread@{C\+Thread}}
+\index{C\+Thread@{C\+Thread}!C\+Thread@{C\+Thread}}
+\subsubsection[{C\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}C\+Thread\+::\+C\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_thread_ad256868eded3b90abee1b5f656bb678e}
+\hypertarget{class_c_thread_a85a583b2edf56a6448e71e3a9ad301d2}{}\index{C\+Thread@{C\+Thread}!````~C\+Thread@{$\sim$\+C\+Thread}}
+\index{````~C\+Thread@{$\sim$\+C\+Thread}!C\+Thread@{C\+Thread}}
+\subsubsection[{$\sim$\+C\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}C\+Thread\+::$\sim$\+C\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_thread_a85a583b2edf56a6448e71e3a9ad301d2}
+\hypertarget{class_c_thread_ad256868eded3b90abee1b5f656bb678e}{}\index{C\+Thread@{C\+Thread}!C\+Thread@{C\+Thread}}
+\index{C\+Thread@{C\+Thread}!C\+Thread@{C\+Thread}}
+\subsubsection[{C\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}C\+Thread\+::\+C\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_thread_ad256868eded3b90abee1b5f656bb678e}
+\hypertarget{class_c_thread_aaa6753fc8114c0eac21f9726b791cfa2}{}\index{C\+Thread@{C\+Thread}!````~C\+Thread@{$\sim$\+C\+Thread}}
+\index{````~C\+Thread@{$\sim$\+C\+Thread}!C\+Thread@{C\+Thread}}
+\subsubsection[{$\sim$\+C\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\+Thread\+::$\sim$\+C\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_thread_aaa6753fc8114c0eac21f9726b791cfa2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_thread_afe1bfa3f5be22b19c0dbd4c7c29d670c}{}\index{C\+Thread@{C\+Thread}!On\+Thread\+Run@{On\+Thread\+Run}}
+\index{On\+Thread\+Run@{On\+Thread\+Run}!C\+Thread@{C\+Thread}}
+\subsubsection[{On\+Thread\+Run}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\+Thread\+::\+On\+Thread\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_c_thread_afe1bfa3f5be22b19c0dbd4c7c29d670c}
+
+
+Implemented in \hyperlink{class_c_event_thread_a0efc3d406cb98907956d4eb10cab0505}{C\+Event\+Thread}, and \hyperlink{class_c_event_thread_a6ad44cd6ef00ba945d4e7ebb46a97448}{C\+Event\+Thread}.
+
+\hypertarget{class_c_thread_afe1bfa3f5be22b19c0dbd4c7c29d670c}{}\index{C\+Thread@{C\+Thread}!On\+Thread\+Run@{On\+Thread\+Run}}
+\index{On\+Thread\+Run@{On\+Thread\+Run}!C\+Thread@{C\+Thread}}
+\subsubsection[{On\+Thread\+Run}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\+Thread\+::\+On\+Thread\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_c_thread_afe1bfa3f5be22b19c0dbd4c7c29d670c}
+
+
+Implemented in \hyperlink{class_c_event_thread_a0efc3d406cb98907956d4eb10cab0505}{C\+Event\+Thread}, and \hyperlink{class_c_event_thread_a6ad44cd6ef00ba945d4e7ebb46a97448}{C\+Event\+Thread}.
+
+\hypertarget{class_c_thread_a02b1c05e14956d21badc48dd06d8a845}{}\index{C\+Thread@{C\+Thread}!Start\+Routine@{Start\+Routine}}
+\index{Start\+Routine@{Start\+Routine}!C\+Thread@{C\+Thread}}
+\subsubsection[{Start\+Routine}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ C\+Thread\+::\+Start\+Routine (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_thread_a02b1c05e14956d21badc48dd06d8a845}
+\hypertarget{class_c_thread_a945a0bc4af2c91d97fef2339fd3e559b}{}\index{C\+Thread@{C\+Thread}!Start\+Routine@{Start\+Routine}}
+\index{Start\+Routine@{Start\+Routine}!C\+Thread@{C\+Thread}}
+\subsubsection[{Start\+Routine}]{\setlength{\rightskip}{0pt plus 5cm}static void$\ast$ C\+Thread\+::\+Start\+Routine (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_thread_a945a0bc4af2c91d97fef2339fd3e559b}
+\hypertarget{class_c_thread_a76897a8f3a57f1acbec44599c4dc2315}{}\index{C\+Thread@{C\+Thread}!Start\+Thread@{Start\+Thread}}
+\index{Start\+Thread@{Start\+Thread}!C\+Thread@{C\+Thread}}
+\subsubsection[{Start\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Thread\+::\+Start\+Thread (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_thread_a76897a8f3a57f1acbec44599c4dc2315}
+
+
+Reimplemented in \hyperlink{class_c_event_thread_aae9853b983731e88714ccf39fae0286f}{C\+Event\+Thread}, and \hyperlink{class_c_event_thread_a685f655956cf2e3e334e44b8ae08a995}{C\+Event\+Thread}.
+
+\hypertarget{class_c_thread_a82d41c0abec6b8dc073d77631a6ab3f8}{}\index{C\+Thread@{C\+Thread}!Start\+Thread@{Start\+Thread}}
+\index{Start\+Thread@{Start\+Thread}!C\+Thread@{C\+Thread}}
+\subsubsection[{Start\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}virtual void C\+Thread\+::\+Start\+Thread (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_thread_a82d41c0abec6b8dc073d77631a6ab3f8}
+
+
+Reimplemented in \hyperlink{class_c_event_thread_aae9853b983731e88714ccf39fae0286f}{C\+Event\+Thread}, and \hyperlink{class_c_event_thread_a685f655956cf2e3e334e44b8ae08a995}{C\+Event\+Thread}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_thread_ab0cdf089d81214033a7d9d855aec1292}{}\index{C\+Thread@{C\+Thread}!m\+\_\+thread\+\_\+id@{m\+\_\+thread\+\_\+id}}
+\index{m\+\_\+thread\+\_\+id@{m\+\_\+thread\+\_\+id}!C\+Thread@{C\+Thread}}
+\subsubsection[{m\+\_\+thread\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}pthread\+\_\+t C\+Thread\+::m\+\_\+thread\+\_\+id\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_thread_ab0cdf089d81214033a7d9d855aec1292}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{base_2util_8h}{util.\+h}\item 
+/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\hyperlink{base_2util_8cpp}{util.\+cpp}\end{DoxyCompactItemize}

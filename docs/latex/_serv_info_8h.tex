@@ -1,0 +1,75 @@
+\hypertarget{_serv_info_8h}{}\section{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\+Serv\+Info.h File Reference}
+\label{_serv_info_8h}\index{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\+Serv\+Info.\+h@{/\+Users/chenjiang/\+Documents/mywork/project/github/\+Team\+Talk/\+T\+T\+Server/cpp/src/base/\+Serv\+Info.\+h}}
+{\ttfamily \#include \char`\"{}util.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}imconn.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Config\+File\+Reader.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structserv__info__t}{serv\+\_\+info\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_serv_info_8h_abb22eb59452fd9e16b5fc389fa7e4555}{M\+A\+X\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+N\+T}~64
+\item 
+\#define \hyperlink{_serv_info_8h_a35b1b71e5a903bf654dbaabf0f571371}{M\+I\+N\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+N\+T}~4
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{_serv_info_8h_a15d1da318581391c6ecf8f571a22bc03}{serv\+\_\+init} (\hyperlink{structserv__info__t}{serv\+\_\+info\+\_\+t} $\ast$server\+\_\+list, uint32\+\_\+t server\+\_\+count)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{_serv_info_8h_a327e5d13bfbce35e79775e8d9575cd27}{serv\+\_\+check\+\_\+reconnect} (\hyperlink{structserv__info__t}{serv\+\_\+info\+\_\+t} $\ast$server\+\_\+list, uint32\+\_\+t server\+\_\+count)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{_serv_info_8h_a1496f310852ac1299920429d38644ad8}{serv\+\_\+reset} (\hyperlink{structserv__info__t}{serv\+\_\+info\+\_\+t} $\ast$server\+\_\+list, uint32\+\_\+t server\+\_\+count, uint32\+\_\+t serv\+\_\+idx)
+\item 
+\hyperlink{structserv__info__t}{serv\+\_\+info\+\_\+t} $\ast$ \hyperlink{_serv_info_8h_a49d661bdbdf5e1495b9b5399b6293733}{read\+\_\+server\+\_\+config} (\hyperlink{class_c_config_file_reader}{C\+Config\+File\+Reader} $\ast$\hyperlink{main_8cpp_a3837a9812cea4b11b59b5211f2a1890b}{config\+\_\+file}, const char $\ast$server\+\_\+ip\+\_\+format, const char $\ast$server\+\_\+port\+\_\+format, uint32\+\_\+t \&server\+\_\+count)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_serv_info_8h_abb22eb59452fd9e16b5fc389fa7e4555}{}\index{Serv\+Info.\+h@{Serv\+Info.\+h}!M\+A\+X\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+N\+T@{M\+A\+X\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+N\+T}}
+\index{M\+A\+X\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+N\+T@{M\+A\+X\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+N\+T}!Serv\+Info.\+h@{Serv\+Info.\+h}}
+\subsubsection[{M\+A\+X\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+N\+T~64}\label{_serv_info_8h_abb22eb59452fd9e16b5fc389fa7e4555}
+\hypertarget{_serv_info_8h_a35b1b71e5a903bf654dbaabf0f571371}{}\index{Serv\+Info.\+h@{Serv\+Info.\+h}!M\+I\+N\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+N\+T@{M\+I\+N\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+N\+T}}
+\index{M\+I\+N\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+N\+T@{M\+I\+N\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+N\+T}!Serv\+Info.\+h@{Serv\+Info.\+h}}
+\subsubsection[{M\+I\+N\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+N\+\_\+\+R\+E\+C\+O\+N\+N\+E\+C\+T\+\_\+\+C\+N\+T~4}\label{_serv_info_8h_a35b1b71e5a903bf654dbaabf0f571371}
+
+
+\subsection{Function Documentation}
+\hypertarget{_serv_info_8h_a49d661bdbdf5e1495b9b5399b6293733}{}\index{Serv\+Info.\+h@{Serv\+Info.\+h}!read\+\_\+server\+\_\+config@{read\+\_\+server\+\_\+config}}
+\index{read\+\_\+server\+\_\+config@{read\+\_\+server\+\_\+config}!Serv\+Info.\+h@{Serv\+Info.\+h}}
+\subsubsection[{read\+\_\+server\+\_\+config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf serv\+\_\+info\+\_\+t}$\ast$ read\+\_\+server\+\_\+config (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Config\+File\+Reader} $\ast$}]{config\+\_\+file, }
+\item[{const char $\ast$}]{server\+\_\+ip\+\_\+format, }
+\item[{const char $\ast$}]{server\+\_\+port\+\_\+format, }
+\item[{uint32\+\_\+t \&}]{server\+\_\+count}
+\end{DoxyParamCaption}
+)}\label{_serv_info_8h_a49d661bdbdf5e1495b9b5399b6293733}
+\hypertarget{_serv_info_8h_a327e5d13bfbce35e79775e8d9575cd27}{}\index{Serv\+Info.\+h@{Serv\+Info.\+h}!serv\+\_\+check\+\_\+reconnect@{serv\+\_\+check\+\_\+reconnect}}
+\index{serv\+\_\+check\+\_\+reconnect@{serv\+\_\+check\+\_\+reconnect}!Serv\+Info.\+h@{Serv\+Info.\+h}}
+\subsubsection[{serv\+\_\+check\+\_\+reconnect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void serv\+\_\+check\+\_\+reconnect (
+\begin{DoxyParamCaption}
+\item[{{\bf serv\+\_\+info\+\_\+t} $\ast$}]{server\+\_\+list, }
+\item[{uint32\+\_\+t}]{server\+\_\+count}
+\end{DoxyParamCaption}
+)}\label{_serv_info_8h_a327e5d13bfbce35e79775e8d9575cd27}
+\hypertarget{_serv_info_8h_a15d1da318581391c6ecf8f571a22bc03}{}\index{Serv\+Info.\+h@{Serv\+Info.\+h}!serv\+\_\+init@{serv\+\_\+init}}
+\index{serv\+\_\+init@{serv\+\_\+init}!Serv\+Info.\+h@{Serv\+Info.\+h}}
+\subsubsection[{serv\+\_\+init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void serv\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf serv\+\_\+info\+\_\+t} $\ast$}]{server\+\_\+list, }
+\item[{uint32\+\_\+t}]{server\+\_\+count}
+\end{DoxyParamCaption}
+)}\label{_serv_info_8h_a15d1da318581391c6ecf8f571a22bc03}
+\hypertarget{_serv_info_8h_a1496f310852ac1299920429d38644ad8}{}\index{Serv\+Info.\+h@{Serv\+Info.\+h}!serv\+\_\+reset@{serv\+\_\+reset}}
+\index{serv\+\_\+reset@{serv\+\_\+reset}!Serv\+Info.\+h@{Serv\+Info.\+h}}
+\subsubsection[{serv\+\_\+reset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void serv\+\_\+reset (
+\begin{DoxyParamCaption}
+\item[{{\bf serv\+\_\+info\+\_\+t} $\ast$}]{server\+\_\+list, }
+\item[{uint32\+\_\+t}]{server\+\_\+count, }
+\item[{uint32\+\_\+t}]{serv\+\_\+idx}
+\end{DoxyParamCaption}
+)}\label{_serv_info_8h_a1496f310852ac1299920429d38644ad8}
